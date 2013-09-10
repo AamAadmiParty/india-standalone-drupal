@@ -59,9 +59,12 @@ function f_site_views_flag_default_flags() {
     'title' => 'Show in Banner',
     'global' => '1',
     'types' => array(
-      0 => 'basic_page',
-      1 => 'event',
-      2 => 'news',
+      0 => 'aap_question',
+      1 => 'basic_page',
+      2 => 'blog',
+      3 => 'event',
+      4 => 'news',
+      5 => 'volunteer_story',
     ),
     'flag_short' => 'Show content on Banner',
     'flag_long' => 'Content Image has shown on banner.',
@@ -104,11 +107,11 @@ function f_site_views_flag_default_flags() {
 function f_site_views_image_default_styles() {
   $styles = array();
 
-  // Exported image style: image_slideshow.
-  $styles['image_slideshow'] = array(
-    'name' => 'image_slideshow',
+  // Exported image style: 670_x_270.
+  $styles['670_x_270'] = array(
+    'name' => '670_x_270',
     'effects' => array(
-      1 => array(
+      3 => array(
         'label' => 'Resize',
         'help' => 'Resizing will make images an exact set of dimensions. This may cause images to be stretched or shrunk disproportionately.',
         'effect callback' => 'image_resize_effect',

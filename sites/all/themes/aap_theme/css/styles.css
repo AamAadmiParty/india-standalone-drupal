@@ -50,54 +50,54 @@
  * components should not be placed here and should instead be kept with the
  * relevant SCSS for that component.
  ******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000312}}
 .splash-region .panel-pane {
   margin: 0 auto;
   width: 60%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000319}}
 .panels-flexible-aap_layout-inside
 .panels-flexible-row {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000323}}
 .panels-flexible-row > .inside {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000327}}
 .top-header-row {
   padding: 0;
   margin-top: 0.1%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000333}}
 .main-menu-row {
   box-shadow: 0 -16px 33px #CCCCCC;
   height: 57px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000338}}
 .main-menu-row > .inside,
 .aap-footer-top-class > .inside {
   background-color: #61a220;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000342}}
 .aap-footer-top-class > .inside {
   margin-bottom: 1%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000346}}
 .bottom-content {
   margin-bottom: 5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000350}}
 .panels-flexible-row.main-menu-row,
 .panels-flexible-row.aap-footer-top-class {
   padding: 0;
@@ -105,40 +105,40 @@
   height: 0%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000356}}
 .panels-flexible-row.aap-footer-bottom-class {
   background: #1e7fa2;
   min-height: 75px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000362}}
 .aap-footer-bottom-class > .inside {
   background: #1e7fa2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000366}}
 .panels-flexible-row.aap-page-background-class {
   background: url("../images/bg_flag.jpg") no-repeat top center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000369}}
 .panels-flexible-row.aap-background-class {
   background: url("../images/bg_flag.jpg") no-repeat 0% 23%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000373}}
 .aap-body-class {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000378}}
 .aap-search-class #aap-contact {
   margin-right: 19px;
   background: url(../images/pager__item_sep.png) right 4px no-repeat;
   padding-right: 19px;
   margin-top: 2%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000383}}
 .aap-search-class #aap-contact a {
   color: #F17E00;
   font-family: Arial, Helvetica, sans-serif;
@@ -146,14 +146,14 @@
   font-weight: bold;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000391}}
 .aap-search-class .aap-login {
   background: #f17e00;
   border-radius: 0.3em;
   padding: 3px 5px;
   margin-left: 9px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\0000397}}
 .aap-search-class .aap-login a {
   color: #fffcf9;
   font-family: Franklin Gothic Demi Cond;
@@ -161,12 +161,12 @@
   text-decoration: none;
   font-size: 1.1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003101}}
 .aap-search-class .aap-login:hover {
   background: #fcac33;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003109}}
 .main-content,
 .middle-content,
 .bottom-content {
@@ -174,24 +174,24 @@
   margin-bottom: 2%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003114}}
 .middle-content > .inside {
   border-bottom: 1px solid #D7D7D7;
   border-top: 1px solid #D7D7D7;
   padding-bottom: 2%;
   padding-top: 2%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003121}}
 .middle-content > .inside panels-flexible-region .pane-content {
   color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003126}}
 .aap-main-content {
   margin-left: 3%;
   margin-right: 3%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003131}}
 .aap-main-content .pane-title {
   border: 1px solid;
   border-radius: 0.3em;
@@ -203,13 +203,13 @@
   font-size: 1.57em;
   padding: 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003135}}
 .aap-main-content .view-content .views-row {
   margin-bottom: 10px;
   padding-left: 25px;
   background: url(../images/bullet_img.png) no-repeat left 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003142}}
 .aap-main-content a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -219,30 +219,30 @@
   color: #1f7fa2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003149}}
 .aap-poll-class a {
   font-family: Arial, Helvetica, sans-serif !important;
   color: #333333 !important;
   font-size: 0.596em !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003154}}
 .aap-poll-class .node__title {
   line-height: 0.8em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003160}}
 .aap-main-content.latest-news-class .pane-content {
   position: relative;
   height: 534px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003164}}
 .aap-main-content.latest-news-class .pane-content .view-header img {
   width: 296px;
   border: 1px solid #D7D7D7;
   border-radius: 0.4em 0.4em 0.4em 0.4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003176}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003176}}
 .aap-donation-class .pane-content,
 .aap-poll-class .pane-content,
 .aap-story-class.aap-main-content .pane-content {
@@ -250,24 +250,24 @@
   height: 16em;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003182}}
 .aap-donation-class .read-more,
 .aap-poll-class .read-more,
 .aap-story-class.aap-main-content .read-more {
   padding: 0.5em 1.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003190}}
 .aap-donation-class .pane-content .form-radios,
 .aap-poll-class .pane-content .form-radios {
   margin-top: 6.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003197}}
 .aap-poll-class .pane-content ul {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003202}}
 .aap-poll-class h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -278,13 +278,13 @@
   padding-bottom: 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003211}}
 .header-menu .pane-content {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003217}}
 .header-menu .sf-menu.sf-style-default a {
   color: #fffcf9;
   background: none;
@@ -298,26 +298,26 @@
   margin: 0.4em 0em;
   padding: 0.4em 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003227}}
 .header-menu .sf-menu.sf-style-default a:hover {
   border-radius: 0.4em;
   color: #191919;
   text-align: center;
   text-shadow: 1px 1px #98C26E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003237}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003237}}
 .header-menu .sf-menu.sf-style-default
 .aap-home-class {
   background: url("../images/home.png") no-repeat scroll center;
   text-indent: -15000px;
   padding-right: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003242}}
 .header-menu .sf-menu.sf-style-default
 .aap-home-class:hover {
   opacity: 0.5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003248}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003248}}
 .header-menu .sf-menu.sf-style-default
 .donate-link-class {
   text-align: center;
@@ -328,133 +328,133 @@
   text-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003261}}
 .header-menu
 .sf-menu.sf-style-default li {
   background: url(../images/main_menu_border.png) no-repeat right;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003265}}
 .header-menu
 .sf-menu.sf-style-default .last {
   background: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003268}}
 .header-menu
 .sf-menu.sf-style-default li ul {
   background: #61a220 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003270}}
 .header-menu
 .sf-menu.sf-style-default li ul li {
   background: none;
   border-bottom: 1px solid #407C04;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003274}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003274}}
 .header-menu
 .sf-menu.sf-style-default li ul li a {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003276}}
 .header-menu
 .sf-menu.sf-style-default li ul li a:hover {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003286}}
 .header-menu
 .sf-menu.sf-style-default {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003290}}
 .aap-footer-class {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003293}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003293}}
 .aap-footer-class .pane-title {
   color: white;
   font-family: Franklin Gothic Demi Cond;
   font-size: 1.5em;
   text-shadow: 1px 1px #0e1e2b;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003302}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003302}}
 .aap-footer-class .pane-content a {
   color: white;
   font-family: arial;
   font-size: 0.75em;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003308}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003308}}
 .aap-footer-class .pane-content a:hover {
   color: #a7f657;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003313}}
 .aap-footer-class .pane-content li {
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003317}}
 .aap-footer-class .pane-content ul {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003323}}
 .aap-footer-class .aap-contact-form-class .form-item {
   margin-bottom: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003329}}
 .right-navigation-class {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003334}}
 .right-navigation-class .pane-content ul {
   padding: 0;
   margin-right: 7%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003338}}
 .right-navigation-class .pane-content .right-nav_1-class {
   background: url("../images/action_call.gif") no-repeat scroll 0% 0% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003342}}
 .right-navigation-class .pane-content .right-nav_2-class {
   background: url("../images/action_call.gif") no-repeat scroll 0% 12.5% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003346}}
 .right-navigation-class .pane-content .right-nav_3-class {
   background: url("../images/action_call.gif") no-repeat scroll 0% 25% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003349}}
 .right-navigation-class .pane-content .right-nav_4-class {
   background: url("../images/action_call.gif") no-repeat scroll 0 37.5% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003352}}
 .right-navigation-class .pane-content .right-nav_5-class {
   background: url("../images/action_call.gif") no-repeat scroll 0 50% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003355}}
 .right-navigation-class .pane-content .right-nav_6-class {
   background: url("../images/action_call.gif") no-repeat scroll 0 62.5% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003358}}
 .right-navigation-class .pane-content .right-nav_7-class {
   background: url("../images/action_call.gif") no-repeat scroll 0 75% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003361}}
 .right-navigation-class .pane-content .right-nav_8-class {
   background: url("../images/action_call.gif") no-repeat scroll 0 87.5% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003364}}
 .right-navigation-class .pane-content .right-nav_9-class {
   background: url("../images/action_call.gif") no-repeat scroll 0 100% #0b6182;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003368}}
 .right-navigation-class .pane-content li {
   list-style: none;
   line-height: 2.5em;
   padding-bottom: 0.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003374}}
 .right-navigation-class .pane-content a {
   color: #fffcf9;
   font-family: Franklin Gothic Demi Cond;
@@ -465,18 +465,18 @@
   display: block;
   border-radius: 0.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003381}}
 .right-navigation-class .pane-content a:hover {
   color: #EFF743;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003390}}
 .sliding-region-class,
 .right-navigation-class {
   margin-top: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003397}}
 .aap-question-class .pane-title {
   border: 1px solid;
   border-radius: 0.3em;
@@ -491,7 +491,7 @@
   margin: 1% 27%;
   padding: 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003405}}
 .aap-question-class .pane-content .aap-question-item-class {
   background: #f7f7f7;
   margin-top: 2%;
@@ -499,7 +499,7 @@
   border-radius: 0.4em;
   width: 48%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003412}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003412}}
 .aap-question-class .pane-content .aap-question-item-class .views-field-field-question {
   color: #fffcf9;
   font-family: Franklin Gothic Demi Cond;
@@ -511,15 +511,15 @@
   color: #666;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003421}}
 .aap-question-class .pane-content .aap-question-item-class .view-field-field-question_toggle {
   background: url("../images/arrow_up.png") no-repeat right 3% center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003425}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003425}}
 .aap-question-class .pane-content .aap-question-item-class .views-field-view-node_toogle {
   display: block !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003429}}
 .aap-question-class .pane-content .aap-question-item-class .views-field-field-answer,
 .aap-question-class .pane-content .aap-question-item-class .views-field-view-node {
   font-family: Arial, Helvetica, sans-serif;
@@ -532,18 +532,18 @@
   padding: 1% 2% 2% 2%;
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003440}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003440}}
 .aap-question-class .pane-content .aap-question-item-class.views-row-odd {
   float: left;
   clear: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003445}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003445}}
 .aap-question-class .pane-content .aap-question-item-class.views-row-even {
   float: right;
   clear: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003455}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003455}}
 .footer-bottom .pane-title {
   float: left;
   color: #fffcf9;
@@ -553,17 +553,17 @@
   font-size: 1.25em;
   margin-right: 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003462}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003462}}
 .footer-bottom .pane-content li {
   float: left;
   list-style: none outside none;
   padding-top: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003469}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003469}}
 .footer-bottom .first.leaf {
   padding-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003475}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003475}}
 .footer-bottom .fb-connector,
 .footer-bottom .twitter-social-connector,
 .footer-bottom .youtube-social-connector {
@@ -574,43 +574,43 @@
   width: 40px;
   height: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003483}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003483}}
 .footer-bottom .fb-connector:hover,
 .footer-bottom .twitter-social-connector:hover,
 .footer-bottom .youtube-social-connector:hover {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003488}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003488}}
 .footer-bottom .fb-connector {
   background: url(../images/fb.png) no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003491}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003491}}
 .footer-bottom .twitter-social-connector {
   background: url(../images/twitter.png) no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003494}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003494}}
 .footer-bottom .youtube-social-connector {
   background: url(../images/youtube.png) no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003500}}
 .aap-story-class .view-content .views-row {
   background: none;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003503}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003503}}
 .aap-story-class .node__title {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003507}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003507}}
 .aap-story-class p {
   font-family: Arial, Helvetica, sans-serif !important;
   color: #333333 !important;
   font-size: 0.87em !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003513}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003513}}
 .aap-call-us-class {
   clear: both;
   float: right;
@@ -621,25 +621,25 @@
   height: 73px;
   color: #FFFEFD;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003523}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003523}}
 .aap-call-us-class .content, .aap-call-us-class .title {
   padding-left: 15%;
   padding-top: 1%;
   font-size: 22px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003527}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003527}}
 .aap-call-us-class .content a, .aap-call-us-class .title a {
   color: #fffcf9;
   font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003529}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003529}}
 .aap-call-us-class .content a:hover, .aap-call-us-class .title a:hover {
   color: #EFF743;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003534}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003534}}
 .copyright-content {
   color: white;
   font-family: arial;
@@ -652,11 +652,11 @@
   * Layout for dafault page
   *
  *******************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003550}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003550}}
 .aap-page-content-class .aap-news-item-class .field__items img {
   width: 100% !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003553}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003553}}
 .aap-page-content-class .pane-title {
   border: 1px solid;
   border-radius: 0.3em;
@@ -673,11 +673,11 @@
   text-align: left;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003562}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003562}}
 .aap-page-content-class .pane-content {
   margin-top: 4%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003568}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003568}}
 .aap-page-content-class .pane-content
 .node-teaser,
 .aap-page-content-class .node--full,
@@ -690,8 +690,9 @@
   margin-bottom: 2%;
   padding: 0 2%;
   color: #333333;
+  padding: 1% 2%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000381}}
 .aap-page-content-class .pane-content
 .node-teaser .node__title a,
 .aap-page-content-class .node--full .node__title a,
@@ -701,7 +702,7 @@
   font-size: 1.2em;
   line-height: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000388}}
 .aap-page-content-class .pane-content
 .node-teaser p,
 .aap-page-content-class .node--full p,
@@ -710,7 +711,7 @@
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000393}}
 .aap-page-content-class .pane-content
 .node-teaser p a,
 .aap-page-content-class .node--full p a,
@@ -720,11 +721,11 @@
   text-decoration: none;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003573}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003574}}
 .aap-page-content-class .links.links--inline {
   padding-bottom: 2%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003576}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003577}}
 .aap-page-content-class .links.links--inline li > a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -732,7 +733,7 @@
   font-size: 14px;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003585}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003586}}
 .aap-page-content-class .field__items a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -740,7 +741,7 @@
   font-size: 14px;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003593}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003594}}
 .aap-page-content-class p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -750,7 +751,7 @@
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003600}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003601}}
 .aap-breadcrumb {
   border-radius: 0.2em 0.2em 0 0;
   text-align: left;
@@ -759,7 +760,7 @@
   padding: 0.5em 0.6em 2em;
   margin-top: 7%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003608}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003609}}
 .aap-breadcrumb .breadcrumb p, .aap-breadcrumb a {
   float: left;
   font-family: arial;
@@ -770,22 +771,22 @@
   text-decoration: none;
   padding-right: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003618}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003619}}
 .aap-breadcrumb .breadcrumb p:hover, .aap-breadcrumb a:hover {
   color: #8fe0ff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003622}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003623}}
 .aap-breadcrumb .breadcrumb p:last-child, .aap-breadcrumb a:last-child {
   color: #dadada;
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003630}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003631}}
 .aap-donation-right-class {
   margin-left: 12%;
   margin-right: 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003634}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003635}}
 .aap-donation-right-class .pane-content {
   border: 1px solid;
   border-radius: 0.3em;
@@ -799,51 +800,51 @@
   padding-bottom: 5%;
   height: 230px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000381}}
 .aap-donation-right-class .pane-content .node__title a {
   color: #000;
   text-decoration: none;
   font-size: 1.2em;
   line-height: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000388}}
 .aap-donation-right-class .pane-content p {
   font-size: 15px !important;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000393}}
 .aap-donation-right-class .pane-content p a {
   font-family: Arial, Helvetica, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003639}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003640}}
 .aap-donation-right-class .pane-content .form-radios {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003643}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003644}}
 .aap-donation-right-class .pane-content .donate-link {
   margin: 6px 35px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003649}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003650}}
 .aap-right-default-class .pane-content ul {
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003654}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003655}}
 .aap-right-default-class li {
   margin-left: 12%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003659}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003660}}
 .aap-related-story {
   margin-left: 12%;
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003662}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003663}}
 .aap-related-story .view-content .views-row {
   margin-bottom: 5px;
   padding-left: 20px;
@@ -855,27 +856,27 @@
   * common Theme for delhi site page
   *
  *******************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003676}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003677}}
 .aap-body-class.aap-delhi-body-class .panels-flexible-row.aap-background-class {
   background: url("../images/bg_flag.jpg") no-repeat 0% 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003679}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003680}}
 .aap-body-class.aap-delhi-body-class .home-box-top {
   margin-top: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003684}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003685}}
 .panelizer-service-links ul {
   list-style: none;
   float: left;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003689}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003690}}
 .panelizer-service-links li {
   float: left;
   padding-right: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003693}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003694}}
 .panelizer-service-links a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -884,17 +885,17 @@
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003703}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003704}}
 .aap-delhi-left-region {
   border-right: 1px solid #d7d7d7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003706}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003707}}
 .aap-delhi-right-region {
   padding-left: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003710}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003711}}
 .aap-delhi-row,
 .aap-delhi-region-content {
   margin-top: 4px;
@@ -906,7 +907,7 @@
  * Layout for candidate detail page
  *
 *******************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003722}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003723}}
 .aap-page-content-class #candidate-detail-page {
   border: 1px solid;
   border-radius: 0.3em;
@@ -917,49 +918,49 @@
   padding: 0 2%;
   color: #333333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003723}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003724}}
 .aap-page-content-class #candidate-detail-page .panels-flexible-row > .inside {
   width: 720px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000381}}
 .aap-page-content-class #candidate-detail-page .node__title a {
   color: #000;
   text-decoration: none;
   font-size: 1.2em;
   line-height: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000388}}
 .aap-page-content-class #candidate-detail-page p {
   font-size: 15px !important;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000393}}
 .aap-page-content-class #candidate-detail-page p a {
   font-family: Arial, Helvetica, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003728}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003729}}
 .aap-page-content-class #candidate-detail-page .candidate-info-region {
   margin-left: 6em;
   width: 500px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003732}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003733}}
 .aap-page-content-class #candidate-detail-page .candidate-info-region .candidate-name .field__item {
   font-size: 1.2em;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003736}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003737}}
 .aap-page-content-class #candidate-detail-page .candidate-info-region .field__items {
   width: 250px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003740}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003741}}
 .aap-page-content-class #candidate-detail-page .pane-content {
   margin-top: 0.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003743}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003744}}
 .aap-page-content-class #candidate-detail-page .pane-content .field__label {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -969,7 +970,7 @@
   font-weight: bold;
   width: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003748}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003749}}
 .aap-page-content-class #candidate-detail-page .pane-content .field__item {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -977,7 +978,7 @@
   font-weight: normal;
   color: #333333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003750}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003751}}
 .aap-page-content-class #candidate-detail-page .pane-content .field__item a {
   font-family: Arial, Helvetica, sans-serif;
   color: #f17e00;
@@ -990,7 +991,7 @@
   * Layout for constituency detail page
   *
  *******************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003770}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003771}}
 .aap-page-content-class #constituency-detail-page {
   border: 1px solid;
   border-radius: 0.3em;
@@ -1001,35 +1002,35 @@
   padding: 0 2%;
   color: #333333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003771}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003772}}
 .aap-page-content-class #constituency-detail-page .panels-flexible-row > .inside {
   width: 720px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000381}}
 .aap-page-content-class #constituency-detail-page .node__title a {
   color: #000;
   text-decoration: none;
   font-size: 1.2em;
   line-height: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000388}}
 .aap-page-content-class #constituency-detail-page p {
   font-size: 15px !important;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_base\.scss}line{font-family:\0000393}}
 .aap-page-content-class #constituency-detail-page p a {
   font-family: Arial, Helvetica, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003776}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003777}}
 .aap-page-content-class #constituency-detail-page .pane-content {
   margin-top: 2%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003778}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003779}}
 .aap-page-content-class #constituency-detail-page .pane-content .field__label {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -1039,7 +1040,7 @@
   font-weight: bold;
   width: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003783}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003784}}
 .aap-page-content-class #constituency-detail-page .pane-content .field__item {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -1047,31 +1048,31 @@
   font-weight: normal;
   color: #333333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003787}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003788}}
 .aap-page-content-class #constituency-detail-page .constituency-detail-region {
   margin-left: 5em;
   width: 500px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003792}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003793}}
 .aap-page-content-class #constituency-detail-page .aap-candidate-info p {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003795}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003796}}
 .aap-page-content-class #constituency-detail-page .aap-candidate-info a {
   font-family: Arial, Helvetica, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003799}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003800}}
 .aap-page-content-class #constituency-detail-page .aap-constituency-row {
   border-bottom: 1px solid #d7d7d7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003803}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003804}}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-candidate-consituency {
   font-size: 1.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003806}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003807}}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-candidate-name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -1082,65 +1083,65 @@
   font-size: 1.2em;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003812}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003813}}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .pane-title {
   background: none;
   color: #333333;
   font-size: 1.6em;
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003816}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003817}}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-shortlisted-candidate {
   border-bottom: 1px solid #d7d7d7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003819}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003820}}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .views-row-last.aap-shortlisted-candidate {
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003825}}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-shortlisted-candidate .panel-flexible {
   padding: 1em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003829}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003830}}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .views-row-first.aap-shortlisted-candidate .panel-flexible {
   padding: 0 0 1em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003833}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003834}}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .pane-content {
   border-bottom: 1px solid #d7d7d7;
   padding-bottom: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003839}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003840}}
 .aap-page-content-class #constituency-detail-page .shs-hierarchy {
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003841}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003842}}
 .aap-page-content-class #constituency-detail-page .shs-hierarchy .state:before {
   font-weight: bold;
   padding-right: 5em;
   content: "State:";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003846}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003847}}
 .aap-page-content-class #constituency-detail-page .shs-hierarchy .district:before {
   font-weight: bold;
   padding-right: 4em;
   content: "District:";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003851}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003852}}
 .aap-page-content-class #constituency-detail-page .shs-hierarchy .constituency:before {
   font-weight: bold;
   padding-right: 1em;
   content: "Constituency:";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003857}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003858}}
 .aap-page-content-class #constituency-detail-page .shs-hierarchy li:after {
   content: "";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003860}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003861}}
 .aap-page-content-class #constituency-detail-page .constituency-description {
   margin-left: 2.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003865}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003866}}
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .pane-title {
   background: none;
   color: #333333;
@@ -1148,11 +1149,11 @@
   padding-left: 0;
   margin-left: 3.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003870}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003871}}
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .adr {
   margin-left: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003876}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003877}}
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .fn, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .street-address,
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .postal-code, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .country-name,
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .locality, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .region,
@@ -1164,12 +1165,12 @@
   color: #333333;
   font-size: 1.1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003880}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003881}}
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel {
   margin-top: 0.5px;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003883}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003884}}
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email a, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel a {
   font-family: Arial, Helvetica, sans-serif;
   color: #f17e00;
@@ -1178,15 +1179,15 @@
   font-weight: bold;
   font-size: 1.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003889}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003890}}
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email abbr[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email acronym[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel abbr[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel acronym[title] {
   border-bottom-width: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003894}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003895}}
 .aap-page-content-class #constituency-detail-page .constituency-contact-container {
   margin-left: 2.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003899}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003900}}
 .aap-page-content-class #constituency-detail-page .constituency-container-1 h2 {
   margin: 0;
 }
@@ -1230,7 +1231,7 @@
  *       CSS. Exposed filter forms, views pagers and other views elements are
  *       also good candidates for components.
  ******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000344}}
 .aap-search-class form .form-submit {
   background: url("../images/search.png") no-repeat scroll 50% 50% #f17e00;
   border-radius: 0;
@@ -1239,11 +1240,11 @@
   width: 30px;
   height: 1.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000352}}
 .aap-search-class form .form-submit:hover {
   opacity: 0.4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000359}}
 .aap-search-class .aap-language .form-item label,
 .aap-search-class .aap-language .form-actions label {
   display: inline;
@@ -1251,7 +1252,7 @@
   color: #858484;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000365}}
 .aap-search-class .aap-language .form-select {
   border: 1px solid #d7d7d7;
   font-family: Arial, Helvetica, sans-serif;
@@ -1261,20 +1262,20 @@
   color: #858484;
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000376}}
 .aap-search-class .container-inline div {
   display: block;
   float: left;
   margin-top: 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000383}}
 .aap-search-class .aap-header-content,
 .aap-search-class .container-inline {
   padding-right: 9px;
   float: left;
   margin-top: 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\0000389}}
 .aap-search-class input[type="text"] {
   padding: 6px 7px;
   width: 90%;
@@ -1284,12 +1285,12 @@
   font-size: 0.8em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003101}}
 .aap-contact-form-class .form-submit {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003106}}
 form .form-submit {
   padding: 0.3em 1em;
   text-align: center;
@@ -1304,12 +1305,12 @@ form .form-submit {
   text-shadow: 1px 1px 1b1c28;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003117}}
 form .form-submit:hover {
   background: #fcac33;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003126}}
 .aap-main-content form .form-submit,
 .aap-main-content .read-more,
 .aap-main-content .more-link,
@@ -1325,7 +1326,7 @@ form .form-submit:hover {
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003133}}
 .aap-main-content form .form-submit a,
 .aap-main-content .read-more a,
 .aap-main-content .more-link a,
@@ -1336,7 +1337,7 @@ form .form-submit:hover {
   text-decoration: none;
   text-shadow: 1px 1px 1b1c28;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003138}}
 .aap-main-content form .form-submit:hover,
 .aap-main-content .read-more:hover,
 .aap-main-content .more-link:hover,
@@ -1344,7 +1345,7 @@ form .form-submit:hover {
   background: #fcac33;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003145}}
 input[type="text"] {
   width: 100%;
   border: 1px solid #d7d7d7;
@@ -1352,26 +1353,26 @@ input[type="text"] {
   height: 24px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003152}}
 .form-item textarea {
   width: 100%;
   border: 1px solid #d7d7d7;
   border-radius: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003159}}
 label {
   padding: 2px 1em 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003162}}
 input[type=radio], input.radio {
   margin: 2px 0 0 2px;
   margin: 0 0 0 2px;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003169}}
 .form-item label, .form-actions label {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.87em;
@@ -1384,13 +1385,13 @@ input[type=radio], input.radio {
   font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003178}}
 .aap-donation-class .form-checkboxes .form-item, .aap-donation-class .form-radios .form-item {
   float: left;
   width: 33%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003185}}
 .sliding-region-class .views-content-counter {
   float: left;
   margin-left: 0.5%;
@@ -1409,13 +1410,13 @@ input[type=radio], input.radio {
   width: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003201}}
 .views-slideshow-controls-bottom {
   margin: auto;
   width: 17%;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003207}}
 .views-slideshow-controls-bottom .active .views-content-counter {
   background: none repeat scroll 0 0 #676767;
 }
@@ -1425,111 +1426,111 @@ input[type=radio], input.radio {
     * Layout for dafault page
     *
     *******************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003222}}
 .aap-donation-right-class .form-checkboxes .form-item, .aap-donation-right-class .form-radios .form-item {
   float: left;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003227}}
 .aap-donation-right-class form .form-submit {
   bottom: 9px;
   left: 36px;
   width: 6em;
   padding: 3%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003233}}
 .aap-donation-right-class .form-item label, .aap-donation-right-class .form-actions label {
   padding: 7% 1%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003238}}
 .pager {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003241}}
 .pager li.pager__item {
   background: url(../images/pager__item_sep.png) right 10px no-repeat;
   font-weight: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003245}}
 .pager li.pager__item a {
   color: #0a6181;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003251}}
 .pager li.pager__item a:hover {
   color: #000000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003257}}
 .pager li.pager__item--last {
   background: url(../images/pager__item_sep.png) left 10px no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003262}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003262}}
 .surveymonkey-drupal-popup {
   display: none;
   text-align: center;
   margin: 4em auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003266}}
 .surveymonkey-drupal-popup .close-btn {
   color: red;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003269}}
 .surveymonkey-drupal-popup .pane-content {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003271}}
 .surveymonkey-drupal-popup .pane-content #surveyMonkeyInfo {
   margin: 0 auto;
 }
 
 /* Styles for home page (panel content) image banner content */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003278}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003278}}
 div.home-box-top {
   width: 730px;
   margin-bottom: 2em;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003282}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003282}}
 div.home-box-top img {
   width: 730px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003286}}
 div.home-box-bottom {
   width: 730px;
   margin-bottom: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003289}}
 div.home-box-bottom div.movstrip {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003291}}
 div.home-box-bottom div.movstrip ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003296}}
 div.home-box-bottom div.movstrip ul li {
   float: left;
   width: 170px;
   margin: 6px;
   padding: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003302}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003302}}
 div.home-box-bottom div.movstrip ul.slides_container li {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003306}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003306}}
 div.home-box-bottom img {
   width: 170px;
   height: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/deploy\/drupal-webroot\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_components\.scss}line{font-family:\00003310}}
 div.home-box-bottom li.last img {
   width: 55px;
   height: 55px;

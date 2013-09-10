@@ -294,26 +294,15 @@ if (!empty($np[1])) {
   $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'show_in_banner';
   $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: News Image */
-  $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['table'] = 'field_data_field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['field'] = 'field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['label'] = '';
-  $handler->display->display_options['fields']['field_news_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_news_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_news_image']['settings'] = array(
-    'image_style' => 'image_slideshow',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Event Image */
-  $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
-  $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
-  $handler->display->display_options['fields']['field_event_image']['field'] = 'field_event_image';
-  $handler->display->display_options['fields']['field_event_image']['label'] = '';
-  $handler->display->display_options['fields']['field_event_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_event_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_event_image']['settings'] = array(
-    'image_style' => 'image_slideshow',
+  /* Field: Content: Sliding Image */
+  $handler->display->display_options['fields']['field_content_sliding_image']['id'] = 'field_content_sliding_image';
+  $handler->display->display_options['fields']['field_content_sliding_image']['table'] = 'field_data_field_content_sliding_image';
+  $handler->display->display_options['fields']['field_content_sliding_image']['field'] = 'field_content_sliding_image';
+  $handler->display->display_options['fields']['field_content_sliding_image']['label'] = '';
+  $handler->display->display_options['fields']['field_content_sliding_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_content_sliding_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_content_sliding_image']['settings'] = array(
+    'image_style' => '670_x_270',
     'image_link' => 'content',
   );
   /* Field: Global: View result counter */
@@ -338,8 +327,12 @@ if (!empty($np[1])) {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
+    'aap_question' => 'aap_question',
+    'basic_page' => 'basic_page',
+    'blog' => 'blog',
     'event' => 'event',
     'news' => 'news',
+    'volunteer_story' => 'volunteer_story',
   );
 
   /* Display: AAP Question */
@@ -831,6 +824,7 @@ print $img;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['links'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Body */
