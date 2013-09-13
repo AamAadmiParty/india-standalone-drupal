@@ -286,6 +286,13 @@ function aap_tweaks_views_pre_render(&$view) {
 	}
 }
 
+/**
+ * Implements hook_feeds_presave().
+ */
+function aap_tweaks_feeds_presave(FeedsSource $source, $entity, $item) {
+	$entity->field_ct_video['und'][0]['video_url'] = $item['watch_page'];
+}
+
 /* Below is the code that is used to generate the Delhi Constituency map
 
 <?php

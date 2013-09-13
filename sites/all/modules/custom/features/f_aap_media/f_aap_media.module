@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AAP Media feature.
+ */
+
+include_once 'f_aap_media.features.inc';

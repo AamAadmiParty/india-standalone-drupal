@@ -1,0 +1,12 @@
+diff --git a/sites/all/modules/contrib/feeds_youtube/FeedsYoutubeParser.inc b/sites/all/modules/contrib/feeds_youtube/FeedsYoutubeParser.inc
+index 99d48da..33827f4 100644
+--- a/sites/all/modules/contrib/feeds_youtube/FeedsYoutubeParser.inc
++++ b/sites/all/modules/contrib/feeds_youtube/FeedsYoutubeParser.inc
+@@ -278,6 +278,7 @@ class FeedsYoutubeParser extends FeedsParser {
+       // Populate the FeedsFetcherResult object with the parsed results.
+       $result->items[] = $item;
+     }
++    return $result;
+   }
+ 
+   /**
