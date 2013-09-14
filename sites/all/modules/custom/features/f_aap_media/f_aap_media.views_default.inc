@@ -28,6 +28,7 @@ function f_aap_media_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'grid';
@@ -49,7 +50,7 @@ function f_aap_media_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'aap_video_gallery' => 'aap_video_gallery',
+    'videos' => 'videos',
   );
 
   /* Display: Videos */
@@ -57,6 +58,9 @@ function f_aap_media_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Videos';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['exposed_form'] = FALSE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Search Video';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '12';
@@ -79,8 +83,10 @@ function f_aap_media_views_default_views() {
   $handler->display->display_options['fields']['field_ct_video']['label'] = '';
   $handler->display->display_options['fields']['field_ct_video']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ct_video']['click_sort_column'] = 'video_url';
+  $handler->display->display_options['fields']['field_ct_video']['type'] = 'video_embed_field_thumbnail';
   $handler->display->display_options['fields']['field_ct_video']['settings'] = array(
-    'video_style' => 'teaser',
+    'image_style' => '200_x_200',
+    'image_link' => 'node',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
