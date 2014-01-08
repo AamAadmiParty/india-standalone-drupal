@@ -113,12 +113,15 @@
   background: #1e7fa2;
 }
 
-.panels-flexible-row.aap-page-background-class {
+.panels-flexible-row.aap-page-background-class,
+body.front .panels-flexible-aap_layout-inside {
   background: url("../images/bg_flag.jpg") no-repeat top center;
+  background-size: 100% auto;
 }
 
-.panels-flexible-row.aap-background-class {
-  background: url("../images/bg_flag.jpg") no-repeat 0% 23%;
+body.front div.panels-flexible-aap_layout div.main-content .inside,
+body.front div.panels-flexible-aap_layout div.middle-content .inside {
+  background: white;
 }
 
 .aap-body-class {
