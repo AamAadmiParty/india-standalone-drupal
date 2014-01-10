@@ -1,0 +1,28 @@
+.view-id-home_page_content {
+	position: relative;
+}
+#views_slideshow_controls_text_previous_home_page_content-sliding_news {
+	background: url(/sites/all/themes/aap_theme/images/slider_arrows_round.png) no-repeat bottom left;
+	width: 44px;
+	padding-top: 44px;
+	position: absolute;
+	z-index: 1000;
+	top: 120px;
+	left: 10px;
+	text-indent: -1000px;
+	height: 0px;
+}
+#views_slideshow_controls_text_next_home_page_content-sliding_news {
+	background: url(/sites/all/themes/aap_theme/images/slider_arrows_round.png) no-repeat bottom right;
+	width: 44px;
+	padding-top: 44px;
+	position: absolute;
+	z-index: 1000;
+	top: 120px;
+	right: 25px;
+	text-indent: -1000px;
+	height: 0px;
+}
+#views_slideshow_controls_text_pause_home_page_content-sliding_news {
+	display: none;
+}
