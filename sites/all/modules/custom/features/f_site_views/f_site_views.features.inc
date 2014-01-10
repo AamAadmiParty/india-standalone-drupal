@@ -76,12 +76,12 @@ function f_site_views_flag_default_flags() {
     'link_type' => 'toggle',
     'roles' => array(
       'flag' => array(
-        0 => '2',
-        1 => '5',
+        0 => '4',
+        1 => '9',
       ),
       'unflag' => array(
-        0 => '2',
-        1 => '5',
+        0 => '4',
+        1 => '9',
       ),
     ),
     'weight' => 0,
