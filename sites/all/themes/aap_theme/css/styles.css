@@ -1110,6 +1110,11 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin: 0;
 }
 
+body.front div.panels-top-row,
+body.front div.panels-top-row h2.pane-title {
+  margin-top: 0px;
+}
+
 .view-id-home_page_content {
   position: relative;
 }
