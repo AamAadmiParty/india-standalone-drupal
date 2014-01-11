@@ -150,7 +150,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-search-class .aap-login a {
   color: #fffcf9;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
   font-size: 1.1em;
@@ -187,7 +187,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.57em;
   padding: 1%;
 }
@@ -264,7 +264,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   color: #fffcf9;
   background: none;
   color: #fffcf9;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
   border-left: none;
@@ -337,7 +337,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-footer-class .pane-title {
   color: white;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.5em;
   text-shadow: 1px 1px #0e1e2b;
 }
@@ -401,7 +401,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .right-navigation-class .pane-content a {
   color: #fffcf9;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
   padding-left: 4em;
@@ -425,7 +425,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.57em;
   padding: 1%;
   font-size: 1.75em;
@@ -441,7 +441,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-question-class .pane-content .aap-question-item-class .views-field-field-question {
   color: #fffcf9;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
   font-size: 1em;
@@ -480,7 +480,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .footer-bottom .pane-title {
   float: left;
   color: #fffcf9;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
   font-size: 1.25em;
@@ -550,7 +550,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-call-us-class .content a, .aap-call-us-class .title a {
   color: #fffcf9;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
 }
@@ -580,7 +580,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.57em;
   padding: 1%;
   border: none;
@@ -703,7 +703,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   border-radius: 0.2em 0.2em 0 0;
   text-align: left;
   background-color: #1e7fa2;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   padding: 0.5em 0.6em 2em;
   margin-top: 7%;
 }
@@ -1213,7 +1213,7 @@ form .form-submit {
   color: white;
   border: 0 none;
   color: #fffcf9;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
   text-shadow: 1px 1px 1b1c28;
@@ -1243,7 +1243,7 @@ form .form-submit:hover {
 .aap-main-content .more-link a,
 .aap-main-content .donate-link a {
   color: #fffcf9;
-  font-family: Arial;
+  font-family: Franklin Gothic Demi Cond;
   font-size: 1.2em;
   text-decoration: none;
   text-shadow: 1px 1px 1b1c28;
@@ -1430,7 +1430,7 @@ div.home-box-bottom li.last img {
 }
 
 .gsc-control-cse {
-  padding: 0px;
+  padding: 0px !important;
 }
 
 .gsc-clear-button {
