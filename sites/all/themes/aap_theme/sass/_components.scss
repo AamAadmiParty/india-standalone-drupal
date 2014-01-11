@@ -143,27 +143,14 @@ form .form-submit {
  }
  
  .header-donate-link {
-  background:  #F28300;
- 	padding: 0.3em 1em;
- 	float: right;
- 	margin-right: 1.78em;
-  margin-top: 0.5em;
+  background: #F28300;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0em 1em;
  	@include border-radius(0.3em);
- 	a {
-		@include aap_font_style ;
-		text-shadow:1px 1px 1b1c28;
-	}
-	&:hover {
-    background:  $button-color-hover;
-  }
  }
- 
-input[type="text"] {
-    width: 100%;
-    border: 1px solid $border-color;
-    border-radius: 0.3em;
-    height: 24px;
-}
 
 .form-item textarea {
       width: 100%;
@@ -327,4 +314,23 @@ div.home-box-bottom {
     width: 55px;
     height: 55px;
   }
+}
+
+/* Google custom search controls */
+#google-search-header {
+  width: 400px;
+  float: right;
+}
+.gsc-control-cse {
+  padding: 0px;
+}
+.gsc-clear-button {
+  display: none;
+}
+
+/* Header donation section */
+.header-donate {
+  float: right;
+  padding: 1em 0em;
+  color: #999;
 }
