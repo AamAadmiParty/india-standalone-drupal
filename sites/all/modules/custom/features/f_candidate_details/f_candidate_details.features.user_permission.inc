@@ -10,6 +10,48 @@
 function f_candidate_details_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: administer panelizer node ct_candidate_details content.
+  $permissions['administer panelizer node ct_candidate_details content'] = array(
+    'name' => 'administer panelizer node ct_candidate_details content',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node ct_candidate_details context.
+  $permissions['administer panelizer node ct_candidate_details context'] = array(
+    'name' => 'administer panelizer node ct_candidate_details context',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node ct_candidate_details defaults.
+  $permissions['administer panelizer node ct_candidate_details defaults'] = array(
+    'name' => 'administer panelizer node ct_candidate_details defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node ct_candidate_details layout.
+  $permissions['administer panelizer node ct_candidate_details layout'] = array(
+    'name' => 'administer panelizer node ct_candidate_details layout',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node ct_candidate_details overview.
+  $permissions['administer panelizer node ct_candidate_details overview'] = array(
+    'name' => 'administer panelizer node ct_candidate_details overview',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: administer panelizer node ct_candidate_details settings.
+  $permissions['administer panelizer node ct_candidate_details settings'] = array(
+    'name' => 'administer panelizer node ct_candidate_details settings',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: create ct_candidate_details content.
   $permissions['create ct_candidate_details content'] = array(
     'name' => 'create ct_candidate_details content',
