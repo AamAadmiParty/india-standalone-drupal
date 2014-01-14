@@ -78,13 +78,13 @@ function f_candidate_details_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '15',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '16',
         ),
       ),
       'display' => array(),
