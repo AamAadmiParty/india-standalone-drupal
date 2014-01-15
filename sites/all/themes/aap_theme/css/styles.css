@@ -1448,6 +1448,23 @@ div.home-box-bottom li.last img {
   color: #999;
 }
 
+.node-readmore {
+  background: #F28300;
+  padding: 0.3em 1em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+.node-readmore a {
+  color: white !important;
+  text-shadow: 1px 1px 1b1c28;
+}
+.node-readmore:hover {
+  background: #fcac33;
+}
+
 .view-id-home_page_content {
   position: relative;
 }
