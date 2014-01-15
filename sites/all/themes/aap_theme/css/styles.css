@@ -594,6 +594,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-page-content-class .pane-content .node-teaser,
 .aap-page-content-class .pane-content .node--full,
+.aap-page-content-class .pane-content .node-full,
 .aap-page-content-class .pane-content .search-result {
   border: 1px solid;
   border-radius: 0.3em;
@@ -607,6 +608,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-page-content-class .pane-content .node-teaser .node__title a,
 .aap-page-content-class .pane-content .node--full .node__title a,
+.aap-page-content-class .pane-content .node-full .node__title a,
 .aap-page-content-class .pane-content .search-result .node__title a {
   color: #000;
   text-decoration: none;
@@ -615,6 +617,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-page-content-class .pane-content .node-teaser p,
 .aap-page-content-class .pane-content .node--full p,
+.aap-page-content-class .pane-content .node-full p,
 .aap-page-content-class .pane-content .search-result p {
   font-size: 15px !important;
   font-style: normal;
@@ -622,6 +625,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-page-content-class .pane-content .node-teaser p a,
 .aap-page-content-class .pane-content .node--full p a,
+.aap-page-content-class .pane-content .node-full p a,
 .aap-page-content-class .pane-content .search-result p a {
   font-family: Arial, Helvetica, sans-serif;
   color: #f17e00;
