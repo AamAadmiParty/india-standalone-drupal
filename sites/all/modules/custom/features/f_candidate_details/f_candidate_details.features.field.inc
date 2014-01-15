@@ -530,7 +530,7 @@ function f_candidate_details_field_default_fields() {
       'bundle' => 'ct_candidate_details',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Enter the candidate\'s full name here without any special characters like apostrophe, hyphen etc.',
       'display' => array(
         'default' => array(
           'label' => 'inline',
@@ -1009,6 +1009,7 @@ function f_candidate_details_field_default_fields() {
   t('Election');
   t('Email');
   t('Enter a long textual description of the candidate that otherwise does not fit into the specific fields.');
+  t('Enter the candidate\'s full name here without any special characters like apostrophe, hyphen etc.');
   t('Gender');
   t('Ignore the N/A value and chose between Male, Female or Other.');
   t('Ignore the N/A value and chose between the other values.');
