@@ -50,6 +50,10 @@
  * components should not be placed here and should instead be kept with the
  * relevant SCSS for that component.
  ******************************************************************************/
+body.admin-menu #admin-menu {
+  z-index: 9999;
+}
+
 .splash-region .panel-pane {
   margin: 0 auto;
   width: 60%;
@@ -73,7 +77,7 @@
   padding-left: 8em;
   padding-right: 10em;
   margin-left: 0em;
-  z-index: 9999;
+  z-index: 9990;
   background: white;
   border-bottom: 1px solid green;
   position: fixed;
