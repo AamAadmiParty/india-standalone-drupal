@@ -49,7 +49,7 @@ function f_candidate_details_field_default_fields() {
             'format' => 'full_html',
             'value' => '',
           ),
-          'value' => '',
+          'value' => '<p>Other candidate details yet to be added.</p>',
           'format' => 'full_html',
         ),
       ),
@@ -90,7 +90,7 @@ function f_candidate_details_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '6',
+        'weight' => '15',
       ),
     ),
   );
@@ -219,7 +219,76 @@ function f_candidate_details_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '5',
+        'weight' => '6',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-ct_candidate_details-field_cd_dob_text'.
+  $fields['node-ct_candidate_details-field_cd_dob_text'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_cd_dob_text',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ct_candidate_details',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'This is Date Of Birth field presented as a text field. It became necessary to present this as a text field because some candidates have used date format MM/DD/YYY while some others have used DD/MM/YYYY. Enter date in either format in this field.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '15',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_cd_dob_text',
+      'label' => 'Date Of Birth',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '20',
       ),
     ),
   );
@@ -497,6 +566,90 @@ function f_candidate_details_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-ct_candidate_details-field_cd_links'.
+  $fields['node-ct_candidate_details-field_cd_links'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_cd_links',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ct_candidate_details',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Enter links to various documents and/or other web pages associated with this candidate.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '12',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_cd_links',
+      'label' => 'Links',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => '_blank',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'rel_remove' => 'default',
+        'title' => 'optional',
+        'title_maxlength' => '128',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
+        'weight' => '14',
+      ),
+    ),
+  );
+
   // Exported field: 'node-ct_candidate_details-field_cd_name'.
   $fields['node-ct_candidate_details-field_cd_name'] = array(
     'field_config' => array(
@@ -636,6 +789,75 @@ function f_candidate_details_field_default_fields() {
         ),
         'type' => 'taxonomy_autocomplete',
         'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-ct_candidate_details-field_cd_pc_text'.
+  $fields['node-ct_candidate_details-field_cd_pc_text'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_cd_pc_text',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ct_candidate_details',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'This is a text field that can accept any value. Since data source for importing Candidate Details does not always has the same Parliament Constituency names as present on the site, we can use this field to populate the Parliament Constituency.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '14',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_cd_pc_text',
+      'label' => 'Parliament Constituency',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '19',
       ),
     ),
   );
@@ -997,6 +1219,75 @@ function f_candidate_details_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-ct_candidate_details-field_cd_state_text'.
+  $fields['node-ct_candidate_details-field_cd_state_text'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_cd_state_text',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ct_candidate_details',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'This is a text field that can accept any value. Since data source for importing Candidate Details does not always has the same State names as present on the site, we can use this field to populate the State Name.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '13',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_cd_state_text',
+      'label' => 'State',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '18',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('<strong>Start typing the Parliament Constituency (PC) name for auto-completion.</strong> Enter a value that is most relevant to this candidate + the election. Example: If a candidate belonging to the state Rajasthan is standing from a seat in Amethi, Uttar Pradesh for Lok Sabha Elections, then the you should enter the value \'Amethi\' in this field.  ');
@@ -1005,14 +1296,17 @@ function f_candidate_details_field_default_fields() {
   t('Candidate Age');
   t('Candidate Description');
   t('Candidate Name');
+  t('Date Of Birth');
   t('Education Qualification');
   t('Election');
   t('Email');
   t('Enter a long textual description of the candidate that otherwise does not fit into the specific fields.');
+  t('Enter links to various documents and/or other web pages associated with this candidate.');
   t('Enter the candidate\'s full name here without any special characters like apostrophe, hyphen etc.');
   t('Gender');
   t('Ignore the N/A value and chose between Male, Female or Other.');
   t('Ignore the N/A value and chose between the other values.');
+  t('Links');
   t('Parliament Constituency');
   t('Phone');
   t('Photo');
@@ -1021,6 +1315,9 @@ function f_candidate_details_field_default_fields() {
   t('Special Category');
   t('State');
   t('Strictly upload an image of size 300 x 400 pixels. All other images will be rejected.');
+  t('This is Date Of Birth field presented as a text field. It became necessary to present this as a text field because some candidates have used date format MM/DD/YYY while some others have used DD/MM/YYYY. Enter date in either format in this field.');
+  t('This is a text field that can accept any value. Since data source for importing Candidate Details does not always has the same Parliament Constituency names as present on the site, we can use this field to populate the Parliament Constituency.');
+  t('This is a text field that can accept any value. Since data source for importing Candidate Details does not always has the same State names as present on the site, we can use this field to populate the State Name.');
 
   return $fields;
 }
