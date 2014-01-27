@@ -14,7 +14,7 @@ function f_candidate_details_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_ct_candidate_details';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-workflow';
   $export['additional_settings__active_tab_ct_candidate_details'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -110,7 +110,9 @@ function f_candidate_details_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_ct_candidate_details';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'status',
+  );
   $export['node_options_ct_candidate_details'] = $strongarm;
 
   $strongarm = new stdClass();
