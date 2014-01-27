@@ -17,14 +17,6 @@ function f_site_controller_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'vocab_pc' => array(
-      'name' => 'Parliament Constituencies',
-      'machine_name' => 'vocab_pc',
-      'description' => 'List of Parliament Constituencies of India',
-      'hierarchy' => '0',
-      'module' => 'taxonomy',
-      'weight' => '0',
-    ),
     'vocab_states' => array(
       'name' => 'States',
       'machine_name' => 'vocab_states',

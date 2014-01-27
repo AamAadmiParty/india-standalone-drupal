@@ -52,6 +52,13 @@ function f_candidate_details_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: clear candidate_data_import feeds.
+  $permissions['clear candidate_data_import feeds'] = array(
+    'name' => 'clear candidate_data_import feeds',
+    'roles' => array(),
+    'module' => 'feeds',
+  );
+
   // Exported permission: create ct_candidate_details content.
   $permissions['create ct_candidate_details content'] = array(
     'name' => 'create ct_candidate_details content',
@@ -87,6 +94,17 @@ function f_candidate_details_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: import candidate_data_import feeds.
+  $permissions['import candidate_data_import feeds'] = array(
+    'name' => 'import candidate_data_import feeds',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Approver' => 'Content Approver',
+      'Content Author' => 'Content Author',
+    ),
+    'module' => 'feeds',
+  );
+
   // Exported permission: publish any ct_candidate_details content.
   $permissions['publish any ct_candidate_details content'] = array(
     'name' => 'publish any ct_candidate_details content',
@@ -106,6 +124,22 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'publish own ct_candidate_details content',
     'roles' => array(),
     'module' => 'publishcontent',
+  );
+
+  // Exported permission: tamper candidate_data_import.
+  $permissions['tamper candidate_data_import'] = array(
+    'name' => 'tamper candidate_data_import',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'feeds_tamper',
+  );
+
+  // Exported permission: unlock candidate_data_import feeds.
+  $permissions['unlock candidate_data_import feeds'] = array(
+    'name' => 'unlock candidate_data_import feeds',
+    'roles' => array(),
+    'module' => 'feeds',
   );
 
   // Exported permission: unpublish any ct_candidate_details content.
