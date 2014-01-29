@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Site Controller feature.
+ */
+
+include_once 'f_site_controller.features.inc';

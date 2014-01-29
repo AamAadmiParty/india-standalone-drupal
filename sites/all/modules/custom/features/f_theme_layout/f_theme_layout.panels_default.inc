@@ -133,12 +133,12 @@ function f_theme_layout_default_panels_mini() {
     $pane->pid = 'new-2';
     $pane->panel = 'footer_1';
     $pane->type = 'block';
-    $pane->subtype = 'menu-menu-donate';
+    $pane->subtype = 'menu-menu-footer-1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Donation Links',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -176,7 +176,7 @@ function f_theme_layout_default_panels_mini() {
     $pane->panel = 'footer_3';
     $pane->type = 'contact';
     $pane->subtype = 'contact';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
@@ -318,11 +318,9 @@ function f_theme_layout_default_panels_mini() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => '',
+      'admin_title' => 'Copyright Message',
       'title' => '',
-      'body' => '<div class = "copyright-content">
-&copy; Aam Aadmi Party. All Rights Reserved
-</div>',
+      'body' => '<div class="copyright-content">&copy; Aam Aadmi Party. All Rights Reserved</div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -330,39 +328,15 @@ function f_theme_layout_default_panels_mini() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'aap-copyright-class',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-6'] = $pane;
     $display->panels['copyright'][0] = 'new-6';
-    $pane = new stdClass();
-    $pane->pid = 'new-7';
-    $pane->panel = 'survey';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => 'embedded survey',
-      'title' => 'This title can be changed by drupal admin or removed all together',
-      'body' => '<div id="surveyMonkeyInfo"><div><script src="https://www.surveymonkey.com/jsEmbed.aspx?sm=xAQ_2fH3CkEGniV4ya9UBGGA_3d_3d"> </script></div></div>',
-      'format' => 'php_code',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => 'surveymonkey-abc',
-      'css_class' => 'surveymonkey-drupal-popup',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['survey'][0] = 'new-7';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -440,11 +414,11 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-8';
+    $pane->pid = 'new-7';
     $pane->panel = 'center';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
@@ -457,17 +431,14 @@ function f_theme_layout_default_panels_mini() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'aap-search-class',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['center'][0] = 'new-8';
+    $display->content['new-7'] = $pane;
+    $display->panels['center'][0] = 'new-7';
     $pane = new stdClass();
-    $pane->pid = 'new-9';
+    $pane->pid = 'new-8';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'search-form';
@@ -488,10 +459,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['center'][1] = 'new-9';
+    $display->content['new-8'] = $pane;
+    $display->panels['center'][1] = 'new-8';
     $pane = new stdClass();
-    $pane->pid = 'new-10';
+    $pane->pid = 'new-9';
     $pane->panel = 'header_logo';
     $pane->type = 'page_logo';
     $pane->subtype = 'page_logo';
@@ -509,8 +480,8 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['header_logo'][0] = 'new-10';
+    $display->content['new-9'] = $pane;
+    $display->panels['header_logo'][0] = 'new-9';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -540,7 +511,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-11';
+    $pane->pid = 'new-10';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'superfish-1';
@@ -561,10 +532,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['center'][0] = 'new-11';
+    $display->content['new-10'] = $pane;
+    $display->panels['center'][0] = 'new-10';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-11';
+  $display->title_pane = 'new-10';
   $mini->display = $display;
   $export['header_menu'] = $mini;
 
@@ -592,7 +563,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-12';
+    $pane->pid = 'new-11';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu-menu-right-navigation';
@@ -613,10 +584,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['center'][0] = 'new-12';
+    $display->content['new-11'] = $pane;
+    $display->panels['center'][0] = 'new-11';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-12';
+  $display->title_pane = 'new-11';
   $mini->display = $display;
   $export['right_navigation'] = $mini;
 

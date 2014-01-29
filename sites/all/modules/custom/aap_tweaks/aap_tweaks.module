@@ -206,27 +206,6 @@ function aap_tweaks_permission()  {
  * Implements hook_menu().
  */
 function aap_tweaks_menu() {
-	$items ['join-us'] = array (
-			'page callback' => 'aap_iframe_pages',
-			'access callback' => TRUE,
-			'file' => 'aap_tweaks.pages.inc' 
-	);
-	$items ['donate'] = array (
-			'page callback' => 'aap_iframe_pages',
-			'access callback' => TRUE,
-			'file' => 'aap_tweaks.pages.inc' 
-	);
-	$items ['talk-to-us'] = array (
-			'page callback' => 'aap_iframe_pages',
-			'access callback' => TRUE,
-			'file' => 'aap_tweaks.pages.inc' 
-	);
-	$items ['spread-message'] = array (
-			'page callback' => 'aap_iframe_pages',
-			'access callback' => TRUE,
-			'file' => 'aap_tweaks.pages.inc' 
-	);
-	
 	$items['admin/config/aap_tweaks'] = array(
 			'title' => 'AAP Configuration',
 			'type' => MENU_LOCAL_TASK,
@@ -263,19 +242,7 @@ function AAP_config_form ($form, &$form_status) {
 	
 	return system_settings_form($form);
 }
-/**
- * Implements hook_theme().
- */
-function aap_tweaks_theme() {
-	return array (
-			'aap-iframe-page' => array (
-					'template' => 'aap-iframe-page',
-					'variables' => array (
-							'src' => NULL 
-					) 
-			) 
-	);
-}
+
 
 /**
  * Implements hook_views_pre_render() .
@@ -290,7 +257,10 @@ function aap_tweaks_views_pre_render(&$view) {
  * Implements hook_feeds_presave().
  */
 function aap_tweaks_feeds_presave(FeedsSource $source, $entity, $item) {
-	$entity->field_ct_video['und'][0]['video_url'] = $item['watch_page'];
+	// TODO It is recommended to check on source id over entity type.
+	if ($entity->type == 'videos') {
+		$entity->field_ct_video['und'][0]['video_url'] = $item['watch_page'];
+	}
 }
 
 /* Below is the code that is used to generate the Delhi Constituency map

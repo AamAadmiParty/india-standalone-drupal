@@ -1,4 +1,0 @@
-name = AAP Tweaks
-description = "Odd minor changes to how things work in AAP site."
-package = AAP Custom
-core = 7.x

@@ -8,6 +8,10 @@
  ******************************************************************************/
 @import "compass/css3/images";
 
+body.admin-menu #admin-menu {
+  z-index: 9999;
+}
+
 .splash-region {
 	.panel-pane {
 		margin: 0 auto;
@@ -31,7 +35,7 @@
   padding-left: 8em;
   padding-right: 10em;
   margin-left: 0em;
-  z-index: 999;
+  z-index: 9990;
   background: white;
   border-bottom: 1px solid green;
   position: fixed;
@@ -72,11 +76,14 @@
     background: $footer;
 }
 
-.panels-flexible-row.aap-page-background-class {
+.panels-flexible-row.aap-page-background-class,
+body.front .panels-flexible-aap_layout-inside  {
   background: url('../images/bg_flag.jpg') no-repeat top center;
+  background-size: 100% auto;
 }
-.panels-flexible-row.aap-background-class {
-  background: url('../images/bg_flag.jpg') no-repeat 0% 23%;
+body.front div.panels-flexible-aap_layout div.main-content .inside,
+body.front div.panels-flexible-aap_layout div.middle-content .inside {
+  background: white;
 }
 
 .aap-body-class {
@@ -573,6 +580,7 @@
         	margin-top : 4%;
           .node-teaser, 
         	.node--full,
+          .node-full,
         	.search-result {
        		 	@include aap_content_item;
        		 	padding: 1% 2%;
@@ -953,3 +961,7 @@
        	}	
       }
    }    		
+body.front div.panels-top-row,
+body.front div.panels-top-row h2.pane-title {
+  margin-top: 0px;
+}

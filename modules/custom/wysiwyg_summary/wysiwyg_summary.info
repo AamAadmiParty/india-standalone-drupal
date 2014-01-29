@@ -1,4 +1,0 @@
-name = wysiwyg summary 
-description = "Add wysiwyg profile to summary also."
-package = AAP Custom
-core = 7.x

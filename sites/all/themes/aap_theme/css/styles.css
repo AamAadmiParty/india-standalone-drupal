@@ -50,6 +50,10 @@
  * components should not be placed here and should instead be kept with the
  * relevant SCSS for that component.
  ******************************************************************************/
+body.admin-menu #admin-menu {
+  z-index: 9999;
+}
+
 .splash-region .panel-pane {
   margin: 0 auto;
   width: 60%;
@@ -73,7 +77,7 @@
   padding-left: 8em;
   padding-right: 10em;
   margin-left: 0em;
-  z-index: 999;
+  z-index: 9990;
   background: white;
   border-bottom: 1px solid green;
   position: fixed;
@@ -113,12 +117,15 @@
   background: #1e7fa2;
 }
 
-.panels-flexible-row.aap-page-background-class {
+.panels-flexible-row.aap-page-background-class,
+body.front .panels-flexible-aap_layout-inside {
   background: url("../images/bg_flag.jpg") no-repeat top center;
+  background-size: 100% auto;
 }
 
-.panels-flexible-row.aap-background-class {
-  background: url("../images/bg_flag.jpg") no-repeat 0% 23%;
+body.front div.panels-flexible-aap_layout div.main-content .inside,
+body.front div.panels-flexible-aap_layout div.middle-content .inside {
+  background: white;
 }
 
 .aap-body-class {
@@ -591,6 +598,7 @@
 }
 .aap-page-content-class .pane-content .node-teaser,
 .aap-page-content-class .pane-content .node--full,
+.aap-page-content-class .pane-content .node-full,
 .aap-page-content-class .pane-content .search-result {
   border: 1px solid;
   border-radius: 0.3em;
@@ -604,6 +612,7 @@
 }
 .aap-page-content-class .pane-content .node-teaser .node__title a,
 .aap-page-content-class .pane-content .node--full .node__title a,
+.aap-page-content-class .pane-content .node-full .node__title a,
 .aap-page-content-class .pane-content .search-result .node__title a {
   color: #000;
   text-decoration: none;
@@ -612,6 +621,7 @@
 }
 .aap-page-content-class .pane-content .node-teaser p,
 .aap-page-content-class .pane-content .node--full p,
+.aap-page-content-class .pane-content .node-full p,
 .aap-page-content-class .pane-content .search-result p {
   font-size: 15px !important;
   font-style: normal;
@@ -619,6 +629,7 @@
 }
 .aap-page-content-class .pane-content .node-teaser p a,
 .aap-page-content-class .pane-content .node--full p a,
+.aap-page-content-class .pane-content .node-full p a,
 .aap-page-content-class .pane-content .search-result p a {
   font-family: Arial, Helvetica, sans-serif;
   color: #f17e00;
@@ -1107,6 +1118,11 @@
   margin: 0;
 }
 
+body.front div.panels-top-row,
+body.front div.panels-top-row h2.pane-title {
+  margin-top: 0px;
+}
+
 /*******************************************************************************
  * _components.scss
  *
@@ -1250,31 +1266,15 @@ form .form-submit:hover {
 .header-donate-link {
   background: #F28300;
   padding: 0.3em 1em;
-  float: right;
-  margin-right: 1.78em;
-  margin-top: 0.5em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0em 1em;
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   -ms-border-radius: 0.3em;
   -o-border-radius: 0.3em;
   border-radius: 0.3em;
-}
-.header-donate-link a {
-  color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
-  font-size: 1.2em;
-  text-decoration: none;
-  text-shadow: 1px 1px 1b1c28;
-}
-.header-donate-link:hover {
-  background: #fcac33;
-}
-
-input[type="text"] {
-  width: 100%;
-  border: 1px solid #d7d7d7;
-  border-radius: 0.3em;
-  height: 24px;
 }
 
 .form-item textarea {
@@ -1429,4 +1429,82 @@ div.home-box-bottom img {
 div.home-box-bottom li.last img {
   width: 55px;
   height: 55px;
+}
+
+/* Google custom search controls */
+#google-search-header {
+  width: 400px;
+  float: right;
+}
+
+.gsc-control-cse {
+  padding: 0px !important;
+}
+
+.gsc-clear-button {
+  display: none;
+}
+
+/* Header donation section */
+.header-donate {
+  float: right;
+  padding: 1em 0em;
+  color: #999;
+}
+
+.node-readmore {
+  background: #F28300;
+  padding: 0.3em 1em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+.node-readmore a {
+  color: white !important;
+  text-shadow: 1px 1px 1b1c28;
+}
+.node-readmore:hover {
+  background: #fcac33;
+}
+
+.view-id-home_page_content {
+  position: relative;
+}
+
+#views_slideshow_controls_text_previous_home_page_content-sliding_news {
+  background: url(/sites/all/themes/aap_theme/images/slider_arrows_round.png) no-repeat top left;
+  width: 44px;
+  padding-top: 44px;
+  position: absolute;
+  z-index: 1000;
+  top: 120px;
+  left: 10px;
+  text-indent: -1000px;
+  height: 0px;
+}
+
+#views_slideshow_controls_text_next_home_page_content-sliding_news {
+  background: url(/sites/all/themes/aap_theme/images/slider_arrows_round.png) no-repeat top right;
+  width: 44px;
+  padding-top: 44px;
+  position: absolute;
+  z-index: 1000;
+  top: 120px;
+  right: 25px;
+  text-indent: -1000px;
+  height: 0px;
+}
+
+#views_slideshow_controls_text_pause_home_page_content-sliding_news {
+  display: none;
+}
+
+#views_slideshow_controls_text_previous_home_page_content-sliding_news:hover {
+  background-position: bottom left;
+}
+
+#views_slideshow_controls_text_next_home_page_content-sliding_news:hover {
+  background-position: bottom right;
 }

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Candidate Details feature.
+ */
+
+include_once 'f_candidate_details.features.inc';
