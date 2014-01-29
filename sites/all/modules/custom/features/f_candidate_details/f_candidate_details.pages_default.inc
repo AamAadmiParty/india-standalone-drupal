@@ -23,7 +23,7 @@ function f_candidate_details_default_page_manager_handlers() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'aap-body-class',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -55,7 +55,7 @@ function f_candidate_details_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Candidate Details - %term:name';
+  $display->title = 'List of Candidates - %term:name';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
