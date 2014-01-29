@@ -1469,6 +1469,22 @@ div.home-box-bottom li.last img {
   background: #fcac33;
 }
 
+a.header-button {
+  float: right;
+  background: #F28300;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  border-radius: 0.2em;
+  color: white !important;
+  text-shadow: 1px 1px 1b1c28;
+  margin-left: 1em;
+}
+a.header-button:hover {
+  background: #fcac33;
+}
+
 .view-id-home_page_content {
   position: relative;
 }

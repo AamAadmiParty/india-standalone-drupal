@@ -346,3 +346,15 @@ div.home-box-bottom {
     background:  $button-color-hover;
   }
 }
+
+a.header-button {
+  float: right;
+  background:  #F28300;
+  @include border-radius(0.2em);
+  color: white !important;
+  text-shadow:1px 1px 1b1c28;
+  margin-left: 1em;
+  &:hover {
+    background:  $button-color-hover;
+  }
+}
