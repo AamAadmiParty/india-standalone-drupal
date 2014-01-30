@@ -1,0 +1,3 @@
+name = Mobile Redirection
+description = A module which provides a mobile device redirection using the DeviceAtlas service
+core = 7.x
