@@ -37,27 +37,21 @@ function f_map_details_views_default_views() {
   $handler->display->display_options['style_options']['geofield'] = 'title';
   $handler->display->display_options['style_options']['enablermt'] = 0;
   $handler->display->display_options['style_options']['rmtfield'] = 'body';
+  $handler->display->display_options['style_options']['center_on_proximityarg'] = 1;
   $handler->display->display_options['style_options']['animation'] = '2';
-  $handler->display->display_options['style_options']['tooltipenabled'] = 1;
   $handler->display->display_options['style_options']['tooltipfield'] = 'title';
-  $handler->display->display_options['style_options']['bubbletextenabled'] = 1;
   $handler->display->display_options['style_options']['bubbletextfield'] = 'title';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
     'title' => 'title',
     'body' => 'body',
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -80,6 +74,8 @@ function f_map_details_views_default_views() {
 
   /* Display: Donations Test Map */
   $handler = $view->new_display('page', 'Donations Test Map', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Donations Test Map';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'gmap';
@@ -132,6 +128,8 @@ function f_map_details_views_default_views() {
 
   /* Display: Contact Test Map */
   $handler = $view->new_display('page', 'Contact Test Map', 'page_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Contact Test Map';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
