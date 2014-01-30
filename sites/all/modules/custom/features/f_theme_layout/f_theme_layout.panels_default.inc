@@ -423,7 +423,7 @@ function f_theme_layout_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => 'Header Contact, Donate Buttons',
       'title' => '',
-      'body' => '<a class="header-contact-button header-button" href="https://donate.aamaadmiparty.org/" title="Contact Us">Contact Us</a>
+      'body' => '<a class="header-contact-button header-button" href="/page/contact-us" title="Contact Us">Contact Us</a>
 <a class="header-donate-button header-button" href="https://donate.aamaadmiparty.org/" target="_blank" title="Make a Donation">Donate</a>',
       'format' => 'full_html',
       'substitute' => TRUE,
