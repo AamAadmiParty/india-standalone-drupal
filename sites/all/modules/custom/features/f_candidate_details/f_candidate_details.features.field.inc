@@ -10,91 +10,6 @@
 function f_candidate_details_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-ct_candidate_details-body'.
-  $fields['node-ct_candidate_details-body'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(
-        0 => 'node',
-      ),
-      'field_name' => 'body',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'profile2_private' => FALSE,
-      ),
-      'translatable' => '0',
-      'type' => 'text_with_summary',
-    ),
-    'field_instance' => array(
-      'bundle' => 'ct_candidate_details',
-      'default_value' => array(
-        0 => array(
-          'summary' => array(
-            'format' => 'full_html',
-            'value' => '',
-          ),
-          'value' => '<p>Other candidate details yet to be added.</p>',
-          'format' => 'full_html',
-        ),
-      ),
-      'deleted' => '0',
-      'description' => 'Enter a long textual description of the candidate that otherwise does not fit into the specific fields.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '4',
-        ),
-        'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
-          'weight' => '0',
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'body',
-      'label' => 'Candidate Description',
-      'required' => 0,
-      'settings' => array(
-        'display_summary' => 1,
-        'text_processing' => '1',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '20',
-          'summary_rows' => 5,
-        ),
-        'type' => 'text_textarea_with_summary',
-        'weight' => '15',
-      ),
-    ),
-  );
-
   // Exported field: 'node-ct_candidate_details-field_cd_address'.
   $fields['node-ct_candidate_details-field_cd_address'] = array(
     'field_config' => array(
@@ -398,7 +313,11 @@ function f_candidate_details_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'ct_candidate_details',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'tid' => '1274',
+        ),
+      ),
       'deleted' => '0',
       'description' => 'Select the election for which this candidate is being nominated.',
       'display' => array(
@@ -745,7 +664,7 @@ function f_candidate_details_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'vocab_pc',
+            'vocabulary' => 'vocab_ls',
             'parent' => '0',
           ),
         ),
@@ -757,7 +676,7 @@ function f_candidate_details_field_default_fields() {
       'bundle' => 'ct_candidate_details',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '<strong>Start typing the Parliament Constituency (PC) name for auto-completion.</strong> Enter a value that is most relevant to this candidate + the election. Example: If a candidate belonging to the state Rajasthan is standing from a seat in Amethi, Uttar Pradesh for Lok Sabha Elections, then the you should enter the value \'Amethi\' in this field.  ',
+      'description' => '<strong>Start typing the Lok Sabha name (Parliament Constituency) name for auto-completion.</strong> Enter a value that is most relevant to this candidate + the election. Example: If a candidate belonging to the state Rajasthan is standing from a seat in Amethi, Uttar Pradesh for Lok Sabha Elections, then the you should enter the value \'Amethi\' in this field.  ',
       'display' => array(
         'default' => array(
           'label' => 'inline',
@@ -775,7 +694,7 @@ function f_candidate_details_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_cd_pc',
-      'label' => 'Parliament Constituency',
+      'label' => 'Lok Sabha',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -1290,23 +1209,22 @@ function f_candidate_details_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('<strong>Start typing the Parliament Constituency (PC) name for auto-completion.</strong> Enter a value that is most relevant to this candidate + the election. Example: If a candidate belonging to the state Rajasthan is standing from a seat in Amethi, Uttar Pradesh for Lok Sabha Elections, then the you should enter the value \'Amethi\' in this field.  ');
+  t('<strong>Start typing the Lok Sabha name (Parliament Constituency) name for auto-completion.</strong> Enter a value that is most relevant to this candidate + the election. Example: If a candidate belonging to the state Rajasthan is standing from a seat in Amethi, Uttar Pradesh for Lok Sabha Elections, then the you should enter the value \'Amethi\' in this field.  ');
   t('<strong>Start typing the state name for auto-completion.</strong> Enter the state that is most relevant to this candidate + the election. Example: If a candidate belonging to the state Rajasthan is standing from a seat in Uttar Pradesh for Lok Sabha Elections, then the you should enter the value \'Uttar Pradesh\' in this field.  ');
   t('Address');
   t('Candidate Age');
-  t('Candidate Description');
   t('Candidate Name');
   t('Date Of Birth');
   t('Education Qualification');
   t('Election');
   t('Email');
-  t('Enter a long textual description of the candidate that otherwise does not fit into the specific fields.');
   t('Enter links to various documents and/or other web pages associated with this candidate.');
   t('Enter the candidate\'s full name here without any special characters like apostrophe, hyphen etc.');
   t('Gender');
   t('Ignore the N/A value and chose between Male, Female or Other.');
   t('Ignore the N/A value and chose between the other values.');
   t('Links');
+  t('Lok Sabha');
   t('Parliament Constituency');
   t('Phone');
   t('Photo');

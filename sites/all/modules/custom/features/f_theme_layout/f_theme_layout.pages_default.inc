@@ -895,7 +895,7 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->panel = 'right_navigation';
     $pane->type = 'block';
     $pane->subtype = 'aap_tweaks-Donation_ Block';
-    $pane->shown = FALSE;
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 0,

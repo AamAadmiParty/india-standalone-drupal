@@ -570,7 +570,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 /*********************************************************************
-  
+
   * Layout for dafault page
   *
  *******************************************************************/
@@ -733,9 +733,15 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-style: italic;
 }
 
+.aap-donation-right-class-fix {
+  position: fixed;
+  margin-left: 2.1% !important;
+  top: 35px;
+}
+
 .aap-donation-right-class {
   margin-left: 12%;
-  margin-right: 1%;
+  width: 200px;
 }
 .aap-donation-right-class .pane-content {
   border: 1px solid;
@@ -832,7 +838,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 /*********************************************************************
-  
+
   * common Theme for delhi site page
   *
  *******************************************************************/
@@ -874,11 +880,11 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   border-bottom: 1px solid #d7d7d7;
 }
 
-/*********************************************************************
- 
- * Layout for candidate detail page
- *
-*******************************************************************/
+ /*********************************************************************
+
+  * Layout for candidate detail page
+  *
+ *******************************************************************/
 .aap-page-content-class #candidate-detail-page {
   border: 1px solid;
   border-radius: 0.3em;
@@ -947,7 +953,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 /*********************************************************************
-  
+
   * Layout for constituency detail page
   *
  *******************************************************************/
