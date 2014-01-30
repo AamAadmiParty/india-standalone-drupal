@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Map Details feature.
+ */
+
+include_once 'f_map_details.features.inc';
