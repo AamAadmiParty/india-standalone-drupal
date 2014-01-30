@@ -104,17 +104,17 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     	font-weight: bold;
     	text-decoration: none;
 		}
-	}	
+	}
 	.aap-login {
 			background:$orange;
 			 border-radius: 0.3em;
    			 padding: 3px 5px;
    			 margin-left:9px;
-			
+
 			a {
 				 @include aap_font_style;
 				 font-size: 1.1em;
-			}			
+			}
 				&:hover {
       	  	background:  $button-color-hover;
       		}
@@ -127,40 +127,40 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     margin-top: 2%;
     margin-bottom: 2%
  }
- 
+
 .middle-content > .inside {
     	border-bottom: 1px solid #D7D7D7;
     	border-top: 1px solid #D7D7D7;
     	padding-bottom: 2%;
     	padding-top: 2%;
-    
+
     panels-flexible-region {
     	.pane-content {
     			color: red;
-    	}	
-   } 
+    	}
+   }
  }
 .aap-main-content {
-      
+
       margin-left: 3%;
       margin-right: 3%;
-    
+
     .pane-title {
       @include aap_content_title;
     }
-    
+
     .view-content .views-row {
       margin-bottom: 2px;
       padding-left: 25px;
       background: url(../images/bullet_img.png) no-repeat left 7px;
     }
-    
-     
+
+
    	a {
       @include aap_font_body;
       color:#1f7fa2;
     }
-    
+
 }
  .aap-poll-class  {
  		a {
@@ -170,21 +170,21 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       }
      .node__title {
      	line-height: 0.8em;
-     }  
-       
+     }
+
     }
 .aap-main-content.latest-news-class {
          .pane-content {
        position:relative;
        height:534px;
-       
+
        .view-header img {
        	width: 296px;
     		border: 1px solid #D7D7D7;
     		border-radius: 0.4em 0.4em 0.4em 0.4em;
        }
     }
-    
+
 }
 
 .aap-donation-class,
@@ -195,10 +195,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 			height: 16em;
 			position:relative;
 		}
-		 
+
  	.read-more {
     		padding: 0.5em 1.2em;
-    	}	
+    	}
 }
 
 .aap-donation-class,
@@ -207,30 +207,30 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        .form-radios {
            margin-top: 6.5%;
        }
-    } 
-}    
+    }
+}
 .aap-poll-class {
   .pane-content {
       ul {
          display: none;
        }
      }
-        
+
      h4 {
         @include aap_font_body;
         margin: 0;
         padding-bottom: 6px;
      }
-}  
- 
+}
+
 .header-menu {
- 
+
     .pane-content {
         @include aap_body_measurements;
       }
-      
+
     .sf-menu.sf-style-default {
-      
+
       a {
       color: $white;
       background: none;
@@ -240,26 +240,26 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       text-shadow:1px 1px #406b15;
       margin: 0.4em 0em;
       padding:0.4em 1em;
-      
+
       &:hover {
-      	border-radius:0.4em; 
+      	border-radius:0.4em;
       	color: #191919;
      		text-align: center;
      		text-shadow: 1px 1px #98C26E;
       }
-     } 
+     }
     }
-    
+
     .sf-menu.sf-style-default
     .aap-home-class {
       background: url('../images/home.png') no-repeat scroll center;
       text-indent: -15000px;
       padding-right: 3em;
-      
+
       &:hover {
       	 opacity: 0.5;
       }
-      
+
     }
     .sf-menu.sf-style-default
     .donate-link-class {
@@ -270,11 +270,11 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
         margin-left: 2em;
         text-shadow:none;
     }
-  }  
- 
+  }
+
  .header-menu
  .sf-menu.sf-style-default {
- 
+
   li {
     background: url(../images/main_menu_border.png)  no-repeat right;
     text-align: center;
@@ -294,18 +294,18 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   	 					text-align: left;
   	 				}
   	 		}
-  	 		
+
   	 }
-  }  
+  }
  }
- 
+
  .header-menu
  .sf-menu.sf-style-default {
     margin-bottom: 0;
  }
- 
+
  .aap-footer-class {
-        
+
         width : 100%;
       .pane-title {
           color: white;
@@ -313,41 +313,41 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           font-size: 1.5em;
           text-shadow:1px 1px #0e1e2b;
           }
-       
+
        .pane-content {
-       
+
        		a {
           color: white;
           font-family: arial;
           font-size: 0.75em;
           text-decoration: none;
-          
+
           &:hover {
           		color : #a7f657;
           	}
-         	} 
-         	
+         	}
+
          li {
           	list-style : none;
           }
-          
+
          ul {
           	padding: 0;
           }
         }
-        
+
         .aap-contact-form-class {
         	.form-item {
         		margin-bottom: 0.5em;
         	}
         }
     }
-    
+
  .right-navigation-class {
       width : 100%;
-       
+
       .pane-content {
-      
+
       			ul {
       					padding:0;
       					margin-right: 7%;
@@ -355,11 +355,11 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
               .right-nav_1-class {
                    background: url('../images/action_call.gif') no-repeat scroll 0% 0% $nav_blue;
              }
-             
+
               .right-nav_2-class {
                    background: url('../images/action_call.gif') no-repeat scroll 0% 12.5% $nav_blue;
              }
-             
+
              .right-nav_3-class  {
                    background: url('../images/action_call.gif') no-repeat scroll 0% 25% $nav_blue;
              }
@@ -371,7 +371,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
              }
               .right-nav_6-class {
                    background: url('../images/action_call.gif') no-repeat scroll 0 62.5% $nav_blue;
-             } 
+             }
               .right-nav_7-class {
                    background: url('../images/action_call.gif') no-repeat scroll 0 75% $nav_blue;
              }
@@ -381,35 +381,35 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
               .right-nav_9-class {
                    background: url('../images/action_call.gif') no-repeat scroll 0 100% $nav_blue;
              }
-             
+
              li {
           			list-style: none;
           			line-height: 2.5em;
           			padding-bottom: 0.2em;
       				}
-      			
+
       			a {
          				@include aap_font_style;
          				padding-left: 4em;
          				font-size: 1em;
           			display: block;
           			border-radius: $border-radius;
-          			
+
           			&:hover {
           				color: #EFF743;
           			}
       				}
-         }    
-     
-  }              
+         }
+
+  }
 
   .sliding-region-class,
   .right-navigation-class {
       margin-top : 1em;
-    }  
-   
-    
-  
+    }
+
+
+
   .aap-question-class {
       .pane-title {
         @include aap_content_title;
@@ -417,7 +417,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
         margin: 1% 27%;
         padding: 1%;
      }
-     
+
      .pane-content {
         .aap-question-item-class {
          background: $question-background;
@@ -425,20 +425,20 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           border: 1px solid $border-color;
           border-radius: $border-radius;
           width: 48% ;
-          
+
           .views-field-field-question {
            @include aap_font_style;
            font-size: 1em;
           	padding: 1% 2% 3%;
            	background: url("../images/arrow_down.png") no-repeat right 3% center;
            	color:#666;
-           	cursor:pointer;	
+           	cursor:pointer;
           }
-          
+
           .view-field-field-question_toggle {
           background: url("../images/arrow_up.png") no-repeat right 3% center;
           }
-         
+
          .views-field-view-node_toogle {
           		display:block !important;
           	}
@@ -450,43 +450,43 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 							padding: 1% 2% 2% 2%;
             	display:none;
             }
-          
-          
+
+
         }
-        
+
      .aap-question-item-class.views-row-odd {
         float: left;
         clear: left;
         }
-        
+
       .aap-question-item-class.views-row-even {
         float: right;
         clear: right;
-        }   
+        }
      }
-     
-     
-   } 
-  
+
+
+   }
+
   .footer-bottom {
       .pane-title {
           float:left;
           @include aap_font_style;
           font-size: 1.25em;
           margin-right:1%;
-        }  
-     
+        }
+
      .pane-content li {
         float: left;
         list-style: none outside none;
         padding-top:8px;
-        
-        
-      } 
+
+
+      }
       	.first.leaf {
         	padding-top:10px;
         }
-        
+
       .fb-connector,
       .twitter-social-connector,
       .youtube-social-connector {
@@ -496,12 +496,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
             overflow: hidden;
             width:40px;
             height:40px;
-            
+
             &:hover {
             	 opacity:0.8; filter:alpha(opacity=80);
             }
          }
-         
+
       .fb-connector {
         background: url(../images/fb.png) no-repeat;
       }
@@ -510,9 +510,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       }
       .youtube-social-connector {
        background: url(../images/youtube.png) no-repeat;
-     }  
+     }
  }
- 
+
 .aap-story-class {
 		.view-content .views-row {
 			background: none;
@@ -520,13 +520,13 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 		}.node__title {
 				display: none;
 		}
-		
+
 		p {
 			 font-family: $font-family-group !important;
        color: #333333 !important;
        font-size: 0.87em !important;
 		}
-} 
+}
  .aap-call-us-class {
  			clear:both;
  			float:right;
@@ -536,7 +536,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  			 margin-top: 1%;
  			 height:73px;
  			color:#FFFEFD;
- 			
+
  			.content, .title {
  			   padding-left: 15%;
  			   padding-top: 1%;
@@ -547,23 +547,23 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  				}
  			}
  	}
- 	
+
  .copyright-content {
  			color: white;
     font-family: arial;
     font-size: 14px;
     margin-top: 14%;
- } 	
- 
-  	
+ }
+
+
 /*********************************************************************
-  
+
   * Layout for dafault page
   *
  *******************************************************************/
-    
+
 .aap-page-content-class {
-      
+
       .aap-news-item-class .field__items img {
   		  width: 100% !important ;
   		 }
@@ -575,10 +575,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
             text-align: left;
             margin: 0;
       	 }
-       
+
        .pane-content {
         	margin-top : 4%;
-          .node-teaser, 
+          .node-teaser,
         	.node--full,
           .node-full,
         	.search-result {
@@ -586,7 +586,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        		 	padding: 1% 2%;
        		}
        }
-       
+
        	.view-aap-media {
        		.view-content		{
        			@include aap_content_item;
@@ -594,58 +594,58 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        		}
        		a {
        			font-family: $font-family-group;
-         		color:#f17e00; 
+         		color:#f17e00;
          		text-decoration:none;
          		font-size: 12px;
        		 }
        		.video-title {
        			width:200px;
        			font-family: $font-family-group;
-         		color:#f17e00; 
+         		color:#f17e00;
          		text-decoration:none;
          		font-size: 12px;
-       		} 	
+       		}
        		td {
        			width: 260px;
        			height: 250px;
-       		} 	
+       		}
        	}
-       	
+
        .links.links--inline {
       	padding-bottom: 2%;
 
       	li > a {
       			font-family:$font-family-group;
-      			font-weight:bold; 
+      			font-weight:bold;
       			color:#0a6181;
-      			font-size:14px; 
+      			font-size:14px;
       			text-decoration:none;
-      		}		
+      		}
       }
-      
+
       .field__items a {
       			font-family:$font-family-group;
-      			font-weight:bold; 
+      			font-weight:bold;
       			color: #0088CC;
-      			font-size:14px; 
+      			font-size:14px;
       			text-decoration:none;
       }
-      
+
       p {
       	@include aap_font_body;
       	font-size: 1em;
       }
-      
+
   }
-  
+
   .aap-breadcrumb {
      border-radius: 0.2em 0.2em 0 0;
       text-align: left;
       background-color:  $footer;
       font-family: $font-family;
-      padding: 0.5em 0.6em 2em; 
+      padding: 0.5em 0.6em 2em;
       margin-top : 7%;
-      
+
       .breadcrumb p, a {
       	float: left;
     		font-family: arial;
@@ -655,23 +655,28 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       	color:#8fe0ff;
       	text-decoration:none;
       	padding-right:6px;
-      	
+
       	&:hover {
       		color:#8fe0ff;
       	}
-      
+
       &:last-child {
       	color:#dadada;
       	font-style: italic;
       }
-     } 
-  } 
-  
-  
+     }
+  }
+
+  .aap-donation-right-class-fix {
+    position:fixed;
+    margin-left: 2.1% !important;
+    top: 35px;
+  }
   .aap-donation-right-class {
   	margin-left: 12%;
-    margin-right: 1%;
-    
+    //position: fixed;
+    width: 200px;
+
     .pane-content {
     	@include aap_content_item;
     	margin-top: 0;
@@ -680,41 +685,41 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       .form-radios {
            margin: 0;
        }
-       
+
        .donate-link {
        	margin: 6px 35px;
        }
     }
-  } 
+  }
   .aap-right-default-class {
   		.pane-content ul {
    	 		padding: 0;
    	 		margin:0;
 			}
-			
+
 			li {
 				margin-left: 12%;
 			}
   }
-  
+
   .aap-tag-cloud {
-    
+
     .pane-content {
       @include aap_content_item;
-    		
+
     	.tagclouds-term {
     	 margin: 0.3em;
     	 a {
     	 	font-family: $font-family-group;
          	 text-decoration:none; font-weight:bold;
-    	 }	
+    	 }
     	}
     }
     .more-link {
     	display: none;
     }
   }
- 
+
  .aap-related-story {
  		margin-left: 12%;
  		margin-right: 0;
@@ -723,21 +728,21 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       padding-left: 20px;
       background: url(../images/bullet_img.png) no-repeat 5px 7px;
     }
- } 
- 
+ }
+
 /*********************************************************************
-  
+
   * common Theme for delhi site page
   *
  *******************************************************************/
- 
+
  .aap-body-class.aap-delhi-body-class {
  		.panels-flexible-row.aap-background-class {
   				background: url('../images/bg_flag.jpg') no-repeat 0% 1%;
 			}
 		.home-box-top {
 					margin-top: 3em;
-		}	
+		}
  }
  .panelizer-service-links {
  		ul {
@@ -751,54 +756,54 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  		}
  	  a {
  					font-family:$font-family-group;
-      		font-weight:bold; 
+      		font-weight:bold;
       		color:#0A6181;
-      		font-size:14px; 
+      		font-size:14px;
       		text-decoration:none;
  		}
- 		
+
  }
- 
+
  .aap-delhi-left-region {
  				border-right: 1px solid $border-color;
  		}
  .aap-delhi-right-region {
  				padding-left: 5px;
- 		}		
+ 		}
  .aap-delhi-row,
  .aap-delhi-region-content {
  				margin-top: 4px;
-        border-bottom: 1px solid $border-color; 
+        border-bottom: 1px solid $border-color;
     }
 
  /*********************************************************************
-  
+
   * Layout for candidate detail page
   *
  *******************************************************************/
 	.aap-page-content-class {
-		
+
 				#candidate-detail-page {
 							.panels-flexible-row > .inside {
   								width: 720px;
 								}
        				@include aap_content_item;
-       			
+
        				.candidate-info-region {
        						margin-left: 6em;
        						width: 500px;
-       					
+
     							.candidate-name	.field__item {
 											font-size: 1.2em;
     									font-weight: bold;
             				}
             			.field__items {
             					width: 250px;
-            				}	
+            				}
        					}
        				.pane-content {
             			margin-top : 0.3em;
-            
+
             			.field__label {
             					@include aap_font_body;
             					font-weight: bold;
@@ -806,31 +811,31 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
             				}
             			.field__item {
             					@include aap_font_body;
-            				 	a { 
+            				 	a {
       									@include aap_content_link;
     									 }
             				}
        					}
-       					
-    
+
+
    	}
-  
+
 }
 
 
 /*********************************************************************
-  
+
   * Layout for constituency detail page
   *
  *******************************************************************/
- 
+
  .aap-page-content-class {
-		
+
 		#constituency-detail-page {
 					.panels-flexible-row > .inside {
   						width: 720px;
 					}
-					
+
        		@include aap_content_item;
        		.pane-content {
             		margin-top : 2%;
@@ -849,14 +854,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        		}
        		.aap-candidate-info {
        						p {
-       									margin: 0;		
+       									margin: 0;
        						}
        						a {
          								@include aap_content_link;
          						}
        		}
        		.aap-constituency-row {
-            		border-bottom: 1px solid $border-color; 
+            		border-bottom: 1px solid $border-color;
           }
          .constituency-candidate-region {
          			.aap-candidate-consituency {
@@ -871,14 +876,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
          			.pane-title {
          				@include aap_content_title_panelizer;
          			}
-         		
+
        			.aap-shortlisted-candidate {
-            		border-bottom: 1px solid $border-color; 
+            		border-bottom: 1px solid $border-color;
             	}
          		 .views-row-last.aap-shortlisted-candidate {
          					border: none;
          			}
-         
+
          		 .aap-shortlisted-candidate {
          				.panel-flexible {
          						padding: 1em 0;
@@ -891,44 +896,44 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
          		}
          		.pane-content {
          				border-bottom: 1px solid $border-color;
-         				padding-bottom: 5px;	
-            }	
-         } 
-         
+         				padding-bottom: 5px;
+            }
+         }
+
           .shs-hierarchy {
           	list-style: none;
           	.state:before {
            		font-weight: bold;
            		padding-right: 5em;
-          		content: "State:";	
+          		content: "State:";
           	}
           	.district:before {
            		font-weight: bold;
            		padding-right: 4em;
-          		content: "District:";	
+          		content: "District:";
           	}
           	.constituency:before {
            		font-weight: bold;
            		padding-right: 1em;
-          		content: "Constituency:";	
+          		content: "Constituency:";
           	}
           }
           .shs-hierarchy li:after {
          		content: "";
-         	}	 
+         	}
           .constituency-description {
        			margin-left: 2.3em;
        		}
-       		
+
        		.constituency-contact-fields {
        			.pane-title {
        					@include aap_content_title_panelizer;
        					margin-left: 3.5em;
        				}
-       			
+
        			.adr {
        					margin-left: 3em;
-       			}	
+       			}
        			.fn,.street-address,
        			.postal-code,.country-name,
        			.locality,.region,
@@ -944,7 +949,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        						font-weight: bold;
        						font-size: 1.2em;
        				}
-       				
+
        				abbr[title], acronym[title] {
      							border-bottom-width: 0;
    						}
@@ -953,14 +958,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        	.constituency-contact-container {
        			margin-left:2.5em;
        	}
-       	
+
        	.constituency-container-1 {
        		h2 {
        			margin: 0;
        		}
-       	}	
+       	}
       }
-   }    		
+   }
 body.front div.panels-top-row,
 body.front div.panels-top-row h2.pane-title {
   margin-top: 0px;

@@ -21,6 +21,7 @@ features[] = favicon
 scripts[] = js/json2.js
 scripts[] = js/jquery.cookie.js
 scripts[] = js/aap_campaign_tracker.js
+scripts[] = js/fix_donation_widget_right_sidebar.js
 
 settings[omega_toggle_front_page_content] = 1
 settings[default_logo] = 0

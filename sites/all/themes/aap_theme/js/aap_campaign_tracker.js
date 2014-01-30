@@ -1,6 +1,6 @@
 (function ($, Drupal, window, document, undefined) {
 	Drupal.behaviors.redirect_to_donate_page = {
-			attach: function(context) { 
+			attach: function(context) {
 				// If ever a link to donate.aamaadmiparty.org is clicked, pass on 'aap_campaign_tracker' cookie value 							to the page.
 
 				// This script runs on every AAP page load and does the below stuff mentioned in comments
@@ -10,7 +10,7 @@
 				if (document.referrer.indexOf("aamaadmiparty.org") < 0) {
 					var flag_site_entry = true;
 					if (document.referrer == '' || document.referrer == null) {
-						vals.utm_source = 'direct';						
+						vals.utm_source = 'direct';
 					}
 					else {
 
@@ -56,10 +56,10 @@
 
 				});
 			}
-	}	
+	}
 
 }
-)(jQuery, Drupal, this, this.document); 
+)(jQuery, Drupal, this, this.document);
 
 
 
