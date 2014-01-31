@@ -785,6 +785,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
 .aap-donation-right-class {
   margin-left: 12%;
+  z-index: 10;
   width: 200px;
 }
 .aap-donation-right-class .pane-content {
