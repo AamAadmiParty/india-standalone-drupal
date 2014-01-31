@@ -958,13 +958,25 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-29';
     $pane->panel = 'right_navigation';
-    $pane->type = 'block';
-    $pane->subtype = 'cumulus-1';
+    $pane->type = 'views';
+    $pane->subtype = 'videos';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '10',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block_1',
       'override_title' => 1,
-      'override_title_text' => 'Tag Clouds',
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -972,7 +984,7 @@ function f_theme_layout_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'aap-main-content aap-tag-cloud',
+      'css_class' => 'aap-sidebars-videos',
     );
     $pane->extras = array();
     $pane->position = 3;
