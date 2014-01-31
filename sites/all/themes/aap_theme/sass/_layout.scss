@@ -562,6 +562,51 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   *
  *******************************************************************/
 
+.aap-sidebars-videos {
+  margin-left:12%;
+  header {
+    float: left;
+    width: 50%;
+  }
+
+  .views-row {
+    max-height: 10em;
+  }
+  .node__title {
+    margin: 0;
+    line-height: 12px;
+    a {
+      font-family:$font-family-group;
+      color:#0A6181;
+      font-size: 0.56em;
+      font-weight:bold;
+      text-decoration:none;
+    }
+  }
+
+  .node__content {
+    .read-more {
+      display: none;
+    }
+    padding-bottom: 3px;
+    .field--name-body {
+      max-height: 100px;
+      p {
+        font-size: 0.7em;
+        font-family: arial;
+      }
+    }
+    .field--name-field-ct-video {
+      float: right;
+    width: 50%;
+    }
+  }
+}
+
+
+
+
+
 .aap-page-content-class {
 
       .aap-news-item-class .field__items img {
