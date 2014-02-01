@@ -27,6 +27,14 @@ function f_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'videos' => array(
+      'name' => t('Videos'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'volunteer_story' => array(
       'name' => t('Volunteer Story'),
       'base' => 'node_content',
