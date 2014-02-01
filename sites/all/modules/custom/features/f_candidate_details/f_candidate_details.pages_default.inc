@@ -55,7 +55,7 @@ function f_candidate_details_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = 'List of Candidates - %term:name';
+  $display->title = 'List of Applicants - %term:name';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

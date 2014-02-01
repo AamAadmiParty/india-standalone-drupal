@@ -54,7 +54,7 @@ function f_candidate_details_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'Candidate Feedback Submission',
-      'title' => 'Candidate Feedback Submission',
+      'title' => '',
       'body' => '<div id="wufoo-z18510dh0jby8yy">
 Fill out my <a href="https://aamaadmiparty.wufoo.com/forms/z18510dh0jby8yy">online form</a>.
 </div>
@@ -93,8 +93,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->pid = 'new-2';
     $pane->panel = 'bottom';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_election';
-    $pane->shown = FALSE;
     $pane->subtype = 'node:body';
     $pane->shown = TRUE;
     $pane->access = array();
@@ -145,18 +143,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $display->panels['bottom'][2] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
-    $pane->panel = 'left';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_name';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
     $pane->panel = 'bottom';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
@@ -186,12 +172,12 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->pid = 'new-5';
     $pane->panel = 'left';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_gender';
+    $pane->subtype = 'node:field_cd_name';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'inline',
-      'formatter' => 'list_default',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
@@ -204,10 +190,9 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-5'] = $pane;
-    $display->panels['left'][1] = 'new-5';
     $display->panels['left'][0] = 'new-5';
     $pane = new stdClass();
     $pane->pid = 'new-6';
@@ -231,10 +216,9 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $display->content['new-6'] = $pane;
-    $display->panels['left'][2] = 'new-6';
     $display->panels['left'][1] = 'new-6';
     $pane = new stdClass();
     $pane->pid = 'new-7';
@@ -258,28 +242,14 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 2;
     $pane->locks = array();
     $display->content['new-7'] = $pane;
-    $display->panels['left'][3] = 'new-7';
     $display->panels['left'][2] = 'new-7';
     $pane = new stdClass();
     $pane->pid = 'new-8';
     $pane->panel = 'left';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_photo';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'image',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'image_style' => '',
-        'image_link' => '',
-      ),
     $pane->subtype = 'node:field_cd_pc';
     $pane->shown = TRUE;
     $pane->access = array();
@@ -298,21 +268,14 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $display->content['new-8'] = $pane;
-    $display->panels['left'][4] = 'new-8';
     $display->panels['left'][3] = 'new-8';
     $pane = new stdClass();
     $pane->pid = 'new-9';
     $pane->panel = 'left';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_dob_text';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'text_default',
     $pane->subtype = 'node:field_cd_photo';
     $pane->shown = FALSE;
     $pane->access = array();
@@ -327,8 +290,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
         'image_link' => '',
       ),
       'context' => 'panelizer',
-      'override_title' => 0,
-      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -336,16 +297,14 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 4;
     $pane->locks = array();
     $display->content['new-9'] = $pane;
-    $display->panels['right'][0] = 'new-9';
     $display->panels['left'][4] = 'new-9';
     $pane = new stdClass();
     $pane->pid = 'new-10';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_education_qualification';
     $pane->subtype = 'node:field_cd_dob_text';
     $pane->shown = TRUE;
     $pane->access = array();
@@ -366,10 +325,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['right'][1] = 'new-10';
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-10'] = $pane;
@@ -378,19 +333,17 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->pid = 'new-11';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_links';
+    $pane->subtype = 'node:field_cd_education_qualification';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'inline',
-      'formatter' => 'link_default',
-      'delta_limit' => '0',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
       'delta_offset' => '0',
-      'delta_reversed' => 0,
+      'delta_reversed' => FALSE,
       'formatter_settings' => array(),
       'context' => 'panelizer',
-      'override_title' => 0,
-      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -398,10 +351,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['right'][2] = 'new-11';
     $pane->position = 1;
     $pane->locks = array();
     $display->content['new-11'] = $pane;
@@ -410,12 +359,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->pid = 'new-12';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_age';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'number_integer',
     $pane->subtype = 'node:field_cd_links';
     $pane->shown = TRUE;
     $pane->access = array();
@@ -510,12 +453,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'decimal_separator' => '.',
-        'prefix_suffix' => TRUE,
-        'scale' => 0,
-        'thousand_separator' => ' ',
-      ),
+      'formatter_settings' => array(),
       'context' => 'panelizer',
     );
     $pane->cache = array();
@@ -524,10 +462,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['right'][3] = 'new-12';
     $pane->position = 5;
     $pane->locks = array();
     $display->content['new-15'] = $pane;
@@ -536,13 +470,12 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->pid = 'new-16';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_special_category';
     $pane->subtype = 'node:field_cd_email';
     $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'inline',
-      'formatter' => 'list_default',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
@@ -555,10 +488,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['right'][4] = 'new-13';
     $pane->position = 6;
     $pane->locks = array();
     $display->content['new-16'] = $pane;
@@ -567,7 +496,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->pid = 'new-17';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_profession_occupation';
     $pane->subtype = 'node:field_cd_phone';
     $pane->shown = FALSE;
     $pane->access = array();
@@ -612,68 +540,12 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 6;
-    $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['right'][6] = 'new-15';
-    $pane = new stdClass();
-    $pane->pid = 'new-16';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_phone';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 7;
-    $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['right'][7] = 'new-16';
-    $pane = new stdClass();
-    $pane->pid = 'new-17';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cd_address';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'inline',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 8;
-    $pane->locks = array();
-    $display->content['new-17'] = $pane;
-    $display->panels['right'][8] = 'new-17';
     $pane->position = 8;
     $pane->locks = array();
     $display->content['new-18'] = $pane;
     $display->panels['right'][8] = 'new-18';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-4';
+  $display->title_pane = 'new-5';
   $panelizer->display = $display;
   $export['node:ct_candidate_details:default:default'] = $panelizer;
 
@@ -797,7 +669,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-
     $display->content['new-21'] = $pane;
     $display->panels['left'][1] = 'new-21';
     $pane = new stdClass();
@@ -826,10 +697,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-21'] = $pane;
-    $display->panels['left'][2] = 'new-21';
-    $pane = new stdClass();
-    $pane->pid = 'new-22';
     $display->content['new-22'] = $pane;
     $display->panels['left'][2] = 'new-22';
     $pane = new stdClass();
@@ -862,7 +729,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $display->panels['left'][3] = 'new-23';
     $pane = new stdClass();
     $pane->pid = 'new-24';
-   $pane->panel = 'left';
+    $pane->panel = 'left';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_cd_age';
     $pane->shown = FALSE;
@@ -948,10 +815,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-25'] = $pane;
-    $display->panels['right'][0] = 'new-25';
-    $pane = new stdClass();
-    $pane->pid = 'new-26';
     $display->content['new-26'] = $pane;
     $display->panels['right'][0] = 'new-26';
     $pane = new stdClass();
@@ -1036,10 +899,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-28'] = $pane;
-    $display->panels['right'][3] = 'new-28';
-    $pane = new stdClass();
-    $pane->pid = 'new-29';
     $display->content['new-29'] = $pane;
     $display->panels['right'][3] = 'new-29';
     $pane = new stdClass();
@@ -1068,6 +927,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
+    $display->content['new-30'] = $pane;
     $display->panels['right'][4] = 'new-30';
     $pane = new stdClass();
     $pane->pid = 'new-31';
@@ -1095,10 +955,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->extras = array();
     $pane->position = 5;
     $pane->locks = array();
-    $display->content['new-30'] = $pane;
-    $display->panels['right'][5] = 'new-30';
-    $pane = new stdClass();
-    $pane->pid = 'new-31';
     $display->content['new-31'] = $pane;
     $display->panels['right'][5] = 'new-31';
     $pane = new stdClass();
@@ -1110,7 +966,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'Give Feedback Link',
-      'title' => 'Give Feedback Link',
+      'title' => '',
       'body' => '<?php
 
 $links = array();
