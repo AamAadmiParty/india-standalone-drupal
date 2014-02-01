@@ -59,6 +59,11 @@ body.admin-menu #admin-menu {
   width: 60%;
 }
 
+.panels-flexible-region-new-header_logo,
+.aap-header-search-class {
+  width: 50%;
+}
+
 .panels-flexible-aap_layout-inside
 .panels-flexible-row {
   width: 100%;
@@ -574,6 +579,45 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   * Layout for dafault page
   *
  *******************************************************************/
+.aap-sidebars-videos {
+  margin-left: 12%;
+}
+.aap-sidebars-videos header {
+  float: left;
+  width: 50%;
+}
+.aap-sidebars-videos .views-row {
+  max-height: 10em;
+}
+.aap-sidebars-videos .node__title {
+  margin: 0;
+  line-height: 12px;
+}
+.aap-sidebars-videos .node__title a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0A6181;
+  font-size: 0.56em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.aap-sidebars-videos .node__content {
+  padding-bottom: 3px;
+}
+.aap-sidebars-videos .node__content .read-more {
+  display: none;
+}
+.aap-sidebars-videos .node__content .field--name-body {
+  max-height: 100px;
+}
+.aap-sidebars-videos .node__content .field--name-body p {
+  font-size: 0.7em;
+  font-family: arial;
+}
+.aap-sidebars-videos .node__content .field--name-field-ct-video {
+  float: right;
+  width: 50%;
+}
+
 .aap-page-content-class .aap-news-item-class .field__items img {
   width: 100% !important;
 }
@@ -741,6 +785,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
 .aap-donation-right-class {
   margin-left: 12%;
+  z-index: 10;
   width: 200px;
 }
 .aap-donation-right-class .pane-content {
