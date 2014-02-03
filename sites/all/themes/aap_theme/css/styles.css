@@ -601,21 +601,21 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   text-decoration: none;
 }
 .aap-sidebars-videos .node__content {
-  padding-bottom: 3px;
+  padding-bottom: 6px;
+  /* .field--name-body {
+    max-height: 100px;
+    p {
+      font-size: 0.7em;
+      font-family: arial;
+    }
+  }
+  .field--name-field-ct-video {
+    float: right;
+  width: 50%;
+  } */
 }
 .aap-sidebars-videos .node__content .read-more {
   display: none;
-}
-.aap-sidebars-videos .node__content .field--name-body {
-  max-height: 100px;
-}
-.aap-sidebars-videos .node__content .field--name-body p {
-  font-size: 0.7em;
-  font-family: arial;
-}
-.aap-sidebars-videos .node__content .field--name-field-ct-video {
-  float: right;
-  width: 50%;
 }
 
 .aap-page-content-class .aap-news-item-class .field__items img {
