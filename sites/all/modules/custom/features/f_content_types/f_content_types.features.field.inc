@@ -203,11 +203,8 @@ function f_content_types_field_default_fields() {
         ),
         'teaser' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => '50',
-          ),
-          'type' => 'text_summary_or_trimmed',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => '1',
         ),
       ),
@@ -347,7 +344,7 @@ function f_content_types_field_default_fields() {
           'module' => 'video_embed_field',
           'settings' => array(
             'description' => 1,
-            'image_link' => '',
+            'image_link' => 'node',
             'image_style' => 'thumbnail',
           ),
           'type' => 'video_embed_field_thumbnail',
