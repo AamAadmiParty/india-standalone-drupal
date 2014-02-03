@@ -697,7 +697,7 @@ function f_theme_layout_default_page_manager_handlers() {
         'width' => 100,
         'width_type' => '%',
         'parent' => 'main-row',
-        'class' => '',
+        'class' => 'top-header-region',
       ),
       1 => array(
         'type' => 'row',
@@ -706,7 +706,7 @@ function f_theme_layout_default_page_manager_handlers() {
           0 => 'top_menu',
         ),
         'parent' => 'main',
-        'class' => 'main-menu-row',
+        'class' => 'center-content-rows main-menu-row',
       ),
       2 => array(
         'type' => 'row',
@@ -716,7 +716,7 @@ function f_theme_layout_default_page_manager_handlers() {
           1 => 'right_navigation',
         ),
         'parent' => 'main',
-        'class' => 'aap-page-background-class',
+        'class' => 'center-content-rows aap-page-background-class',
       ),
       3 => array(
         'type' => 'row',
@@ -725,7 +725,7 @@ function f_theme_layout_default_page_manager_handlers() {
           0 => 'bottom_content',
         ),
         'parent' => 'main',
-        'class' => 'aap-footer-top-class',
+        'class' => 'center-content-rows aap-footer-top-class',
       ),
       'top_menu' => array(
         'type' => 'region',
@@ -766,7 +766,7 @@ function f_theme_layout_default_page_manager_handlers() {
           0 => 'footer_top_content',
         ),
         'parent' => 'main',
-        'class' => 'aap-footer-bottom-class',
+        'class' => 'center-content-rows aap-footer-bottom-class',
       ),
       'footer_top_content' => array(
         'type' => 'region',
