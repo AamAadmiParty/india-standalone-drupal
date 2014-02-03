@@ -60,7 +60,7 @@ function f_theme_layout_default_panels_layout() {
           0 => 'header_menu',
         ),
         'parent' => 'main',
-        'class' => 'main-menu-row',
+        'class' => 'center-content-rows main-menu-row',
       ),
       2 => array(
         'type' => 'row',
@@ -70,7 +70,7 @@ function f_theme_layout_default_panels_layout() {
           1 => 'right_navigation',
         ),
         'parent' => 'main',
-        'class' => 'aap-background-class',
+        'class' => 'center-content-rows aap-background-class',
       ),
       3 => array(
         'type' => 'row',
@@ -81,7 +81,7 @@ function f_theme_layout_default_panels_layout() {
           2 => 'right_content',
         ),
         'parent' => 'main',
-        'class' => 'panels-top-row main-content',
+        'class' => 'center-content-rows panels-top-row main-content',
       ),
       4 => array(
         'type' => 'row',
@@ -92,7 +92,7 @@ function f_theme_layout_default_panels_layout() {
           2 => 'right_middle_content',
         ),
         'parent' => 'main',
-        'class' => 'middle-content',
+        'class' => 'center-content-rows middle-content',
       ),
       5 => array(
         'type' => 'row',
@@ -101,7 +101,7 @@ function f_theme_layout_default_panels_layout() {
           0 => 'footer_1__',
         ),
         'parent' => 'main',
-        'class' => 'bottom-content',
+        'class' => 'center-content-rows bottom-content',
       ),
       'header_logo' => array(
         'type' => 'region',
@@ -109,7 +109,7 @@ function f_theme_layout_default_panels_layout() {
         'width' => 100,
         'width_type' => '%',
         'parent' => 'main-row',
-        'class' => 'top-header-row',
+        'class' => 'top-header-region',
       ),
       'right_navigation' => array(
         'type' => 'region',
@@ -182,7 +182,7 @@ function f_theme_layout_default_panels_layout() {
           0 => 'footer_bottom_content',
         ),
         'parent' => 'main',
-        'class' => 'aap-footer-top-class',
+        'class' => 'center-content-rows aap-footer-top-class',
       ),
       'footer_bottom_content' => array(
         'type' => 'region',
@@ -199,7 +199,7 @@ function f_theme_layout_default_panels_layout() {
           0 => 'footer_bottom',
         ),
         'parent' => 'main',
-        'class' => 'aap-footer-bottom-class',
+        'class' => 'center-content-rows aap-footer-bottom-class',
       ),
       'footer_bottom' => array(
         'type' => 'region',
