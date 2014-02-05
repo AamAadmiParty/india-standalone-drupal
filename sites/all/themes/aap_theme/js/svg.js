@@ -3,35 +3,19 @@
     attach: function(context) {
 
       $("path").click(function() {
-
-        $(".view-data-on-map").append("<div id=toPopup><div class=close></div><div id=popup_content></div></div>");
+        $(".view-svg-maps").append("<div id=popup_content></div>");
         var clickedState = $(this).attr('id');
-        setTimeout(function(){ // then show popup, deley in .5 second
-          loadPopup(clickedState); // function show popup
-          }, 100); // .1 second
+        getData(clickedState);
       });
 
-      $("div.close").live("click", function() {
-          disablePopup();  // function close pop up
-        });
-
-        function loadPopup(clickedState) {
-            $('#popup_content').empty();
-            disablePopup();
-            var state = $( "div.gmap-state:contains("+clickedState+")" ).text();
-            if (state.length != 0) {
-              var state_data = $( "div.gmap-state:contains("+ clickedState + ")" ).next().text();
-              $('#popup_content').append('<p>' + state + '<br>' + state_data + '</p>');
-              $("#toPopup").fadeIn(0500); // fadein popup div
-              $("#backgroundPopup").css("opacity", "0.7"); // css opacity, supports IE7, IE8
-              $("#backgroundPopup").fadeIn(0001);
-            }
+      function getData(clickedState) {
+        var state_div = $( "div.gmap-state:contains("+clickedState+")" );
+        if (state_div.length != 0) {
+           var title = state_div.siblings('.gmap-title').html();
+        var data = state_div.siblings('.gmap-body').html();
+        $( "#popup_content" ).html(data).dialog({ title: title,minWidth: 300,maxWidth:400});
         }
-
-        function disablePopup() {
-            $("#toPopup").fadeOut("normal");
-            $("#backgroundPopup").fadeOut("normal");
-        }
+      }
     }
   }
 }
