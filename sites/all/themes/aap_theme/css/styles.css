@@ -54,6 +54,15 @@ body.admin-menu #admin-menu {
   z-index: 9999;
 }
 
+path:hover {
+  fill: #aaddff;
+}
+
+#water_1_,
+#foreign_1_:hover {
+  fill: #FFFFFF;
+}
+
 .splash-region .panel-pane {
   margin: 0 auto;
   width: 60%;
@@ -1180,6 +1189,42 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 body.front div.panels-top-row,
 body.front div.panels-top-row h2.pane-title {
   margin-top: 0px;
+}
+
+.view-data-on-map .view-content {
+  display: none;
+}
+
+#toPopup {
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  background: #afccdd;
+  border: 3px solid #ccc;
+  border-radius: 3px;
+  color: #333333;
+  display: none;
+  font-size: 14px;
+  position: fixed;
+  top: 40%;
+  left: 16%;
+  width: 600px;
+  height: 200px;
+  z-index: 2;
+}
+
+div.close {
+  background: url("../images/close.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  right: -27px;
+  top: -24px;
+  width: 30px;
+}
+
+div#popup_content {
+  margin: 4px 7px;
+  overflow-y: scroll;
+  height: 200px;
 }
 
 /*******************************************************************************
