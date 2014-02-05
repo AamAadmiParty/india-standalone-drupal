@@ -1032,10 +1032,12 @@ body.front div.panels-top-row h2.pane-title {
 
 path:hover {
 fill:#666;
+cursor:pointer;
 }
 #water_1_,
 #foreign_1_:hover {
   fill:#FFFFFF;
+  cursor: auto;
 }
 .view-svg-maps .view-content {
   display: none;
