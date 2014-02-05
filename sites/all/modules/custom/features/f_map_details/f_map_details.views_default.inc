@@ -11,11 +11,11 @@ function f_map_details_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'data_on_map';
+  $view->name = 'svg_maps';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'data on map';
+  $view->human_name = 'SVG Maps';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -29,165 +29,16 @@ function f_map_details_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'title' => 'title',
-    'body' => 'body',
-  );
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<svg xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
-
-  <rect x="10" y="10" height="130" width="500" style="fill: #000000"/>
-
-  <image x="20" y="20" width="300" height="80"
-     xlink:href="http://jenkov.com/images/layout/top-bar-logo.png" />
-    
-  <line x1="25" y1="80" x2="350" y2="80"
-            style="stroke: #ffffff; stroke-width: 3;"/>
-</svg>';
-  $handler->display->display_options['header']['area']['format'] = 'full_html';
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'map_data' => 'map_data',
-  );
-
-  /* Display: Donations Test Map */
-  $handler = $view->new_display('page', 'Donations Test Map', 'page_1');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Donations Test Map';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'gmap';
-  $handler->display->display_options['style_options']['macro'] = '';
-  $handler->display->display_options['style_options']['markertype'] = 'green';
-  $handler->display->display_options['style_options']['latfield'] = 'title';
-  $handler->display->display_options['style_options']['lonfield'] = 'title';
-  $handler->display->display_options['style_options']['markerfield'] = 'title';
-  $handler->display->display_options['style_options']['geofield'] = 'title';
-  $handler->display->display_options['style_options']['enablermt'] = 0;
-  $handler->display->display_options['style_options']['rmtfield'] = 'title';
-  $handler->display->display_options['style_options']['animation'] = '2';
-  $handler->display->display_options['style_options']['tooltipfield'] = 'title';
-  $handler->display->display_options['style_options']['bubbletextfield'] = 'title';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'title' => 'title',
-  );
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'map_data' => 'map_data',
-  );
-  /* Filter criterion: Content: Tags (field_content_tags) */
-  $handler->display->display_options['filters']['field_content_tags_tid']['id'] = 'field_content_tags_tid';
-  $handler->display->display_options['filters']['field_content_tags_tid']['table'] = 'field_data_field_content_tags';
-  $handler->display->display_options['filters']['field_content_tags_tid']['field'] = 'field_content_tags_tid';
-  $handler->display->display_options['filters']['field_content_tags_tid']['value'] = array(
-    48 => '48',
-    17 => '17',
-    43 => '43',
-  );
-  $handler->display->display_options['filters']['field_content_tags_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_content_tags_tid']['vocabulary'] = 'tags';
-  $handler->display->display_options['path'] = 'donations-test-map';
-
-  /* Display: Contact Test Map */
-  $handler = $view->new_display('page', 'Contact Test Map', 'page_2');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Contact Test Map';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'map_data' => 'map_data',
-  );
-  /* Filter criterion: Content: Tags (field_content_tags) */
-  $handler->display->display_options['filters']['field_content_tags_tid']['id'] = 'field_content_tags_tid';
-  $handler->display->display_options['filters']['field_content_tags_tid']['table'] = 'field_data_field_content_tags';
-  $handler->display->display_options['filters']['field_content_tags_tid']['field'] = 'field_content_tags_tid';
-  $handler->display->display_options['filters']['field_content_tags_tid']['value'] = array(
-    1275 => '1275',
-  );
-  $handler->display->display_options['filters']['field_content_tags_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_content_tags_tid']['vocabulary'] = 'tags';
-  $handler->display->display_options['path'] = 'contact-test-map';
-
-  /* Display: Test Map */
-  $handler = $view->new_display('page', 'Test Map', 'page_3');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Test Map';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'gmap-row';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'title' => 'title',
-    'body' => 'body',
-  );
-  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['header'] = FALSE;
   /* Header: Global: PHP */
   $handler->display->display_options['header']['php']['id'] = 'php';
   $handler->display->display_options['header']['php']['table'] = 'views';
   $handler->display->display_options['header']['php']['field'] = 'php';
   $handler->display->display_options['header']['php']['php_output'] = '<?php
  drupal_add_js(drupal_get_path(\'theme\', \'aap_theme\') . \'/js/svg.js\');
+ drupal_add_library(\'system\', \'ui.dialog\');
 ?>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="1600px" height="868px" viewBox="0 0 3500 1868">
@@ -947,9 +798,9 @@ function f_map_details_views_default_views() {
   c0.532-1.146,0.457-2.3,0.688-3.527c0.604-3.242,0.981-6.356-0.563-9.37c-2.051-4.001-3.726-7.87-6.498-11.448
   c-2.636-3.396-6.729-6.73-6.978-11.24c-0.229-4.123-0.863-7.871-2.519-11.718c-3.392-7.915-9.896-13.666-17.8-16.903
   c-18.125-7.433-47.896-6.229-64.968,4.146c-11.021,6.688-16.146,16.709-30.521,15.589"/>
-<path id="path3771" fill="#CCC" stroke="#FFFFFF" d="M302.595,1047.802c1.448-1.594,10.135-2.657,10.708-0.22
+<!-- <path id="path3771" fill="#CCC" stroke="#FFFFFF" d="M302.595,1047.802c1.448-1.594,10.135-2.657,10.708-0.22
   c0.361,1.521-1.543,1.954-2.506,3.073c-2.713,0.188-10.462,0.038-8.375-2.657C302.481,1047.933,302.536,1047.868,302.595,1047.802z"
-  />
+  /> -->
 <path id="CHANDIGARH" fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M531.023,477.463
   c0.6,0.068,1.109,0.152,1.438,0.2c0.094,1.488,0.655,8.753-2.924,6.979c0.38,0.188-1.604-2.271-1.501-2.063
   c-0.335-0.703-0.036-1.493-0.271-2.208c-0.229-0.714-1.438-0.908-1.021-2C527.171,477.219,529.391,477.279,531.023,477.463z"/>
@@ -1002,11 +853,12 @@ function f_map_details_views_default_views() {
   c-0.112-0.004-0.239-0.009-0.354-0.013c-0.063-0.28,0.129-0.479,0.146-0.734c0.021-0.229-0.113-0.507-0.063-0.752
   c0.13-0.077,0.209-0.334,0.162-0.507c-0.039-0.143-0.183-0.088-0.222-0.208c-0.021-0.072,0-0.215,0.007-0.292
   C536.806,595.182,536.839,595.023,536.917,594.914z"/>
+<!-- The below show UTs like Pondecherry in TamilNadu -->
 <g>
   <g>
-    <path fill="#CCC" stroke="#FFFFFF" stroke-width="2" d="M804.817,1260.868c-1.354,0-3.317-0.406-4.313,0.518
-      c-1.036,0.966-1.21,2.647,0.022,3.38c0.747,0.444,3.853,0.854,4.525,0.199c1.063-1.003,0.104-3.601-1.021-4.097"/>
-    <path fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M666.212,1540.401c0.42-0.091,0.848-0.313,1.229-0.354
+    <!-- <path fill="#CCC" stroke="#FFFFFF" stroke-width="2" d="M804.817,1260.868c-1.354,0-3.317-0.406-4.313,0.518
+      c-1.036,0.966-1.21,2.647,0.022,3.38c0.747,0.444,3.853,0.854,4.525,0.199c1.063-1.003,0.104-3.601-1.021-4.097"/> -->
+    <path id="PUDUCHERRY" fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M666.212,1540.401c0.42-0.091,0.848-0.313,1.229-0.354
       c1.008-0.094,2.08,0.148,3.104,0.068c0.127-2.313,0.328-4.68,0.567-6.984c0.146-1.416,1.221-3.369-0.201-4.017
       c-1.628-0.736-3.313,0.069-4.854,0.584c-0.354,0.119-1.447,0.634-1.813,0.29c-0.509-0.485,0.005-1.122,0.589-1.257
       c-0.08-0.072-1.012-1.063-0.918-1.117c0.854-0.505,1.464-2.339,0.158-2.675c-1.626-0.419-1.014,1.805-1.82,2.314
@@ -1014,13 +866,13 @@ function f_map_details_views_default_views() {
       c0.082,0.359,0.08,0.91,0,1.279c-1.509,0.571-0.5,1.799-0.666,3.004c-0.054,0.387-3.646-0.188-3.92,1.479
       c1.86,0.248,5.883,1.687,4.49,4.014c1.104,0.365,1.575,0.704,2.754,0.726c0.238,1.465,2.188,1.438,2.234-0.005
       c0.518,0.227,0.959,0.53,1.293,0.983c0.14,0.188,0.302,1.081,0.373,1.133C665.577,1540.467,665.892,1540.47,666.212,1540.401z"/>
-    <path fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M669.045,1583.374c-1.18-0.682-2.687-0.794-4.292-0.248
+<!--     <path fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M669.045,1583.374c-1.18-0.682-2.687-0.794-4.292-0.248
       c-1.729,0.587-0.358,3.042-2.641,2.858c-0.161,1.594,1.954,3.664,3.454,3.839c0.017,0.091,0.021,0.183,0.047,0.271
       c0.764,0.065,0.435,0.631,0.969,1.041c0.497,0.38,1.235,0.629,1.74,0.983c1.517,1.063,1.224,1.575,3.063,0.642
       c0.148-2.099,0.393-4.885-0.307-6.826C670.673,1584.77,669.957,1583.901,669.045,1583.374z"/>
     <path fill="#CCC" stroke="#FFFFFF" stroke-width="2" d="M431.549,1539.923c-0.323,0.286-0.633,0.531-0.854,0.698
       c-1.668,1.251-4.811,0.21-5.104-2.116c-0.303-2.358,3.938-1.619,5.627-1.47C433.535,1537.24,433.327,1538.354,431.549,1539.923z"
-      />
+      /> -->
   </g>
 </g>
 <path id="ANDAMAN AND NICOBAR ISLANDS" fill="#CCC" d="M1545.755,1717.973c23.148-59.063,16.505-126.055,2.836-186.104
@@ -1029,13 +881,13 @@ function f_map_details_views_default_views() {
   c5.313,46.134,21.409,90.813,45.608,129.577c17.209,27.563,25.938,59.063,43.563,84.056c6.854,9.721,11.915,25.891,21.438,31.755
   c7.082,4.363,19.34,1.771,27.438,2.342c13.352,0.938,31.233,5.063,43.989,0.188
   C1529.365,1795.102,1531.671,1753.911,1545.755,1717.973z"/>
-<path id="path3781" fill="#C0C0C0" stroke="#FFFFFF" stroke-width="3.5433" d="M357.006,1538.885
+<!-- <path id="path3781" fill="#C0C0C0" stroke="#FFFFFF" stroke-width="3.5433" d="M357.006,1538.885
   c-5.415-6.972-14.012-14.301-18.437-19.354c-7.271-8.293-14.695-16.461-22.578-24.176c-12.646-12.373-26.915-24.809-43.794-30.937
   c-33.77-12.259-60.661,12.41-79.814,37.647c-7.488,9.857-14.252,20.271-20.765,30.805c-6.446,10.422-16.792,22.906-20.47,34.577
   c-6.007,19.063-5.944,44.56-5.938,64.46c0.004,18.089,2.164,36.839,10.7,53.063c19.541,37.15,65.58,46.084,103.666,49.814
   c21.8,2.135,44.907,5.266,66.805,4.359c5.891-0.238,18.141-14.814,21.838-19.065c7.243-8.326,12.493-18.039,16.063-28.459
   c9.596-28.063,8.272-59.351,5.271-88.411c-1.873-18.143-2.672-39.404-8.188-56.813
-  C360.607,1544.042,359.029,1541.489,357.006,1538.885z"/>
+  C360.607,1544.042,359.029,1541.489,357.006,1538.885z"/> -->
 <path id="DAMAN AND DIU" fill="#FFFFD0" stroke="#FFFFFF" stroke-width="3.5433" d="M209.837,1027.375c0.101-0.971,0.117-1.852-1.067-2.056
   c-1.001-0.173-2.436,1.01-2.672,1.961c0.98-0.063,3.665,1.259,3.905-0.489"/>
 <path id="JAMMU AND KASHMIR" fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M491.004,381.119
@@ -1143,6 +995,7 @@ function f_map_details_views_default_views() {
   c-2.438-0.655-4.748-1.062-7.155-1.979c-6.628-2.524-12.841-0.438-19.563-0.938c-5.653-0.418-10.625-2.962-16.45-3.25
   c-9.525-0.479-17.816-3.914-27.313-2.104c-8.688,1.661-13.155,8.669-20.938,11.944c-1.973,0.829-6.411,1.146-7.771,2.897
   c-1.382,1.787-0.33,7.294-0.354,9.521c-0.023,2.506-0.84,3.89-1.688,5.959C1174.335,703.012,1173.303,707.631,1174.295,710.346z"/>
+<!--
 <path id="path3787" fill="none" stroke="#FFFFFF" d="M491.004,381.119c-0.597,0.591-1.365,0.945-2,1.524
   c-0.103,0.094-0.71,0.107-0.95,0.282c-0.331,0.242,0.238,0.905-0.282,1.162c-2.231,1.103-2.603-0.932-3.506,1.8
   c-0.646,1.978-0.261,2.469-2.513,2.737c-1.703,0.203-3.508-0.07-5.212,0.038c0.086,2.032-2.542,1.678-2.325,4.175
@@ -1183,7 +1036,7 @@ function f_map_details_views_default_views() {
   c-1.21-1.744-3.009-2.791-2.944-5.198c-1.384-0.081-2.261,1.985-2.641,3.089c-0.455,1.321-0.365,2.767-0.365,4.271
   c0,1.332-0.253,3.096,0.454,4.249c0.521,0.849,1.727,2.188,2.424,2.917c1.62,1.687,1.287,3.305,2.114,5.213
   c0.188,0.452,0.62,0.592,0.87,0.967c2.255-0.125,2.998,4.715,3.164,6.333c2.007,0.108,3.607-0.055,3.642-2.308
-  c0.009-0.813-0.09-1.229-0.333-1.82C631.494,426.25,631.319,422.7,629.591,419.362z"/>
+  c0.009-0.813-0.09-1.229-0.333-1.82C631.494,426.25,631.319,422.7,629.591,419.362z"/> 
 <path id="path3795" fill="none" stroke="#FFFFFF" stroke-width="3.5433" d="M1307.034,678.479c4.104-1.479,7.948-2.771,8.077-2.396
   c1.354,4.016,4.64,3.38,8.389,3.616c2.516,0.146,5.879,0.456,8.326-0.074c2.723-0.59,4.732-2.011,7.342-2.666
   c2.605-0.653,5.42-1.115,7.992-1.602c5.013-0.947,10.667-1.036,14.924-4.407c1.132-0.896,1.123-1.484,1.732-2.584
@@ -1201,10 +1054,12 @@ function f_map_details_views_default_views() {
   c-26.791,4.27-48.815,20.121-70.565,35.579c-9.941,7.065-19.31,14.824-29.218,21.882c-9.354,6.657-14.896,16.188-21.517,25.396
   c-4.011,5.578-8.604,11.324-10.479,18.099c-1.275,4.612-0.819,9.611-0.819,14.486c0,8.633-1.104,18.446,0.653,26.813
   c1.749,8.313,9.771,16.418,16.318,21.898c3.468,2.897,7.519,2.604,11.457,4.479c3.834,1.824,8.15,3.313,12.229,4.142
-  c1.107,0.226,2.365-0.021,3.332-0.334c2.101-0.688,3.914-1.789,6.343-2.324C1297.925,681.873,1302.63,680.07,1307.034,678.479z"/>
-<path id="path3797" fill="none" stroke="#FFFFFF" stroke-width="3.5433" d="M696.558,496.977c-0.727-1.794-0.021-2.421-1.166-3.729
+  c1.107,0.226,2.365-0.021,3.332-0.334c2.101-0.688,3.914-1.789,6.343-2.324C1297.925,681.873,1302.63,680.07,1307.034,678.479z"/> 
+
+<path id="path3797" fill="red" stroke="#FFFFFF" stroke-width="3.5433" d="M696.558,496.977c-0.727-1.794-0.021-2.421-1.166-3.729
   c-0.646-0.75-2.83-2.128-3.841-2.261c-0.804-0.105,2.116-7.015,3.357-7.576c2.5,2.431,4.271,2.25,4.934,5.954
   c0.305,1.705,0.481,3.979,0.164,5.676c-0.104,0.579,0.036,1.789-0.508,2.212C699.4,497.323,696.479,496.779,696.558,496.977z"/>
+
 <path id="path3799" fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M658.976,339.219
   c3.979-0.519,7.503,0.559,11.648-0.441c4.466-1.078,8.666-3.046,13.122-4.162c2.864-0.717,6.189-0.547,9.111-1.075
   c3.354-0.609,5.058-2.094,7.9-4.026c9.188-6.216,13.239-16.031,18.08-25.954c3.35-6.842,7.288-15.191,7.52-22.849
@@ -1224,12 +1079,14 @@ function f_map_details_views_default_views() {
   c-0.313,2.628,2.048,4.425,3.196,6.503c0.563,1.029,0.995,2.121,1.547,3.148c0.337,0.626,0.88,2.336,1.243,2.754
   c0.296,0.341,1.188,0.366,1.514,0.656c0.622,0.556,1.073,1.77,1.963,1.981c-0.057,0.603,0.131,1.316,0.075,1.92
   c1.43-0.019,0.688,0.877,1.443,1.292c2.688,1.474,7.816,0.58,10.756,0.239C654.084,340.479,656.436,339.551,658.976,339.219z"/>
+ 
 <path id="path3801" fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M522.093,218.334c4.78,1.785,9.496,3.621,14.277,5.433
   c2.143,0.813,4.438,0.512,6.632,1.335c4.542,1.707,9.605,1.933,14.477,1.927c4.291-0.005,7.289-1.258,11.029-3.356
   c2.952-1.655,7.648-3.232,9.293-6.468c1.773-3.485-1.307-8.053-3.313-10.719c-2.896-3.823-8.238-6.422-12.205-9.017
   c-4.652-3.042-9.12-6.53-13.486-9.957c-4.125-3.238-8.322-6.469-12.729-9.446c-2.152-1.455-4.228-3.357-6.479-4.682
   c-2.493-1.462-5.457-2.219-8.114-3.403c-4.508-2.009-11.896-6.477-17.171-4.913c-3.978,1.18-5.764,6.241-7.271,9.536
   c-2.313,5.027-2.421,11.525-1.511,17.064C497.605,204.334,510.898,214.154,522.093,218.334z"/>
+
 <path id="path3803" fill="#CCC" stroke="#FFFFFF" stroke-width="3.543" d="M355.335,319.642
   c0.529,5.064,2.149,9.922,2.976,14.933c0.574,3.482-0.604,10.148,2.625,12.528c2.789,2.054,7.432,2.844,10.659,4.074
   c4.524,1.718,8.486,3.669,12.404,6.612c8.86,6.657,19.371,11.162,30.313,13.318c3.527,0.695,7.891,1.595,11.271-0.111
@@ -1274,13 +1131,24 @@ function f_map_details_views_default_views() {
   c-6.244,4.286-14.979,8.412-19.361,14.639c-5.021,7.127-3.807,18.196-2.002,26.266c3.284,14.685,4.089,29.969,6.388,44.839
   c2.769,17.859,5.36,35.762,7.622,53.675c0.876,6.939,0.697,14.227,1.867,21.045C353.546,310.282,354.814,314.653,355.335,319.642z"
   />
-<path id="siachen_1_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3.5433" d="M591.167,220.195c-1.74-0.333-3.252-1.51-5-1.874
+ 
+END UNITED KASHMIR
+ -->
+
+ <!--
+
+ <path id="siachen_1_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3.5433" d="M591.167,220.195c-1.74-0.333-3.252-1.51-5-1.874
   c-0.854-0.178-1.755-0.124-2.651-0.126c-2.999-0.008-6.228,0.63-9.098,1.542c-1.664,0.529-2.649,1.048-4.38,1.254
   c-0.927,0.111-2.701-0.117-3.537,0.237c-0.879,0.372-1.627,1.591-2.334,2.174c-0.91,0.75-1.465,1.063-2.666,1.126
   c-2.158,0.112-4.715,0.356-6.805,0.142c-0.32-1.221-0.714-2.312-1.029-3.475c-0.483-1.779-0.786-1.653-2.5-1.333
   c-1.012,0.188-2.941,0.501-4.004,0.17c-1.273-0.397-1.354-1.717-2.196-2.662c-1.043-1.168-2.279-0.845-3.633-1.176
   c-1.021-0.25-2.15-0.983-2.875-1.625c-0.625-0.553-2.041-4.148-2.997-3.642c-0.87,0.46-0.251,5.521-0.179,6.501
   c1.921,0.321,17.326,29.136,17.5,30.304C554.881,246.267,584.699,224.742,591.167,220.195"/>
+-->
+
+<!-- START STRIPS
+The below show strips that we do not want to show 
+
 <g>
   <line id="line3820" fill="none" stroke="#8EDD8E" stroke-width="3" x1="1329.148" y1="678.852" x2="1485.813" y2="522.185"/>
   <line id="line3822" fill="none" stroke="#8EDD8E" stroke-width="3" x1="1463.875" y1="591.211" x2="1492.792" y2="562.294"/>
@@ -1344,6 +1212,10 @@ function f_map_details_views_default_views() {
   <line id="line3920" fill="none" stroke="#F4F4F4" stroke-width="3.543" x1="622.293" y1="407.625" x2="653.774" y2="376.144"/>
   <line id="line3922" fill="none" stroke="#F4F4F4" stroke-width="3.543" x1="402.473" y1="278.845" x2="425.974" y2="255.344"/>
 </g>
+
+END STRIPS
+-->
+
 <path id="foreign_1_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3.5433" d="M811.083,1578.01
   c-12.481,8.197-26.875,14.898-40.544,20.854c-19.688,8.579-41.311,12.073-60.711,21.119c-11.953,5.563-24.161,14.222-34.374,22.517
   c-9.161,7.441-21.637,18.83-26.333,29.93c-9.874,23.352-16.707,51.063-19.443,76.165c-3.053,28.007,6.025,52.671,18.396,77.104
@@ -2263,6 +2135,7 @@ function f_map_details_views_default_views() {
   c-0.229,0.354-0.412,0.628-0.499,0.748l0.499-0.748c0.797-1.236,2.146-3.487,1.899-3.896c2.511,4.114,3.219,9.449,4.021,14.146
   c0.357,2.063,0.229,4.452,1.075,6.395c0.893,2.029,3.079,2.701,4.076,4.479C1553.792,1252.72,1545.53,1259.957,1542.773,1257.177z"
   />
+<!--
 <path id="border_4_" fill="none" stroke="#FFFFFF" stroke-width="3.5433" d="M1286.333,683.279c1.074-3.366-1.167-5.396-1.289-8.457
   c-1.588-0.41-4.977-2.197-5.466-3.793c-0.282-0.921,0.011-3.938,0.543-4.688c0.596-0.85,1.8-0.656,2.271-1.556
   c0.396-0.774-0.181-1.813,0.173-2.512c0.339-0.696,1.729-0.698,1.979-1.281c0.444-1.049-0.875-2.243-1.518-2.962
@@ -2388,6 +2261,8 @@ function f_map_details_views_default_views() {
 <path id="border_1_" fill="none" stroke="#FFFFFF" stroke-width="3.5433" d="M621.553,410.575c0.068,0.954,0.359,1.833,1.208,2.521
   c1.123,0.916,1.741-0.026,2.604,1.235c0.534,0.789,0.295,2.333,0.438,3.249c0.86,5.324,5.243,9.32,5.694,14.777
   c0.045,0.544,0.104,1.208,0.151,1.92"/>
+-->
+
 <path id="path3936" fill="none" stroke="#FFFFFF" stroke-width="3.5433" d="M619.516,392.349c-0.253,0.014-0.508,0.024-0.762,0.025
   c-1.958,0.01-1.992-0.069-3.062-1.438c-0.906-1.159-0.904-1.863-2.688-2.062c-1.314-0.146-3.312,0.237-4.211,1.175
   c0.259-1.367,0.777-3.241,2.674-2.963c0.709-3.178,4.479-16.443-3.463-12.212c-0.644,0.343-1.066,1.21-1.556,1.457
@@ -2405,8 +2280,65 @@ function f_map_details_views_default_views() {
   c-0.331,0.242,0.238,0.905-0.272,1.162c-2.241,1.103-2.604-0.932-3.513,1.8c-0.646,1.978-0.264,2.469-2.516,2.737
   c-1.703,0.203-3.508-0.07-5.212,0.038c0.086,2.032-2.542,1.678-2.325,4.175c-2.604,0.165-3.661-0.67-5.962-1.407
   c-0.762-0.244-1.555-0.321-2.358-0.283"/>
-</svg>
-';
+
+</svg>';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: State */
+  $handler->display->display_options['fields']['field_map_data_state']['id'] = 'field_map_data_state';
+  $handler->display->display_options['fields']['field_map_data_state']['table'] = 'field_data_field_map_data_state';
+  $handler->display->display_options['fields']['field_map_data_state']['field'] = 'field_map_data_state';
+  $handler->display->display_options['fields']['field_map_data_state']['label'] = '';
+  $handler->display->display_options['fields']['field_map_data_state']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_map_data_state']['type'] = 'taxonomy_term_reference_plain';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'map_data' => 'map_data',
+  );
+
+  /* Display: Donation Test Map */
+  $handler = $view->new_display('page', 'Donation Test Map', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Donation Test Map';
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'gmap-row';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: State */
   $handler->display->display_options['fields']['field_map_data_state']['id'] = 'field_map_data_state';
@@ -2418,6 +2350,18 @@ function f_map_details_views_default_views() {
   $handler->display->display_options['fields']['field_map_data_state']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_map_data_state']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_map_data_state']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_class'] = 'gmap-title';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -2427,8 +2371,36 @@ function f_map_details_views_default_views() {
   $handler->display->display_options['fields']['body']['element_class'] = 'gmap-body';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
-  $handler->display->display_options['path'] = 'gmap';
-  $export['data_on_map'] = $view;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'map_data' => 'map_data',
+  );
+  /* Filter criterion: Content: Tags (field_content_tags) */
+  $handler->display->display_options['filters']['field_content_tags_tid']['id'] = 'field_content_tags_tid';
+  $handler->display->display_options['filters']['field_content_tags_tid']['table'] = 'field_data_field_content_tags';
+  $handler->display->display_options['filters']['field_content_tags_tid']['field'] = 'field_content_tags_tid';
+  $handler->display->display_options['filters']['field_content_tags_tid']['value'] = array(
+    7 => '7',
+    48 => '48',
+    17 => '17',
+    43 => '43',
+  );
+  $handler->display->display_options['filters']['field_content_tags_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_content_tags_tid']['vocabulary'] = 'tags';
+  $handler->display->display_options['path'] = 'donation-test-map';
+  $export['svg_maps'] = $view;
 
   return $export;
 }
