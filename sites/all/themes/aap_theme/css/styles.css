@@ -1489,7 +1489,7 @@ a.header-button:hover {
   z-index: 1000;
   top: 120px;
   left: 10px;
-  text-indent: -1000px;
+  text-indent: -10000px;
   height: 0px;
 }
 
@@ -1501,7 +1501,7 @@ a.header-button:hover {
   z-index: 1000;
   top: 120px;
   right: 25px;
-  text-indent: -1000px;
+  text-indent: -10000px;
   height: 0px;
 }
 
