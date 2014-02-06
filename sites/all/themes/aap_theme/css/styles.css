@@ -374,34 +374,33 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .right-navigation-class .pane-content ul {
   padding: 0;
-  margin-right: 7%;
 }
 .right-navigation-class .pane-content .right-nav_1-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0% 0% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 0% #0b6182;
 }
 .right-navigation-class .pane-content .right-nav_2-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0% 12.5% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 12.5% #0b6182;
 }
 .right-navigation-class .pane-content .right-nav_3-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0% 25% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 25% #0b6182;
 }
 .right-navigation-class .pane-content .right-nav_4-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0 37.5% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 37.5% #0b6182;
 }
 .right-navigation-class .pane-content .right-nav_5-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0 50% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 50% #0b6182;
 }
 .right-navigation-class .pane-content .right-nav_6-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0 62.5% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 62.5% #0b6182;
 }
 .right-navigation-class .pane-content .right-nav_7-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0 75% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 75% #0b6182;
 }
 .right-navigation-class .pane-content .right-nav_8-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0 87.5% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 87.5% #0b6182;
 }
 .right-navigation-class .pane-content .right-nav_9-class {
-  background: url("../images/action_call.gif") no-repeat scroll 0 100% #0b6182;
+  background: url("../images/action_call.gif") no-repeat scroll 0px 100% #0b6182;
 }
 .right-navigation-class .pane-content li {
   list-style: none;
@@ -416,10 +415,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   padding-left: 4em;
   font-size: 1em;
   display: block;
-  border-radius: 0.4em;
 }
 .right-navigation-class .pane-content a:hover {
-  color: #EFF743;
+  color: yellow;
+  background-position-x: -5px;
 }
 
 .sliding-region-class,
@@ -828,9 +827,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-right-default-class .pane-content ul {
   padding: 0;
   margin: 0;
-}
-.aap-right-default-class li {
-  margin-left: 12%;
 }
 
 .aap-tag-cloud .pane-content {
