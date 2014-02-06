@@ -42,6 +42,10 @@
 /* AAP colour sechme */
 /* AAP body measurements */
 /* AAP font style */
+a {
+  font-family: Arial, sans-serif;
+}
+
 /*******************************************************************************
  * _layout.scss
  *
@@ -150,7 +154,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-search-class #aap-contact a {
   color: #F17E00;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   text-decoration: none;
@@ -162,7 +166,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-search-class .aap-login a {
   color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-decoration: none;
   font-size: 1.1em;
@@ -193,7 +197,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Arial, sans-serif;
   font-size: 1.57em;
   padding: 1%;
 }
@@ -203,7 +207,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background: url(../images/bullet_img.png) no-repeat left 7px;
 }
 .aap-main-content a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -212,7 +216,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 .aap-poll-class a {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Arial, sans-serif !important;
   color: #333333 !important;
   font-size: 0.596em !important;
 }
@@ -251,7 +255,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   display: none;
 }
 .aap-poll-class h4 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -269,7 +273,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   color: #fffcf9;
   background: none;
   color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-decoration: none;
   border-left: none;
@@ -340,7 +344,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-footer-class .pane-title {
   color: white;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Arial, sans-serif;
   font-size: 1.5em;
   text-shadow: 1px 1px #0e1e2b;
 }
@@ -408,7 +412,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .right-navigation-class .pane-content a {
   color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-decoration: none;
   padding-left: 4em;
@@ -430,7 +434,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Arial, sans-serif;
   font-size: 1.57em;
   padding: 1%;
   font-size: 1.75em;
@@ -445,7 +449,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-question-class .pane-content .aap-question-item-class .views-field-field-question {
   color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-decoration: none;
   font-size: 1em;
@@ -462,7 +466,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-question-class .pane-content .aap-question-item-class .views-field-field-answer,
 .aap-question-class .pane-content .aap-question-item-class .views-field-view-node {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -484,7 +488,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .footer-bottom .pane-title {
   float: left;
   color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-decoration: none;
   font-size: 1.25em;
@@ -532,7 +536,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   display: none;
 }
 .aap-story-class p {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
   color: #333333 !important;
   font-size: 0.87em !important;
 }
@@ -553,7 +557,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-call-us-class .content a, .aap-call-us-class .title a {
   color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-decoration: none;
 }
@@ -588,7 +592,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   line-height: 12px;
 }
 .aap-sidebars-videos .node__title a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #0A6181;
   font-size: 0.56em;
   font-weight: bold;
@@ -623,7 +627,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Arial, sans-serif;
   font-size: 1.57em;
   padding: 1%;
   background: rgba(255, 255, 255, 0.7);
@@ -663,13 +667,13 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class .pane-content .search-result p {
   font-size: 15px !important;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-page-content-class .pane-content .node-teaser p a,
 .aap-page-content-class .pane-content .node--full p a,
 .aap-page-content-class .pane-content .node-full p a,
 .aap-page-content-class .pane-content .search-result p a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -692,23 +696,23 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class .view-aap-media .view-content p {
   font-size: 15px !important;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-page-content-class .view-aap-media .view-content p a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
 }
 .aap-page-content-class .view-aap-media a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-size: 12px;
 }
 .aap-page-content-class .view-aap-media .video-title {
   width: 200px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   color: #f17e00;
   text-decoration: none;
   font-size: 12px;
@@ -721,21 +725,21 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   padding-bottom: 2%;
 }
 .aap-page-content-class .links.links--inline li > a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   color: #0a6181;
   font-size: 14px;
   text-decoration: none;
 }
 .aap-page-content-class .field__items a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   color: #0088CC;
   font-size: 14px;
   text-decoration: none;
 }
 .aap-page-content-class p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -746,7 +750,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-breadcrumb {
   text-align: left;
   background-color: #1e7fa2;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Arial, sans-serif;
   padding: 0.5em 0.6em 2em;
   margin-top: 7%;
 }
@@ -796,10 +800,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-donation-right-class .pane-content p {
   font-size: 15px !important;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-donation-right-class .pane-content p a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -833,10 +837,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-tag-cloud .pane-content p {
   font-size: 15px !important;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-tag-cloud .pane-content p a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -845,7 +849,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin: 0.3em;
 }
 .aap-tag-cloud .pane-content .tagclouds-term a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   text-decoration: none;
   font-weight: bold;
 }
@@ -885,7 +889,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   padding-right: 7px;
 }
 .panelizer-service-links a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   color: #0A6181;
   font-size: 14px;
@@ -931,10 +935,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class #candidate-detail-page p {
   font-size: 15px !important;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-page-content-class #candidate-detail-page p a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -954,7 +958,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin-top: 0.3em;
 }
 .aap-page-content-class #candidate-detail-page .pane-content .field__label {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -963,14 +967,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   width: 200px;
 }
 .aap-page-content-class #candidate-detail-page .pane-content .field__item {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
 }
 .aap-page-content-class #candidate-detail-page .pane-content .field__item a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: normal;
@@ -1001,10 +1005,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class #constituency-detail-page p {
   font-size: 15px !important;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-page-content-class #constituency-detail-page p a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -1013,7 +1017,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin-top: 2%;
 }
 .aap-page-content-class #constituency-detail-page .pane-content .field__label {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -1022,7 +1026,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   width: 200px;
 }
 .aap-page-content-class #constituency-detail-page .pane-content .field__item {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -1036,7 +1040,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin: 0;
 }
 .aap-page-content-class #constituency-detail-page .aap-candidate-info a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: normal;
@@ -1048,7 +1052,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-size: 1.3em;
 }
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-candidate-name {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -1117,7 +1121,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .postal-code, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .country-name,
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .locality, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .region,
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
@@ -1129,7 +1133,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-weight: bold;
 }
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email a, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: normal;
@@ -1239,7 +1243,7 @@ body.front div.panels-top-row h2.pane-title {
 }
 .aap-search-class .aap-language .form-select {
   border: 1px solid #d7d7d7;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   height: 1.9em;
   padding: 0.1em;
   width: 77px;
@@ -1261,7 +1265,7 @@ body.front div.panels-top-row h2.pane-title {
   padding: 6px 7px;
   width: 90%;
   height: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 0.8em;
 }
 
@@ -1276,7 +1280,7 @@ form .form-submit {
   color: white;
   border: 0 none;
   color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-decoration: none;
   text-shadow: 1px 1px 1b1c28;
@@ -1301,7 +1305,7 @@ form .form-submit:hover {
 .aap-main-content .more-link a,
 .aap-main-content .donate-link a {
   color: #fffcf9;
-  font-family: Franklin Gothic Demi Cond;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1.2em;
   text-decoration: none;
   text-shadow: 1px 1px 1b1c28;
@@ -1338,7 +1342,7 @@ input[type=radio], input.radio {
 }
 
 .form-item label, .form-actions label {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
