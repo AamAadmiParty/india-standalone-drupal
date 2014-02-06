@@ -43,7 +43,6 @@
      
      	form .form-submit {
       background: url("../images/search.png") no-repeat scroll 50% 50% $orange;
-      border-radius: 0;
     	padding:0;
     	margin:0;
     	width: 30px;
@@ -89,7 +88,6 @@
     input[type="text"] {
     padding: 6px 7px;
     width: 90%;
-    border-radius: 0 0 0 0;
     height: 13px;
     font-family:  $font-family-group;
     font-size: 0.8em;
@@ -107,7 +105,6 @@ form .form-submit {
         padding: 0.3em 1em;
         text-align: center;
         background: $button-color;
-        border-radius: 0.3em;
         color: white;
         border: 0 none;
         @include aap_font_style;
@@ -129,7 +126,6 @@ form .form-submit {
  				left:0;
  				background:  #F28300;
  				padding: 0.3em 1em;
- 				@include border-radius(0.3em);
  				a {
 					@include aap_font_style ;
 				 text-shadow:1px 1px 1b1c28;
@@ -148,13 +144,11 @@ form .form-submit {
   color: white;
   font-weight: bold;
   margin: 0em 1em;
- 	@include border-radius(0.3em);
  }
 
 .form-item textarea {
       width: 100%;
       border: 1px solid $border-color;
-      border-radius: 0.5em;
 }
 
 
@@ -190,7 +184,6 @@ input[type=radio], input.radio {
           margin-right: 0.5%;
           
           background: none repeat scroll 0 0 $slide_dot;
-          @include border-radius(0.2em);
           color: white;
           font-family: arial;
           font-size: 0.6em;
@@ -337,7 +330,6 @@ div.home-box-bottom {
 .node-readmore {
   background:  #F28300;
   padding: 0.3em 1em;
-  @include border-radius(0.3em);
   a {
     color: white !important;
    text-shadow:1px 1px 1b1c28;
@@ -350,7 +342,6 @@ div.home-box-bottom {
 a.header-button {
   float: right;
   background:  #F28300;
-  @include border-radius(0.2em);
   color: white !important;
   text-shadow:1px 1px 1b1c28;
   margin-left: 1em;

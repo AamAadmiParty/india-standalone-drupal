@@ -157,7 +157,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-search-class .aap-login {
   background: #f17e00;
-  border-radius: 0.3em;
   padding: 3px 5px;
   margin-left: 9px;
 }
@@ -228,7 +227,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-main-content.latest-news-class .pane-content .view-header img {
   width: 296px;
   border: 1px solid #D7D7D7;
-  border-radius: 0.4em 0.4em 0.4em 0.4em;
 }
 
 .aap-donation-class .pane-content,
@@ -281,7 +279,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   padding: 0.4em 1em;
 }
 .header-menu .sf-menu.sf-style-default a:hover {
-  border-radius: 0.4em;
   color: #191919;
   text-align: center;
   text-shadow: 1px 1px #98C26E;
@@ -301,7 +298,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   text-align: center;
   color: #F17E00;
   background: white;
-  border-radius: 0.4em;
   margin-left: 2em;
   text-shadow: none;
 }
@@ -445,7 +441,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background: #f7f7f7;
   margin-top: 2%;
   border: 1px solid #d7d7d7;
-  border-radius: 0.4em;
   width: 48%;
 }
 .aap-question-class .pane-content .aap-question-item-class .views-field-field-question {
@@ -546,7 +541,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   clear: both;
   float: right;
   background: url(../images/call-us.png) no-repeat 2% center #1e7fa2;
-  border-radius: 0.4em;
   width: 48%;
   margin-top: 1%;
   height: 73px;
@@ -635,7 +629,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background: rgba(255, 255, 255, 0.7);
   color: #333;
   border: 1px solid white;
-  border-radius: 0;
   font-size: 2em;
   text-align: left;
   margin: 0;
@@ -751,7 +744,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 .aap-breadcrumb {
-  border-radius: 0.2em 0.2em 0 0;
   text-align: left;
   background-color: #1e7fa2;
   font-family: Franklin Gothic Demi Cond;
@@ -1230,7 +1222,6 @@ body.front div.panels-top-row h2.pane-title {
  ******************************************************************************/
 .aap-search-class form .form-submit {
   background: url("../images/search.png") no-repeat scroll 50% 50% #f17e00;
-  border-radius: 0;
   padding: 0;
   margin: 0;
   width: 30px;
@@ -1269,7 +1260,6 @@ body.front div.panels-top-row h2.pane-title {
 .aap-search-class input[type="text"] {
   padding: 6px 7px;
   width: 90%;
-  border-radius: 0 0 0 0;
   height: 13px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
@@ -1283,7 +1273,6 @@ form .form-submit {
   padding: 0.3em 1em;
   text-align: center;
   background: #f36c01;
-  border-radius: 0.3em;
   color: white;
   border: 0 none;
   color: #fffcf9;
@@ -1306,11 +1295,6 @@ form .form-submit:hover {
   left: 0;
   background: #F28300;
   padding: 0.3em 1em;
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  -ms-border-radius: 0.3em;
-  -o-border-radius: 0.3em;
-  border-radius: 0.3em;
 }
 .aap-main-content form .form-submit a,
 .aap-main-content .read-more a,
@@ -1336,17 +1320,11 @@ form .form-submit:hover {
   color: white;
   font-weight: bold;
   margin: 0em 1em;
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  -ms-border-radius: 0.3em;
-  -o-border-radius: 0.3em;
-  border-radius: 0.3em;
 }
 
 .form-item textarea {
   width: 100%;
   border: 1px solid #d7d7d7;
-  border-radius: 0.5em;
 }
 
 label {
@@ -1381,11 +1359,6 @@ input[type=radio], input.radio {
   margin-left: 0.5%;
   margin-right: 0.5%;
   background: none repeat scroll 0 0 #999999;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  -ms-border-radius: 0.2em;
-  -o-border-radius: 0.2em;
-  border-radius: 0.2em;
   color: white;
   font-family: arial;
   font-size: 0.6em;
@@ -1521,11 +1494,6 @@ div.home-box-bottom li.last img {
 .node-readmore {
   background: #F28300;
   padding: 0.3em 1em;
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  -ms-border-radius: 0.3em;
-  -o-border-radius: 0.3em;
-  border-radius: 0.3em;
 }
 .node-readmore a {
   color: white !important;
@@ -1538,11 +1506,6 @@ div.home-box-bottom li.last img {
 a.header-button {
   float: right;
   background: #F28300;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  -ms-border-radius: 0.2em;
-  -o-border-radius: 0.2em;
-  border-radius: 0.2em;
   color: white !important;
   text-shadow: 1px 1px 1b1c28;
   margin-left: 1em;
