@@ -146,9 +146,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  }
 .aap-main-content {
 
-      margin-left: 3%;
-      margin-right: 3%;
-
     .pane-title {
       @include aap_content_title;
     }
@@ -718,13 +715,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
   .aap-donation-right-class-fix {
     position:fixed;
-    margin-left: 2.1% !important;
     top: 35px;
   }
   .aap-donation-right-class {
-  	margin-left: 12%;
     z-index: 10;
-    width: 200px;
 
     .pane-content {
     	@include aap_content_item;

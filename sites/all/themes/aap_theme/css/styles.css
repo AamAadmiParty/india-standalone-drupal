@@ -185,12 +185,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   color: red;
 }
 
-.aap-main-content {
-  margin-left: 3%;
-  margin-right: 3%;
-}
 .aap-main-content .pane-title {
-  border: 1px solid;
   text-align: center;
   background-color: #61a220;
   margin-bottom: 2%;
@@ -426,7 +421,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 .aap-question-class .pane-title {
-  border: 1px solid;
   text-align: center;
   background-color: #61a220;
   margin-bottom: 2%;
@@ -622,7 +616,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   width: 100% !important;
 }
 .aap-page-content-class .pane-title {
-  border: 1px solid;
   text-align: center;
   background-color: #61a220;
   margin-bottom: 2%;
@@ -776,14 +769,11 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
 .aap-donation-right-class-fix {
   position: fixed;
-  margin-left: 2.1% !important;
   top: 35px;
 }
 
 .aap-donation-right-class {
-  margin-left: 12%;
   z-index: 10;
-  width: 200px;
 }
 .aap-donation-right-class .pane-content {
   border: 1px solid white;
