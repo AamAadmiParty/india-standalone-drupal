@@ -3,7 +3,6 @@
     attach: function(context) {
 
       $("path").click(function() {
-        $(".view-svg-maps").append("<div id=popup_content></div>");
         var clickedState = $(this).attr('id');
 
         // if user click on foreign or water region, then do not show popup
@@ -13,15 +12,19 @@
       });
 
       function getData(clickedState) {
+        // Completely remove jquery dialog, when clicked on other state, so that
+        // it does not create duplicate dialog on screen
+         jQuery('#map_data').dialog('destroy').remove();
+        $(".view-svg-maps").append("<div id=map_data></div>");
         var state_div = $( "div.gmap-state:contains("+clickedState+")" );
         if (state_div.length != 0) {
           var title = state_div.siblings('.gmap-title').html();
           var data = state_div.siblings('.gmap-body').html();
-          $( "#popup_content" ).html(data).dialog({ title: title});
+          $( "#map_data" ).html(data).dialog({ title: title});
         }
         // if content is not added
         else {
-          $( "#popup_content" ).html("Data yet to be added").dialog({ title: 'Data yet to be added'});
+          $( "#map_data" ).html("Data yet to be added").dialog({ title: 'Data yet to be added'});
         }
       }
     }
