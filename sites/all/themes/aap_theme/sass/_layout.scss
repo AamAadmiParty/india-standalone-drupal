@@ -28,7 +28,7 @@ body.admin-menu #admin-menu {
   width: 100%;
 }
 
-.center-content-rows > .inside {
+.panels-flexible-row > .inside {
   @include aap_body_measurements;
 }
 
@@ -364,33 +364,33 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       					margin: 0 2%;
       			}
               .right-nav_1-class {
-                   background: url('../images/action_call.gif') no-repeat scroll 0% 0% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 0% $nav_blue;
              }
 
               .right-nav_2-class {
-                   background: url('../images/action_call.gif') no-repeat scroll 0% 12.5% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 12.5% $nav_blue;
              }
 
              .right-nav_3-class  {
-                   background: url('../images/action_call.gif') no-repeat scroll 0% 25% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 25% $nav_blue;
              }
               .right-nav_4-class {
-                   background: url('../images/action_call.gif') no-repeat scroll 0 37.5% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 37.5% $nav_blue;
              }
               .right-nav_5-class{
-                   background: url('../images/action_call.gif') no-repeat scroll 0 50% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 50% $nav_blue;
              }
               .right-nav_6-class {
-                   background: url('../images/action_call.gif') no-repeat scroll 0 62.5% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 62.5% $nav_blue;
              }
               .right-nav_7-class {
-                   background: url('../images/action_call.gif') no-repeat scroll 0 75% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 75% $nav_blue;
              }
               .right-nav_8-class {
-                   background: url('../images/action_call.gif') no-repeat scroll 0 87.5% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 87.5% $nav_blue;
              }
               .right-nav_9-class {
-                   background: url('../images/action_call.gif') no-repeat scroll 0 100% $nav_blue;
+                   background: url('../images/action_call.gif') no-repeat scroll 0px 100% $nav_blue;
              }
 
              li {
@@ -404,10 +404,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
          				padding-left: 4em;
          				font-size: 1em;
           			display: block;
-          			border-radius: $border-radius;
-
           			&:hover {
-          				color: #EFF743;
+          				color: yellow;
+                  background-position-x: -5px;
           			}
       				}
          }
@@ -600,7 +599,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       display: none;
     }
     padding-bottom: 6px;
-    /* .field--name-body {
+    .field--name-body {
       max-height: 100px;
       p {
         font-size: 0.7em;
@@ -610,7 +609,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     .field--name-field-ct-video {
       float: right;
     width: 50%;
-    } */
+    }
   }
 }
 
@@ -751,10 +750,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   		.pane-content ul {
    	 		padding: 0;
    	 		margin:0;
-			}
-
-			li {
-				margin-left: 12%;
 			}
   }
 
