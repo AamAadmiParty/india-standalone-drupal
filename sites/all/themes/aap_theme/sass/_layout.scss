@@ -610,21 +610,23 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
 
 .aap-page-content-class {
-
+  margin-top: 1em;
       .aap-news-item-class .field__items img {
   		  width: 100% !important ;
   		 }
        .pane-title {
             @include aap_content_title;
-            border : none;
-            border-radius: 0 0 0.2em 0.2em;
+            background: rgba(255,255,255,0.7);
+            color: #333;
+            border: 1px solid white;
+            border-radius: 0;
             font-size: 2em;
             text-align: left;
             margin: 0;
       	 }
 
        .pane-content {
-        	margin-top : 4%;
+        	margin-top: 1em;
           .node-teaser,
         	.node--full,
           .node-full,
