@@ -195,7 +195,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-main-content .pane-title {
   border: 1px solid;
-  border-radius: 0.3em;
   text-align: center;
   background-color: #61a220;
   margin-bottom: 2%;
@@ -437,7 +436,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
 .aap-question-class .pane-title {
   border: 1px solid;
-  border-radius: 0.3em;
   text-align: center;
   background-color: #61a220;
   margin-bottom: 2%;
@@ -626,12 +624,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   width: 50%;
 }
 
+.aap-page-content-class {
+  margin-top: 1em;
+}
 .aap-page-content-class .aap-news-item-class .field__items img {
   width: 100% !important;
 }
 .aap-page-content-class .pane-title {
   border: 1px solid;
-  border-radius: 0.3em;
   text-align: center;
   background-color: #61a220;
   margin-bottom: 2%;
@@ -639,24 +639,24 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Franklin Gothic Demi Cond;
   font-size: 1.57em;
   padding: 1%;
-  border: none;
-  border-radius: 0 0 0.2em 0.2em;
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
+  border: 1px solid white;
+  border-radius: 0;
   font-size: 2em;
   text-align: left;
   margin: 0;
 }
 .aap-page-content-class .pane-content {
-  margin-top: 4%;
+  margin-top: 1em;
 }
 .aap-page-content-class .pane-content .node-teaser,
 .aap-page-content-class .pane-content .node--full,
 .aap-page-content-class .pane-content .node-full,
 .aap-page-content-class .pane-content .search-result {
-  border: 1px solid;
-  border-radius: 0.3em;
-  border-color: #d7d7d7;
+  border: 1px solid white;
   text-align: left;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2%;
   padding: 0 2%;
   color: #333333;
@@ -689,11 +689,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-weight: bold;
 }
 .aap-page-content-class .view-aap-media .view-content {
-  border: 1px solid;
-  border-radius: 0.3em;
-  border-color: #d7d7d7;
+  border: 1px solid white;
   text-align: left;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2%;
   padding: 0 2%;
   color: #333333;
@@ -797,11 +795,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   width: 200px;
 }
 .aap-donation-right-class .pane-content {
-  border: 1px solid;
-  border-radius: 0.3em;
-  border-color: #d7d7d7;
+  border: 1px solid white;
   text-align: left;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2%;
   padding: 0 2%;
   color: #333333;
@@ -839,11 +835,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 .aap-tag-cloud .pane-content {
-  border: 1px solid;
-  border-radius: 0.3em;
-  border-color: #d7d7d7;
+  border: 1px solid white;
   text-align: left;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2%;
   padding: 0 2%;
   color: #333333;
@@ -936,11 +930,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   *
  *******************************************************************/
 .aap-page-content-class #candidate-detail-page {
-  border: 1px solid;
-  border-radius: 0.3em;
-  border-color: #d7d7d7;
+  border: 1px solid white;
   text-align: left;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2%;
   padding: 0 2%;
   color: #333333;
@@ -1008,11 +1000,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   *
  *******************************************************************/
 .aap-page-content-class #constituency-detail-page {
-  border: 1px solid;
-  border-radius: 0.3em;
-  border-color: #d7d7d7;
+  border: 1px solid white;
   text-align: left;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 2%;
   padding: 0 2%;
   color: #333333;
