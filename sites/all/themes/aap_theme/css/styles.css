@@ -688,6 +688,17 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   text-decoration: none;
   font-weight: bold;
 }
+.aap-page-content-class .pane-content .node-teaser a,
+.aap-page-content-class .pane-content .node--full a,
+.aap-page-content-class .pane-content .node-full a,
+.aap-page-content-class .pane-content .search-result a {
+  color: #0a6181;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+.aap-page-content-class .pane-content .search-result__info {
+  display: none;
+}
 .aap-page-content-class .view-aap-media .view-content {
   border: 1px solid;
   border-radius: 0.3em;
