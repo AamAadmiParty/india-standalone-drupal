@@ -640,14 +640,16 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
         	.search-result {
        		 	@include aap_content_item;
        		 	padding: 1% 2%;
+       		}
+          .search-result {
+            .search-result__info {
+            display: none;
+            }
             a {
               color:#0a6181;
               font-size:1.3em;
               text-decoration:none;
             }
-       		}
-          .search-result__info {
-            display: none;
           }
        }
 
