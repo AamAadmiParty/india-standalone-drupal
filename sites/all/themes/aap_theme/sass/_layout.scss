@@ -1035,8 +1035,13 @@ body.front div.panels-top-row h2.pane-title {
   fill:#FFFFFF;
   cursor: auto;
 }
-.view-svg-maps .view-content {
-  display: none;
+.view-svg-maps {
+  .view-header {
+    overflow: hidden;
+  }
+  .view-content {
+     display: none;
+  }
 }
 
 .ui-dialog-titlebar {

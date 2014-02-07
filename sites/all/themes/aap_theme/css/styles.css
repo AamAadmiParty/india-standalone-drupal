@@ -1188,6 +1188,9 @@ body.front div.panels-top-row h2.pane-title {
   cursor: auto;
 }
 
+.view-svg-maps .view-header {
+  overflow: hidden;
+}
 .view-svg-maps .view-content {
   display: none;
 }
