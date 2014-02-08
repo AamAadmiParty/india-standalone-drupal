@@ -1045,10 +1045,17 @@ body.front div.panels-top-row h2.pane-title {
 }
 
 .ui-dialog-titlebar {
-  background: green;
+  background: rgb(31, 165, 13);
   color: white;
-  font-family: arial;
+  font-family: verdana;
 }
 .ui-dialog-content {
   background: yellowgreen;
+}
+
+#map_data {
+  font-family: verdana;
+  p {
+    font-family: verdana;
+  }
 }
