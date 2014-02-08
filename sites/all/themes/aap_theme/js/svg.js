@@ -1,23 +1,25 @@
 (function ($, Drupal, window, document, undefined) {
   Drupal.behaviors.svg_image = {
     attach: function(context) {
-
       // Change the color of state, which has content
       $("path").each(function() {
         var state = $(this).attr('id');
-        if (hasData(state)) {
-          $(this).css("fill", "#9B9595");
+        if (state != 'foreign_1_' &&state != 'water_1_') {
+        if (!hasData(state)) {
+          $(this).css("fill", "#CCC");
         }
+      }
       });
 
       // Adds hover effect on states
       $("path").hover(function() {
         var hoveredState = $(this).attr('id');
+        $.cookie('state_color',$(this).attr('fill') );
         // if user hover on foreign or water region, then do not show popup
         if (hoveredState != 'foreign_1_' && hoveredState != 'water_1_') {
           if (hasData(hoveredState)) {
             var styles = {
-              fill : "#666",
+              fill : "#E9BAA8",
               cursor: "pointer"
             };
             $( this ).css( styles );
@@ -28,7 +30,7 @@
         if (hoveredState != 'foreign_1_' && hoveredState != 'water_1_') {
           if (hasData(hoveredState)) {
             var styles = {
-              fill : "#9B9595",
+              fill : $.cookie('state_color'),
               cursor: "auto"
             };
             $( this ).css( styles );
@@ -68,11 +70,11 @@
           var title = state_div.siblings('.gmap-title').html();
           var data = state_div.siblings('.gmap-body').html();
           $( "#map_data" ).html(data).dialog({
-            height: 140,
             modal: true,
             title: title,
-            width: 400,
-            height: 400,
+            width: 750,
+            height: 520,
+            resizable:false,
           });dialog({ });
         }
       }

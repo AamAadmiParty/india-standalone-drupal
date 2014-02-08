@@ -1196,13 +1196,20 @@ body.front div.panels-top-row h2.pane-title {
 }
 
 .ui-dialog-titlebar {
-  background: green;
+  background: #1fa50d;
   color: white;
-  font-family: arial;
+  font-family: verdana;
 }
 
 .ui-dialog-content {
   background: yellowgreen;
+}
+
+#map_data {
+  font-family: verdana;
+}
+#map_data p {
+  font-family: verdana;
 }
 
 /*******************************************************************************
