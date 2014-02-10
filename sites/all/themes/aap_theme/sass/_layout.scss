@@ -28,25 +28,30 @@ body.admin-menu #admin-menu {
   width: 100%;
 }
 
-.panels-flexible-row > .inside {
+.center-content-rows > .inside {
   @include aap_body_measurements;
 }
 
 .top-header-row {
-	padding: 0;
-  width: 1000px !important;
-  left: 0px;
-  padding-left: 8em;
-  padding-right: 10em;
-  margin-left: 0em;
-  z-index: 9990;
-  background: white;
-  border-bottom: 1px solid green;
-  position: fixed;
-  top: 0;
+  padding-bottom:0;
+  > .inside {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1000;
+    border-bottom:1px solid #008000;
+  }
+  .top-header-region {
+    > .inside {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    }
+  }
 }
-.aap-header-search-class > .inside {
-}
+
 .main-menu-row {
 	//box-shadow: 0 -16px 33px #CCCCCC;
 	height: 57px;
@@ -346,7 +351,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
         	}
         }
     }
-
+ .panels-flexible-region-aap_layout-right_navigation {
+  float: right;
+ }
  .right-navigation-class {
       width : 100%;
 
@@ -354,7 +361,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
       			ul {
       					padding:0;
-      					margin-right: 7%;
+      					margin: 0 2%;
       			}
               .right-nav_1-class {
                    background: url('../images/action_call.gif') no-repeat scroll 0% 0% $nav_blue;
@@ -592,8 +599,8 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     .read-more {
       display: none;
     }
-    padding-bottom: 3px;
-    .field--name-body {
+    padding-bottom: 6px;
+    /* .field--name-body {
       max-height: 100px;
       p {
         font-size: 0.7em;
@@ -603,7 +610,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     .field--name-field-ct-video {
       float: right;
     width: 50%;
-    }
+    } */
   }
 }
 
@@ -1018,4 +1025,37 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 body.front div.panels-top-row,
 body.front div.panels-top-row h2.pane-title {
   margin-top: 0px;
+}
+
+
+//  styles for map showing content in pop up
+
+#water_1_,
+#foreign_1_:hover {
+  fill:#FFFFFF;
+  cursor: auto;
+}
+.view-svg-maps {
+  .view-header {
+    overflow: hidden;
+  }
+  .view-content {
+     display: none;
+  }
+}
+
+.ui-dialog-titlebar {
+  background: rgb(31, 165, 13);
+  color: white;
+  font-family: verdana;
+}
+.ui-dialog-content {
+  background: yellowgreen;
+}
+
+#map_data {
+  font-family: verdana;
+  p {
+    font-family: verdana;
+  }
 }

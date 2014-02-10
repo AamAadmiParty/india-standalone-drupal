@@ -160,203 +160,51 @@ function f_map_details_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map_data-field_map_data_location'.
-  $fields['node-map_data-field_map_data_location'] = array(
+  // Exported field: 'node-map_data-field_map_data_state'.
+  $fields['node-map_data-field_map_data_state'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_map_data_location',
-      'foreign keys' => array(),
+      'field_name' => 'field_map_data_state',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
       'indexes' => array(
-        'lid' => array(
-          0 => 'lid',
+        'tid' => array(
+          0 => 'tid',
         ),
       ),
       'locked' => '0',
-      'module' => 'location_cck',
+      'module' => 'taxonomy',
       'settings' => array(
-        'gmap_macro' => '[gmap ]',
-        'gmap_marker' => 'green',
-        'location_settings' => array(
-          'display' => array(
-            'hide' => array(
-              'additional' => 'additional',
-              'city' => 0,
-              'coords' => 0,
-              'country' => 0,
-              'country_name' => 0,
-              'locpick' => 0,
-              'map_link' => 0,
-              'name' => 'name',
-              'postal_code' => 'postal_code',
-              'province' => 0,
-              'province_name' => 'province_name',
-              'street' => 'street',
-            ),
-          ),
-          'form' => array(
-            'fields' => array(
-              'additional' => array(
-                'collect' => '0',
-                'default' => '',
-                'weight' => '6',
-              ),
-              'city' => array(
-                'collect' => '1',
-                'default' => '',
-                'weight' => '8',
-              ),
-              'country' => array(
-                'collect' => '1',
-                'default' => 'us',
-                'weight' => '14',
-              ),
-              'locpick' => array(
-                'collect' => '2',
-                'weight' => '20',
-              ),
-              'name' => array(
-                'collect' => '0',
-                'default' => '',
-                'weight' => '2',
-              ),
-              'postal_code' => array(
-                'collect' => '0',
-                'default' => '',
-                'weight' => '12',
-              ),
-              'province' => array(
-                'collect' => '1',
-                'default' => '',
-                'weight' => '10',
-                'widget' => 'autocomplete',
-              ),
-              'street' => array(
-                'collect' => '0',
-                'default' => '',
-                'weight' => '4',
-              ),
-            ),
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'vocab_states',
+            'parent' => '0',
           ),
         ),
       ),
       'translatable' => '0',
-      'type' => 'location',
+      'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
       'bundle' => 'map_data',
-      'default_value' => array(
-        0 => array(
-          'location_settings' => array(
-            'display' => array(
-              'hide' => array(
-                'additional' => 'additional',
-                'city' => 'city',
-                'coords' => 0,
-                'country' => 'country',
-                'country_name' => 0,
-                'locpick' => 0,
-                'map_link' => 0,
-                'name' => 'name',
-                'postal_code' => 'postal_code',
-                'province' => 'province',
-                'province_name' => 'province_name',
-                'street' => 'street',
-              ),
-            ),
-            'form' => array(
-              'fields' => array(
-                'additional' => array(
-                  'collect' => '0',
-                  'default' => '',
-                  'weight' => '6',
-                ),
-                'city' => array(
-                  'collect' => '0',
-                  'default' => '',
-                  'weight' => '8',
-                ),
-                'country' => array(
-                  '#parents' => array(
-                    0 => 'field_map_data_location',
-                    1 => 'und',
-                    2 => 0,
-                  ),
-                  'collect' => '1',
-                  'default' => 'us',
-                  'weight' => '14',
-                ),
-                'delete_location' => array(
-                  'default' => FALSE,
-                  'nodiff' => TRUE,
-                ),
-                'is_primary' => array(
-                  'default' => 0,
-                ),
-                'latitude' => array(
-                  'default' => 0,
-                ),
-                'lid' => array(
-                  'default' => FALSE,
-                ),
-                'locpick' => array(
-                  '#parents' => array(
-                    0 => 'field_map_data_location',
-                    1 => 'und',
-                    2 => 0,
-                  ),
-                  'collect' => 1,
-                  'default' => FALSE,
-                  'nodiff' => TRUE,
-                  'weight' => '20',
-                ),
-                'longitude' => array(
-                  'default' => 0,
-                ),
-                'name' => array(
-                  'collect' => '0',
-                  'default' => '',
-                  'weight' => '2',
-                ),
-                'postal_code' => array(
-                  'collect' => '0',
-                  'default' => '',
-                  'weight' => '12',
-                ),
-                'province' => array(
-                  'collect' => '0',
-                  'default' => '',
-                  'weight' => '10',
-                  'widget' => 'autocomplete',
-                ),
-                'source' => array(
-                  'default' => 0,
-                ),
-                'street' => array(
-                  'collect' => '0',
-                  'default' => '',
-                  'weight' => '4',
-                ),
-              ),
-            ),
-          ),
-          'country' => 'in',
-          'locpick' => array(
-            'user_latitude' => '',
-            'user_longitude' => '',
-          ),
-        ),
-      ),
+      'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Provide geographical location',
+      'description' => 'Type state name',
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'location_cck',
+          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'location_default',
+          'type' => 'taxonomy_term_reference_link',
           'weight' => 1,
         ),
         'teaser' => array(
@@ -367,17 +215,20 @@ function f_map_details_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_map_data_location',
-      'label' => 'Location',
-      'required' => 0,
+      'field_name' => 'field_map_data_state',
+      'label' => 'State',
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'location_cck',
-        'settings' => array(),
-        'type' => 'location',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'autocomplete_path' => 'taxonomy/autocomplete',
+          'size' => 60,
+        ),
+        'type' => 'taxonomy_autocomplete',
         'weight' => '41',
       ),
     ),
@@ -386,10 +237,10 @@ function f_map_details_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Location');
   t('Please provide tags related with this content.');
-  t('Provide geographical location');
+  t('State');
   t('Tags');
+  t('Type state name');
 
   return $fields;
 }

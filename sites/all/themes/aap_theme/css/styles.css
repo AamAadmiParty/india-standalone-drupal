@@ -69,24 +69,28 @@ body.admin-menu #admin-menu {
   width: 100%;
 }
 
-.panels-flexible-row > .inside {
+.center-content-rows > .inside {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .top-header-row {
-  padding: 0;
-  width: 1000px !important;
-  left: 0px;
-  padding-left: 8em;
-  padding-right: 10em;
-  margin-left: 0em;
-  z-index: 9990;
-  background: white;
-  border-bottom: 1px solid green;
+  padding-bottom: 0;
+}
+.top-header-row > .inside {
   position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
+  background: #FFFFFF;
+  z-index: 1000;
+  border-bottom: 1px solid #008000;
+}
+.top-header-row .top-header-region > .inside {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
 }
 
 .main-menu-row {
@@ -369,12 +373,16 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin-bottom: 0.5em;
 }
 
+.panels-flexible-region-aap_layout-right_navigation {
+  float: right;
+}
+
 .right-navigation-class {
   width: 100%;
 }
 .right-navigation-class .pane-content ul {
   padding: 0;
-  margin-right: 7%;
+  margin: 0 2%;
 }
 .right-navigation-class .pane-content .right-nav_1-class {
   background: url("../images/action_call.gif") no-repeat scroll 0% 0% #0b6182;
@@ -601,21 +609,21 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   text-decoration: none;
 }
 .aap-sidebars-videos .node__content {
-  padding-bottom: 3px;
+  padding-bottom: 6px;
+  /* .field--name-body {
+    max-height: 100px;
+    p {
+      font-size: 0.7em;
+      font-family: arial;
+    }
+  }
+  .field--name-field-ct-video {
+    float: right;
+  width: 50%;
+  } */
 }
 .aap-sidebars-videos .node__content .read-more {
   display: none;
-}
-.aap-sidebars-videos .node__content .field--name-body {
-  max-height: 100px;
-}
-.aap-sidebars-videos .node__content .field--name-body p {
-  font-size: 0.7em;
-  font-family: arial;
-}
-.aap-sidebars-videos .node__content .field--name-field-ct-video {
-  float: right;
-  width: 50%;
 }
 
 .aap-page-content-class .aap-news-item-class .field__items img {
@@ -1172,6 +1180,36 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 body.front div.panels-top-row,
 body.front div.panels-top-row h2.pane-title {
   margin-top: 0px;
+}
+
+#water_1_,
+#foreign_1_:hover {
+  fill: #FFFFFF;
+  cursor: auto;
+}
+
+.view-svg-maps .view-header {
+  overflow: hidden;
+}
+.view-svg-maps .view-content {
+  display: none;
+}
+
+.ui-dialog-titlebar {
+  background: #1fa50d;
+  color: white;
+  font-family: verdana;
+}
+
+.ui-dialog-content {
+  background: yellowgreen;
+}
+
+#map_data {
+  font-family: verdana;
+}
+#map_data p {
+  font-family: verdana;
 }
 
 /*******************************************************************************
