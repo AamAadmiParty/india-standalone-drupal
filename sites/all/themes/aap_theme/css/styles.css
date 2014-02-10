@@ -54,6 +54,31 @@ a {
  * components should not be placed here and should instead be kept with the
  * relevant SCSS for that component.
  ******************************************************************************/
+/*******************************************************************************
+ * _base.scss
+
+ * Base styles define the default look for HTML and common Drupal elements.
+ *
+ * These rules will generally be made up of element selectors for HTML elements
+ * such as headings, paragraphs and lists. Common Drupal elements such as form
+ * items, collapsible fieldsets and messages should be included in this partial.
+ *
+ * The styleguide module (http://drupal.org/project/styleguide) gives you a good
+ * overview of Drupals common elements for styling. By setting a solid baseline
+ * before adding any more specific customisations you ensure that as any new
+ * features are added they will be correctly styled without any extra work.
+ ******************************************************************************/
+/* AAP colour sechme */
+/* AAP body measurements */
+/* AAP font style */
+a {
+  font-family: Arial, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
 body.admin-menu #admin-menu {
   z-index: 9999;
 }
@@ -155,7 +180,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-search-class #aap-contact a {
   color: #F17E00;
   font-family: Arial, sans-serif;
-  font-size: 0.9em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -167,9 +191,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-search-class .aap-login a {
   color: #fffcf9;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
   text-decoration: none;
-  font-size: 1.1em;
 }
 .aap-search-class .aap-login:hover {
   background: #fcac33;
@@ -198,7 +220,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin-bottom: 2%;
   color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 1.57em;
   padding: 1%;
 }
 .aap-main-content .view-content .views-row {
@@ -208,7 +229,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-main-content a {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -218,7 +238,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-poll-class a {
   font-family: Arial, sans-serif !important;
   color: #333333 !important;
-  font-size: 0.596em !important;
 }
 .aap-poll-class .node__title {
   line-height: 0.8em;
@@ -256,7 +275,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-poll-class h4 {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -274,7 +292,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background: none;
   color: #fffcf9;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
   text-decoration: none;
   border-left: none;
   border-top: none;
@@ -345,13 +362,11 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-footer-class .pane-title {
   color: white;
   font-family: Arial, sans-serif;
-  font-size: 1.5em;
   text-shadow: 1px 1px #0e1e2b;
 }
 .aap-footer-class .pane-content a {
   color: white;
   font-family: arial;
-  font-size: 0.75em;
   text-decoration: none;
 }
 .aap-footer-class .pane-content a:hover {
@@ -413,10 +428,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .right-navigation-class .pane-content a {
   color: #fffcf9;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
   text-decoration: none;
-  padding-left: 4em;
-  font-size: 1em;
+  padding-left: 4.5em;
+  font-size: 0.9em;
+  font-weight: bold;
   display: block;
 }
 .right-navigation-class .pane-content a:hover {
@@ -435,9 +450,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin-bottom: 2%;
   color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 1.57em;
   padding: 1%;
-  font-size: 1.75em;
   margin: 1% 27%;
   padding: 1%;
 }
@@ -450,9 +463,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-question-class .pane-content .aap-question-item-class .views-field-field-question {
   color: #fffcf9;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
   text-decoration: none;
-  font-size: 1em;
   padding: 1% 2% 3%;
   background: url("../images/arrow_down.png") no-repeat right 3% center;
   color: #666;
@@ -467,11 +478,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-question-class .pane-content .aap-question-item-class .views-field-field-answer,
 .aap-question-class .pane-content .aap-question-item-class .views-field-view-node {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
-  font-size: 1em;
   color: #333;
   padding: 1% 2% 2% 2%;
   display: none;
@@ -489,9 +498,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   float: left;
   color: #fffcf9;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
   text-decoration: none;
-  font-size: 1.25em;
   margin-right: 1%;
 }
 .footer-bottom .pane-content li {
@@ -538,7 +545,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-story-class p {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
   color: #333333 !important;
-  font-size: 0.87em !important;
 }
 
 .aap-call-us-class {
@@ -553,12 +559,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-call-us-class .content, .aap-call-us-class .title {
   padding-left: 15%;
   padding-top: 1%;
-  font-size: 22px;
 }
 .aap-call-us-class .content a, .aap-call-us-class .title a {
   color: #fffcf9;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
   text-decoration: none;
 }
 .aap-call-us-class .content a:hover, .aap-call-us-class .title a:hover {
@@ -568,7 +572,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .copyright-content {
   color: white;
   font-family: arial;
-  font-size: 14px;
   margin-top: 14%;
 }
 
@@ -594,7 +597,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-sidebars-videos .node__title a {
   font-family: Arial, sans-serif;
   color: #0A6181;
-  font-size: 0.56em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -608,8 +610,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   max-height: 100px;
 }
 .aap-sidebars-videos .node__content .field--name-body p {
-  font-size: 0.7em;
-  font-family: arial;
+  font-family: Arial, sans-serif;
 }
 .aap-sidebars-videos .node__content .field--name-field-ct-video {
   float: right;
@@ -628,12 +629,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin-bottom: 2%;
   color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 1.57em;
   padding: 1%;
   background: rgba(255, 255, 255, 0.7);
   color: #333;
   border: 1px solid white;
-  font-size: 2em;
   text-align: left;
   margin: 0;
 }
@@ -658,14 +657,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class .pane-content .search-result .node__title a {
   color: #000;
   text-decoration: none;
-  font-size: 1.2em;
   line-height: 1em;
 }
 .aap-page-content-class .pane-content .node-teaser p,
 .aap-page-content-class .pane-content .node--full p,
 .aap-page-content-class .pane-content .node-full p,
 .aap-page-content-class .pane-content .search-result p {
-  font-size: 15px !important;
   font-style: normal;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
@@ -690,11 +687,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class .view-aap-media .view-content .node__title a {
   color: #000;
   text-decoration: none;
-  font-size: 1.2em;
   line-height: 1em;
 }
 .aap-page-content-class .view-aap-media .view-content p {
-  font-size: 15px !important;
   font-style: normal;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
@@ -708,14 +703,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
-  font-size: 12px;
 }
 .aap-page-content-class .view-aap-media .video-title {
   width: 200px;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   color: #f17e00;
   text-decoration: none;
-  font-size: 12px;
 }
 .aap-page-content-class .view-aap-media td {
   width: 260px;
@@ -728,23 +721,19 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Arial, sans-serif;
   font-weight: bold;
   color: #0a6181;
-  font-size: 14px;
   text-decoration: none;
 }
 .aap-page-content-class .field__items a {
   font-family: Arial, sans-serif;
   font-weight: bold;
   color: #0088CC;
-  font-size: 14px;
   text-decoration: none;
 }
 .aap-page-content-class p {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
-  font-size: 1em;
 }
 
 .aap-breadcrumb {
@@ -757,7 +746,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-breadcrumb .breadcrumb p, .aap-breadcrumb a {
   float: left;
   font-family: arial;
-  font-size: 0.9em;
   font-weight: normal;
   margin: 0;
   color: #8fe0ff;
@@ -794,11 +782,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-donation-right-class .pane-content .node__title a {
   color: #000;
   text-decoration: none;
-  font-size: 1.2em;
   line-height: 1em;
 }
 .aap-donation-right-class .pane-content p {
-  font-size: 15px !important;
   font-style: normal;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
@@ -831,11 +817,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-tag-cloud .pane-content .node__title a {
   color: #000;
   text-decoration: none;
-  font-size: 1.2em;
   line-height: 1em;
 }
 .aap-tag-cloud .pane-content p {
-  font-size: 15px !important;
   font-style: normal;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
@@ -892,7 +876,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Arial, sans-serif;
   font-weight: bold;
   color: #0A6181;
-  font-size: 14px;
   text-decoration: none;
 }
 
@@ -929,11 +912,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class #candidate-detail-page .node__title a {
   color: #000;
   text-decoration: none;
-  font-size: 1.2em;
   line-height: 1em;
 }
 .aap-page-content-class #candidate-detail-page p {
-  font-size: 15px !important;
   font-style: normal;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
@@ -948,7 +929,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   width: 500px;
 }
 .aap-page-content-class #candidate-detail-page .candidate-info-region .candidate-name .field__item {
-  font-size: 1.2em;
   font-weight: bold;
 }
 .aap-page-content-class #candidate-detail-page .candidate-info-region .field__items {
@@ -959,7 +939,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-page-content-class #candidate-detail-page .pane-content .field__label {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -968,7 +947,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-page-content-class #candidate-detail-page .pane-content .field__item {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -999,11 +977,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class #constituency-detail-page .node__title a {
   color: #000;
   text-decoration: none;
-  font-size: 1.2em;
   line-height: 1em;
 }
 .aap-page-content-class #constituency-detail-page p {
-  font-size: 15px !important;
   font-style: normal;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
@@ -1018,7 +994,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-page-content-class #constituency-detail-page .pane-content .field__label {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -1027,7 +1002,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-page-content-class #constituency-detail-page .pane-content .field__item {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -1048,23 +1022,17 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class #constituency-detail-page .aap-constituency-row {
   border-bottom: 1px solid #d7d7d7;
 }
-.aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-candidate-consituency {
-  font-size: 1.3em;
-}
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-candidate-name {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
   color: #f17e00;
-  font-size: 1.2em;
   font-weight: bold;
 }
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .pane-title {
   background: none;
   color: #333333;
-  font-size: 1.6em;
   padding-left: 0;
 }
 .aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-shortlisted-candidate {
@@ -1110,7 +1078,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .pane-title {
   background: none;
   color: #333333;
-  font-size: 1.6em;
   padding-left: 0;
   margin-left: 3.5em;
 }
@@ -1122,11 +1089,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .locality, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .region,
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
-  font-size: 1.1em;
 }
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel {
   margin-top: 0.5px;
@@ -1138,7 +1103,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   text-decoration: none;
   font-weight: normal;
   font-weight: bold;
-  font-size: 1.2em;
 }
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email abbr[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email acronym[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel abbr[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel acronym[title] {
   border-bottom-width: 0;
@@ -1255,7 +1219,8 @@ body.front div.panels-top-row h2.pane-title {
   float: left;
   margin-top: 1%;
 }
-.aap-search-class .aap-header-content,
+.aap-search-class font
+.aap-header-content,
 .aap-search-class .container-inline {
   padding-right: 9px;
   float: left;
@@ -1266,7 +1231,6 @@ body.front div.panels-top-row h2.pane-title {
   width: 90%;
   height: 13px;
   font-family: Arial, sans-serif;
-  font-size: 0.8em;
 }
 
 .aap-contact-form-class .form-submit {
@@ -1281,7 +1245,6 @@ form .form-submit {
   border: 0 none;
   color: #fffcf9;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
   text-decoration: none;
   text-shadow: 1px 1px 1b1c28;
   cursor: pointer;
@@ -1306,7 +1269,6 @@ form .form-submit:hover {
 .aap-main-content .donate-link a {
   color: #fffcf9;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.2em;
   text-decoration: none;
   text-shadow: 1px 1px 1b1c28;
 }
@@ -1343,12 +1305,10 @@ input[type=radio], input.radio {
 
 .form-item label, .form-actions label {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 0.87em;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
   vertical-align: middle;
-  font-size: 0.9em;
   color: #333333;
   font-weight: normal;
 }
@@ -1365,7 +1325,6 @@ input[type=radio], input.radio {
   background: none repeat scroll 0 0 #999999;
   color: white;
   font-family: arial;
-  font-size: 0.6em;
   font-weight: bold;
   text-align: center;
   width: 12px;
@@ -1408,7 +1367,6 @@ input[type=radio], input.radio {
 }
 .pager li.pager__item a {
   color: #0a6181;
-  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }

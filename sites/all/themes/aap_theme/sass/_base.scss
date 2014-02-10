@@ -55,12 +55,10 @@ $font-family-sans-serif: Arial, sans-serif;
 @mixin aap_font_style {
       color: $white;
       font-family: $font-family-serif;
-      font-size: 1.2em;
       text-decoration: none;
 }
 @mixin aap_font_body {
       font-family: $font-family-serif;
-      font-size: 0.87em;
       text-decoration: none;
       font-weight:normal;
       color: #333333;
@@ -71,7 +69,6 @@ $font-family-sans-serif: Arial, sans-serif;
       margin-bottom: 2%;
       color:#fff;
       font-family: $font-family-sans-serif;
-      font-size: 1.57em;
       padding: 1%;
 }
 
@@ -87,12 +84,10 @@ $font-family-sans-serif: Arial, sans-serif;
       .node__title a {
        		color:#000;
        		text-decoration:none; 
-       		font-size:1.2em;
        		line-height: 1em;
        	}
       
       p {
-      	font-size: 15px !important;
       	font-style:normal;
       	font-family: $font-family-serif !important;
 
@@ -108,7 +103,6 @@ $font-family-sans-serif: Arial, sans-serif;
 
 			background: none;
       color: #333333;
-      font-size: 1.6em;
       padding-left: 0;
  }
  

@@ -7,9 +7,10 @@
  * relevant SCSS for that component.
  ******************************************************************************/
 @import "compass/css3/images";
+@import "base";
 
 html {
-  font-family: $base-font-family;
+  font-size: $base-font-size;
 }
 
 body.admin-menu #admin-menu {
@@ -113,7 +114,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 	a {
 			color: #F17E00;
     	font-family: $font-family-sans-serif;
-    	font-size: 0.9em;
     	font-weight: bold;
     	text-decoration: none;
 		}
@@ -125,7 +125,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
 			a {
 				 @include aap_font_style;
-				 font-size: 1.1em;
 			}
 				&:hover {
       	  	background:  $button-color-hover;
@@ -175,7 +174,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  		a {
     	 font-family: $font-family-sans-serif !important;
        color: #333333 !important;
-       font-size: 0.596em !important;
       }
      .node__title {
      	line-height: 0.8em;
@@ -311,32 +309,25 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  }
 
  .aap-footer-class {
-
-        width : 100%;
+      width : 100%;
       .pane-title {
           color: white;
           font-family: $font-family-sans-serif;
-          font-size: 1.5em;
           text-shadow:1px 1px #0e1e2b;
           }
 
        .pane-content {
-
        		a {
           color: white;
           font-family: arial;
-          font-size: 0.75em;
           text-decoration: none;
-
           &:hover {
           		color : #a7f657;
           	}
          	}
-
          li {
           	list-style : none;
           }
-
          ul {
           	padding: 0;
           }
@@ -353,9 +344,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  }
  .right-navigation-class {
       width : 100%;
-
       .pane-content {
-
       			ul {
       					padding:0;
       					margin: 0 2%;
@@ -398,8 +387,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
       			a {
          				@include aap_font_style;
-         				padding-left: 4em;
-         				font-size: 1em;
+         				padding-left: 4.5em;
+         				font-size: 0.9em;
+                font-weight: bold;
           			display: block;
           			&:hover {
           				color: yellow;
@@ -420,7 +410,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   .aap-question-class {
       .pane-title {
         @include aap_content_title;
-        font-size: 1.75em;
         margin: 1% 27%;
         padding: 1%;
      }
@@ -434,7 +423,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
           .views-field-field-question {
            @include aap_font_style;
-           font-size: 1em;
           	padding: 1% 2% 3%;
            	background: url("../images/arrow_down.png") no-repeat right 3% center;
            	color:#666;
@@ -451,7 +439,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           .views-field-field-answer,
           .views-field-view-node  {
             	@include aap_font_body;
-							font-size: 1em;
 							color:#333;
 							padding: 1% 2% 2% 2%;
             	display:none;
@@ -478,7 +465,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       .pane-title {
           float:left;
           @include aap_font_style;
-          font-size: 1.25em;
           margin-right:1%;
         }
 
@@ -530,7 +516,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 		p {
 			 font-family: $font-family-serif !important;
        color: #333333 !important;
-       font-size: 0.87em !important;
 		}
 }
  .aap-call-us-class {
@@ -545,7 +530,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  			.content, .title {
  			   padding-left: 15%;
  			   padding-top: 1%;
- 			   font-size: 22px;
  			   a{
  						@include aap_font_style;
  						&:hover {color: #EFF743;}
@@ -556,7 +540,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  .copyright-content {
  			color: white;
     font-family: arial;
-    font-size: 14px;
     margin-top: 14%;
  }
 
@@ -583,7 +566,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     a {
       font-family:$font-family-sans-serif;
       color:#0A6181;
-      font-size: 0.56em;
       font-weight:bold;
       text-decoration:none;
     }
@@ -597,8 +579,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     .field--name-body {
       max-height: 100px;
       p {
-        font-size: 0.7em;
-        font-family: arial;
+        font-family: $font-family-sans-serif;
       }
     }
     .field--name-field-ct-video {
@@ -622,7 +603,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
             background: rgba(255,255,255,0.7);
             color: #333;
             border: 1px solid white;
-            font-size: 2em;
             text-align: left;
             margin: 0;
       	 }
@@ -647,14 +627,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        			font-family: $font-family-sans-serif;
          		color:#f17e00;
          		text-decoration:none;
-         		font-size: 12px;
        		 }
        		.video-title {
        			width:200px;
        			font-family: $font-family-serif;
          		color:#f17e00;
          		text-decoration:none;
-         		font-size: 12px;
        		}
        		td {
        			width: 260px;
@@ -669,7 +647,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       			font-family:$font-family-sans-serif;
       			font-weight:bold;
       			color:#0a6181;
-      			font-size:14px;
       			text-decoration:none;
       		}
       }
@@ -678,13 +655,11 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       			font-family:$font-family-sans-serif;
       			font-weight:bold;
       			color: #0088CC;
-      			font-size:14px;
       			text-decoration:none;
       }
 
       p {
       	@include aap_font_body;
-      	font-size: 1em;
       }
 
   }
@@ -699,7 +674,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       .breadcrumb p, a {
       	float: left;
     		font-family: arial;
-    		font-size: 0.9em;
     		font-weight: normal;
     		margin: 0;
       	color:#8fe0ff;
@@ -801,7 +775,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  					font-family:$font-family-sans-serif;
       		font-weight:bold;
       		color:#0A6181;
-      		font-size:14px;
       		text-decoration:none;
  		}
 
@@ -837,7 +810,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        						width: 500px;
 
     							.candidate-name	.field__item {
-											font-size: 1.2em;
     									font-weight: bold;
             				}
             			.field__items {
@@ -908,12 +880,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           }
          .constituency-candidate-region {
          			.aap-candidate-consituency {
-         					font-size: 1.3em;
          			}
          			.aap-candidate-name {
          				@include aap_font_body;
          				color:#f17e00;
-         				font-size: 1.2em;
          				font-weight: bold;
          			}
          			.pane-title {
@@ -982,7 +952,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        			.locality,.region,
        			.tel,.email {
        					@include aap_font_body;
-       					font-size: 1.1em;
        			}
        			.email,.tel {
        				margin-top: 0.5px;
@@ -990,7 +959,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        				a {
        						@include aap_content_link;
        						font-weight: bold;
-       						font-size: 1.2em;
        				}
 
        				abbr[title], acronym[title] {
