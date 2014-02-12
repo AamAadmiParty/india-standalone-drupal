@@ -61,7 +61,7 @@ function f_content_and_user_roles_field_default_fields() {
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -137,7 +137,7 @@ function f_content_and_user_roles_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -947,9 +947,11 @@ Otherwise, if your content is very specific to one of your interest groups above
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'og_ui',
-          'settings' => array(),
-          'type' => 'og_list_default',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
           'weight' => '3',
         ),
         'teaser' => array(
@@ -999,9 +1001,13 @@ Otherwise, if your content is very specific to one of your interest groups above
       ),
       'widget' => array(
         'active' => 0,
-        'module' => 'og',
-        'settings' => array(),
-        'type' => 'og_complex',
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
         'weight' => '5',
       ),
       'workbench_access_field' => 0,
