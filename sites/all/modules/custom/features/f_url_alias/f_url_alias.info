@@ -1,0 +1,15 @@
+name = Url Alias
+core = 7.x
+package = AAP Features
+version = 7.x-1.0
+project = f_url_alias
+dependencies[] = ctools
+dependencies[] = pathauto
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = pathauto_node_basic_page_pattern
+features[variable][] = pathauto_node_blog_pattern
+features[variable][] = pathauto_node_event_pattern
+features[variable][] = pathauto_node_news_pattern
+features[variable][] = pathauto_node_pattern
