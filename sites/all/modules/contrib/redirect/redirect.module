@@ -1152,7 +1152,7 @@ function redirect_can_redirect() {
 
     if ($_SERVER['SCRIPT_NAME'] != $GLOBALS['base_path'] . 'index.php') {
       // Do not redirect if the root script is not /index.php.
-      //$can_redirect = FALSE;
+      $can_redirect = FALSE;
     }
     elseif (!empty($_POST)) {
       // Do not redirect if this is a post request with data.
