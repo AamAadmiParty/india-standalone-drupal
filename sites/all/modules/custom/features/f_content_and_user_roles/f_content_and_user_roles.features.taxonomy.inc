@@ -25,13 +25,5 @@ function f_content_and_user_roles_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'tags' => array(
-      'name' => 'Tags',
-      'machine_name' => 'tags',
-      'description' => 'Free tagging for content of any kind',
-      'hierarchy' => '0',
-      'module' => 'taxonomy',
-      'weight' => '0',
-    ),
   );
 }
