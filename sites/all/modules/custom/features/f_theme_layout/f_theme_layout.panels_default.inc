@@ -195,6 +195,27 @@ function f_theme_layout_default_panels_mini() {
     $pane->locks = array();
     $display->content['new-4'] = $pane;
     $display->panels['footer_3'][0] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
+    $pane->panel = 'footer_3';
+    $pane->type = 'block';
+    $pane->subtype = 'aap_tweaks-apachesolr_search_block';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-5'] = $pane;
+    $display->panels['footer_3'][1] = 'new-5';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -290,7 +311,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu-menu-social-connectors';
@@ -308,10 +329,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['center'][0] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['center'][0] = 'new-6';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-7';
     $pane->panel = 'copyright';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -335,8 +356,8 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['copyright'][0] = 'new-6';
+    $display->content['new-7'] = $pane;
+    $display->panels['copyright'][0] = 'new-7';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -385,8 +406,8 @@ function f_theme_layout_default_panels_mini() {
       ),
       'center' => array(
         'type' => 'region',
-        'title' => 'Header Search',
-        'width' => '54.305874610040995',
+        'title' => 'Header Content',
+        'width' => 54.305874610040995,
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-header-search-class',
@@ -414,7 +435,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-7';
+    $pane->pid = 'new-8';
     $pane->panel = 'center';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -439,10 +460,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-7'] = $pane;
-    $display->panels['center'][0] = 'new-7';
+    $display->content['new-8'] = $pane;
+    $display->panels['center'][0] = 'new-8';
     $pane = new stdClass();
-    $pane->pid = 'new-8';
+    $pane->pid = 'new-9';
     $pane->panel = 'center';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -463,10 +484,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['center'][1] = 'new-8';
+    $display->content['new-9'] = $pane;
+    $display->panels['center'][1] = 'new-9';
     $pane = new stdClass();
-    $pane->pid = 'new-9';
+    $pane->pid = 'new-10';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'search-form';
@@ -487,10 +508,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['center'][2] = 'new-9';
+    $display->content['new-10'] = $pane;
+    $display->panels['center'][2] = 'new-10';
     $pane = new stdClass();
-    $pane->pid = 'new-10';
+    $pane->pid = 'new-11';
     $pane->panel = 'header_logo';
     $pane->type = 'page_logo';
     $pane->subtype = 'page_logo';
@@ -508,8 +529,8 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['header_logo'][0] = 'new-10';
+    $display->content['new-11'] = $pane;
+    $display->panels['header_logo'][0] = 'new-11';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -539,7 +560,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-11';
+    $pane->pid = 'new-12';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'superfish-1';
@@ -560,10 +581,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['center'][0] = 'new-11';
+    $display->content['new-12'] = $pane;
+    $display->panels['center'][0] = 'new-12';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-11';
+  $display->title_pane = 'new-12';
   $mini->display = $display;
   $export['header_menu'] = $mini;
 
@@ -591,7 +612,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-12';
+    $pane->pid = 'new-13';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu-menu-right-navigation';
@@ -612,10 +633,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['center'][0] = 'new-12';
+    $display->content['new-13'] = $pane;
+    $display->panels['center'][0] = 'new-13';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-12';
+  $display->title_pane = 'new-13';
   $mini->display = $display;
   $export['right_navigation'] = $mini;
 
