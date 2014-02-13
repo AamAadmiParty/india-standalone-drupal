@@ -688,8 +688,8 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   text-decoration: none;
   font-weight: bold;
 }
-.aap-page-content-class .pane-content .search-result .search-result__info {
-  display: none;
+.aap-page-content-class .pane-content .search-result {
+  list-style: none;
 }
 .aap-page-content-class .pane-content .search-result a {
   color: #0a6181;
