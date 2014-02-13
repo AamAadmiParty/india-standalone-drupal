@@ -132,11 +132,6 @@ function aap_tweaks_block_info() {
 			'info' => t ( 'Donation Block' ),
 			'cache' => DRUPAL_NO_CACHE
 	);
-	$blocks ['apachesolr_search_block'] = array (
-			'info' => t ( 'Apache Solr Search' ),
-			'cache' => DRUPAL_NO_CACHE
-	);
-
 	return $blocks;
 }
 /**
@@ -150,17 +145,6 @@ function aap_tweaks_block_view($delta = '') {
 
 		$block = array (
 			'subject' => t ( 'Make a Donation' ),
-			'content' => $form
-			);
-	}
-	elseif ($delta == 'apachesolr_search_block') {
-		module_load_include('inc', 'apachesolr', 'apachesolr_search.pages');
-		$search_page = apachesolr_search_page_load('core_search');
-		$form = drupal_get_form ( 'apachesolr_search_custom_page_search_form', $search_page );
-		$form = drupal_render ( $form );
-
-		$block = array (
-			'subject' => t ( 'Search' ),
 			'content' => $form
 			);
 	}
