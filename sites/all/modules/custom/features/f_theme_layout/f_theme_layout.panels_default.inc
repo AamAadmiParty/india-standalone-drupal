@@ -198,13 +198,18 @@ function f_theme_layout_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-5';
     $pane->panel = 'footer_3';
-    $pane->type = 'block';
-    $pane->subtype = 'aap_tweaks-apachesolr_search_block';
+    $pane->type = 'apachesolr_form';
+    $pane->subtype = 'apachesolr_form';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
+      'path_type' => 'custom',
+      'path' => 'search/site/',
+      'override_prompt' => 0,
+      'prompt' => '',
+      'show_keys' => 1,
+      'override_title' => 1,
+      'override_title_text' => 'Search',
     );
     $pane->cache = array();
     $pane->style = array(
