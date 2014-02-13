@@ -30,7 +30,6 @@ features[field][] = node-event-body
 features[field][] = node-event-field_content_tags
 features[field][] = node-event-field_event_date
 features[field][] = node-event-field_location
-features[field][] = node-event-og_group_ref
 features[field][] = node-news-body
 features[field][] = node-news-field_content_tags
 features[field][] = node-news-field_news_links
