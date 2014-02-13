@@ -13,7 +13,9 @@ function f_wysiwyg_image_user_default_permissions() {
   // Exported permission: administer imce.
   $permissions['administer imce'] = array(
     'name' => 'administer imce',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'imce',
   );
 
@@ -22,6 +24,8 @@ function f_wysiwyg_image_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Approver' => 'Content Approver',
+      'Content Author' => 'Content Author',
     ),
     'module' => 'filter',
   );
@@ -30,10 +34,9 @@ function f_wysiwyg_image_user_default_permissions() {
   $permissions['use text format restricted_html'] = array(
     'name' => 'use text format restricted_html',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Content Approver' => 'Content Approver',
       'Content Author' => 'Content Author',
-      'Party Leardership' => 'Party Leardership',
-      'Professional Author' => 'Professional Author',
     ),
     'module' => 'filter',
   );
