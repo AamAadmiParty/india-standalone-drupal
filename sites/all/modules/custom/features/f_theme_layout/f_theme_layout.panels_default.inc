@@ -204,7 +204,7 @@ function f_theme_layout_default_panels_mini() {
     $pane->access = array();
     $pane->configuration = array(
       'path_type' => 'custom',
-      'path' => 'search/site/',
+      'path' => 'search/site',
       'override_prompt' => 0,
       'prompt' => '',
       'show_keys' => 1,
