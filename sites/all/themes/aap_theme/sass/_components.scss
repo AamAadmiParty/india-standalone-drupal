@@ -38,9 +38,9 @@
  *       also good candidates for components.
  ******************************************************************************/
  @import "compass/css3/border-radius";
- 
+
 .aap-search-class {
-     
+
      	form .form-submit {
       background: url("../images/search.png") no-repeat scroll 50% 50% $orange;
       border-radius: 0;
@@ -48,12 +48,12 @@
     	margin:0;
     	width: 30px;
     	height: 1.3em;
-    	
+
       &:hover {
         	opacity: 0.4;
       	}
  		}
-     
+
 		.aap-language {
     	.form-item label,
     	.form-actions label {
@@ -71,21 +71,21 @@
    			color:#858484;
    			background: white;
       }
- 		}	
-     	   
+ 		}
+
 		.container-inline div {
  			display:block;
  			float:left;
  			margin-top:1%;
  		}
- 	
-		.aap-header-content, 
+
+		.aap-header-content,
 			.container-inline {
  			padding-right:9px;
  			float:left;
  			margin-top:1%;
  		}
- 
+
     input[type="text"] {
     padding: 6px 7px;
     width: 90%;
@@ -93,18 +93,18 @@
     height: 13px;
     font-family:  $font-family-group;
     font-size: 0.8em;
-   } 
+   }
 }
- 
- 
+
+
  .aap-contact-form-class {
   .form-submit {
       float: right;
   }
  }
- 
+
 form .form-submit {
-        padding: 0.3em 1em;
+        padding: 0em 0.9em;
         text-align: center;
         background: $button-color;
         border-radius: 0.3em;
@@ -113,12 +113,12 @@ form .form-submit {
         @include aap_font_style;
         text-shadow:1px 1px 1b1c28;
         cursor:pointer;
-        
+
         &:hover {
         	background: $button-color-hover;
         }
  }
- 
+
  .aap-main-content {
  		form .form-submit,
  		.read-more,
@@ -134,13 +134,13 @@ form .form-submit {
 					@include aap_font_style ;
 				 text-shadow:1px 1px 1b1c28;
 				}
-				
+
 				&:hover {
       	  	background:  $button-color-hover;
       		}
  			}
  }
- 
+
  .header-donate-link {
   background: #F28300;
   padding: 0.3em 1em;
@@ -180,7 +180,7 @@ input[type=radio], input.radio {
     .form-checkboxes .form-item, .form-radios .form-item {
           float: left;
           width: 33%;
-     }   
+     }
 }
 
 .sliding-region-class {
@@ -188,7 +188,7 @@ input[type=radio], input.radio {
           float : left;
           margin-left: 0.5%;
           margin-right: 0.5%;
-          
+
           background: none repeat scroll 0 0 $slide_dot;
           @include border-radius(0.2em);
           color: white;
@@ -204,28 +204,28 @@ input[type=radio], input.radio {
 		margin: auto;
     width: 17%;
     float:right;
-    
+
     .active {
     	.views-content-counter {
     		 background: none repeat scroll 0 0  $slide_dot_active;
     	}
     }
-    
-}  
+
+}
 
 /*********************************************************************
-  
+
     * Layout for dafault page
     *
     *******************************************************************/
-    
-    
+
+
 .aap-donation-right-class {
     .form-checkboxes .form-item, .form-radios .form-item {
           float: left;
           width: 50%;
-     }   
-     
+     }
+
      form .form-submit {
      		bottom: 9px;
     		left: 36px;
@@ -234,31 +234,31 @@ input[type=radio], input.radio {
      }
      .form-item label, .form-actions label {
      		padding: 7% 1%;
-     }  
+     }
 }
 
 .pager {
     float: right;
-    
-    li.pager__item { 
+
+    li.pager__item {
     		background:url(../images/pager__item_sep.png) right 10px no-repeat;
     		font-weight: normal;
-    		
-    		a{ 
+
+    		a{
     			color:#0a6181;
-    			font-size:14px; 
+    			font-size:14px;
     			font-family:Arial, Helvetica, sans-serif;
     			text-decoration:none;
-    			
+
     			&:hover {
     				 color:#000000;
     			}
     		}
     	}
-    	
+
    li.pager__item--last {
    		background:url(../images/pager__item_sep.png) left 10px no-repeat;
-   }		  			  	
+   }
 }
 
 .surveymonkey-drupal-popup {
