@@ -40,10 +40,14 @@
  * features are added they will be correctly styled without any extra work.
  ******************************************************************************/
 /* AAP colour sechme */
+h2 {
+  font-size: 64px;
+}
+
 /* AAP body measurements */
 /* AAP font style */
 a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
 }
 
 /*******************************************************************************
@@ -69,10 +73,14 @@ a {
  * features are added they will be correctly styled without any extra work.
  ******************************************************************************/
 /* AAP colour sechme */
+h2 {
+  font-size: 64px;
+}
+
 /* AAP body measurements */
 /* AAP font style */
 a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
 }
 
 html {
@@ -179,7 +187,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-search-class #aap-contact a {
   color: #F17E00;
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
@@ -219,7 +227,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   padding: 1%;
 }
 .aap-main-content .view-content .views-row {
@@ -236,7 +244,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 .aap-poll-class a {
-  font-family: Arial, sans-serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
   color: #333333 !important;
 }
 .aap-poll-class .node__title {
@@ -361,7 +369,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-footer-class .pane-title {
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-shadow: 1px 1px #0e1e2b;
 }
 .aap-footer-class .pane-content a {
@@ -449,7 +457,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   padding: 1%;
   margin: 1% 27%;
   padding: 1%;
@@ -595,7 +603,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   line-height: 12px;
 }
 .aap-sidebars-videos .node__title a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #0A6181;
   font-weight: bold;
   text-decoration: none;
@@ -610,7 +618,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   max-height: 100px;
 }
 .aap-sidebars-videos .node__content .field--name-body p {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
 }
 .aap-sidebars-videos .node__content .field--name-field-ct-video {
   float: right;
@@ -628,7 +636,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background-color: #61a220;
   margin-bottom: 2%;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   padding: 1%;
   background: rgba(255, 255, 255, 0.7);
   color: #333;
@@ -670,7 +678,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-page-content-class .pane-content .node--full p a,
 .aap-page-content-class .pane-content .node-full p a,
 .aap-page-content-class .pane-content .search-result p a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -694,13 +702,13 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-page-content-class .view-aap-media .view-content p a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
 }
 .aap-page-content-class .view-aap-media a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
 }
@@ -718,13 +726,13 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   padding-bottom: 2%;
 }
 .aap-page-content-class .links.links--inline li > a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   font-weight: bold;
   color: #0a6181;
   text-decoration: none;
 }
 .aap-page-content-class .field__items a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   font-weight: bold;
   color: #0088CC;
   text-decoration: none;
@@ -739,7 +747,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-breadcrumb {
   text-align: left;
   background-color: #1e7fa2;
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   padding: 0.5em 0.6em 2em;
   margin-top: 7%;
 }
@@ -789,7 +797,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-donation-right-class .pane-content p a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -824,7 +832,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-tag-cloud .pane-content p a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -833,7 +841,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin: 0.3em;
 }
 .aap-tag-cloud .pane-content .tagclouds-term a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: bold;
 }
@@ -873,7 +881,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   padding-right: 7px;
 }
 .panelizer-service-links a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   font-weight: bold;
   color: #0A6181;
   text-decoration: none;
@@ -919,7 +927,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-page-content-class #candidate-detail-page p a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -952,7 +960,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   color: #333333;
 }
 .aap-page-content-class #candidate-detail-page .pane-content .field__item a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: normal;
@@ -984,7 +992,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 .aap-page-content-class #constituency-detail-page p a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: bold;
@@ -1014,7 +1022,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin: 0;
 }
 .aap-page-content-class #constituency-detail-page .aap-candidate-info a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: normal;
@@ -1098,7 +1106,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-weight: bold;
 }
 .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email a, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel a {
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
   font-weight: normal;
@@ -1207,7 +1215,7 @@ body.front div.panels-top-row h2.pane-title {
 }
 .aap-search-class .aap-language .form-select {
   border: 1px solid #d7d7d7;
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   height: 1.9em;
   padding: 0.1em;
   width: 77px;
@@ -1230,7 +1238,7 @@ body.front div.panels-top-row h2.pane-title {
   padding: 6px 7px;
   width: 90%;
   height: 13px;
-  font-family: Arial, sans-serif;
+  font-family: "Droid Sans", Arial, sans-serif;
 }
 
 .aap-contact-form-class .form-submit {

@@ -16,15 +16,15 @@
 $base-font-size:   16px; // The font size set on the root html element.
 $base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
 
-$h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
+$h1-font-size: 4    * $base-font-size;
+$h2-font-size: 4  * $base-font-size;
 $h3-font-size: 1.17 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.75 * $base-font-size;
 
 $font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
-$font-family-sans-serif: Arial, sans-serif;
+$font-family-sans-serif: 'Droid Sans', Arial, sans-serif;
 
 /* AAP colour sechme */
  
@@ -42,6 +42,10 @@ $font-family-sans-serif: Arial, sans-serif;
       $slide_dot: #999999;
       $slide_dot_active: #676767;
  
+h2 {
+  font-size: $h2-font-size;
+}
+
 /* AAP body measurements */
 
 @mixin aap_body_measurements {
