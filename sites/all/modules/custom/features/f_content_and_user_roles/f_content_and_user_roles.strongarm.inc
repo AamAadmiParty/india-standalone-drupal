@@ -50,51 +50,17 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__basic_page';
   $strongarm->value = array(
-    'view_modes' => array(
-      'teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-      'rss' => array(
-        'custom_settings' => FALSE,
-      ),
-      'search_index' => array(
-        'custom_settings' => FALSE,
-      ),
-      'search_result' => array(
-        'custom_settings' => FALSE,
-      ),
-      'diff_standard' => array(
-        'custom_settings' => FALSE,
-      ),
-      'email_plain' => array(
-        'custom_settings' => FALSE,
-      ),
-      'email_html' => array(
-        'custom_settings' => FALSE,
-      ),
-      'email_textalt' => array(
-        'custom_settings' => FALSE,
-      ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
+    'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '1',
+          'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '30',
         ),
         'workbench_access' => array(
           'weight' => '0',
-        ),
-        'metatags' => array(
-          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -186,9 +152,6 @@ function f_content_and_user_roles_strongarm() {
         ),
         'workbench_access' => array(
           'weight' => '0',
-        ),
-        'metatags' => array(
-          'weight' => '40',
         ),
       ),
       'display' => array(),
@@ -391,37 +354,16 @@ function f_content_and_user_roles_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_blog_pattern';
-  $strongarm->value = 'blogs/[user:name]';
-  $export['pathauto_blog_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_forum_pattern';
-  $strongarm->value = '[term:vocabulary]/[term:name]';
-  $export['pathauto_forum_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_basic_page_pattern';
-  $strongarm->value = '[node:field_page_type]/[node:title]';
+  $strongarm->value = '[node:title]';
   $export['pathauto_node_basic_page_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_blog_pattern';
-  $strongarm->value = 'blog/[node:author]/[node:title]';
+  $strongarm->value = '[node:title]';
   $export['pathauto_node_blog_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_event_pattern';
-  $strongarm->value = 'event/[node:title]';
-  $export['pathauto_node_event_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -429,55 +371,6 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->name = 'pathauto_node_news_pattern';
   $strongarm->value = 'news/[node:title]';
   $export['pathauto_node_news_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_pattern';
-  $strongarm->value = 'content/[node:title]';
-  $export['pathauto_node_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_poll_pattern';
-  $strongarm->value = 'poll/[node:title]';
-  $export['pathauto_node_poll_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_punctuation_hyphen';
-  $strongarm->value = '1';
-  $export['pathauto_punctuation_hyphen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_taxonomy_term_content_publishing_workflow_pattern';
-  $strongarm->value = '';
-  $export['pathauto_taxonomy_term_content_publishing_workflow_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_taxonomy_term_pattern';
-  $strongarm->value = '[term:vocabulary]/[term:name]';
-  $export['pathauto_taxonomy_term_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_user_pattern';
-  $strongarm->value = 'citizen/[user:name]';
-  $export['pathauto_user_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'read_more_anchor';
-  $strongarm->value = 0;
-  $export['read_more_anchor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -492,7 +385,7 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'read_more_newwindow';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['read_more_newwindow'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -506,7 +399,7 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'read_more_placement';
-  $strongarm->value = 'after';
+  $strongarm->value = 'inline';
   $export['read_more_placement'] = $strongarm;
 
   $strongarm = new stdClass();
