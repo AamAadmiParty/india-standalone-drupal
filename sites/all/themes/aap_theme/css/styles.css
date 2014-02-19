@@ -94,13 +94,13 @@ body {
   margin-top: 50px;
 }
 
-body.admin-menu {
+html body.admin-menu {
   margin: 0;
-  margin-top: 79px;
+  margin-top: 79px !important;
 }
 
-body.admin-menu .top-header-row {
-  margin-top: 29px;
+html body.admin-menu .top-header-row {
+  margin-top: 29px !important;
 }
 
 body.admin-menu #admin-menu {
@@ -200,7 +200,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   color: red;
 }
 
-.aap-main-content h2.pane-title {
+h2.pane-title {
   background-color: #61a220;
   text-align: center;
   margin: 0.3em 0;
@@ -209,6 +209,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: "Droid Sans", Arial, sans-serif;
   font-weight: normal;
 }
+
 .aap-main-content a {
   color: #1f7fa2;
 }
@@ -1062,4 +1063,8 @@ a.header-button:hover {
 }
 .latest-news-block-view a:hover {
   text-decoration: underline;
+}
+
+.join-us-on-facebook iframe {
+  width: 100%;
 }

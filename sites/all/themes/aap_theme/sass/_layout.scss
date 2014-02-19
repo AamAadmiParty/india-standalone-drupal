@@ -19,12 +19,12 @@ body {
   margin-top: 50px;
 }
 // When there is both fixed header + fixed admin menu, body needs more top margin
-body.admin-menu {
+html body.admin-menu {
   margin: 0;
-  margin-top: 79px;
+  margin-top: 79px !important;
 }
-body.admin-menu .top-header-row {
-  margin-top: 29px;
+html body.admin-menu .top-header-row {
+  margin-top: 29px !important;
 }
 
 body.admin-menu #admin-menu {
@@ -125,7 +125,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     	}
    }
  }
-.aap-main-content {
+
     h2.pane-title {
       background-color: $green;
       text-align: center;
@@ -135,7 +135,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       font-family: $font-family-sans-serif;
       font-weight: normal;
     }
-
+.aap-main-content {
    	a {
       color:#1f7fa2;
     }
