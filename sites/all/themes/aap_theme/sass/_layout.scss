@@ -192,21 +192,17 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       }
 
     .sf-menu.sf-style-default {
-
       a {
       color: $white;
-      background: none;
-      @include aap_font_style;
-      border-left: none;
-      border-top: none;
+      text-decoration: none;
+      border: none;
       text-shadow:1px 1px #406b15;
-      margin: 0.4em 0em;
-      padding:0.4em 1em;
-
+      padding: 0.75em 1.4em;
+      .sf-sub-indicator{
+        right: 5px;
+      }
       &:hover {
-      	color: #191919;
-     		text-align: center;
-     		text-shadow: 1px 1px #98C26E;
+        background-color: #407C04;
       }
      }
     }
@@ -216,42 +212,22 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       background: url('../images/home.png') no-repeat scroll center;
       text-indent: -15000px;
       padding-right: 3em;
-
-      &:hover {
-      	 opacity: 0.5;
-      }
-
-    }
-    .sf-menu.sf-style-default
-    .donate-link-class {
-        text-align: center;
-        color: #F17E00;
-        background: white;
-        margin-left: 2em;
-        text-shadow:none;
     }
   }
 
  .header-menu
  .sf-menu.sf-style-default {
-
-  li {
-    background: url(../images/main_menu_border.png)  no-repeat right;
-    text-align: center;
-   }
-  .last {
-    background : none;
-  }
+  li {background: $green;}
   li ul {
   			background: $green !important;
   	 li {
   	 		background : none;
-  	 		border-bottom: 1px solid #407C04;;
+  	 		border-bottom: 1px solid #407C04;
   	 		text-align: left;
   	 		a {
   	 				margin: 0;
   	 				&:hover {
-  	 					text-align: left;
+              background-color: #407C04;
   	 				}
   	 		}
 

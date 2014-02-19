@@ -46,6 +46,10 @@ h2 {
 
 /* AAP body measurements */
 /* AAP font style */
+a, button {
+  font-family: "Droid Sans", Arial, sans-serif;
+}
+
 /*******************************************************************************
  * _layout.scss
  *
@@ -75,6 +79,10 @@ h2 {
 
 /* AAP body measurements */
 /* AAP font style */
+a, button {
+  font-family: "Droid Sans", Arial, sans-serif;
+}
+
 html {
   font-size: 16px;
 }
@@ -248,20 +256,16 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .header-menu .sf-menu.sf-style-default a {
   color: #fffcf9;
-  background: none;
-  color: #fffcf9;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   text-decoration: none;
-  border-left: none;
-  border-top: none;
+  border: none;
   text-shadow: 1px 1px #406b15;
-  margin: 0.4em 0em;
-  padding: 0.4em 1em;
+  padding: 0.75em 1.4em;
+}
+.header-menu .sf-menu.sf-style-default a .sf-sub-indicator {
+  right: 5px;
 }
 .header-menu .sf-menu.sf-style-default a:hover {
-  color: #191919;
-  text-align: center;
-  text-shadow: 1px 1px #98C26E;
+  background-color: #407C04;
 }
 .header-menu .sf-menu.sf-style-default
 .aap-home-class {
@@ -269,27 +273,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   text-indent: -15000px;
   padding-right: 3em;
 }
-.header-menu .sf-menu.sf-style-default
-.aap-home-class:hover {
-  opacity: 0.5;
-}
-.header-menu .sf-menu.sf-style-default
-.donate-link-class {
-  text-align: center;
-  color: #F17E00;
-  background: white;
-  margin-left: 2em;
-  text-shadow: none;
-}
 
 .header-menu
 .sf-menu.sf-style-default li {
-  background: url(../images/main_menu_border.png) no-repeat right;
-  text-align: center;
-}
-.header-menu
-.sf-menu.sf-style-default .last {
-  background: none;
+  background: #61a220;
 }
 .header-menu
 .sf-menu.sf-style-default li ul {
@@ -307,7 +294,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .header-menu
 .sf-menu.sf-style-default li ul li a:hover {
-  text-align: left;
+  background-color: #407C04;
 }
 
 .header-menu

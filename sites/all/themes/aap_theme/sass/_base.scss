@@ -114,3 +114,8 @@ h2 {
 		font-family: $font-family-sans-serif;
     color:#f17e00; text-decoration:none; font-weight:normal;
 }
+
+// All links unless they are inline in the main content should have SANS-SERIF font-size
+a, button {
+  font-family: $font-family-sans-serif;
+}
