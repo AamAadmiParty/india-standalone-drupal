@@ -1023,7 +1023,7 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->panel = 'right_navigation';
     $pane->type = 'views';
     $pane->subtype = 'videos';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
