@@ -189,13 +189,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   color: red;
 }
 
-.aap-main-content .pane-title {
-  text-align: center;
+.aap-main-content h2.pane-title {
   background-color: #61a220;
-  margin-bottom: 2%;
-  color: #fff;
+  text-align: center;
+  margin: 0.3em 0;
+  padding: 0.5em 0;
+  color: #fffcf9;
   font-family: "Droid Sans", Arial, sans-serif;
-  padding: 1%;
+  font-weight: normal;
 }
 .aap-main-content .view-content .views-row {
   margin-bottom: 2px;
@@ -256,13 +257,15 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .header-menu .sf-menu.sf-style-default a {
   color: #fffcf9;
+  font-size: 1.15em;
   text-decoration: none;
   border: none;
   text-shadow: 1px 1px #406b15;
   padding: 0.75em 1.4em;
 }
 .header-menu .sf-menu.sf-style-default a .sf-sub-indicator {
-  right: 5px;
+  right: 8px;
+  top: 0.9em;
 }
 .header-menu .sf-menu.sf-style-default a:hover {
   background-color: #407C04;
@@ -336,7 +339,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .right-navigation-class .pane-content ul {
   padding: 0;
-  margin: 0 2%;
+  margin: 0;
 }
 .right-navigation-class .pane-content .right-nav_1-class {
   background: url("../images/action_call_2.gif") no-repeat scroll 0px 0% #0b6182;
@@ -372,7 +375,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .right-navigation-class .pane-content a {
   color: #fffcf9;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   text-decoration: none;
   padding-left: 4.5em;
   font-size: 0.9em;
@@ -834,32 +836,6 @@ form .form-submit {
   cursor: pointer;
 }
 form .form-submit:hover {
-  background: #fcac33;
-}
-
-.aap-main-content form .form-submit,
-.aap-main-content .read-more,
-.aap-main-content .more-link,
-.aap-main-content .donate-link {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #F28300;
-  padding: 0.3em 1em;
-}
-.aap-main-content form .form-submit a,
-.aap-main-content .read-more a,
-.aap-main-content .more-link a,
-.aap-main-content .donate-link a {
-  color: #fffcf9;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  text-shadow: 1px 1px 1b1c28;
-}
-.aap-main-content form .form-submit:hover,
-.aap-main-content .read-more:hover,
-.aap-main-content .more-link:hover,
-.aap-main-content .donate-link:hover {
   background: #fcac33;
 }
 

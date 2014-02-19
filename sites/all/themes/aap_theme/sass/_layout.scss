@@ -117,9 +117,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
    }
  }
 .aap-main-content {
-
-    .pane-title {
-      @include aap_content_title;
+    h2.pane-title {
+      background-color: $green;
+      text-align: center;
+      margin: 0.3em 0;
+      padding: 0.5em 0;
+      color: $white;
+      font-family: $font-family-sans-serif;
+      font-weight: normal;
     }
 
     .view-content .views-row {
@@ -128,12 +133,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       background: url(../images/bullet_img.png) no-repeat left 7px;
     }
 
-
    	a {
       @include aap_font_body;
       color:#1f7fa2;
     }
-
 }
 
 .aap-main-content.latest-news-class {
@@ -194,12 +197,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     .sf-menu.sf-style-default {
       a {
       color: $white;
+      font-size: 1.15em;
       text-decoration: none;
       border: none;
       text-shadow:1px 1px #406b15;
       padding: 0.75em 1.4em;
       .sf-sub-indicator{
-        right: 5px;
+        right: 8px;
+        top: 0.9em;
       }
       &:hover {
         background-color: #407C04;
@@ -278,7 +283,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       .pane-content {
       			ul {
       					padding:0;
-      					margin: 0 2%;
+      					margin: 0;
       			}
               .right-nav_1-class {
                    background: url('../images/action_call_2.gif') no-repeat scroll 0px 0% $nav_blue;
@@ -317,8 +322,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       				}
 
       			a {
-         				@include aap_font_style;
-         				padding-left: 4.5em;
+         				color: $white;
+                text-decoration: none;
+                padding-left: 4.5em;
          				font-size: 0.9em;
                 font-weight: bold;
           			display: block;

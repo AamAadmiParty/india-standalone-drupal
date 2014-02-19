@@ -89,27 +89,6 @@ form .form-submit {
         }
  }
  
- .aap-main-content {
- 		form .form-submit,
- 		.read-more,
- 		.more-link,
- 		.donate-link  {
- 				position:absolute;
- 				bottom: 0;
- 				left:0;
- 				background:  #F28300;
- 				padding: 0.3em 1em;
- 				a {
-					@include aap_font_style ;
-				 text-shadow:1px 1px 1b1c28;
-				}
-				
-				&:hover {
-      	  	background:  $button-color-hover;
-      		}
- 			}
- }
- 
  .header-donate-link {
   background: #F28300;
   padding: 0.3em 1em;
