@@ -48,6 +48,7 @@ h2 {
 /* AAP font style */
 a, button {
   font-family: "Droid Sans", Arial, sans-serif;
+  text-decoration: none;
 }
 
 /*******************************************************************************
@@ -81,6 +82,7 @@ h2 {
 /* AAP font style */
 a, button {
   font-family: "Droid Sans", Arial, sans-serif;
+  text-decoration: none;
 }
 
 html {
@@ -207,16 +209,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: "Droid Sans", Arial, sans-serif;
   font-weight: normal;
 }
-.aap-main-content .view-content .views-row {
-  margin-bottom: 2px;
-  padding-left: 25px;
-  background: url(../images/bullet_img.png) no-repeat left 7px;
-}
 .aap-main-content a {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  font-weight: normal;
-  color: #333333;
   color: #1f7fa2;
 }
 
@@ -1054,4 +1047,19 @@ a.header-button:hover {
 
 #views_slideshow_controls_text_next_home_page_content-sliding_news:hover {
   background-position: bottom right;
+}
+
+.latest-news-block-view ul {
+  margin: 0;
+  padding: 0;
+}
+.latest-news-block-view li {
+  list-style: none;
+  margin: 0 0.5em;
+  padding: 0.7em 1em;
+  border-bottom: 1px dashed #ddd;
+  font-size: 0.9em;
+}
+.latest-news-block-view a:hover {
+  text-decoration: underline;
 }

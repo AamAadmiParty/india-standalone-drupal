@@ -8,7 +8,6 @@ project = f_site_views
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = flag
-dependencies[] = flag
 dependencies[] = fontyourface_ui
 dependencies[] = image
 dependencies[] = media
