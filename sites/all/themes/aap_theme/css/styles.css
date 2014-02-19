@@ -96,11 +96,6 @@ body.admin-menu #admin-menu {
   width: 60%;
 }
 
-.panels-flexible-region-new-header_logo,
-.aap-header-search-class {
-  width: 50%;
-}
-
 .panels-flexible-aap_layout-inside
 .panels-flexible-row {
   width: 100%;
@@ -114,14 +109,12 @@ body.admin-menu #admin-menu {
 
 .top-header-row {
   padding-bottom: 0;
-}
-.top-header-row > .inside {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   background: #FFFFFF;
-  z-index: 1000;
+  z-index: 9999;
   border-bottom: 1px solid #008000;
 }
 .top-header-row .top-header-region > .inside {
