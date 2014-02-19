@@ -52,25 +52,6 @@
         	opacity: 0.4;
       	}
  		}
-     
-		.aap-language {
-    	.form-item label,
-    	.form-actions label {
-       		display: inline;
-       		padding: 0;
-       		color:#858484;
-       		font-weight: bold;
-     		}
-     .form-select {
-      	border: 1px solid $border-color;
-      	font-family: $font-family-sans-serif;
-    		height: 1.9em;
-    		padding: 0.1em;
-   			width: 77px;
-   			color:#858484;
-   			background: white;
-      }
- 		}	
      	   
 		.container-inline div {
  			display:block;
@@ -84,13 +65,6 @@
  			float:left;
  			margin-top:1%;
  		}
- 
-    input[type="text"] {
-    padding: 6px 7px;
-    width: 90%;
-    height: 13px;
-    font-family:  $font-family-sans-serif;
-   } 
 }
  
  
@@ -175,21 +149,6 @@ input[type=radio], input.radio {
      }   
 }
 
-.sliding-region-class {
-    .views-content-counter {
-          float : left;
-          margin-left: 0.5%;
-          margin-right: 0.5%;
-          
-          background: none repeat scroll 0 0 $slide_dot;
-          color: white;
-          font-family: arial;
-          font-weight:bold;
-          text-align: center;
-          width: 12px;
-          }
-     }
-
 .views-slideshow-controls-bottom {
 		margin: auto;
     width: 17%;
@@ -225,29 +184,6 @@ input[type=radio], input.radio {
      .form-item label, .form-actions label {
      		padding: 7% 1%;
      }  
-}
-
-.pager {
-    float: right;
-    
-    li.pager__item { 
-    		background:url(../images/pager__item_sep.png) right 10px no-repeat;
-    		font-weight: normal;
-    		
-    		a{ 
-    			color:#0a6181;
-    			font-family:Arial, Helvetica, sans-serif;
-    			text-decoration:none;
-    			
-    			&:hover {
-    				 color:#000000;
-    			}
-    		}
-    	}
-    	
-   li.pager__item--last {
-   		background:url(../images/pager__item_sep.png) left 10px no-repeat;
-   }		  			  	
 }
 
 .surveymonkey-drupal-popup {

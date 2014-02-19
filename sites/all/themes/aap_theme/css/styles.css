@@ -41,15 +41,11 @@
  ******************************************************************************/
 /* AAP colour sechme */
 h2 {
-  font-size: 64px;
+  font-size: 24px;
 }
 
 /* AAP body measurements */
 /* AAP font style */
-a {
-  font-family: "Droid Sans", Arial, sans-serif;
-}
-
 /*******************************************************************************
  * _layout.scss
  *
@@ -74,15 +70,11 @@ a {
  ******************************************************************************/
 /* AAP colour sechme */
 h2 {
-  font-size: 64px;
+  font-size: 24px;
 }
 
 /* AAP body measurements */
 /* AAP font style */
-a {
-  font-family: "Droid Sans", Arial, sans-serif;
-}
-
 html {
   font-size: 16px;
 }
@@ -172,32 +164,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin-top: 50px;
 }
 
-.aap-search-class #aap-contact {
-  margin-right: 19px;
-  background: url(../images/pager__item_sep.png) right 4px no-repeat;
-  padding-right: 19px;
-  margin-top: 2%;
-}
-.aap-search-class #aap-contact a {
-  color: #F17E00;
-  font-family: "Droid Sans", Arial, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-}
-.aap-search-class .aap-login {
-  background: #f17e00;
-  padding: 3px 5px;
-  margin-left: 9px;
-}
-.aap-search-class .aap-login a {
-  color: #fffcf9;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-}
-.aap-search-class .aap-login:hover {
-  background: #fcac33;
-}
-
 .main-content,
 .middle-content,
 .bottom-content {
@@ -234,14 +200,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-weight: normal;
   color: #333333;
   color: #1f7fa2;
-}
-
-.aap-poll-class a {
-  font-family: "Droid Sans", Arial, sans-serif !important;
-  color: #333333 !important;
-}
-.aap-poll-class .node__title {
-  line-height: 0.8em;
 }
 
 .aap-main-content.latest-news-class .pane-content {
@@ -367,7 +325,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-footer-class .pane-content a {
   color: white;
-  font-family: arial;
   text-decoration: none;
 }
 .aap-footer-class .pane-content a:hover {
@@ -536,18 +493,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   background: url(../images/youtube.png) no-repeat;
 }
 
-.aap-story-class .view-content .views-row {
-  background: none;
-  padding: 0;
-}
-.aap-story-class .node__title {
-  display: none;
-}
-.aap-story-class p {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
-  color: #333333 !important;
-}
-
 .aap-call-us-class {
   clear: both;
   float: right;
@@ -568,12 +513,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .aap-call-us-class .content a:hover, .aap-call-us-class .title a:hover {
   color: #EFF743;
-}
-
-.copyright-content {
-  color: white;
-  font-family: arial;
-  margin-top: 14%;
 }
 
 /*********************************************************************
@@ -674,7 +613,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
-  font-weight: bold;
 }
 .aap-page-content-class .view-aap-media .view-content {
   border: 1px solid white;
@@ -698,7 +636,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
-  font-weight: bold;
 }
 .aap-page-content-class .view-aap-media a {
   font-family: "Droid Sans", Arial, sans-serif;
@@ -715,15 +652,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   width: 260px;
   height: 250px;
 }
-.aap-page-content-class .links.links--inline {
-  padding-bottom: 2%;
-}
-.aap-page-content-class .links.links--inline li > a {
-  font-family: "Droid Sans", Arial, sans-serif;
-  font-weight: bold;
-  color: #0a6181;
-  text-decoration: none;
-}
 .aap-page-content-class .field__items a {
   font-family: "Droid Sans", Arial, sans-serif;
   font-weight: bold;
@@ -735,30 +663,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   text-decoration: none;
   font-weight: normal;
   color: #333333;
-}
-
-.aap-breadcrumb {
-  text-align: left;
-  background-color: #1e7fa2;
-  font-family: "Droid Sans", Arial, sans-serif;
-  padding: 0.5em 0.6em 2em;
-  margin-top: 7%;
-}
-.aap-breadcrumb .breadcrumb p, .aap-breadcrumb a {
-  float: left;
-  font-family: arial;
-  font-weight: normal;
-  margin: 0;
-  color: #8fe0ff;
-  text-decoration: none;
-  padding-right: 6px;
-}
-.aap-breadcrumb .breadcrumb p:hover, .aap-breadcrumb a:hover {
-  color: #8fe0ff;
-}
-.aap-breadcrumb .breadcrumb p:last-child, .aap-breadcrumb a:last-child {
-  color: #dadada;
-  font-style: italic;
 }
 
 .aap-donation-right-class-fix {
@@ -793,7 +697,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
-  font-weight: bold;
 }
 .aap-donation-right-class .pane-content .form-radios {
   margin: 0;
@@ -828,15 +731,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
-  font-weight: bold;
-}
-.aap-tag-cloud .pane-content .tagclouds-term {
-  margin: 0.3em;
-}
-.aap-tag-cloud .pane-content .tagclouds-term a {
-  font-family: "Droid Sans", Arial, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
 }
 .aap-tag-cloud .more-link {
   display: none;
@@ -850,274 +744,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   margin-bottom: 5px;
   padding-left: 20px;
   background: url(../images/bullet_img.png) no-repeat 5px 7px;
-}
-
-/*********************************************************************
-
-  * common Theme for delhi site page
-  *
- *******************************************************************/
-.aap-body-class.aap-delhi-body-class .panels-flexible-row.aap-background-class {
-  background: url("../images/bg_flag.jpg") no-repeat 0px -3px;
-}
-.aap-body-class.aap-delhi-body-class .home-box-top {
-  margin-top: 3em;
-}
-
-.panelizer-service-links ul {
-  list-style: none;
-  float: left;
-  padding: 0;
-}
-.panelizer-service-links li {
-  float: left;
-  padding-right: 7px;
-}
-.panelizer-service-links a {
-  font-family: "Droid Sans", Arial, sans-serif;
-  font-weight: bold;
-  color: #0A6181;
-  text-decoration: none;
-}
-
-.aap-delhi-left-region {
-  border-right: 1px solid #d7d7d7;
-}
-
-.aap-delhi-right-region {
-  padding-left: 5px;
-}
-
-.aap-delhi-row,
-.aap-delhi-region-content {
-  margin-top: 4px;
-  border-bottom: 1px solid #d7d7d7;
-}
-
- /*********************************************************************
-
-  * Layout for candidate detail page
-  *
- *******************************************************************/
-.aap-page-content-class #candidate-detail-page {
-  border: 1px solid white;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 2%;
-  padding: 0 2%;
-  color: #333333;
-}
-.aap-page-content-class #candidate-detail-page .panels-flexible-row > .inside {
-  width: 720px;
-}
-.aap-page-content-class #candidate-detail-page .node__title a {
-  color: #000;
-  text-decoration: none;
-  line-height: 1em;
-}
-.aap-page-content-class #candidate-detail-page p {
-  font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
-}
-.aap-page-content-class #candidate-detail-page p a {
-  font-family: "Droid Sans", Arial, sans-serif;
-  color: #f17e00;
-  text-decoration: none;
-  font-weight: bold;
-}
-.aap-page-content-class #candidate-detail-page .candidate-info-region {
-  margin-left: 6em;
-  width: 500px;
-}
-.aap-page-content-class #candidate-detail-page .candidate-info-region .candidate-name .field__item {
-  font-weight: bold;
-}
-.aap-page-content-class #candidate-detail-page .candidate-info-region .field__items {
-  width: 250px;
-}
-.aap-page-content-class #candidate-detail-page .pane-content {
-  margin-top: 0.3em;
-}
-.aap-page-content-class #candidate-detail-page .pane-content .field__label {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  font-weight: normal;
-  color: #333333;
-  font-weight: bold;
-  width: 200px;
-}
-.aap-page-content-class #candidate-detail-page .pane-content .field__item {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  font-weight: normal;
-  color: #333333;
-}
-.aap-page-content-class #candidate-detail-page .pane-content .field__item a {
-  font-family: "Droid Sans", Arial, sans-serif;
-  color: #f17e00;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-/*********************************************************************
-
-  * Layout for constituency detail page
-  *
- *******************************************************************/
-.aap-page-content-class #constituency-detail-page {
-  border: 1px solid white;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 2%;
-  padding: 0 2%;
-  color: #333333;
-}
-.aap-page-content-class #constituency-detail-page .panels-flexible-row > .inside {
-  width: 720px;
-}
-.aap-page-content-class #constituency-detail-page .node__title a {
-  color: #000;
-  text-decoration: none;
-  line-height: 1em;
-}
-.aap-page-content-class #constituency-detail-page p {
-  font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
-}
-.aap-page-content-class #constituency-detail-page p a {
-  font-family: "Droid Sans", Arial, sans-serif;
-  color: #f17e00;
-  text-decoration: none;
-  font-weight: bold;
-}
-.aap-page-content-class #constituency-detail-page .pane-content {
-  margin-top: 2%;
-}
-.aap-page-content-class #constituency-detail-page .pane-content .field__label {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  font-weight: normal;
-  color: #333333;
-  font-weight: bold;
-  width: 200px;
-}
-.aap-page-content-class #constituency-detail-page .pane-content .field__item {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  font-weight: normal;
-  color: #333333;
-}
-.aap-page-content-class #constituency-detail-page .constituency-detail-region {
-  margin-left: 5em;
-  width: 500px;
-}
-.aap-page-content-class #constituency-detail-page .aap-candidate-info p {
-  margin: 0;
-}
-.aap-page-content-class #constituency-detail-page .aap-candidate-info a {
-  font-family: "Droid Sans", Arial, sans-serif;
-  color: #f17e00;
-  text-decoration: none;
-  font-weight: normal;
-}
-.aap-page-content-class #constituency-detail-page .aap-constituency-row {
-  border-bottom: 1px solid #d7d7d7;
-}
-.aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-candidate-name {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  font-weight: normal;
-  color: #333333;
-  color: #f17e00;
-  font-weight: bold;
-}
-.aap-page-content-class #constituency-detail-page .constituency-candidate-region .pane-title {
-  background: none;
-  color: #333333;
-  padding-left: 0;
-}
-.aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-shortlisted-candidate {
-  border-bottom: 1px solid #d7d7d7;
-}
-.aap-page-content-class #constituency-detail-page .constituency-candidate-region .views-row-last.aap-shortlisted-candidate {
-  border: none;
-}
-.aap-page-content-class #constituency-detail-page .constituency-candidate-region .aap-shortlisted-candidate .panel-flexible {
-  padding: 1em 0;
-}
-.aap-page-content-class #constituency-detail-page .constituency-candidate-region .views-row-first.aap-shortlisted-candidate .panel-flexible {
-  padding: 0 0 1em 0;
-}
-.aap-page-content-class #constituency-detail-page .constituency-candidate-region .pane-content {
-  border-bottom: 1px solid #d7d7d7;
-  padding-bottom: 5px;
-}
-.aap-page-content-class #constituency-detail-page .shs-hierarchy {
-  list-style: none;
-}
-.aap-page-content-class #constituency-detail-page .shs-hierarchy .state:before {
-  font-weight: bold;
-  padding-right: 5em;
-  content: "State:";
-}
-.aap-page-content-class #constituency-detail-page .shs-hierarchy .district:before {
-  font-weight: bold;
-  padding-right: 4em;
-  content: "District:";
-}
-.aap-page-content-class #constituency-detail-page .shs-hierarchy .constituency:before {
-  font-weight: bold;
-  padding-right: 1em;
-  content: "Constituency:";
-}
-.aap-page-content-class #constituency-detail-page .shs-hierarchy li:after {
-  content: "";
-}
-.aap-page-content-class #constituency-detail-page .constituency-description {
-  margin-left: 2.3em;
-}
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .pane-title {
-  background: none;
-  color: #333333;
-  padding-left: 0;
-  margin-left: 3.5em;
-}
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .adr {
-  margin-left: 3em;
-}
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .fn, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .street-address,
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .postal-code, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .country-name,
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .locality, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .region,
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  font-weight: normal;
-  color: #333333;
-}
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .email, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel {
-  margin-top: 0.5px;
-  font-weight: bold;
-}
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .email a, .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel a {
-  font-family: "Droid Sans", Arial, sans-serif;
-  color: #f17e00;
-  text-decoration: none;
-  font-weight: normal;
-  font-weight: bold;
-}
-.aap-page-content-class #constituency-detail-page .constituency-contact-fields .email abbr[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .email acronym[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel abbr[title], .aap-page-content-class #constituency-detail-page .constituency-contact-fields .tel acronym[title] {
-  border-bottom-width: 0;
-}
-.aap-page-content-class #constituency-detail-page .constituency-contact-container {
-  margin-left: 2.5em;
-}
-.aap-page-content-class #constituency-detail-page .constituency-container-1 h2 {
-  margin: 0;
-}
-
-body.front div.panels-top-row,
-body.front div.panels-top-row h2.pane-title {
-  margin-top: 0px;
 }
 
 #water_1_,
@@ -1136,18 +762,10 @@ body.front div.panels-top-row h2.pane-title {
 .ui-dialog-titlebar {
   background: #1fa50d;
   color: white;
-  font-family: verdana;
 }
 
 .ui-dialog-content {
   background: yellowgreen;
-}
-
-#map_data {
-  font-family: verdana;
-}
-#map_data p {
-  font-family: verdana;
 }
 
 /*******************************************************************************
@@ -1199,22 +817,6 @@ body.front div.panels-top-row h2.pane-title {
 .aap-search-class form .form-submit:hover {
   opacity: 0.4;
 }
-.aap-search-class .aap-language .form-item label,
-.aap-search-class .aap-language .form-actions label {
-  display: inline;
-  padding: 0;
-  color: #858484;
-  font-weight: bold;
-}
-.aap-search-class .aap-language .form-select {
-  border: 1px solid #d7d7d7;
-  font-family: "Droid Sans", Arial, sans-serif;
-  height: 1.9em;
-  padding: 0.1em;
-  width: 77px;
-  color: #858484;
-  background: white;
-}
 .aap-search-class .container-inline div {
   display: block;
   float: left;
@@ -1226,12 +828,6 @@ body.front div.panels-top-row h2.pane-title {
   padding-right: 9px;
   float: left;
   margin-top: 1%;
-}
-.aap-search-class input[type="text"] {
-  padding: 6px 7px;
-  width: 90%;
-  height: 13px;
-  font-family: "Droid Sans", Arial, sans-serif;
 }
 
 .aap-contact-form-class .form-submit {
@@ -1319,18 +915,6 @@ input[type=radio], input.radio {
   width: 33%;
 }
 
-.sliding-region-class .views-content-counter {
-  float: left;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  background: none repeat scroll 0 0 #999999;
-  color: white;
-  font-family: arial;
-  font-weight: bold;
-  text-align: center;
-  width: 12px;
-}
-
 .views-slideshow-controls-bottom {
   margin: auto;
   width: 17%;
@@ -1357,25 +941,6 @@ input[type=radio], input.radio {
 }
 .aap-donation-right-class .form-item label, .aap-donation-right-class .form-actions label {
   padding: 7% 1%;
-}
-
-.pager {
-  float: right;
-}
-.pager li.pager__item {
-  background: url(../images/pager__item_sep.png) right 10px no-repeat;
-  font-weight: normal;
-}
-.pager li.pager__item a {
-  color: #0a6181;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-}
-.pager li.pager__item a:hover {
-  color: #000000;
-}
-.pager li.pager__item--last {
-  background: url(../images/pager__item_sep.png) left 10px no-repeat;
 }
 
 .surveymonkey-drupal-popup {
