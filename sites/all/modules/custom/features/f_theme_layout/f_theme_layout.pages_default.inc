@@ -69,13 +69,28 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'footer_1';
-    $pane->type = 'block';
-    $pane->subtype = 'aap_tweaks-Donation_ Block';
+    $pane->type = 'views';
+    $pane->subtype = 'landing_pages';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '1',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block_3',
+      'context' => array(
+        0 => '',
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Blog Posts',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -83,7 +98,7 @@ function f_theme_layout_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'aap-main-content aap-donation-class',
+      'css_class' => 'aap-main-content',
     );
     $pane->extras = array();
     $pane->position = 0;

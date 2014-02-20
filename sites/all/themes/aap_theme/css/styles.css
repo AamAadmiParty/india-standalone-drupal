@@ -1048,12 +1048,14 @@ a.header-button:hover {
 }
 
 .latest-news-block-view ul,
-.press-release-block-view ul {
+.press-release-block-view ul,
+.blog-posts-view ul {
   margin: 0;
   padding: 0;
 }
 .latest-news-block-view li,
-.press-release-block-view li {
+.press-release-block-view li,
+.blog-posts-view li {
   list-style: none;
   margin: 0 0.5em;
   padding: 0.7em 1em;
@@ -1061,7 +1063,8 @@ a.header-button:hover {
   font-size: 0.9em;
 }
 .latest-news-block-view a:hover,
-.press-release-block-view a:hover {
+.press-release-block-view a:hover,
+.blog-posts-view a:hover {
   text-decoration: underline;
 }
 
