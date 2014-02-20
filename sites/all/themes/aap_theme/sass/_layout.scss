@@ -73,7 +73,7 @@ body.admin-menu #admin-menu {
 }
 
 .aap-footer-top-class > .inside {
-   margin-bottom: 1%;
+   margin: 0.6em auto;
 }
 
 .bottom-content {
@@ -247,17 +247,24 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  .aap-footer-class {
       width : 100%;
       .pane-title {
-          color: white;
-          font-family: $font-family-sans-serif;
-          text-shadow:1px 1px #0e1e2b;
-          }
+        color: white;
+        font-family: $font-family-sans-serif;
+        text-align: left;
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;    
+      }
 
        .pane-content {
-       		a {
           color: white;
           text-decoration: none;
+          font-size: 1em;
+       		a {
+          color: white;
           &:hover {
-          		color : #a7f657;
+          		text-decoration: underline;
           	}
          	}
          li {
@@ -265,6 +272,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           }
          ul {
           	padding: 0;
+            margin: 0;
           }
         }
 
@@ -399,9 +407,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
   .footer-bottom {
       .pane-title {
-          float:left;
-          @include aap_font_style;
-          margin-right:1%;
+        float: left;
+        color: $white;
+        text-decoration: none;
+        background-color: transparent;
+        margin: 0.5em 0.5em 0 0;
+        font-size: 1.2em;
         }
 
      .pane-content li {
@@ -639,4 +650,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 .ui-dialog-content {
   background: yellowgreen;
+}
+
+.copyright-content {
+  color: $white;
+  font-size: 0.9em;
+  margin-top: 2em;
 }

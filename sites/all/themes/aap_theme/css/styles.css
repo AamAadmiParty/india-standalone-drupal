@@ -149,7 +149,7 @@ body.admin-menu #admin-menu {
 }
 
 .aap-footer-top-class > .inside {
-  margin-bottom: 1%;
+  margin: 0.6em auto;
 }
 
 .bottom-content {
@@ -311,20 +311,30 @@ h2.pane-title {
 .aap-footer-class .pane-title {
   color: white;
   font-family: "Droid Sans", Arial, sans-serif;
-  text-shadow: 1px 1px #0e1e2b;
+  text-align: left;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.aap-footer-class .pane-content {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
 }
 .aap-footer-class .pane-content a {
   color: white;
-  text-decoration: none;
 }
 .aap-footer-class .pane-content a:hover {
-  color: #a7f657;
+  text-decoration: underline;
 }
 .aap-footer-class .pane-content li {
   list-style: none;
 }
 .aap-footer-class .pane-content ul {
   padding: 0;
+  margin: 0;
 }
 .aap-footer-class .aap-contact-form-class .form-item {
   margin-bottom: 0.5em;
@@ -444,9 +454,10 @@ h2.pane-title {
 .footer-bottom .pane-title {
   float: left;
   color: #fffcf9;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   text-decoration: none;
-  margin-right: 1%;
+  background-color: transparent;
+  margin: 0.5em 0.5em 0 0;
+  font-size: 1.2em;
 }
 .footer-bottom .pane-content li {
   float: left;
@@ -755,6 +766,12 @@ h2.pane-title {
 
 .ui-dialog-content {
   background: yellowgreen;
+}
+
+.copyright-content {
+  color: #fffcf9;
+  font-size: 0.9em;
+  margin-top: 2em;
 }
 
 /*******************************************************************************
