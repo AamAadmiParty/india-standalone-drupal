@@ -38,16 +38,17 @@
  *       also good candidates for components.
  ******************************************************************************/
  @import "compass/css3/border-radius";
- 
+
 .aap-search-class {
-     
+
      	form .form-submit {
       background: url("../images/search.png") no-repeat scroll 50% 50% $orange;
+      border-radius: 0;
     	padding:0;
     	margin:0;
     	width: 30px;
     	height: 1.3em;
-    	
+
       &:hover {
         	opacity: 0.4;
       	}
@@ -58,8 +59,8 @@
  			float:left;
  			margin-top:1%;
  		}
- 	
-		.aap-header-content, 
+
+		.aap-header-content,
 			.container-inline {
  			padding-right:9px;
  			float:left;
@@ -75,7 +76,7 @@
  }
  
 form .form-submit {
-        padding: 0.3em 1em;
+        padding: 0em 0.9em;
         text-align: center;
         background: $button-color;
         color: white;
@@ -83,12 +84,12 @@ form .form-submit {
         @include aap_font_style;
         text-shadow:1px 1px 1b1c28;
         cursor:pointer;
-        
+
         &:hover {
         	background: $button-color-hover;
         }
  }
- 
+
  .header-donate-link {
   background: #F28300;
   padding: 0.3em 1em;
@@ -125,21 +126,21 @@ input[type=radio], input.radio {
     .form-checkboxes .form-item, .form-radios .form-item {
           float: left;
           width: 33%;
-     }   
+     }
 }
 
 .views-slideshow-controls-bottom {
 		margin: auto;
     width: 17%;
     float:right;
-    
+
     .active {
     	.views-content-counter {
     		 background: none repeat scroll 0 0  $slide_dot_active;
     	}
     }
-    
-}  
+
+}
 
 /*********************************************************************
   

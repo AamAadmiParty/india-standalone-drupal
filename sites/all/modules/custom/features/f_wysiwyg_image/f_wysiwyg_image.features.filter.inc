@@ -18,8 +18,13 @@ function f_wysiwyg_image_filter_default_formats() {
     'status' => '1',
     'weight' => '0',
     'filters' => array(
+      'media_filter' => array(
+        'weight' => '-48',
+        'status' => '1',
+        'settings' => array(),
+      ),
       'htmlpurifier_advanced' => array(
-        'weight' => '0',
+        'weight' => '-47',
         'status' => '1',
         'settings' => array(
           'htmlpurifier_help' => 0,
@@ -33,7 +38,7 @@ function f_wysiwyg_image_filter_default_formats() {
             'Attr.DefaultInvalidImage' => '',
             'Attr.DefaultInvalidImageAlt' => 'Invalid image',
             'Attr.DefaultTextDir' => 'ltr',
-            'Attr.EnableID' => '0',
+            'Attr.EnableID' => '1',
             'Attr.ForbiddenClasses' => '',
             'Attr.IDBlacklist' => '',
             'Null_Attr.IDBlacklistRegexp' => '1',
@@ -165,7 +170,7 @@ news',
             'URI.MungeResources' => '0',
             'Null_URI.MungeSecretKey' => '1',
             'URI.OverrideAllowedSchemes' => '1',
-            'URI.SafeIframeRegexp' => '%^http://(www.youtube.|player.vimeo.|maps.google.|www.slideshare.|www.aamaadmiparty.)%',
+            'URI.SafeIframeRegexp' => '%%',
           ),
         ),
       ),

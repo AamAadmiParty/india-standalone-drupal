@@ -411,8 +411,8 @@ function f_theme_layout_default_panels_mini() {
       ),
       'center' => array(
         'type' => 'region',
-        'title' => 'Header Search',
-        'width' => '54.305874610040995',
+        'title' => 'Header Content',
+        'width' => 54.305874610040995,
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-header-search-class',

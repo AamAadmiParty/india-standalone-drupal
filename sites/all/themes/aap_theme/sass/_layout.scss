@@ -502,7 +502,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       display: none;
     }
     padding-bottom: 6px;
-    .field--name-body {
+    /* .field--name-body {
       max-height: 100px;
       p {
         font-family: $font-family-sans-serif;
@@ -511,7 +511,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     .field--name-field-ct-video {
       float: right;
     width: 50%;
-    }
+    } */
   }
 }
 
@@ -665,17 +665,4 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       text-decoration: underline;
     }
   }
-}
-
-.more-link {
-  margin-top: 1em;
-}
-.more-link a {
-background-color: $button-color;
-color: white !important;
-padding: 0.2em 1em;
-text-decoration: none;
-&:hover {
-  background-color: $button-color-hover;
-}
 }

@@ -538,19 +538,19 @@ h2.pane-title {
 }
 .aap-sidebars-videos .node__content {
   padding-bottom: 6px;
+  /* .field--name-body {
+    max-height: 100px;
+    p {
+      font-family: $font-family-sans-serif;
+    }
+  }
+  .field--name-field-ct-video {
+    float: right;
+  width: 50%;
+  } */
 }
 .aap-sidebars-videos .node__content .read-more {
   display: none;
-}
-.aap-sidebars-videos .node__content .field--name-body {
-  max-height: 100px;
-}
-.aap-sidebars-videos .node__content .field--name-body p {
-  font-family: "Droid Sans", Arial, sans-serif;
-}
-.aap-sidebars-videos .node__content .field--name-field-ct-video {
-  float: right;
-  width: 50%;
 }
 
 .aap-page-content-class {
@@ -781,20 +781,6 @@ h2.pane-title {
   text-decoration: underline;
 }
 
-.more-link {
-  margin-top: 1em;
-}
-
-.more-link a {
-  background-color: #f36c01;
-  color: white !important;
-  padding: 0.2em 1em;
-  text-decoration: none;
-}
-.more-link a:hover {
-  background-color: #fcac33;
-}
-
 /*******************************************************************************
  * _components.scss
  *
@@ -836,6 +822,7 @@ h2.pane-title {
  ******************************************************************************/
 .aap-search-class form .form-submit {
   background: url("../images/search.png") no-repeat scroll 50% 50% #f17e00;
+  border-radius: 0;
   padding: 0;
   margin: 0;
   width: 30px;
@@ -861,7 +848,7 @@ h2.pane-title {
 }
 
 form .form-submit {
-  padding: 0.3em 1em;
+  padding: 0em 0.9em;
   text-align: center;
   background: #f36c01;
   color: white;
