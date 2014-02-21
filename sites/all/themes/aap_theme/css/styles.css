@@ -785,6 +785,20 @@ h2.pane-title {
   text-decoration: underline;
 }
 
+.more-link {
+  margin-top: 1em;
+}
+
+.more-link a {
+  background-color: #f36c01;
+  color: white !important;
+  padding: 0.2em 1em;
+  text-decoration: none;
+}
+.more-link a:hover {
+  background-color: #fcac33;
+}
+
 /*******************************************************************************
  * _components.scss
  *

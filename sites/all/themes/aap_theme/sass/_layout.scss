@@ -668,3 +668,16 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     }
   }
 }
+
+.more-link {
+  margin-top: 1em;
+}
+.more-link a {
+background-color: $button-color;
+color: white !important;
+padding: 0.2em 1em;
+text-decoration: none;
+&:hover {
+  background-color: $button-color-hover;
+}
+}
