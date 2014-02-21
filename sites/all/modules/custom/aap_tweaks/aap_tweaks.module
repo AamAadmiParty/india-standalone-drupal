@@ -186,7 +186,7 @@ function donation_block_form($form, &$form_state) {
 			'#validated' => TRUE,
 	);
 
-	$donation_link =  l('Donate Now', 'https://donate.aamaadmiparty.org');
+	$donation_link =  l(t('Donate Now'), 'https://donate.aamaadmiparty.org');
 	$form['link'] = array(
 		'#prefix' => '<div class = "donate-link">' . $donation_link,
 		'#suffix' => '</div>',
