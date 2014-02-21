@@ -227,14 +227,15 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   line-height: 0.8em;
 }
 
-.aap-main-content.latest-news-class .pane-content {
-  position: relative;
-  height: 534px;
-}
 .aap-main-content.latest-news-class .pane-content .view-header img {
   width: 296px;
   border: 1px solid #D7D7D7;
   border-radius: 0.4em 0.4em 0.4em 0.4em;
+}
+
+.aap-main-content .pane-content {
+  position: relative;
+  height: 534px;
 }
 
 .aap-donation-class .pane-content,
