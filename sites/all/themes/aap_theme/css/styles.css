@@ -174,7 +174,7 @@ body.admin-menu #admin-menu {
 
 .panels-flexible-row.aap-page-background-class,
 body.front .panels-flexible-aap_layout-inside {
-  background: url("../images/bg_flag.jpg") no-repeat 0px -3px;
+  background: url("../images/bg_flag.jpg") no-repeat top center;
   background-size: 100% auto;
 }
 
@@ -338,10 +338,6 @@ h2.pane-title {
 }
 .aap-footer-class .aap-contact-form-class .form-item {
   margin-bottom: 0.5em;
-}
-
-.panels-flexible-region-aap_layout-right_navigation {
-  float: right;
 }
 
 .right-navigation-class {
@@ -853,8 +849,7 @@ h2.pane-title {
   float: left;
   margin-top: 1%;
 }
-.aap-search-class font
-.aap-header-content,
+.aap-search-class .aap-header-content,
 .aap-search-class .container-inline {
   padding-right: 9px;
   float: left;
