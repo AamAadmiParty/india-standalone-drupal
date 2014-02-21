@@ -271,7 +271,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Center',
-        'width' => '71.14674127188007',
+        'width' => '65.03425322122577',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'social-connector-region',
@@ -279,7 +279,7 @@ function f_theme_layout_default_panels_mini() {
       'copyright' => array(
         'type' => 'region',
         'title' => 'Copyright',
-        'width' => '28.85325872811993',
+        'width' => '34.96574677877424',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-copyright-class',
@@ -346,7 +346,7 @@ function f_theme_layout_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => 'Copyright Message',
       'title' => '',
-      'body' => '<div class="copyright-content">© Aam Aadmi Party. All Rights Reserved</div>',
+      'body' => '<div class="copyright-content"><p>© 2012-2014 Aam Aadmi Party. All Rights Reserved.</p><p><a href="http://drupal.org" target="_blank">Drupal</a> powered site, built and maintained by <a href="http://www.innoraft.com/" target="_blank">Innoraft</a>.</p></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );

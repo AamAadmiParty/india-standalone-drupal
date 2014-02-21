@@ -769,9 +769,20 @@ h2.pane-title {
 }
 
 .copyright-content {
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #fffcf9;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-top: 2em;
+}
+.copyright-content p {
+  padding: 0;
+  margin: 0;
+}
+.copyright-content a {
+  color: #fffcf9;
+}
+.copyright-content a:hover {
+  text-decoration: underline;
 }
 
 /*******************************************************************************
