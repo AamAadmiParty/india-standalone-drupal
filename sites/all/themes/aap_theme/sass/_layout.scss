@@ -98,7 +98,7 @@ body.admin-menu #admin-menu {
 
 .panels-flexible-row.aap-page-background-class,
 body.front .panels-flexible-aap_layout-inside  {
-  background: url('../images/bg_flag.jpg') no-repeat top center;
+  background: url('../images/bg_flag.jpg') no-repeat 0px -3px;
   background-size: 100% auto;
 }
 body.front div.panels-flexible-aap_layout div.main-content .inside,
@@ -156,7 +156,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .aap-story-class.aap-main-content {
 		.pane-content {
 			margin-top: 5%;
-			height: 16em;
 			position:relative;
 		}
 
@@ -526,9 +525,6 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   		 }
        .pane-title {
             @include aap_content_title;
-            background: rgba(255,255,255,0.7);
-            color: #333;
-            border: 1px solid white;
             text-align: left;
             margin: 0;
       	 }
@@ -590,13 +586,23 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     	@include aap_content_item;
     	margin-top: 0;
     	padding-bottom: 5%;
-    	height: 230px;
       .form-radios {
            margin: 0;
        }
 
        .donate-link {
-       	margin: 6px 35px;
+          clear: both;
+          text-align: center;
+          margin: 1em 0;
+          a {
+            background:  $button-color;
+            color: white !important;
+            padding: 0.2em 1em;
+            text-decoration: none;
+            &:hover {
+              background:  $button-color-hover;
+            }
+          }
        }
     }
   }
@@ -665,4 +671,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       text-decoration: underline;
     }
   }
+}
+
+.field--name-field-content-tags {
+  margin: 1em 0;
+}
+
+.service-links {
+  margin: 1em 0;
 }

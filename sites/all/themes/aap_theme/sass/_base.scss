@@ -78,11 +78,10 @@ h2 {
 
 
 @mixin aap_content_item {
-      border: 1px solid white;
       text-align: left;
-      background-color: rgba(255,255,255,0.7);
       margin-bottom: 2%;
-      padding: 0 2%;
+      background: $white;
+      padding: 0 1em;
       color: #333333;
       
       .node__title a {
