@@ -57,7 +57,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Footer 3',
-        'width' => 25,
+        'width' => '25.086775456108423',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -72,7 +72,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_2' => array(
         'type' => 'region',
         'title' => 'Footer 2',
-        'width' => 25,
+        'width' => '24.999997018607544',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -80,7 +80,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_3' => array(
         'type' => 'region',
         'title' => 'Footer 4',
-        'width' => 25,
+        'width' => '24.827041432271997',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -88,7 +88,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_1' => array(
         'type' => 'region',
         'title' => 'Footer 1',
-        'width' => 25,
+        'width' => '25.086186093012035',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -271,7 +271,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Center',
-        'width' => '65.03425322122577',
+        'width' => '59.96784180209157',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'social-connector-region',
@@ -279,7 +279,7 @@ function f_theme_layout_default_panels_mini() {
       'copyright' => array(
         'type' => 'region',
         'title' => 'Copyright',
-        'width' => '34.96574677877424',
+        'width' => '40.03215819790843',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-copyright-class',
@@ -412,7 +412,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Header Content',
-        'width' => 54.305874610040995,
+        'width' => '49.991619862946514',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-header-search-class',
@@ -420,7 +420,7 @@ function f_theme_layout_default_panels_mini() {
       'header_logo' => array(
         'type' => 'region',
         'title' => 'Header Logo',
-        'width' => '45.69412538995901',
+        'width' => '50.008380137053486',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
