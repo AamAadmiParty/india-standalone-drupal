@@ -124,13 +124,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  }
 
     h2.pane-title {
-      background-color: $green;
+      background-color: $white;
       text-align: center;
-      margin: 0.3em 0;
+      margin: 0.3em 0 0.5em;
       padding: 0.5em 0;
-      color: $white;
+      color: $green;
       font-family: $font-family-sans-serif;
       font-weight: normal;
+      border-bottom: 3px solid $green;
     }
 .aap-main-content {
    	a {
@@ -247,12 +248,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       width : 100%;
       .pane-title {
         color: white;
+        background:none;
         font-family: $font-family-sans-serif;
         text-align: left;
         font-size: 1em;
-        text-transform: uppercase;
         padding: 0;
-        margin: 0;
+        margin: 0 0 0.2em;
         font-weight: bold;    
       }
 
@@ -346,66 +347,11 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       margin-top : 1em;
     }
 
-
-
-  .aap-question-class {
-      .pane-title {
-        @include aap_content_title;
-        margin: 1% 27%;
-        padding: 1%;
-     }
-
-     .pane-content {
-        .aap-question-item-class {
-         background: $question-background;
-          margin-top: 2%;
-          border: 1px solid $border-color;
-          width: 48% ;
-
-          .views-field-field-question {
-           @include aap_font_style;
-          	padding: 1% 2% 3%;
-           	background: url("../images/arrow_down.png") no-repeat right 3% center;
-           	color:#666;
-           	cursor:pointer;
-          }
-
-          .view-field-field-question_toggle {
-          background: url("../images/arrow_up.png") no-repeat right 3% center;
-          }
-
-         .views-field-view-node_toogle {
-          		display:block !important;
-          	}
-          .views-field-field-answer,
-          .views-field-view-node  {
-            	@include aap_font_body;
-							color:#333;
-							padding: 1% 2% 2% 2%;
-            	display:none;
-            }
-
-
-        }
-
-     .aap-question-item-class.views-row-odd {
-        float: left;
-        clear: left;
-        }
-
-      .aap-question-item-class.views-row-even {
-        float: right;
-        clear: right;
-        }
-     }
-
-
-   }
-
   .footer-bottom {
       .pane-title {
         float: left;
         color: $white;
+        border-bottom: none;
         text-decoration: none;
         background-color: transparent;
         margin: 0.5em 0.5em 0 0;
@@ -524,10 +470,15 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   		  width: 100% !important ;
   		 }
        .pane-title {
-            @include aap_content_title;
-            text-align: left;
-            margin: 0;
-      	 }
+          text-align: left;
+          background-color: $white;
+          margin: 0;
+          padding: 0.5em 0.2em;
+          color: $green;
+          font-family: "Droid Sans", Arial, sans-serif;
+          font-size: 3em;
+          border-bottom: none;
+       }
 
        .pane-content {
         	margin-top: 1em;
@@ -595,12 +546,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           text-align: center;
           margin: 1em 0;
           a {
-            background:  $button-color;
+            background:  $nav_blue_light;
             color: white !important;
             padding: 0.2em 1em;
             text-decoration: none;
             &:hover {
-              background:  $button-color-hover;
+              background:  $nav_blue;
             }
           }
        }
@@ -679,4 +630,18 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 
 .service-links {
   margin: 1em 0;
+}
+
+.more-link {
+  text-align: left;
+  margin: 1em;
+  a {
+  color: $white;
+  background: $nav_blue_light;
+  padding: 0.3em 1em;
+  &:hover {
+    background: $nav_blue;
+    text-decoration: none !important;
+  }
+  }
 }

@@ -32,7 +32,7 @@ $font-family-sans-serif: 'Droid Sans', Arial, sans-serif;
       $nav_blue : #0B6182;
       $nav_blue_light: #0b7ba5;
       $nav_icon : #0A7FAA;
-      $white : #FFFCF9;
+      $white : #FFFFFF;
       $orange : #F17E00;
       $footer : #1E7FA2;
       $button-color:#F36C01;
@@ -66,14 +66,6 @@ h2 {
       text-decoration: none;
       font-weight:normal;
       color: #333333;
-} 
-@mixin aap_content_title {
-      text-align: center;
-      background-color: $green;
-      margin-bottom: 2%;
-      color:#fff;
-      font-family: $font-family-sans-serif;
-      padding: 1%;
 }
 
 

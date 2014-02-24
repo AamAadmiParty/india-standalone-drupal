@@ -38,57 +38,31 @@
  *       also good candidates for components.
  ******************************************************************************/
  @import "compass/css3/border-radius";
-
-.aap-search-class {
-
-     	form .form-submit {
-      background: url("../images/search.png") no-repeat scroll 50% 50% $orange;
-      border-radius: 0;
-    	padding:0;
-    	margin:0;
-    	width: 30px;
-    	height: 1.3em;
-
-      &:hover {
-        	opacity: 0.4;
-      	}
- 		}
-     	   
-		.container-inline div {
- 			display:block;
- 			float:left;
- 			margin-top:1%;
- 		}
-
-		.aap-header-content,
-			.container-inline {
- 			padding-right:9px;
- 			float:left;
- 			margin-top:1%;
- 		}
-}
- 
- 
- .aap-contact-form-class {
-  .form-submit {
-      float: right;
-  }
- }
  
 form .form-submit {
-        padding: 0em 0.9em;
-        text-align: center;
-        background: $button-color;
-        color: white;
-        border: 0 none;
-        @include aap_font_style;
-        text-shadow:1px 1px 1b1c28;
-        cursor:pointer;
+  padding: 0.3em 1em;
+  text-align: center;
+  background: $nav_blue_light;
+  color: white;
+  border: none;
+  cursor:pointer;
+  &:hover {
+  	background: $nav_blue;
+    text-decoration: none !important;
+  }
+}
 
-        &:hover {
-        	background: $button-color-hover;
-        }
- }
+form.apachesolr-panels-search-form {
+  .form-text {
+    width: 80%;
+  }
+  .form-submit {
+  background: $button-color;
+  &:hover {
+    background: $button-color-hover;
+  }
+  }
+}
 
  .header-donate-link {
   background: #F28300;

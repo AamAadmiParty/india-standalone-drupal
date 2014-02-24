@@ -198,13 +198,14 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 }
 
 h2.pane-title {
-  background-color: #61a220;
+  background-color: white;
   text-align: center;
-  margin: 0.3em 0;
+  margin: 0.3em 0 0.5em;
   padding: 0.5em 0;
-  color: #fffcf9;
+  color: #61a220;
   font-family: "Droid Sans", Arial, sans-serif;
   font-weight: normal;
+  border-bottom: 3px solid #61a220;
 }
 
 .aap-main-content a {
@@ -255,7 +256,7 @@ h2.pane-title {
   margin-right: auto;
 }
 .header-menu .sf-menu.sf-style-default a {
-  color: #fffcf9;
+  color: white;
   font-size: 1.15em;
   text-decoration: none;
   border: none;
@@ -309,12 +310,12 @@ h2.pane-title {
 }
 .aap-footer-class .pane-title {
   color: white;
+  background: none;
   font-family: "Droid Sans", Arial, sans-serif;
   text-align: left;
   font-size: 1em;
-  text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0.2em;
   font-weight: bold;
 }
 .aap-footer-class .pane-content {
@@ -379,7 +380,7 @@ h2.pane-title {
   padding-bottom: 0.2em;
 }
 .right-navigation-class .pane-content a {
-  color: #fffcf9;
+  color: white;
   text-decoration: none;
   padding-left: 4.5em;
   font-size: 0.9em;
@@ -396,59 +397,10 @@ h2.pane-title {
   margin-top: 1em;
 }
 
-.aap-question-class .pane-title {
-  text-align: center;
-  background-color: #61a220;
-  margin-bottom: 2%;
-  color: #fff;
-  font-family: "Droid Sans", Arial, sans-serif;
-  padding: 1%;
-  margin: 1% 27%;
-  padding: 1%;
-}
-.aap-question-class .pane-content .aap-question-item-class {
-  background: #f7f7f7;
-  margin-top: 2%;
-  border: 1px solid #d7d7d7;
-  width: 48%;
-}
-.aap-question-class .pane-content .aap-question-item-class .views-field-field-question {
-  color: #fffcf9;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  padding: 1% 2% 3%;
-  background: url("../images/arrow_down.png") no-repeat right 3% center;
-  color: #666;
-  cursor: pointer;
-}
-.aap-question-class .pane-content .aap-question-item-class .view-field-field-question_toggle {
-  background: url("../images/arrow_up.png") no-repeat right 3% center;
-}
-.aap-question-class .pane-content .aap-question-item-class .views-field-view-node_toogle {
-  display: block !important;
-}
-.aap-question-class .pane-content .aap-question-item-class .views-field-field-answer,
-.aap-question-class .pane-content .aap-question-item-class .views-field-view-node {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  font-weight: normal;
-  color: #333333;
-  color: #333;
-  padding: 1% 2% 2% 2%;
-  display: none;
-}
-.aap-question-class .pane-content .aap-question-item-class.views-row-odd {
-  float: left;
-  clear: left;
-}
-.aap-question-class .pane-content .aap-question-item-class.views-row-even {
-  float: right;
-  clear: right;
-}
-
 .footer-bottom .pane-title {
   float: left;
-  color: #fffcf9;
+  color: white;
+  border-bottom: none;
   text-decoration: none;
   background-color: transparent;
   margin: 0.5em 0.5em 0 0;
@@ -502,7 +454,7 @@ h2.pane-title {
   padding-top: 1%;
 }
 .aap-call-us-class .content a, .aap-call-us-class .title a {
-  color: #fffcf9;
+  color: white;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   text-decoration: none;
 }
@@ -559,14 +511,14 @@ h2.pane-title {
   width: 100% !important;
 }
 .aap-page-content-class .pane-title {
-  text-align: center;
-  background-color: #61a220;
-  margin-bottom: 2%;
-  color: #fff;
-  font-family: "Droid Sans", Arial, sans-serif;
-  padding: 1%;
   text-align: left;
+  background-color: white;
   margin: 0;
+  padding: 0.5em 0.2em;
+  color: #61a220;
+  font-family: "Droid Sans", Arial, sans-serif;
+  font-size: 3em;
+  border-bottom: none;
 }
 .aap-page-content-class .pane-content {
   margin-top: 1em;
@@ -577,7 +529,7 @@ h2.pane-title {
 .aap-page-content-class .pane-content .search-result {
   text-align: left;
   margin-bottom: 2%;
-  background: #fffcf9;
+  background: white;
   padding: 0 1em;
   color: #333333;
   padding: 1% 2%;
@@ -608,7 +560,7 @@ h2.pane-title {
 .aap-page-content-class .view-aap-media .view-content {
   text-align: left;
   margin-bottom: 2%;
-  background: #fffcf9;
+  background: white;
   padding: 0 1em;
   color: #333333;
   padding: 1% 2%;
@@ -666,7 +618,7 @@ h2.pane-title {
 .aap-donation-right-class .pane-content {
   text-align: left;
   margin-bottom: 2%;
-  background: #fffcf9;
+  background: white;
   padding: 0 1em;
   color: #333333;
   margin-top: 0;
@@ -695,13 +647,13 @@ h2.pane-title {
   margin: 1em 0;
 }
 .aap-donation-right-class .pane-content .donate-link a {
-  background: #f36c01;
+  background: #0b7ba5;
   color: white !important;
   padding: 0.2em 1em;
   text-decoration: none;
 }
 .aap-donation-right-class .pane-content .donate-link a:hover {
-  background: #fcac33;
+  background: #0b6182;
 }
 
 .aap-right-default-class .pane-content ul {
@@ -712,7 +664,7 @@ h2.pane-title {
 .aap-tag-cloud .pane-content {
   text-align: left;
   margin-bottom: 2%;
-  background: #fffcf9;
+  background: white;
   padding: 0 1em;
   color: #333333;
 }
@@ -768,7 +720,7 @@ h2.pane-title {
 
 .copyright-content {
   font-family: "Droid Sans", Arial, sans-serif;
-  color: #fffcf9;
+  color: white;
   font-size: 0.8em;
   margin-top: 2em;
 }
@@ -777,7 +729,7 @@ h2.pane-title {
   margin: 0;
 }
 .copyright-content a {
-  color: #fffcf9;
+  color: white;
 }
 .copyright-content a:hover {
   text-decoration: underline;
@@ -789,6 +741,20 @@ h2.pane-title {
 
 .service-links {
   margin: 1em 0;
+}
+
+.more-link {
+  text-align: left;
+  margin: 1em;
+}
+.more-link a {
+  color: white;
+  background: #0b7ba5;
+  padding: 0.3em 1em;
+}
+.more-link a:hover {
+  background: #0b6182;
+  text-decoration: none !important;
 }
 
 /*******************************************************************************
@@ -830,46 +796,26 @@ h2.pane-title {
  *       CSS. Exposed filter forms, views pagers and other views elements are
  *       also good candidates for components.
  ******************************************************************************/
-.aap-search-class form .form-submit {
-  background: url("../images/search.png") no-repeat scroll 50% 50% #f17e00;
-  border-radius: 0;
-  padding: 0;
-  margin: 0;
-  width: 30px;
-  height: 1.3em;
-}
-.aap-search-class form .form-submit:hover {
-  opacity: 0.4;
-}
-.aap-search-class .container-inline div {
-  display: block;
-  float: left;
-  margin-top: 1%;
-}
-.aap-search-class .aap-header-content,
-.aap-search-class .container-inline {
-  padding-right: 9px;
-  float: left;
-  margin-top: 1%;
-}
-
-.aap-contact-form-class .form-submit {
-  float: right;
-}
-
 form .form-submit {
-  padding: 0em 0.9em;
+  padding: 0.3em 1em;
   text-align: center;
-  background: #f36c01;
+  background: #0b7ba5;
   color: white;
-  border: 0 none;
-  color: #fffcf9;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  text-decoration: none;
-  text-shadow: 1px 1px 1b1c28;
+  border: none;
   cursor: pointer;
 }
 form .form-submit:hover {
+  background: #0b6182;
+  text-decoration: none !important;
+}
+
+form.apachesolr-panels-search-form .form-text {
+  width: 80%;
+}
+form.apachesolr-panels-search-form .form-submit {
+  background: #f36c01;
+}
+form.apachesolr-panels-search-form .form-submit:hover {
   background: #fcac33;
 }
 
@@ -1093,8 +1039,13 @@ a.header-button:hover {
   list-style: none;
   margin: 0 0.5em;
   padding: 0.7em 1em;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px solid #ddd;
   font-size: 0.9em;
+}
+.latest-news-block-view li.views-row-last,
+.press-release-block-view li.views-row-last,
+.blog-posts-view li.views-row-last {
+  border-bottom: none;
 }
 .latest-news-block-view a:hover,
 .press-release-block-view a:hover,
