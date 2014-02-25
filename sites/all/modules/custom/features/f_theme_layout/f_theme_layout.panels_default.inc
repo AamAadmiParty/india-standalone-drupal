@@ -57,7 +57,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Footer 3',
-        'width' => 25,
+        'width' => '25.086775456108423',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -72,7 +72,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_2' => array(
         'type' => 'region',
         'title' => 'Footer 2',
-        'width' => 25,
+        'width' => '24.999997018607544',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -80,7 +80,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_3' => array(
         'type' => 'region',
         'title' => 'Footer 4',
-        'width' => 25,
+        'width' => '24.827041432271997',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -88,7 +88,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_1' => array(
         'type' => 'region',
         'title' => 'Footer 1',
-        'width' => 25,
+        'width' => '25.086186093012035',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -271,7 +271,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Center',
-        'width' => '71.14674127188007',
+        'width' => '59.96784180209157',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'social-connector-region',
@@ -279,7 +279,7 @@ function f_theme_layout_default_panels_mini() {
       'copyright' => array(
         'type' => 'region',
         'title' => 'Copyright',
-        'width' => '28.85325872811993',
+        'width' => '40.03215819790843',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-copyright-class',
@@ -346,7 +346,7 @@ function f_theme_layout_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => 'Copyright Message',
       'title' => '',
-      'body' => '<div class="copyright-content">&copy; Aam Aadmi Party. All Rights Reserved</div>',
+      'body' => '<div class="copyright-content"><p>© 2012-2014 Aam Aadmi Party. All Rights Reserved.</p><p><a href="http://drupal.org" target="_blank">Drupal</a> powered site, built and maintained by <a href="http://www.innoraft.com/" target="_blank">Innoraft</a>.</p></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -412,7 +412,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Header Content',
-        'width' => 54.305874610040995,
+        'width' => '49.991619862946514',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-header-search-class',
@@ -420,7 +420,7 @@ function f_theme_layout_default_panels_mini() {
       'header_logo' => array(
         'type' => 'region',
         'title' => 'Header Logo',
-        'width' => '45.69412538995901',
+        'width' => '50.008380137053486',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -449,8 +449,7 @@ function f_theme_layout_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => 'Header Contact, Donate Buttons',
       'title' => '',
-      'body' => '<a class="header-contact-button header-button" href="/page/contact-us" title="Contact Us">Contact Us</a>
-<a class="header-donate-button header-button" href="https://donate.aamaadmiparty.org/" target="_blank" title="Make a Donation">Donate</a>',
+      'body' => '<p><a class="header-donate-button header-button" href="https://donate.aamaadmiparty.org/" target="_blank" title="Make a Donation">Donate</a><a class="header-contact-button header-button" href="/contact-us" title="Contact Us">Contact Us</a> </p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );

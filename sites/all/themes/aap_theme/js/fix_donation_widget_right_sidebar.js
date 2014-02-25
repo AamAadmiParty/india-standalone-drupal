@@ -4,6 +4,10 @@
       var donation_pos = $( ".aap-donation-right-class" ).offset();
       if (donation_pos != null) {
         donation_pos = donation_pos.top;
+        // compute the original width of right side donation widget and keep it that way
+        // basically set it explicitly so that it remains in position when made 'fixed' later
+        var donation_right_widget_width = $('.aap-donation-right-class').width();
+        $('.aap-donation-right-class').width(donation_right_widget_width);
         $(window).scroll(function() { //when window is scrolled
           $pos = donation_pos - $(window).scrollTop();
           if ($pos < 65) {
