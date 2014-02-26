@@ -123,7 +123,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
    }
  }
 
-    h2.pane-title {
+    h1.pane-title {
       background-color: $white;
       text-align: center;
       margin: 0.3em 0 0.5em;
@@ -135,7 +135,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     }
 .aap-main-content {
    	a {
-      color:#1f7fa2;
+      color:$link-color;
     }
 }
 
@@ -476,7 +476,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           padding: 0.5em 0.2em;
           color: $green;
           font-family: "Droid Sans", Arial, sans-serif;
-          font-size: 3em;
+          font-size: 2em;
           border-bottom: none;
        }
 
@@ -485,12 +485,23 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           .node-teaser,
         	.node--full,
           .node-full,
-        	.search-result {
+        	.search-result,
+          .view-topics {
        		 	@include aap_content_item;
        		 	padding: 1% 2%;
        		}
        }
 
+       // Css for topics page
+       .aap-topics-item-class {
+        padding-right: 1em;
+        a {
+          color:$link-color;
+          &:hover {
+            color: #0DB1EC;
+          }
+        }
+       }
        	.view-aap-media {
        		.view-content		{
        			@include aap_content_item;

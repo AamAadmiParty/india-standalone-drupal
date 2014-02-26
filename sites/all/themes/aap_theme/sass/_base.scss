@@ -16,8 +16,8 @@
 $base-font-size:   16px; // The font size set on the root html element.
 $base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
 
-$h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
+$h1-font-size: 1.5    * $base-font-size;
+$h2-font-size: 1  * $base-font-size;
 $h3-font-size: 1.17 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
@@ -27,7 +27,7 @@ $font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
 $font-family-sans-serif: 'Droid Sans', Arial, sans-serif;
 
 /* AAP colour sechme */
- 
+
       $green : #61A220;
       $nav_blue : #0B6182;
       $nav_blue_light: #0b7ba5;
@@ -41,9 +41,10 @@ $font-family-sans-serif: 'Droid Sans', Arial, sans-serif;
       $question-background : #F7F7F7;
       $slide_dot: #999999;
       $slide_dot_active: #676767;
- 
-h2 {
-  font-size: $h2-font-size;
+      $link-color: #1f7fa2;
+
+h1 {
+  font-size: $h1-font-size;
 }
 
 /* AAP body measurements */
@@ -75,23 +76,23 @@ h2 {
       background: $white;
       padding: 0 1em;
       color: #333333;
-      
+
       .node__title a {
        		color:#000;
-       		text-decoration:none; 
+       		text-decoration:none;
        		line-height: 1em;
        	}
-      
+
       p {
       	font-style:normal;
       	font-family: $font-family-serif !important;
 
-      	a { 
+      	a {
       		font-family: $font-family-sans-serif;
          	color:#f17e00; text-decoration:none;
         }
       }
-      
+
 }
 
 @mixin aap_content_title_panelizer {
@@ -100,7 +101,7 @@ h2 {
       color: #333333;
       padding-left: 0;
  }
- 
+
 @mixin aap_content_link {
 		font-family: $font-family-sans-serif;
     color:#f17e00; text-decoration:none; font-weight:normal;
