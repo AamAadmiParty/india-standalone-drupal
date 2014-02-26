@@ -13,25 +13,39 @@
  * features are added they will be correctly styled without any extra work.
  ******************************************************************************/
 
+$base-font-size:   16px; // The font size set on the root html element.
+$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+
+$h1-font-size: 2    * $base-font-size;
+$h2-font-size: 1.5  * $base-font-size;
+$h3-font-size: 1.17 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.75 * $base-font-size;
+
+$font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
+$font-family-sans-serif: 'Droid Sans', Arial, sans-serif;
+
 /* AAP colour sechme */
- 
  
       $green : #61A220;
       $nav_blue : #0B6182;
+      $nav_blue_light: #0b7ba5;
       $nav_icon : #0A7FAA;
-      $white : #FFFCF9;
+      $white : #FFFFFF;
       $orange : #F17E00;
       $footer : #1E7FA2;
       $button-color:#F36C01;
       $button-color-hover:#fcac33;
-      $font-family : Franklin Gothic Demi Cond;
       $border-color:  #D7D7D7;
       $question-background : #F7F7F7;
-      $border-radius: 0.4em;
       $slide_dot: #999999;
       $slide_dot_active: #676767;
-      $font-family-group : Arial, Helvetica, sans-serif;
  
+h2 {
+  font-size: $h2-font-size;
+}
+
 /* AAP body measurements */
 
 @mixin aap_body_measurements {
@@ -44,55 +58,37 @@
 
 @mixin aap_font_style {
       color: $white;
-      font-family: $font-family;
-      font-size: 1.2em;
+      font-family: $font-family-serif;
       text-decoration: none;
 }
 @mixin aap_font_body {
-      font-family: $font-family-group;
-      font-size: 0.87em;
+      font-family: $font-family-serif;
       text-decoration: none;
       font-weight:normal;
       color: #333333;
-} 
-@mixin aap_content_title {
-      border: 1px solid;
-      border-radius: 0.3em;
-      text-align: center;
-      background-color: $green;
-      margin-bottom: 2%;
-      color:#fff;;
-      font-family: $font-family;
-      font-size: 1.57em;
-      padding: 1%;
 }
 
 
 @mixin aap_content_item {
-      border: 1px solid;
-      border-radius: 0.3em;
-      border-color: $border-color;
       text-align: left;
-      background-color: white;
       margin-bottom: 2%;
-      padding: 0 2%;
+      background: $white;
+      padding: 0 1em;
       color: #333333;
       
       .node__title a {
        		color:#000;
        		text-decoration:none; 
-       		font-size:1.2em;
        		line-height: 1em;
        	}
       
       p {
-      	font-size: 15px !important;
       	font-style:normal;
-      	font-family: $font-family-group !important;
+      	font-family: $font-family-serif !important;
 
       	a { 
-      		font-family: $font-family-group;
-         	color:#f17e00; text-decoration:none; font-weight:bold;
+      		font-family: $font-family-sans-serif;
+         	color:#f17e00; text-decoration:none;
         }
       }
       
@@ -102,11 +98,16 @@
 
 			background: none;
       color: #333333;
-      font-size: 1.6em;
       padding-left: 0;
  }
  
 @mixin aap_content_link {
-		font-family: $font-family-group;
+		font-family: $font-family-sans-serif;
     color:#f17e00; text-decoration:none; font-weight:normal;
-}   
+}
+
+// All links unless they are inline in the main content should have SANS-SERIF font-size
+a, button {
+  font-family: $font-family-sans-serif;
+  text-decoration: none;
+}
