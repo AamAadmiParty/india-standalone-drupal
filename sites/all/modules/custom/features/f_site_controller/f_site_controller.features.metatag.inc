@@ -92,13 +92,13 @@ function f_site_controller_metatag_export_default() {
         'value' => '[node:title] | [site:name]',
       ),
       'description' => array(
-        'value' => '[node:body]',
+        'value' => '[node:description]',
       ),
       'og:title' => array(
         'value' => '[node:title]',
       ),
       'og:description' => array(
-        'value' => '[node:body]',
+        'value' => '[node:description]',
       ),
       'og:image' => array(
         'value' => '[node:field_content_sliding_image]',
@@ -110,7 +110,7 @@ function f_site_controller_metatag_export_default() {
         'value' => '[node:title]',
       ),
       'twitter:description' => array(
-        'value' => '[node:body]',
+        'value' => '[node:description]',
       ),
       'twitter:image' => array(
         'value' => '[node:field_content_sliding_image]',
