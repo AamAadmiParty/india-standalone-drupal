@@ -15,6 +15,9 @@ regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
 regions[footer] = Footer
 
+fonts[google_fonts_api][] = "Droid Sans&subset=latin#700"
+fonts[google_fonts_api][] = "Droid Sans&subset=latin#regular"
+
 features[] = logo
 features[] = favicon
 

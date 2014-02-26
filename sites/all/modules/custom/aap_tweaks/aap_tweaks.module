@@ -169,18 +169,18 @@ function donation_forms() {
  */
 function donation_block_form($form, &$form_state) {
 	$list = array (
+			'50' => 'Rs.50',
+			'100' => 'Rs.100',
 			'500' => 'Rs.500',
-			'2500' => 'Rs.2500',
+			'1000' => 'Rs.1000',
 			'5000' => 'Rs.5000',
 			'10000' => 'Rs.10000',
-			'15000' => 'Rs.15000',
 			'20000' => 'Rs.20000',
-			'25000' => 'Rs.25000',
 			'0' => 'Rs.Other'
 	);
 	$form ['choice'] = array (
 			'#type' => 'radios',
-			'#title' => t ( 'Contribute today and help to build a stronger party!' ),
+			'#title' => t ( 'Contribute to fight Corruption!' ),
 			'#default_value' => - 1,
 			'#options' => $list,
 			'#validated' => TRUE,
@@ -188,8 +188,8 @@ function donation_block_form($form, &$form_state) {
 
 	$donation_link =  l('Donate Now', 'https://donate.aamaadmiparty.org');
 	$form['link'] = array(
-		'#prefix' => '<div class = "donate-link">' . $donation_link,
-		'#suffix' => '</div>',
+		'#prefix' => '<div class="clearfix"><div class = "donate-link">' . $donation_link,
+		'#suffix' => '</div></div>',
 	);
 	return $form;
 }
