@@ -414,6 +414,26 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
  			}
  	}
 
+ .copyright-content {
+ 			color: white;
+    font-family: arial;
+    font-size: 14px;
+    margin-top: 14%;
+ }
+
+.language-detector {
+  ul {
+    list-style: none;
+    margin-left: 25%;
+  }
+  li {
+    float: left;
+    padding-left: 5%;
+    a {
+      text-decoration: none;
+    }
+  }
+}
 
 /*********************************************************************
 
