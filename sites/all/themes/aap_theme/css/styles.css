@@ -209,7 +209,18 @@ h1.pane-title {
 }
 
 .aap-main-content a {
+  color: #136180;
+}
+
+.aap-right-side-bar .view-similar-content {
+  background: white;
+}
+.aap-right-side-bar .view-similar-content a {
   color: #1f7fa2;
+}
+.aap-right-side-bar .view-similar-content a a:hover {
+  color: #1967AF;
+  font-size: 1em;
 }
 
 .aap-main-content.latest-news-class .pane-content {
@@ -527,7 +538,8 @@ h1.pane-title {
 .aap-page-content-class .pane-content .node--full,
 .aap-page-content-class .pane-content .node-full,
 .aap-page-content-class .pane-content .search-result,
-.aap-page-content-class .pane-content .view-topics {
+.aap-page-content-class .pane-content .view-topics,
+.aap-page-content-class .pane-content .view-similar-content {
   text-align: left;
   margin-bottom: 2%;
   background: white;
@@ -539,7 +551,8 @@ h1.pane-title {
 .aap-page-content-class .pane-content .node--full .node__title a,
 .aap-page-content-class .pane-content .node-full .node__title a,
 .aap-page-content-class .pane-content .search-result .node__title a,
-.aap-page-content-class .pane-content .view-topics .node__title a {
+.aap-page-content-class .pane-content .view-topics .node__title a,
+.aap-page-content-class .pane-content .view-similar-content .node__title a {
   color: #000;
   text-decoration: none;
   line-height: 1em;
@@ -548,7 +561,8 @@ h1.pane-title {
 .aap-page-content-class .pane-content .node--full p,
 .aap-page-content-class .pane-content .node-full p,
 .aap-page-content-class .pane-content .search-result p,
-.aap-page-content-class .pane-content .view-topics p {
+.aap-page-content-class .pane-content .view-topics p,
+.aap-page-content-class .pane-content .view-similar-content p {
   font-style: normal;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
@@ -556,10 +570,14 @@ h1.pane-title {
 .aap-page-content-class .pane-content .node--full p a,
 .aap-page-content-class .pane-content .node-full p a,
 .aap-page-content-class .pane-content .search-result p a,
-.aap-page-content-class .pane-content .view-topics p a {
+.aap-page-content-class .pane-content .view-topics p a,
+.aap-page-content-class .pane-content .view-similar-content p a {
   font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
+}
+.aap-page-content-class .view-similar-content {
+  background: white;
 }
 .aap-page-content-class .aap-topics-item-class {
   padding-right: 1em;
@@ -881,7 +899,7 @@ input[type=radio], input.radio {
 }
 
 /*********************************************************************
-  
+
     * Layout for dafault page
     *
     *******************************************************************/
@@ -1042,13 +1060,15 @@ a.header-button:hover {
 
 .latest-news-block-view ul,
 .press-release-block-view ul,
-.blog-posts-view ul {
+.blog-posts-view ul,
+.view-similar-content ul {
   margin: 0;
   padding: 0;
 }
 .latest-news-block-view li,
 .press-release-block-view li,
-.blog-posts-view li {
+.blog-posts-view li,
+.view-similar-content li {
   list-style: none;
   margin: 0 0.5em;
   padding: 0.7em 1em;
@@ -1057,13 +1077,22 @@ a.header-button:hover {
 }
 .latest-news-block-view li.views-row-last,
 .press-release-block-view li.views-row-last,
-.blog-posts-view li.views-row-last {
+.blog-posts-view li.views-row-last,
+.view-similar-content li.views-row-last {
   border-bottom: none;
 }
 .latest-news-block-view a:hover,
 .press-release-block-view a:hover,
-.blog-posts-view a:hover {
+.blog-posts-view a:hover,
+.view-similar-content a:hover {
   text-decoration: underline;
+}
+
+.view-similar-content {
+  background: white;
+}
+.view-similar-content a:hover {
+  color: #f17e00;
 }
 
 .join-us-on-facebook iframe {

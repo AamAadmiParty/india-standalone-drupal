@@ -135,10 +135,19 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     }
 .aap-main-content {
    	a {
-      color:#1f7fa2;
+      color:#136180;
     }
 }
-
+.aap-right-side-bar .view-similar-content {
+  background: white;
+    a {
+      color:#1f7fa2;
+      a:hover {
+        color: #1967AF;
+        font-size: 1em;
+      }
+    }
+  }
 .aap-main-content.latest-news-class {
          .pane-content {
        position:relative;
@@ -486,12 +495,15 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
         	.node--full,
           .node-full,
         	.search-result,
-          .view-topics {
+          .view-topics,
+          .view-similar-content {
        		 	@include aap_content_item;
        		 	padding: 1% 2%;
        		}
        }
-
+       .view-similar-content {
+        background: white;
+       }
        // Css for topics page
        .aap-topics-item-class {
         padding-right: 1em;

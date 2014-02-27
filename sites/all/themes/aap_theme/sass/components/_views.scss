@@ -35,7 +35,8 @@
 
 .latest-news-block-view,
 .press-release-block-view,
-.blog-posts-view {
+.blog-posts-view,
+.view-similar-content {
 	ul {
 		margin: 0;
 		padding: 0;
@@ -54,6 +55,12 @@
 		text-decoration: underline;
 	}
 }
+.view-similar-content {
+  background: white;
+      a:hover {
+        color: #f17e00;
+      }
+  }
 
 .join-us-on-facebook {
 	iframe {
