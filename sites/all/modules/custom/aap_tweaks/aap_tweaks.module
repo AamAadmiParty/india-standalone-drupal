@@ -194,6 +194,33 @@ function donation_block_form($form, &$form_state) {
 	return $form;
 }
 
+/* Implements hook_token_info().
+*/
+function aap_tweaks_token_info() {
+  $info['tokens']['node']['description'] = array(
+    'name' => t('Dode description'),
+    'description' => t('Returns the trimmed body of content limit to 160 characters'),
+  );
+  return $info;
+}
+
+
+/**
+* Implements hook_tokens().
+*/
+function aap_tweaks_tokens($type, $tokens, $data = array(), $options = array()) {
+  $replacements = array();
+  if ($type == 'node' && !empty($data['node'])) {
+    $node = $data['node'];
+    if (isset($tokens['description'])) {
+    	$language = $node->language;
+    	$text = drupal_html_to_text($node->body[$language][0]['value']);
+      $replacements[$tokens['description']] = substr($text, 0, 150);
+    }
+  }
+
+  return $replacements;
+}
 
 function aap_tweaks_permission()  {
 	return array(
