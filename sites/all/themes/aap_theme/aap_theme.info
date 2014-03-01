@@ -15,6 +15,9 @@ regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
 regions[footer] = Footer
 
+fonts[google_fonts_api][] = "Droid Sans&subset=latin#700"
+fonts[google_fonts_api][] = "Droid Sans&subset=latin#regular"
+
 features[] = logo
 features[] = favicon
 
@@ -24,6 +27,7 @@ scripts[] = js/aap_campaign_tracker.js
 scripts[] = js/fix_donation_widget_right_sidebar.js
 scripts[] = js/ddtf.js
 scripts[] = js/aap_script.js
+scripts[] = js/slide_survey.js
 
 settings[omega_toggle_front_page_content] = 1
 settings[default_logo] = 0

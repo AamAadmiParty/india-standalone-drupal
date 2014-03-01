@@ -63,17 +63,20 @@ function f_site_controller_metatag_export_default() {
       'title' => array(
         'value' => '[site:name]',
       ),
+      'description' => array(
+        'value' => 'This is front page description.',
+      ),
       'canonical' => array(
         'value' => '[site:url]',
       ),
       'shortlink' => array(
         'value' => '[site:url]',
       ),
-      'og:type' => array(
-        'value' => 'website',
-      ),
       'og:title' => array(
         'value' => '[site:name]',
+      ),
+      'og:type' => array(
+        'value' => 'website',
       ),
       'og:url' => array(
         'value' => '[site:url]',
@@ -92,13 +95,13 @@ function f_site_controller_metatag_export_default() {
         'value' => '[node:title] | [site:name]',
       ),
       'description' => array(
-        'value' => '[node:body]',
+        'value' => '[node:description]',
       ),
       'og:title' => array(
         'value' => '[node:title]',
       ),
       'og:description' => array(
-        'value' => '[node:body]',
+        'value' => '[node:description]',
       ),
       'og:image' => array(
         'value' => '[node:field_content_sliding_image]',
@@ -110,7 +113,7 @@ function f_site_controller_metatag_export_default() {
         'value' => '[node:title]',
       ),
       'twitter:description' => array(
-        'value' => '[node:body]',
+        'value' => '[node:description]',
       ),
       'twitter:image' => array(
         'value' => '[node:field_content_sliding_image]',
