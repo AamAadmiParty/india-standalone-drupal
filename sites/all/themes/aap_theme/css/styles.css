@@ -525,10 +525,10 @@ h1.pane-title {
   text-align: left;
   background-color: white;
   margin: 0;
-  padding: 0.5em 0.2em;
+  padding: 0.3em 0.4em;
   color: #61a220;
   font-family: "Droid Sans", Arial, sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   border-bottom: none;
 }
 .aap-page-content-class .pane-content {
@@ -786,6 +786,10 @@ h1.pane-title {
 .more-link a:hover {
   background: #0b6182;
   text-decoration: none !important;
+}
+
+.pane-page-content .pane-content {
+  background: white;
 }
 
 /*******************************************************************************
@@ -1097,4 +1101,8 @@ a.header-button:hover {
 
 .join-us-on-facebook iframe {
   width: 100%;
+}
+
+.pane-page-content .pane-content div.view-content div.views-row {
+  border-bottom: 1px solid #ddd;
 }

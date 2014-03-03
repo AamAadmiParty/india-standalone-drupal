@@ -482,10 +482,10 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
           text-align: left;
           background-color: $white;
           margin: 0;
-          padding: 0.5em 0.2em;
+          padding: 0.3em 0.4em;
           color: $green;
           font-family: "Droid Sans", Arial, sans-serif;
-          font-size: 3em;
+          font-size: 2em;
           border-bottom: none;
        }
 
@@ -668,4 +668,8 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
     text-decoration: none !important;
   }
   }
+}
+
+.pane-page-content .pane-content {
+  background: $white;
 }
