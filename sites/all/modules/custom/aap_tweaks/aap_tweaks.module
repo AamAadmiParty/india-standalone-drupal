@@ -8,20 +8,20 @@
  * Implements hook_init
  */
 function aap_tweaks_init() {
-	// Make our splash settings variables available to our JavaScript.
+  // Make our splash settings variables available to our JavaScript.
 
-	$survey_delay = variable_get('survey_delay',6000);
-	$js_settings = array(
-			'survey_delay' => $survey_delay,
+  $survey_delay = variable_get('survey_delay',6000);
+  $js_settings = array(
+    'survey_delay' => $survey_delay,
 
-	);
+  );
 
-	drupal_add_js(array('aap_tweaks' => $js_settings), array(
-	'type' => 'setting',
-	'cache' => TRUE,
-	'weight' => -100,
-	'every_page' => TRUE,
-	));
+  drupal_add_js(array('aap_tweaks' => $js_settings), array(
+  'type' => 'setting',
+  'cache' => TRUE,
+  'weight' => -100,
+  'every_page' => TRUE,
+  ));
 }
 
 /**
@@ -29,173 +29,173 @@ function aap_tweaks_init() {
  */
 function aap_tweaks_form_alter(&$form, &$form_state, $form_id) {
 
-	// Removes title in textfield of search field
-	if ($form_id == 'apachesolr_search_custom_page_search_form') {
-		$form['basic']['keys']['#title'] = t('');
-	}
-	// If we are on a node form and the setting for 'separate summary' is ON, do so.
-	if (! (strpos ( $form_id, 'node_form' ) === FALSE)) {
-		unset ( $form ['body'] [LANGUAGE_NONE] [0] ['summary'] ['#attached'] );
-	}
-	if ($form_id == "invite_form") {
-		$form ['message'] ['#disabled'] = TRUE;
-		$form ['email'] ['#description'] = 'Enter the e-mail addresses of the persons you would like to invite.
+  // Removes title in textfield of search field
+  if ($form_id == 'apachesolr_search_custom_page_search_form') {
+    $form['basic']['keys']['#title'] = t('');
+  }
+  // If we are on a node form and the setting for 'separate summary' is ON, do so.
+  if (! (strpos ( $form_id, 'node_form' ) === FALSE)) {
+    unset ( $form ['body'] [LANGUAGE_NONE] [0] ['summary'] ['#attached'] );
+  }
+  if ($form_id == "invite_form") {
+    $form ['message'] ['#disabled'] = TRUE;
+    $form ['email'] ['#description'] = 'Enter the e-mail addresses of the persons you would like to invite.
       To specify multiple recipients, enter one e-mail address per line or separate each address with a comma.
       <div class="contact-importer-message">' . t ( 'You can also <a href=!importer-link class="contact-importer-link">import your ' . 'contacts from GMail, Yahoo!</a>', array (
-				'!importer-link' => url ( 'contact_importer' )
-		) ) . '</div>';
-	}
+        '!importer-link' => url ( 'contact_importer' )
+      ) ) . '</div>';
+  }
 
-	// edit contact site form
-	if ($form_id == 'contact_site_form') {
-		$form ['name'] ['#title'] = NULL;
-		$form ['mail'] ['#title'] = NULL;
-		$form ['message'] ['#title'] = NULL;
-		$form ['name'] ['#size'] = 30;
-		$form ['mail'] ['#size'] = 30;
-		$form ['subject'] ['#access'] = FALSE;
-		$form ['message'] ['#cols'] = 5;
-		$form ['message'] ['#rows'] = 4;
-		$form ['message'] ['#resizable'] = FALSE;
+  // edit contact site form
+  if ($form_id == 'contact_site_form') {
+    $form ['name'] ['#title'] = NULL;
+    $form ['mail'] ['#title'] = NULL;
+    $form ['message'] ['#title'] = NULL;
+    $form ['name'] ['#size'] = 30;
+    $form ['mail'] ['#size'] = 30;
+    $form ['subject'] ['#access'] = FALSE;
+    $form ['message'] ['#cols'] = 5;
+    $form ['message'] ['#rows'] = 4;
+    $form ['message'] ['#resizable'] = FALSE;
 
-		$form ['name'] ['#attributes'] ['placeholder'] = t ( 'Name' );
-		$form ['mail'] ['#attributes'] ['placeholder'] = t ( 'Mail' );
-		$form ['message'] ['#attributes'] ['placeholder'] = t ( 'Comments/Suggestions' );
-		$form ['actions'] ['submit'] ['#value'] = t ( 'Send' );
-	}
+    $form ['name'] ['#attributes'] ['placeholder'] = t ( 'Name' );
+    $form ['mail'] ['#attributes'] ['placeholder'] = t ( 'Mail' );
+    $form ['message'] ['#attributes'] ['placeholder'] = t ( 'Comments/Suggestions' );
+    $form ['actions'] ['submit'] ['#value'] = t ( 'Send' );
+  }
 
-	// edit user login form
-	if ($form_id == 'search_block_form') {
+  // edit user login form
+  if ($form_id == 'search_block_form') {
 
-		$form['actions']['submit']['#value'] = '';
-		$form['search_block_form']['#attributes']['placeholder'] = t ( 'Search our websites...' );
-		unset($form['search_block_form']['#attributes']['title']);
-		global  $base_url;
+    $form['actions']['submit']['#value'] = '';
+    $form['search_block_form']['#attributes']['placeholder'] = t ( 'Search our websites...' );
+    unset($form['search_block_form']['#attributes']['title']);
+    global  $base_url;
 
-		$contact_link = l ( 'Contact Us', $base_url . '/page/contact-us' );
-		$form ['contact_link'] = array (
-				'#prefix' => '<div id="aap-contact" class = "aap-header-content">' . $contact_link,
-				'#suffix' => '</div>',
-				'#weight' => -50,
-		);
+    $contact_link = l ( 'Contact Us', $base_url . '/page/contact-us' );
+    $form ['contact_link'] = array (
+      '#prefix' => '<div id="aap-contact" class = "aap-header-content">' . $contact_link,
+      '#suffix' => '</div>',
+      '#weight' => -50,
+    );
 
-		$lang_option = array (
-				'0' => 'English'
-		);
-		$form ['website_language'] = array (
-				'#prefix' => '<div class="aap-language aap-header-content">',
-				'#type' => 'select',
-				'#title' => t ( 'Language' ),
-				'#options' => $lang_option,
-				'#default_value' => array (0),
-				'#weight' => -48,
-				'#suffix' => '</div>',
-		);
+    $lang_option = array (
+      '0' => 'English'
+    );
+    $form ['website_language'] = array (
+      '#prefix' => '<div class="aap-language aap-header-content">',
+      '#type' => 'select',
+      '#title' => t ( 'Language' ),
+      '#options' => $lang_option,
+      '#default_value' => array (0),
+      '#weight' => -48,
+      '#suffix' => '</div>',
+    );
 
-		$login_link = l('Log In', $base_url . '/user');
+    $login_link = l('Log In', $base_url . '/user');
 
-		$form ['login_link'] = array (
-				'#prefix' => '<div class="aap-login aap-header-content">' . $login_link,
-				'#suffix' => '</div>',
-				'#weight' => 500,
-		);
-	}
+    $form ['login_link'] = array (
+      '#prefix' => '<div class="aap-login aap-header-content">' . $login_link,
+      '#suffix' => '</div>',
+      '#weight' => 500,
+    );
+  }
 
-	return $form;
+  return $form;
 }
 
 /**
  * Implements hook_node_view_alter().
  */
 function aap_tweaks_node_view_alter(&$build) {
-	if ($build ['#view_mode'] == 'teaser' && isset ( $build ['links'] ['disqus'] )) {
-		unset ( $build ['links'] ['disqus'] );
-	}
+  if ($build ['#view_mode'] == 'teaser' && isset ( $build ['links'] ['disqus'] )) {
+    unset ( $build ['links'] ['disqus'] );
+  }
 
-	// code for inserting block just above disqus comment
-	if (isset ( $build ['disqus'] )) {
-		$build ['block'] = array (
-				'#prefix' => '<div class="service-links"><span style="color:blue">When expressing your views in the comments, please use clean and dignified language, even when you are expressing disagreement.
-                                     Also, we encourage you to <b>Flag</b> any abusive or highly irrelevant comments. Thank you.</span>',
-				'#suffix' => '</div>',
-				'#weight' => variable_get ( 'disqus_weight', 50 ) - 1
-		);
-	}
+  // code for inserting block just above disqus comment
+  if (isset ( $build ['disqus'] )) {
+    $build ['block'] = array (
+      '#prefix' => '<div class="service-links"><span style="color:blue">When expressing your views in the comments, please use clean and dignified language, even when you are expressing disagreement.
+      Also, we encourage you to <b>Flag</b> any abusive or highly irrelevant comments. Thank you.</span>',
+      '#suffix' => '</div>',
+      '#weight' => variable_get ( 'disqus_weight', 50 ) - 1
+    );
+  }
 }
 
 /**
  * Implements hook_block_info().
  */
 function aap_tweaks_block_info() {
-	$blocks = array ();
-	$blocks ['Donation_ Block'] = array (
-			'info' => t ( 'Donation Block' ),
-			'cache' => DRUPAL_NO_CACHE
-	);
-	return $blocks;
+  $blocks = array ();
+  $blocks ['Donation_ Block'] = array (
+    'info' => t ( 'Donation Block' ),
+    'cache' => DRUPAL_NO_CACHE
+  );
+  return $blocks;
 }
 /**
  * Implements hook_block_view().
  */
 function aap_tweaks_block_view($delta = '') {
-	// if (user_access('search content')) {
-	if ($delta == 'Donation_ Block') {
-		$form = drupal_get_form ( 'donation_block_form' );
-		$form = drupal_render ( $form );
+  // if (user_access('search content')) {
+  if ($delta == 'Donation_ Block') {
+    $form = drupal_get_form ('donation_block_form');
+    $form = drupal_render ($form);
 
-		$block = array (
-			'subject' => t ( 'Make a Donation' ),
-			'content' => $form
-			);
-	}
-	return $block;
+    $block = array (
+      'subject' => t ('Make a Donation'),
+      'content' => $form
+    );
+  }
+  return $block;
 }
 
 /**
  * Implements hook_forms().
  */
 function donation_forms() {
-	$forms ['donation_block_form'] = array (
-			'callback' => 'donation_form',
-			'callback arguments' => array (
-					'donation_block_form'
-			)
-	);
-	return $forms;
+  $forms ['donation_block_form'] = array (
+    'callback' => 'donation_form',
+    'callback arguments' => array (
+      'donation_block_form'
+    )
+  );
+  return $forms;
 }
 
 /**
  * Create donatin form block
  */
 function donation_block_form($form, &$form_state) {
-	$list = array (
-			'50' => 'Rs.50',
-			'100' => 'Rs.100',
-			'500' => 'Rs.500',
-			'1000' => 'Rs.1000',
-			'5000' => 'Rs.5000',
-			'10000' => 'Rs.10000',
-			'20000' => 'Rs.20000',
-			'0' => 'Rs.Other'
-	);
-	$form ['choice'] = array (
-			'#type' => 'radios',
-			'#title' => t ( 'Contribute to fight Corruption!' ),
-			'#default_value' => - 1,
-			'#options' => $list,
-			'#validated' => TRUE,
-	);
+  $list = array (
+    '201' => 'Rs.201',
+    '501' => 'Rs.501',
+    '1100' => 'Rs.1100',
+    '2100' => 'Rs.2100',
+    '5100' => 'Rs.5100',
+    '11000' => 'Rs.11000',
+    //'20000' => 'Rs.20000',
+    '' => 'Rs.Other'
+  );
+  $form ['choice'] = array (
+    '#type' => 'radios',
+    '#title' => t ( 'Contribute to fight Corruption!' ),
+    '#default_value' => - 1,
+    '#options' => $list,
+    '#validated' => TRUE,
+  );
 
-	$donation_link =  l('Donate Now', 'https://donate.aamaadmiparty.org');
-	$form['link'] = array(
-		'#prefix' => '<div class="clearfix"><div class = "donate-link">' . $donation_link,
-		'#suffix' => '</div></div>',
-	);
-	return $form;
+  $donation_link =  l('Donate Now', 'https://donate.aamaadmiparty.org');
+  $form['link'] = array(
+    '#prefix' => '<div class="clearfix"><div class = "donate-link">' . $donation_link,
+    '#suffix' => '</div></div>',
+  );
+  return $form;
 }
 
 /* Implements hook_token_info().
-*/
+ */
 function aap_tweaks_token_info() {
   $info['tokens']['node']['description'] = array(
     'name' => t('Dode description'),
@@ -206,15 +206,15 @@ function aap_tweaks_token_info() {
 
 
 /**
-* Implements hook_tokens().
-*/
+ * Implements hook_tokens().
+ */
 function aap_tweaks_tokens($type, $tokens, $data = array(), $options = array()) {
   $replacements = array();
   if ($type == 'node' && !empty($data['node'])) {
     $node = $data['node'];
     if (isset($tokens['description'])) {
-    	$language = $node->language;
-    	$text = drupal_html_to_text($node->body[$language][0]['value']);
+      $language = $node->language;
+      $text = drupal_html_to_text($node->body[$language][0]['value']);
       $replacements[$tokens['description']] = substr($text, 0, 150);
     }
   }
@@ -223,25 +223,25 @@ function aap_tweaks_tokens($type, $tokens, $data = array(), $options = array()) 
 }
 
 function aap_tweaks_permission()  {
-	return array(
-			'manage aap custom tweaks' => array(
-					'title' => t('Manage AAP custom tweaks'),
-					'description' => t('Can Manage AAP custom tweaks')),
-			);
+  return array(
+    'manage aap custom tweaks' => array(
+      'title' => t('Manage AAP custom tweaks'),
+      'description' => t('Can Manage AAP custom tweaks')),
+  );
 }
 
 /**
  * Implements hook_menu().
  */
 function aap_tweaks_menu() {
-	$items['admin/config/aap_tweaks'] = array(
-			'title' => 'AAP Configuration',
-			'type' => MENU_LOCAL_TASK,
-			'access arguments' => array('manage aap custom tweaks'),
-			'page callback' => 'drupal_get_form',
-			'page arguments' => array('AAP_config_form'),
-	);
-	return $items;
+  $items['admin/config/aap_tweaks'] = array(
+    'title' => 'AAP Configuration',
+    'type' => MENU_LOCAL_TASK,
+    'access arguments' => array('manage aap custom tweaks'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('AAP_config_form'),
+  );
+  return $items;
 }
 
 
@@ -250,25 +250,25 @@ function aap_tweaks_menu() {
  */
 
 function AAP_config_form ($form, &$form_status) {
-	$form = array();
+  $form = array();
 
-	$form['news_image'] = array(
-			'#type' => 'textfield',
-			'#size' => 30,
-			'#title' => 'Enter FID',
-			'#default_value' => t(variable_get('news_image',122)),
-			'#description' => t('Fill file id (FID) of image, which you want to show above the news block in home page'),
-	);
+  $form['news_image'] = array(
+    '#type' => 'textfield',
+    '#size' => 30,
+    '#title' => 'Enter FID',
+    '#default_value' => t(variable_get('news_image',122)),
+    '#description' => t('Fill file id (FID) of image, which you want to show above the news block in home page'),
+  );
 
-	$form['survey_delay'] = array(
-			'#type' => 'textfield',
-			'#size' => 30,
-			'#title' => 'Enter Survey delay',
-			'#default_value' => t(variable_get('survey_delay',6000)),
-			'#description' => t('Enter time in miliseconds'),
-	);
+  $form['survey_delay'] = array(
+    '#type' => 'textfield',
+    '#size' => 30,
+    '#title' => 'Enter Survey delay',
+    '#default_value' => t(variable_get('survey_delay',6000)),
+    '#description' => t('Enter time in miliseconds'),
+  );
 
-	return system_settings_form($form);
+  return system_settings_form($form);
 }
 
 
@@ -276,19 +276,19 @@ function AAP_config_form ($form, &$form_status) {
  * Implements hook_views_pre_render() .
  */
 function aap_tweaks_views_pre_render(&$view) {
-	if ($view->name == 'home_page_content' && $view->current_display == 'sliding_news') {
-		drupal_add_js ( drupal_get_path ( 'module', 'aap_tweaks' ) . '/js/collapse_AAP_Question.js' );
-	}
+  if ($view->name == 'home_page_content' && $view->current_display == 'sliding_news') {
+    drupal_add_js ( drupal_get_path ( 'module', 'aap_tweaks' ) . '/js/collapse_AAP_Question.js' );
+  }
 }
 
 /**
  * Implements hook_feeds_presave().
  */
 function aap_tweaks_feeds_presave(FeedsSource $source, $entity, $item) {
-	// TODO It is recommended to check on source id over entity type.
-	if ($entity->type == 'videos') {
-		$entity->field_ct_video['und'][0]['video_url'] = $item['watch_page'];
-	}
+  // TODO It is recommended to check on source id over entity type.
+  if ($entity->type == 'videos') {
+    $entity->field_ct_video['und'][0]['video_url'] = $item['watch_page'];
+  }
 }
 
 /* Below is the code that is used to generate the Delhi Constituency map
