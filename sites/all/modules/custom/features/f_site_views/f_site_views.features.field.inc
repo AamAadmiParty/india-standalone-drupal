@@ -404,6 +404,7 @@ Image size should be of <b>630x230px<b>.',
       'settings' => array(
         'alt_field' => 0,
         'default_image' => 0,
+        'entity_translation_sync' => FALSE,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',

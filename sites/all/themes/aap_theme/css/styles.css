@@ -473,6 +473,26 @@ h1.pane-title {
   color: #EFF743;
 }
 
+
+.copyright-content {
+  color: white;
+  font-family: arial;
+  font-size: 14px;
+  margin-top: 14%;
+}
+
+.language-detector ul {
+  list-style: none;
+  margin-left: 25%;
+}
+.language-detector li {
+  float: left;
+  padding-left: 5%;
+}
+.language-detector li a {
+  text-decoration: none;
+}
+
 /*********************************************************************
 
   * Layout for dafault page
@@ -903,7 +923,7 @@ input[type=radio], input.radio {
 }
 
 /*********************************************************************
-  
+
     * Layout for dafault page
     *
     *******************************************************************/
