@@ -14,7 +14,7 @@ function f_candidate_details_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_ct_candidate_details';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-xmlsitemap';
   $export['additional_settings__active_tab_ct_candidate_details'] = $strongarm;
 
   $strongarm = new stdClass();
