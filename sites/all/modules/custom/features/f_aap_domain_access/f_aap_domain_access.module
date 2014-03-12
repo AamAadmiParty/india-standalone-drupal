@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AAP Domain Access feature.
+ */
+
+include_once 'f_aap_domain_access.features.inc';
