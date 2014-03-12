@@ -22,7 +22,8 @@ function f_aap_domain_access_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'domain_bootstrap_modules';
   $strongarm->value = array(
-    0 => 'domain_conf',
+    0 => 'domain_alias',
+    1 => 'domain_conf',
   );
   $export['domain_bootstrap_modules'] = $strongarm;
 
@@ -101,39 +102,45 @@ node/%n/outline';
   $strongarm->value = array(
     0 => array(
       'DOMAIN_ALL' => 0,
-      'aap_local' => 0,
-      'rj_aap_local' => 0,
-      'gj_aap_local' => 0,
+      'aamaadmiparty_org' => 0,
+      'ka_aamaadmiparty_org' => 0,
+      'mh_aamaadmiparty_org' => 0,
+      'rj_aamaadmiparty_org' => 0,
     ),
     1 => array(
-      'DOMAIN_ALL' => 1,
-      'aap_local' => 0,
-      'rj_aap_local' => 0,
-      'gj_aap_local' => 0,
+      'DOMAIN_ALL' => 0,
+      'aamaadmiparty_org' => 1,
+      'ka_aamaadmiparty_org' => 0,
+      'mh_aamaadmiparty_org' => 0,
+      'rj_aamaadmiparty_org' => 0,
     ),
     2 => array(
       'DOMAIN_ALL' => 0,
-      'aap_local' => 0,
-      'rj_aap_local' => 0,
-      'gj_aap_local' => 0,
+      'aamaadmiparty_org' => 0,
+      'ka_aamaadmiparty_org' => 0,
+      'mh_aamaadmiparty_org' => 0,
+      'rj_aamaadmiparty_org' => 0,
     ),
     4 => array(
       'DOMAIN_ALL' => 0,
-      'aap_local' => 0,
-      'rj_aap_local' => 0,
-      'gj_aap_local' => 0,
+      'aamaadmiparty_org' => 0,
+      'ka_aamaadmiparty_org' => 0,
+      'mh_aamaadmiparty_org' => 0,
+      'rj_aamaadmiparty_org' => 0,
     ),
     5 => array(
       'DOMAIN_ALL' => 0,
-      'aap_local' => 0,
-      'rj_aap_local' => 0,
-      'gj_aap_local' => 0,
+      'aamaadmiparty_org' => 0,
+      'ka_aamaadmiparty_org' => 0,
+      'mh_aamaadmiparty_org' => 0,
+      'rj_aamaadmiparty_org' => 0,
     ),
     9 => array(
-      'DOMAIN_ALL' => 1,
-      'aap_local' => 0,
-      'rj_aap_local' => 0,
-      'gj_aap_local' => 0,
+      'DOMAIN_ALL' => 0,
+      'aamaadmiparty_org' => 1,
+      'ka_aamaadmiparty_org' => 0,
+      'mh_aamaadmiparty_org' => 0,
+      'rj_aamaadmiparty_org' => 0,
     ),
   );
   $export['domain_roles'] = $strongarm;

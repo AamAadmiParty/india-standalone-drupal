@@ -10,6 +10,15 @@
 function f_aap_domain_access_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access domain navigation.
+  $permissions['access domain navigation'] = array(
+    'name' => 'access domain navigation',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'domain_nav',
+  );
+
   // Exported permission: access domain settings form.
   $permissions['access domain settings form'] = array(
     'name' => 'access domain settings form',
