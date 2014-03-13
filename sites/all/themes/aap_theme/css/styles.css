@@ -792,6 +792,10 @@ h1.pane-title {
   background: white;
 }
 
+.sf-menu li.sfHover > ul {
+  top: 2.4em;
+}
+
 /*******************************************************************************
  * _components.scss
  *
@@ -1043,7 +1047,7 @@ a.header-button:hover {
   width: 44px;
   padding-top: 44px;
   position: absolute;
-  z-index: 1000;
+  z-index: 450;
   top: 120px;
   right: 25px;
   text-indent: -10000px;
