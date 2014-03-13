@@ -673,3 +673,12 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
 .pane-page-content .pane-content {
   background: $white;
 }
+
+.sf-menu  {
+  li.sfHover {
+    & > ul {
+      top: 2.4em;
+    }
+  }
+}
+
