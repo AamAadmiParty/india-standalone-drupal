@@ -1,0 +1,158 @@
+<?php 
+
+/**
+ * Implements hook_domain_batch().
+ */
+function domain_aap_custom_panes_domain_batch() {
+  $batch = array();
+  // Facebook handler page.
+  $batch['facebook_block'] = array(
+    '#form' => array(
+      '#title' => t('Facebook Handler'),
+      '#type' => 'textfield',
+      '#size' => 80,
+      '#maxlength' => 255,
+      '#description' => t('Facebook Handler of page. like: AamAadmiParty'),
+      '#required' => TRUE,
+    ),
+    '#permission' => 'administer domains',
+    '#domain_action' => 'custom',
+    '#meta_description' => t('Edit Facebook Handler Values.'),
+    '#data_type' => 'string',
+    '#weight' => 0,
+    '#group' => t('Facebook Handler'),
+    '#collapsed' => FALSE,
+    '#update_all' => FALSE,
+    '#module' => t('Domain AAP Custom Pane'),
+    '#submit' => 'domain_custom_pane_batch_submit_facebook',
+    '#lookup' => 'domain_custom_pane_batch_lookup_facebook',
+  );
+  // Twitter handlers page.
+  $batch['twitter_block'] = array(
+    '#form' => array(
+      '#title' => t('Twitter Handler'),
+      '#type' => 'textfield',
+      '#size' => 80,
+      '#maxlength' => 255,
+      '#description' => t('Twitter Handler of page. like: AamAadmiParty'),
+      '#required' => TRUE,
+    ),
+    '#permission' => 'administer domains',
+    '#domain_action' => 'custom',
+    '#meta_description' => t('Edit Twitter Handler Values.'),
+    '#data_type' => 'string',
+    '#weight' => 0,
+    '#group' => t('Twitter Handler'),
+    '#collapsed' => FALSE,
+    '#update_all' => FALSE,
+    '#module' => t('Domain AAP Custom Pane'),
+    '#submit' => 'domain_custom_pane_batch_submit_twitter',
+    '#lookup' => 'domain_custom_pane_batch_lookup_twitter',
+  );
+  return $batch;
+}
+
+/**
+ * twitter batch submit handler.
+ * @param $form_values
+ */
+function domain_custom_pane_batch_submit_twitter($form_values) {
+  domain_aap_custom_panes_batch_update_values($form_values, 'twitter');
+}
+
+/**
+ * twitter default value handler.
+ * @param $domain
+ * @return String
+ */
+function domain_custom_pane_batch_lookup_twitter($domain) {
+  $data = domain_custom_pane_batch_lookup($domain, 'twitter');
+  if (empty($data)) {
+    $data = 'AamAadmiParty';
+  }
+  return $data;
+}
+
+/**
+ * facebook batch submit handler.
+ * @param $form_values
+ */
+function domain_custom_pane_batch_submit_facebook($form_values) {
+  domain_aap_custom_panes_batch_update_values($form_values, 'facebook');
+}
+
+/**
+ * facebook default value handler.
+ * @param $domain
+ * @return String
+ */
+function domain_custom_pane_batch_lookup_facebook($domain) {
+  //dpm($domain['domain_id']);
+  $data = domain_custom_pane_batch_lookup($domain, 'facebook');
+  if (empty($data)) {
+    $data = 'AamAadmiParty';
+  }
+  return $data;
+}
+
+/**
+ * get handler value by domain and type from domain_aap_custom_panes table.
+ * @param $domain
+ * @param $type
+ * @return String
+ */
+function domain_custom_pane_batch_lookup($domain, $type) {
+  $data = db_query("SELECT handler FROM {domain_aap_custom_panes} WHERE type = :type AND domain_id = :domain_id",
+    array(':type' => $type, ':domain_id' => $domain['domain_id']))->fetchField();
+  return $data;
+}
+
+/**
+ * update values in domain_aap_custom_panes.
+ * @param $form_values
+ * @param $type
+ */
+function domain_aap_custom_panes_batch_update_values($form_values, $type) {
+  foreach ($form_values['domain_batch'] as $key => $handler) {
+    $_domain = domain_load($key);
+    $data = domain_custom_pane_batch_lookup($_domain, $type);
+    // Update if data exists
+    if (!empty($data)) {
+      db_update('domain_aap_custom_panes')
+      ->fields(array('handler' => $handler))
+      ->condition('domain_id', $key)
+      ->condition('type', $type)
+      ->execute();
+    }
+    // Insert if data doesn't exists.
+    else {
+      db_insert('domain_aap_custom_panes')
+      ->fields(array(
+      'domain_id' => $key,
+      'type' => $type,
+      'handler' => $handler,
+      ))->execute();
+    }
+  }
+}
+
+/**
+ * get content for facebook pane.
+ * @return string
+ */
+function domain_aap_custom_panes_facebook_content() {
+  $_domain = domain_get_domain();
+  $handler = domain_custom_pane_batch_lookup_facebook($_domain);
+  return '<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F' . $handler . '&amp;width&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=607545139264444" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:550px;" allowTransparency="true"></iframe>';
+}
+
+/**
+ * get content for twitter pane.
+ * @return string
+ */
+function domain_aap_custom_panes_twitter_content() {
+  $_domain = domain_get_domain();
+  $handler = domain_custom_pane_batch_lookup_twitter($_domain);
+  return '<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><a class="twitter-timeline" href="https://twitter.com/' . $handler . '" data-widget-id="352375736809693184" height = 550px>Tweets by @' . $handler . '</a>';
+}
+
