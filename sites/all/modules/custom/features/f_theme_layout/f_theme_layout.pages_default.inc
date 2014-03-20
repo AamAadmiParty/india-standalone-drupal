@@ -243,7 +243,7 @@ function f_theme_layout_default_page_manager_handlers() {
       'title' => 'Follow us on Twitter',
       'body' => '<?php
 // getting block code according to the domain.
-// refer issue 164
+// refer https://github.com/AamAadmiParty/india-standalone-drupal/issues/164#issuecomment-38162212
 print domain_aap_custom_panes_twitter_content();
 ?>',
       'format' => 'php_code',
@@ -295,7 +295,7 @@ print domain_aap_custom_panes_twitter_content();
       'title' => 'Join us on Facebook',
       'body' => '<?php
 // getting block code according to the domain.
-// refer issue 164
+// refer https://github.com/AamAadmiParty/india-standalone-drupal/issues/164#issuecomment-38162212
 print domain_aap_custom_panes_facebook_content();
 ?>',
       'format' => 'php_code',
