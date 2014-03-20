@@ -242,6 +242,8 @@ function f_theme_layout_default_page_manager_handlers() {
       'admin_title' => 'Follow us on Twitter',
       'title' => 'Follow us on Twitter',
       'body' => '<?php
+// getting block code according to the domain.
+// refer issue 164
 print domain_aap_custom_panes_twitter_content();
 ?>',
       'format' => 'php_code',
@@ -292,6 +294,8 @@ print domain_aap_custom_panes_twitter_content();
       'admin_title' => 'Join us on Facebook',
       'title' => 'Join us on Facebook',
       'body' => '<?php
+// getting block code according to the domain.
+// refer issue 164
 print domain_aap_custom_panes_facebook_content();
 ?>',
       'format' => 'php_code',
