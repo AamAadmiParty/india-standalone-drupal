@@ -241,8 +241,9 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->configuration = array(
       'admin_title' => 'Follow us on Twitter',
       'title' => 'Follow us on Twitter',
-      'body' => '<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<a class="twitter-timeline" href="https://twitter.com/AamAadmiParty" data-widget-id="352375736809693184" height = 550px>Tweets by @AamAadmiParty</a>',
+      'body' => '<?php
+print domain_aap_custom_panes_twitter_content();
+?>',
       'format' => 'php_code',
       'substitute' => 1,
     );
@@ -290,9 +291,11 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->configuration = array(
       'admin_title' => 'Join us on Facebook',
       'title' => 'Join us on Facebook',
-      'body' => '<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FAamAadmiParty&amp;width&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=607545139264444" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:550px;" allowTransparency="true"></iframe>',
+      'body' => '<?php
+print domain_aap_custom_panes_facebook_content();
+?>',
       'format' => 'php_code',
-      'substitute' => 0,
+      'substitute' => 1,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -726,33 +729,9 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-20';
     $pane->panel = 'right_navigation';
-    $pane->type = 'block';
-    $pane->subtype = 'aap_tweaks-Donation_ Block';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'aap-main-content aap-donation-class aap-donation-right-class',
-    );
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-20'] = $pane;
-    $display->panels['right_navigation'][1] = 'new-20';
-    $pane = new stdClass();
-    $pane->pid = 'new-21';
-    $pane->panel = 'right_navigation';
     $pane->type = 'views';
     $pane->subtype = 'similar_content';
-    $pane->shown = FALSE;
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
@@ -781,7 +760,31 @@ function f_theme_layout_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'aap-main-content aap-related-story',
+      'css_class' => 'aap-right-side-bar',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-20'] = $pane;
+    $display->panels['right_navigation'][1] = 'new-20';
+    $pane = new stdClass();
+    $pane->pid = 'new-21';
+    $pane->panel = 'right_navigation';
+    $pane->type = 'block';
+    $pane->subtype = 'aap_tweaks-Donation_ Block';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'aap-main-content aap-donation-class aap-donation-right-class',
     );
     $pane->extras = array();
     $pane->position = 2;
