@@ -21,7 +21,7 @@ function f_comments_disqus_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'disqus_domain';
-  $strongarm->value = 'aapdl';
+  $strongarm->value = 'aap-india';
   $export['disqus_domain'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -51,11 +51,16 @@ function f_comments_disqus_strongarm() {
   $strongarm->name = 'disqus_nodetypes';
   $strongarm->value = array(
     'blog' => 'blog',
+    'ct_candidate_details' => 'ct_candidate_details',
+    'poll' => 'poll',
     'basic_page' => 'basic_page',
     'event' => 'event',
     'news' => 'news',
-    'poll' => 'poll',
+    'aap_question' => 0,
+    'volunteer_story' => 0,
+    'aap_newsletter' => 0,
     'group' => 0,
+    'videos' => 0,
   );
   $export['disqus_nodetypes'] = $strongarm;
 
