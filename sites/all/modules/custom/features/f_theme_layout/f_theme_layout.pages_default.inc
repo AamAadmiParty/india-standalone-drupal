@@ -726,33 +726,9 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-20';
     $pane->panel = 'right_navigation';
-    $pane->type = 'block';
-    $pane->subtype = 'aap_tweaks-Donation_ Block';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'aap-main-content aap-donation-class aap-donation-right-class',
-    );
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-20'] = $pane;
-    $display->panels['right_navigation'][1] = 'new-20';
-    $pane = new stdClass();
-    $pane->pid = 'new-21';
-    $pane->panel = 'right_navigation';
     $pane->type = 'views';
     $pane->subtype = 'similar_content';
-    $pane->shown = FALSE;
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
@@ -781,7 +757,31 @@ function f_theme_layout_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'aap-main-content aap-related-story',
+      'css_class' => 'aap-right-side-bar',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-20'] = $pane;
+    $display->panels['right_navigation'][1] = 'new-20';
+    $pane = new stdClass();
+    $pane->pid = 'new-21';
+    $pane->panel = 'right_navigation';
+    $pane->type = 'block';
+    $pane->subtype = 'aap_tweaks-Donation_ Block';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'aap-main-content aap-donation-class aap-donation-right-class',
     );
     $pane->extras = array();
     $pane->position = 2;

@@ -57,7 +57,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Footer 3',
-        'width' => '25.086775456108423',
+        'width' => '25.087371954214223',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -72,7 +72,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_2' => array(
         'type' => 'region',
         'title' => 'Footer 2',
-        'width' => '24.999997018607544',
+        'width' => '25.08617414661059',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -80,7 +80,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_3' => array(
         'type' => 'region',
         'title' => 'Footer 4',
-        'width' => '24.827041432271997',
+        'width' => '24.654078752040245',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -88,7 +88,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_1' => array(
         'type' => 'region',
         'title' => 'Footer 1',
-        'width' => '25.086186093012035',
+        'width' => '25.172375147134936',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -271,7 +271,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Center',
-        'width' => '59.96784180209157',
+        'width' => '60.055249561944194',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'social-connector-region',
@@ -279,7 +279,7 @@ function f_theme_layout_default_panels_mini() {
       'copyright' => array(
         'type' => 'region',
         'title' => 'Copyright',
-        'width' => '40.03215819790843',
+        'width' => '39.944750438055806',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-copyright-class',
@@ -363,6 +363,78 @@ function f_theme_layout_default_panels_mini() {
     $pane->locks = array();
     $display->content['new-7'] = $pane;
     $display->panels['copyright'][0] = 'new-7';
+    $pane = new stdClass();
+    $pane->pid = 'new-8';
+    $pane->panel = 'survey';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = FALSE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'front',
+          'settings' => NULL,
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'role',
+          'settings' => array(
+            'rids' => array(
+              0 => 9,
+            ),
+          ),
+          'context' => 'logged-in-user',
+          'not' => FALSE,
+        ),
+      ),
+    );
+    $pane->configuration = array(
+      'admin_title' => 'embedded survey',
+      'title' => '',
+      'body' => '<div id="surveyMonkeyInfo"><!doctype html>
+<style type="text/css">@font-face {
+    font-family: \'gotham_boldregular\';
+    src:url(fonts/gotham-bold-webfont.eot);
+    src: url(fonts/gotham-bold-webfont.eot?#iefix) format(\'embedded-opentype\'),
+         url(fonts/gotham-bold-webfont.woff) format(\'woff\'),
+         url(fonts/gotham-bold-webfont.ttf) format(\'truetype\'),
+         url(fonts/gotham-bold-webfont.svg#gotham_boldregular) format(\'svg\');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: \'gotham_mediumregular\';
+    src: url(fonts/gotham-medium-webfont.eot);
+    src: url(fonts/gotham-medium-webfont.eot?#iefix) format(\'embedded-opentype\'),
+         url(fonts/gotham-medium-webfont.woff) format(\'woff\'),
+         url(fonts/gotham-medium-webfont.ttf) format(\'truetype\'),
+         url(fonts/gotham-medium-webfont.svg#gotham_mediumregular) format(\'svg\');
+    font-weight: normal;
+    font-style: normal;
+
+}
+</style>
+<div style="width:1000px;height:404px;background:url(http://www.aamaadmiparty.org/sites/default/files/bg.jpg) no-repeat top center;position:relative"><div style="margin:20px 0;float:left;font-family: \'gotham_boldregular\';color:#ffffff;width:400px;text-align:center;padding-top:70px"><h2>Change begins with YOU!</h2><p style="color:#ffffff;">There is only one person who can change the destiny of this nation. And that is you! Help us fight this election with clean white money.</p><a href="https://donate.aamaadmiparty.org/?utm_source=Interstitial-Banner&amp;utm_medium=undefined&amp;utm_term=undefined&amp;utm_content=undefined&amp;utm_campaign=Interstitial-Banner28-Feb" style="text-decoration:none;padding:10px;background-color:#ca2129;color:#fff;margin-top:28px;text-transform:uppercase;display:inline-block">Donate Now</a></div>
+<div style="clear:both">&nbsp;</div></div>
+</div>',
+      'format' => 'php_code',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => 'donate',
+      'css_class' => 'surveymonkey-drupal-popup',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-8'] = $pane;
+    $display->panels['survey'][0] = 'new-8';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -412,7 +484,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Header Content',
-        'width' => '49.991619862946514',
+        'width' => '49.905419324909055',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-header-search-class',
@@ -420,7 +492,7 @@ function f_theme_layout_default_panels_mini() {
       'header_logo' => array(
         'type' => 'region',
         'title' => 'Header Logo',
-        'width' => '50.008380137053486',
+        'width' => '50.09458067509095',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -440,7 +512,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-8';
+    $pane->pid = 'new-9';
     $pane->panel = 'center';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -464,10 +536,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['center'][0] = 'new-8';
+    $display->content['new-9'] = $pane;
+    $display->panels['center'][0] = 'new-9';
     $pane = new stdClass();
-    $pane->pid = 'new-9';
+    $pane->pid = 'new-10';
     $pane->panel = 'center';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -488,10 +560,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['center'][1] = 'new-9';
+    $display->content['new-10'] = $pane;
+    $display->panels['center'][1] = 'new-10';
     $pane = new stdClass();
-    $pane->pid = 'new-10';
+    $pane->pid = 'new-11';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'search-form';
@@ -512,10 +584,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['center'][2] = 'new-10';
+    $display->content['new-11'] = $pane;
+    $display->panels['center'][2] = 'new-11';
     $pane = new stdClass();
-    $pane->pid = 'new-11';
+    $pane->pid = 'new-12';
     $pane->panel = 'header_logo';
     $pane->type = 'page_logo';
     $pane->subtype = 'page_logo';
@@ -533,8 +605,8 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['header_logo'][0] = 'new-11';
+    $display->content['new-12'] = $pane;
+    $display->panels['header_logo'][0] = 'new-12';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -564,7 +636,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-12';
+    $pane->pid = 'new-13';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'superfish-1';
@@ -585,10 +657,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['center'][0] = 'new-12';
+    $display->content['new-13'] = $pane;
+    $display->panels['center'][0] = 'new-13';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-12';
+  $display->title_pane = 'new-13';
   $mini->display = $display;
   $export['header_menu'] = $mini;
 
@@ -616,7 +688,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-13';
+    $pane->pid = 'new-14';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu-menu-right-navigation';
@@ -637,10 +709,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['center'][0] = 'new-13';
+    $display->content['new-14'] = $pane;
+    $display->panels['center'][0] = 'new-14';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-13';
+  $display->title_pane = 'new-14';
   $mini->display = $display;
   $export['right_navigation'] = $mini;
 
