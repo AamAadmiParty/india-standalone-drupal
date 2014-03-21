@@ -15,7 +15,7 @@ function f_tags_cloud_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Tags Cloud';
   $page->admin_description = '';
-  $page->path = 'tags-cloud';
+  $page->path = 'aap-in-media';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -52,7 +52,7 @@ function f_tags_cloud_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'AAP In Media';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -64,8 +64,8 @@ function f_tags_cloud_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => '',
-      'body' => '',
+      'title' => 'All Media Articles',
+      'body' => '<p><a href="http://www.aamaadmiparty.org/tags/media-articles" style="font-size: 1.538em; font-weight: bold; line-height: 1.538em;">Media Articles</a></p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -88,7 +88,7 @@ function f_tags_cloud_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
-      'override_title_text' => 'Tags Cloud',
+      'override_title_text' => 'Topic wise tags',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -103,7 +103,7 @@ function f_tags_cloud_default_page_manager_pages() {
     $pane->locks = array();
     $display->content['new-2'] = $pane;
     $display->panels['center'][1] = 'new-2';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
