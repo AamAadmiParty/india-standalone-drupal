@@ -29,7 +29,11 @@ function f_sharing_on_social_platforms_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'service_links_category_vocs';
   $strongarm->value = array(
+    4 => 0,
     1 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
     2 => 0,
   );
   $export['service_links_category_vocs'] = $strongarm;
@@ -73,7 +77,7 @@ function f_sharing_on_social_platforms_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'service_links_label_in_node';
-  $strongarm->value = 'Make honest voices stronger. Spread the word.';
+  $strongarm->value = 'Liked this content? Share it.';
   $export['service_links_label_in_node'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -88,12 +92,18 @@ function f_sharing_on_social_platforms_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'service_links_node_types';
   $strongarm->value = array(
+    'basic_page' => 'basic_page',
     'blog' => 'blog',
     'event' => 'event',
     'news' => 'news',
     'poll' => 'poll',
-    'basic_page' => 0,
+    'aap_newsletter' => 0,
+    'aap_question' => 0,
+    'ct_candidate_details' => 0,
     'group' => 0,
+    'map_data' => 0,
+    'videos' => 0,
+    'volunteer_story' => 0,
   );
   $export['service_links_node_types'] = $strongarm;
 

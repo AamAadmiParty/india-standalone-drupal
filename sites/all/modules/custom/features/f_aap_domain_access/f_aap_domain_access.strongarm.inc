@@ -80,7 +80,7 @@ function f_aap_domain_access_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'domain_list_size';
-  $strongarm->value = '30';
+  $strongarm->value = '100';
   $export['domain_list_size'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -163,7 +163,7 @@ node/%n/outline';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'domain_seo';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['domain_seo'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -184,7 +184,7 @@ node/%n/outline';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'domain_settings_form_visibility';
-  $strongarm->value = '0';
+  $strongarm->value = '1';
   $export['domain_settings_form_visibility'] = $strongarm;
 
   $strongarm = new stdClass();

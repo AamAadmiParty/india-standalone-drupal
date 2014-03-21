@@ -12,4 +12,3 @@ dependencies[] = local_fonts
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
-features[fontyourface][] = Franklin Gothic Demi Cond normal normal

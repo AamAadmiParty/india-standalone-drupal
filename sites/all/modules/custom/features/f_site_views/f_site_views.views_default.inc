@@ -498,7 +498,7 @@ if (!empty($np[1])) {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Tags (field_content_tags) */
+  /* Contextual filter: Content: Related Sections (field_content_tags) */
   $handler->display->display_options['arguments']['field_content_tags_tid']['id'] = 'field_content_tags_tid';
   $handler->display->display_options['arguments']['field_content_tags_tid']['table'] = 'field_data_field_content_tags';
   $handler->display->display_options['arguments']['field_content_tags_tid']['field'] = 'field_content_tags_tid';
@@ -968,21 +968,13 @@ if (!empty($np[1])) {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Type */
-  $handler->display->display_options['fields']['type']['id'] = 'type';
-  $handler->display->display_options['fields']['type']['table'] = 'node';
-  $handler->display->display_options['fields']['type']['field'] = 'type';
-  $handler->display->display_options['fields']['type']['label'] = '';
-  $handler->display->display_options['fields']['type']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['text'] = '[type] - [title]';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;

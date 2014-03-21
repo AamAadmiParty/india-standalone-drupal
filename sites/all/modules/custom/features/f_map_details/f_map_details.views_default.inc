@@ -28,6 +28,10 @@ function f_map_details_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
@@ -2325,10 +2329,11 @@ END STRIPS
     'map_data' => 'map_data',
   );
 
-  /* Display: Donation Test Map */
-  $handler = $view->new_display('page', 'Donation Test Map', 'page_1');
+  /* Display: Aam Aadmi Party */
+  $handler = $view->new_display('page', 'Aam Aadmi Party', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Donation Test Map';
+  $handler->display->display_options['title'] = 'Aam Aadmi Party, India';
+  $handler->display->display_options['display_description'] = 'State map of India, Generic';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
@@ -2388,19 +2393,16 @@ END STRIPS
   $handler->display->display_options['filters']['type']['value'] = array(
     'map_data' => 'map_data',
   );
-  /* Filter criterion: Content: Tags (field_content_tags) */
+  /* Filter criterion: Content: Related Sections (field_content_tags) */
   $handler->display->display_options['filters']['field_content_tags_tid']['id'] = 'field_content_tags_tid';
   $handler->display->display_options['filters']['field_content_tags_tid']['table'] = 'field_data_field_content_tags';
   $handler->display->display_options['filters']['field_content_tags_tid']['field'] = 'field_content_tags_tid';
   $handler->display->display_options['filters']['field_content_tags_tid']['value'] = array(
-    7 => '7',
-    48 => '48',
-    17 => '17',
-    43 => '43',
+    1279 => '1279',
   );
   $handler->display->display_options['filters']['field_content_tags_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_content_tags_tid']['vocabulary'] = 'tags';
-  $handler->display->display_options['path'] = 'donation-test-map';
+  $handler->display->display_options['path'] = 'AAP-party-in-India';
   $export['svg_maps'] = $view;
 
   return $export;
