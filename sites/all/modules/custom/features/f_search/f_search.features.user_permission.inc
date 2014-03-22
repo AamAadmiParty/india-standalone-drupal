@@ -25,7 +25,6 @@ function f_search_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
   );
