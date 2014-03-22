@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * Implements hook_domain_batch().
@@ -49,7 +49,78 @@ function domain_aap_custom_panes_domain_batch() {
     '#submit' => 'domain_custom_pane_batch_submit_twitter',
     '#lookup' => 'domain_custom_pane_batch_lookup_twitter',
   );
+  // Logo change page.
+  $batch['domain_logo'] = array(
+    '#form' => array(
+      '#title' => t('Domain specific Logo'),
+      '#type' => 'managed_file',
+      //'#size' => 80,
+      //'#maxlength' => 255,
+      '#description' => t('Choose an image file to upload.'),
+      '#required' => FALSE,
+      '#upload_validators' => array(
+        'file_validate_extensions' => array('png jpg jpeg gif'),
+      ),
+      '#upload_location' => 'public://domain_logo/',
+    ),
+    '#permission' => 'administer domains',
+    '#domain_action' => 'custom',
+    '#meta_description' => t('Different logo for different domains. If there is no image then, default logo of the theme will be used. Height of the image will be resized to 47px.'),
+    '#data_type' => 'string',
+    '#weight' => 0,
+    '#group' => t('Domain specific Logo'),
+    '#collapsed' => FALSE,
+    '#update_all' => FALSE,
+    '#module' => t('Domain AAP Custom Pane'),
+    '#submit' => 'domain_custom_pane_batch_submit_logo',
+    '#lookup' => 'domain_custom_pane_batch_lookup_logo',
+  );
   return $batch;
+}
+
+/**
+ * submit handler for domain logo
+ * @param $form_values
+ */
+function domain_custom_pane_batch_submit_logo($form_values) {
+  foreach ($form_values['domain_batch'] as $key => $file_fid) {
+    $_domain = domain_load($key);
+    // get if there is already data in the table for given domain.
+    $data = domain_custom_pane_batch_lookup_logo($_domain);
+    if (!empty($file_fid)) {
+      $file = file_load($file_fid);
+      // making the file status permanent
+      $file->status = 1;
+      $file = file_save($file);
+    }
+    // check if fid exists.
+    // explicit check of 0 because empty returns true for 0.
+    if (!empty($data) || $data === '0') {
+      db_update('domain_aap_logo_uri')
+      ->fields(array('image_fid' => $file_fid))
+      ->condition('domain_id', $key)
+      ->execute();
+    }
+    else {
+      // Insert if data doesn't exists.
+      db_insert('domain_aap_logo_uri')
+      ->fields(array(
+      'domain_id' => $key,
+      'image_fid' => $file_fid,
+      ))->execute();
+    }
+  }
+}
+
+/**
+ * get domain logo inage file fid from domain
+ * @param $domain
+ * @return int FID
+ */
+function domain_custom_pane_batch_lookup_logo($domain) {
+  $data = db_query("SELECT image_fid FROM {domain_aap_logo_uri} WHERE domain_id = :domain_id",
+    array(':domain_id' => $domain['domain_id']))->fetchField();
+  return $data;
 }
 
 /**
@@ -154,47 +225,5 @@ function domain_aap_custom_panes_twitter_content() {
   $_domain = domain_get_domain();
   $body_html = domain_custom_pane_batch_lookup_twitter($_domain);
   return $body_html;
-}
-
-/**
- * Implements hook_node_access().
- * @param $node
- * @param $op
- * @param $account
- * @return string
- */
-function domain_aap_custom_panes_node_access($node, $op, $account) {
-  if (isset($node->domain_source) && isset($account->domain_user)) {
-    switch ($op) {
-      case 'update':
-        if (in_array($node->domain_source, $account->domain_user) &&
-        user_access('edit any content directly owned by assigned domain', $account)) {
-          return NODE_ACCESS_ALLOW;
-        }
-        break;
-      case 'delete':
-        if (in_array($node->domain_source, $account->domain_user) &&
-        user_access('delete any content directly owned by assigned domain', $account)) {
-          return NODE_ACCESS_ALLOW;
-        }
-        break;
-    }
-  }
-  return NODE_ACCESS_IGNORE;
-}
-
-/**
- * Implements hook_permissions();
- * @return array
- */
-function domain_aap_custom_panes_permission()  {
-  return array(
-    'edit any content directly owned by assigned domain' => array(
-      'title' => t('edit any content directly owned by assigned domain'),
-      'description' => t('Edit any content owned by assigned domain')),
-    'delete any content directly owned by assigned domain' => array(
-      'title' => t('delete any content directly owned by assigned domain'),
-      'description' => t('Delete any content owned by assigned domain')),
-  );
 }
 
