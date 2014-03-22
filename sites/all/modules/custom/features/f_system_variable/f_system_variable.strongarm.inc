@@ -34,20 +34,6 @@ function f_system_variable_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_display';
-  $strongarm->value = 'plid';
-  $export['admin_menu_display'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_show_all';
-  $strongarm->value = 0;
-  $export['admin_menu_show_all'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'admin_theme';
   $strongarm->value = 'seven';
   $export['admin_theme'] = $strongarm;
@@ -126,7 +112,7 @@ function f_system_variable_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'fontyourface_css_md5';
-  $strongarm->value = 'a99f8a44a58ac31d3d52c7308bd672ac';
+  $strongarm->value = 'd41d8cd98f00b204e9800998ecf8427e';
   $export['fontyourface_css_md5'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -363,10 +349,27 @@ function f_system_variable_strongarm() {
   $strongarm->name = 'theme_aap_theme_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
+    'toggle_favicon' => 1,
     'omega_toggle_front_page_content' => 1,
-    'default_logo' => 0,
-    'logo_path' => 'public://aaplogo_0.gif',
+    'default_logo' => 1,
+    'logo_path' => '',
     'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'omega_toggle_extension_compatibility' => 1,
+    'omega_conditional_classes_html' => 1,
+    'omega_apple_touch' => 1,
+    'omega_cleartype' => 1,
+    'omega_handheld_friendly' => 1,
+    'omega_mobile_optimized' => 1,
+    'omega_viewport' => 1,
+    'omega_viewport_user_scaleable' => 1,
+    'omega_chrome_edge' => 1,
+    'omega_chrome_popup' => 0,
+    'omega_chrome_notice' => 0,
+    'omega_toggle_extension_layouts' => 1,
+    'omega_layout' => 'simple',
     'omega_toggle_extension_assets' => 1,
     'omega_js_footer' => array(),
     'omega_css_exclude' => array(),
@@ -392,18 +395,7 @@ function f_system_variable_strongarm() {
         'status' => 0,
       ),
     ),
-    'omega_toggle_extension_compatibility' => 1,
-    'omega_conditional_classes_html' => 1,
-    'omega_apple_touch' => 1,
-    'omega_cleartype' => 1,
-    'omega_handheld_friendly' => 1,
-    'omega_mobile_optimized' => 1,
-    'omega_viewport' => 1,
-    'omega_viewport_user_scaleable' => 1,
-    'omega_chrome_edge' => 1,
-    'omega_chrome_popup' => 0,
-    'omega_chrome_notice' => 0,
-    'omega_toggle_extension_development' => 1,
+    'omega_toggle_extension_development' => 0,
     'omega_rebuild_theme_registry' => 0,
     'omega_rebuild_aggregates' => 0,
     'omega_browser_width_indicator' => 0,
@@ -411,8 +403,6 @@ function f_system_variable_strongarm() {
     'omega_livereload_host' => '',
     'omega_livereload_port' => '',
     'omega_demo_regions' => 0,
-    'omega_toggle_extension_layouts' => 1,
-    'omega_layout' => 'simple',
   );
   $export['theme_aap_theme_settings'] = $strongarm;
 

@@ -14,7 +14,7 @@ function f_search_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'apachesolr_cron_limit';
-  $strongarm->value = '50';
+  $strongarm->value = '200';
   $export['apachesolr_cron_limit'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -29,24 +29,12 @@ function f_search_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'apachesolr_index_last';
   $strongarm->value = array(
-    'solr' => array(
+    'new_apache_solr' => array(
       'node' => array(
-        'last_changed' => '1369187199',
-        'last_entity_id' => '157',
+        'last_changed' => '1395433628',
+        'last_entity_id' => '3246',
       ),
-      'og_membership_type' => array(
-        'last_changed' => 0,
-        'last_entity_id' => 0,
-      ),
-      'og_membership' => array(
-        'last_changed' => 0,
-        'last_entity_id' => 0,
-      ),
-      'profile2' => array(
-        'last_changed' => 0,
-        'last_entity_id' => 0,
-      ),
-      'profile2_type' => array(
+      'redirect' => array(
         'last_changed' => 0,
         'last_entity_id' => 0,
       ),
@@ -79,7 +67,8 @@ function f_search_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'apachesolr_index_updated';
   $strongarm->value = array(
-    'solr' => 1369387429,
+    'solr' => 1384257165,
+    'new_apache_solr' => 1395459768,
   );
   $export['apachesolr_index_updated'] = $strongarm;
 
@@ -87,7 +76,7 @@ function f_search_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'apachesolr_last_optimize';
-  $strongarm->value = 1369299601;
+  $strongarm->value = 1395450535;
   $export['apachesolr_last_optimize'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -97,12 +86,12 @@ function f_search_strongarm() {
   $strongarm->value = array(
     'mlt-001' => array(
       'name' => 'More like this',
+      'mlt_env_id' => 'new_apache_solr',
       'num_results' => '5',
       'mlt_fl' => array(
         'label' => 'label',
         'taxonomy_names' => 'taxonomy_names',
       ),
-      'mlt_env_id' => 'solr',
       'mlt_mintf' => '1',
       'mlt_mindf' => '1',
       'mlt_minwl' => '3',
@@ -143,7 +132,6 @@ function f_search_strongarm() {
   $strongarm->value = array(
     'apachesolr_search' => 'apachesolr_search',
     'node' => 0,
-    'user' => 0,
   );
   $export['search_active_modules'] = $strongarm;
 

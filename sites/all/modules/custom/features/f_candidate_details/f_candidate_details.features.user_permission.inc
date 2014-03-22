@@ -13,84 +13,120 @@ function f_candidate_details_user_default_permissions() {
   // Exported permission: administer panelizer node ct_candidate_details content.
   $permissions['administer panelizer node ct_candidate_details content'] = array(
     'name' => 'administer panelizer node ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: administer panelizer node ct_candidate_details context.
   $permissions['administer panelizer node ct_candidate_details context'] = array(
     'name' => 'administer panelizer node ct_candidate_details context',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: administer panelizer node ct_candidate_details defaults.
   $permissions['administer panelizer node ct_candidate_details defaults'] = array(
     'name' => 'administer panelizer node ct_candidate_details defaults',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: administer panelizer node ct_candidate_details layout.
   $permissions['administer panelizer node ct_candidate_details layout'] = array(
     'name' => 'administer panelizer node ct_candidate_details layout',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: administer panelizer node ct_candidate_details overview.
   $permissions['administer panelizer node ct_candidate_details overview'] = array(
     'name' => 'administer panelizer node ct_candidate_details overview',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: administer panelizer node ct_candidate_details settings.
   $permissions['administer panelizer node ct_candidate_details settings'] = array(
     'name' => 'administer panelizer node ct_candidate_details settings',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: clear candidate_data_import feeds.
   $permissions['clear candidate_data_import feeds'] = array(
     'name' => 'clear candidate_data_import feeds',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'feeds',
   );
 
   // Exported permission: create ct_candidate_details content.
   $permissions['create ct_candidate_details content'] = array(
     'name' => 'create ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'All Domains Author' => 'All Domains Author',
+      'State Domains Approver' => 'State Domains Approver',
+      'State Domains Author' => 'State Domains Author',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete any ct_candidate_details content.
   $permissions['delete any ct_candidate_details content'] = array(
     'name' => 'delete any ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete own ct_candidate_details content.
   $permissions['delete own ct_candidate_details content'] = array(
     'name' => 'delete own ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit any ct_candidate_details content.
   $permissions['edit any ct_candidate_details content'] = array(
     'name' => 'edit any ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit own ct_candidate_details content.
   $permissions['edit own ct_candidate_details content'] = array(
     'name' => 'edit own ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
+    ),
     'module' => 'node',
   );
 
@@ -99,8 +135,6 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'import candidate_data_import feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Content Approver' => 'Content Approver',
-      'Content Author' => 'Content Author',
     ),
     'module' => 'feeds',
   );
@@ -108,21 +142,32 @@ function f_candidate_details_user_default_permissions() {
   // Exported permission: publish any ct_candidate_details content.
   $permissions['publish any ct_candidate_details content'] = array(
     'name' => 'publish any ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: publish editable ct_candidate_details content.
   $permissions['publish editable ct_candidate_details content'] = array(
     'name' => 'publish editable ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: publish own ct_candidate_details content.
   $permissions['publish own ct_candidate_details content'] = array(
     'name' => 'publish own ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
+    ),
     'module' => 'publishcontent',
   );
 
@@ -138,28 +183,41 @@ function f_candidate_details_user_default_permissions() {
   // Exported permission: unlock candidate_data_import feeds.
   $permissions['unlock candidate_data_import feeds'] = array(
     'name' => 'unlock candidate_data_import feeds',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'feeds',
   );
 
   // Exported permission: unpublish any ct_candidate_details content.
   $permissions['unpublish any ct_candidate_details content'] = array(
     'name' => 'unpublish any ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: unpublish editable ct_candidate_details content.
   $permissions['unpublish editable ct_candidate_details content'] = array(
     'name' => 'unpublish editable ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
+    ),
     'module' => 'publishcontent',
   );
 
   // Exported permission: unpublish own ct_candidate_details content.
   $permissions['unpublish own ct_candidate_details content'] = array(
     'name' => 'unpublish own ct_candidate_details content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
+    ),
     'module' => 'publishcontent',
   );
 

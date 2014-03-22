@@ -24,8 +24,10 @@ function f_wysiwyg_image_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Content Approver' => 'Content Approver',
-      'Content Author' => 'Content Author',
+      'All Domains Approver' => 'All Domains Approver',
+      'All Domains Author' => 'All Domains Author',
+      'State Domains Approver' => 'State Domains Approver',
+      'State Domains Author' => 'State Domains Author',
     ),
     'module' => 'filter',
   );
@@ -35,8 +37,10 @@ function f_wysiwyg_image_user_default_permissions() {
     'name' => 'use text format restricted_html',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Content Approver' => 'Content Approver',
-      'Content Author' => 'Content Author',
+      'All Domains Approver' => 'All Domains Approver',
+      'All Domains Author' => 'All Domains Author',
+      'State Domains Approver' => 'State Domains Approver',
+      'State Domains Author' => 'State Domains Author',
     ),
     'module' => 'filter',
   );

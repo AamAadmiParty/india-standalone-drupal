@@ -14,10 +14,7 @@ function f_search_user_default_permissions() {
   $permissions['administer search'] = array(
     'name' => 'administer search',
     'roles' => array(
-      'AAP Editor' => 'AAP Editor',
       'Administrator' => 'Administrator',
-      'Content Approver' => 'Content Approver',
-      'Party Leardership' => 'Party Leardership',
     ),
     'module' => 'search',
   );
@@ -28,7 +25,6 @@ function f_search_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
   );

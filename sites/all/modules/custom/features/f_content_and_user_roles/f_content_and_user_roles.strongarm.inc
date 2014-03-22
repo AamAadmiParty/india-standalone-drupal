@@ -14,28 +14,28 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_basic_page';
-  $strongarm->value = 'edit-menu';
+  $strongarm->value = 'edit-xmlsitemap';
   $export['additional_settings__active_tab_basic_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_blog';
-  $strongarm->value = 'edit-og';
+  $strongarm->value = 'edit-xmlsitemap';
   $export['additional_settings__active_tab_blog'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_event';
-  $strongarm->value = 'edit-og';
+  $strongarm->value = 'edit-xmlsitemap';
   $export['additional_settings__active_tab_event'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_news';
-  $strongarm->value = 'edit-og';
+  $strongarm->value = 'edit-xmlsitemap';
   $export['additional_settings__active_tab_news'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -236,8 +236,7 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_basic_page';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_basic_page'] = $strongarm;
 
@@ -246,8 +245,7 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_blog';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_blog'] = $strongarm;
 
@@ -256,8 +254,7 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_event';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_event'] = $strongarm;
 
@@ -266,8 +263,7 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_news';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_news'] = $strongarm;
 
@@ -369,7 +365,7 @@ function f_content_and_user_roles_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_news_pattern';
-  $strongarm->value = 'news/[node:title]';
+  $strongarm->value = '[node:title]';
   $export['pathauto_node_news_pattern'] = $strongarm;
 
   $strongarm = new stdClass();

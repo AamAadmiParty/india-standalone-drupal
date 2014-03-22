@@ -14,8 +14,8 @@ function f_sharing_on_social_platforms_user_default_permissions() {
   $permissions['access service links'] = array(
     'name' => 'access service links',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'service_links',
   );
@@ -23,7 +23,9 @@ function f_sharing_on_social_platforms_user_default_permissions() {
   // Exported permission: use PHP for service visibility.
   $permissions['use PHP for service visibility'] = array(
     'name' => 'use PHP for service visibility',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'service_links',
   );
 

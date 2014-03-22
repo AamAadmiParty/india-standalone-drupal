@@ -2,6 +2,7 @@ name = splash_page
 description = Create a custom page, used in splashify module
 core = 7.x
 package = Other Site Functionality
+php = 5.2.4
 version = 7.x-1.0
 project = f_splash_page
 dependencies[] = ctools

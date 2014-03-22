@@ -6,6 +6,7 @@ php = 5.2.4
 version = 7.x-1.0
 project = f_sharing_on_social_platforms
 dependencies[] = ctools
+dependencies[] = f_moderation_and_publication
 dependencies[] = features
 dependencies[] = general_services
 dependencies[] = menu

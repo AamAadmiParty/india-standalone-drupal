@@ -64,7 +64,7 @@ function f_site_controller_metatag_export_default() {
         'value' => '[site:name]',
       ),
       'description' => array(
-        'value' => 'This is front page description.',
+        'value' => 'News & updates about Aam Aadmi Party (AAP), Arvind Kejriwal. Donate to AAP and strengthen the fight against corruption. ',
       ),
       'canonical' => array(
         'value' => '[site:url]',

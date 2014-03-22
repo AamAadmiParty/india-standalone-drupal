@@ -1,0 +1,20 @@
+<?php 
+
+/**
+ * Implements hook_schema().
+ */
+function domain_aap_custom_panes_schema() {
+  $schema['domain_aap_social_blocks'] = array(
+    'description' => 'Stores facebook and twitter handler information for each domain.',
+    'fields' => array(
+      'domain_id' => array('type' => 'int', 'not null' => TRUE, 'default' => 0),
+      'type' => array('type' => 'varchar', 'length' => '255', 'not null' => TRUE, 'default' => 'facebook'),
+      'body_html' => array('type' => 'text', 'size' => 'medium', 'not null' => FALSE)),
+    'primary key' => array('domain_id', 'type'),
+    'foreign_keys' => array(
+      'domain_id' => array('domain' => 'domain_id'),
+    ),
+  );
+  return $schema;
+}
+

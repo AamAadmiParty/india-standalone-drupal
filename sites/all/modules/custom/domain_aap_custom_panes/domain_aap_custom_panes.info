@@ -1,0 +1,5 @@
+name = Domain AAP Custom Pane
+description = Have different handlers for custom panes in Facebook and twitter blocks
+package = Domain Access
+dependencies[] = domain
+core = 7.x
