@@ -33,8 +33,9 @@ function f_comments_disqus_user_default_permissions() {
     'name' => 'toggle disqus comments',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
       'All Domains Author' => 'All Domains Author',
-      'Content Author' => 'Content Author',
+      'State Domains Approver' => 'State Domains Approver',
       'State Domains Author' => 'State Domains Author',
     ),
     'module' => 'disqus',
