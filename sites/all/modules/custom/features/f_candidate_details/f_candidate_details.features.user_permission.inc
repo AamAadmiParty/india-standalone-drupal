@@ -92,7 +92,6 @@ function f_candidate_details_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'node',
   );
@@ -114,7 +113,6 @@ function f_candidate_details_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'node',
   );
