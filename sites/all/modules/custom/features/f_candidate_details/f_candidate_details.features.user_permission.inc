@@ -78,7 +78,10 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'create ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Content Approver' => 'Content Approver',
+      'All Domains Approver' => 'All Domains Approver',
+      'All Domains Author' => 'All Domains Author',
+      'State Domains Approver' => 'State Domains Approver',
+      'State Domains Author' => 'State Domains Author',
     ),
     'module' => 'node',
   );
@@ -88,6 +91,8 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'delete any ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'node',
   );
@@ -97,7 +102,8 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'delete own ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Content Approver' => 'Content Approver',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'node',
   );
@@ -107,6 +113,8 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'edit any ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'node',
   );
@@ -116,7 +124,8 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'edit own ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Content Approver' => 'Content Approver',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'node',
   );
@@ -126,7 +135,6 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'import candidate_data_import feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Content Author' => 'Content Author',
     ),
     'module' => 'feeds',
   );
@@ -136,6 +144,7 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'publish any ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
     ),
     'module' => 'publishcontent',
   );
@@ -145,6 +154,8 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'publish editable ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'publishcontent',
   );
@@ -154,6 +165,8 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'publish own ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'publishcontent',
   );
@@ -181,6 +194,7 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'unpublish any ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
     ),
     'module' => 'publishcontent',
   );
@@ -190,6 +204,8 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'unpublish editable ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'publishcontent',
   );
@@ -199,6 +215,8 @@ function f_candidate_details_user_default_permissions() {
     'name' => 'unpublish own ct_candidate_details content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'All Domains Approver' => 'All Domains Approver',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'publishcontent',
   );
