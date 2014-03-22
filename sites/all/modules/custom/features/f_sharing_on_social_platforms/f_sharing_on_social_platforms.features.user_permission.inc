@@ -16,7 +16,6 @@ function f_sharing_on_social_platforms_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'service_links',
   );
