@@ -102,13 +102,13 @@ function domain_custom_pane_batch_lookup_facebook($domain) {
  * @return String
  */
 function domain_custom_pane_batch_lookup($domain, $type) {
-  $data = db_query("SELECT body_html FROM {domain_aap_custom_panes} WHERE type = :type AND domain_id = :domain_id",
+  $data = db_query("SELECT body_html FROM {domain_aap_social_blocks} WHERE type = :type AND domain_id = :domain_id",
     array(':type' => $type, ':domain_id' => $domain['domain_id']))->fetchField();
   return $data;
 }
 
 /**
- * update values in domain_aap_custom_panes.
+ * update values in domain_aap_social_blocks.
  * @param $form_values
  * @param $type
  */
@@ -118,7 +118,7 @@ function domain_aap_custom_panes_batch_update_values($form_values, $type) {
     $data = domain_custom_pane_batch_lookup($_domain, $type);
     // Update if data exists
     if (!empty($data)) {
-      db_update('domain_aap_custom_panes')
+      db_update('domain_aap_social_blocks')
       ->fields(array('body_html' => $body_html))
       ->condition('domain_id', $key)
       ->condition('type', $type)
@@ -126,7 +126,7 @@ function domain_aap_custom_panes_batch_update_values($form_values, $type) {
     }
     // Insert if data doesn't exists.
     else {
-      db_insert('domain_aap_custom_panes')
+      db_insert('domain_aap_social_blocks')
       ->fields(array(
       'domain_id' => $key,
       'type' => $type,
@@ -154,5 +154,9 @@ function domain_aap_custom_panes_twitter_content() {
   $_domain = domain_get_domain();
   $body_html = domain_custom_pane_batch_lookup_twitter($_domain);
   return $body_html;
+}
+
+function domain_aap_custom_panes_path_update($path) {
+  //dpm($path);
 }
 
