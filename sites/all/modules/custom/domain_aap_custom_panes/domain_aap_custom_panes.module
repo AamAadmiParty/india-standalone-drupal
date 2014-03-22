@@ -156,7 +156,3 @@ function domain_aap_custom_panes_twitter_content() {
   return $body_html;
 }
 
-function domain_aap_custom_panes_path_update($path) {
-  //dpm($path);
-}
-
