@@ -156,3 +156,45 @@ function domain_aap_custom_panes_twitter_content() {
   return $body_html;
 }
 
+/**
+ * Implements hook_node_access().
+ * @param $node
+ * @param $op
+ * @param $account
+ * @return string
+ */
+function domain_aap_custom_panes_node_access($node, $op, $account) {
+  if (isset($node->domain_source) && isset($account->domain_user)) {
+    switch ($op) {
+      case 'update':
+        if (in_array($node->domain_source, $account->domain_user) &&
+        user_access('edit any content directly owned by assigned domain', $account)) {
+          return NODE_ACCESS_ALLOW;
+        }
+        break;
+      case 'delete':
+        if (in_array($node->domain_source, $account->domain_user) &&
+        user_access('delete any content directly owned by assigned domain', $account)) {
+          return NODE_ACCESS_ALLOW;
+        }
+        break;
+    }
+  }
+  return NODE_ACCESS_IGNORE;
+}
+
+/**
+ * Implements hook_permissions();
+ * @return array
+ */
+function domain_aap_custom_panes_permission()  {
+  return array(
+    'edit any content directly owned by assigned domain' => array(
+      'title' => t('edit any content directly owned by assigned domain'),
+      'description' => t('Edit any content owned by assigned domain')),
+    'delete any content directly owned by assigned domain' => array(
+      'title' => t('delete any content directly owned by assigned domain'),
+      'description' => t('Delete any content owned by assigned domain')),
+  );
+}
+
