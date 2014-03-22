@@ -31,8 +31,8 @@ function f_search_strongarm() {
   $strongarm->value = array(
     'new_apache_solr' => array(
       'node' => array(
-        'last_changed' => '1395327285',
-        'last_entity_id' => '3207',
+        'last_changed' => '1395433628',
+        'last_entity_id' => '3246',
       ),
       'redirect' => array(
         'last_changed' => 0,
@@ -68,7 +68,7 @@ function f_search_strongarm() {
   $strongarm->name = 'apachesolr_index_updated';
   $strongarm->value = array(
     'solr' => 1384257165,
-    'new_apache_solr' => 1395363901,
+    'new_apache_solr' => 1395459768,
   );
   $export['apachesolr_index_updated'] = $strongarm;
 
@@ -76,7 +76,7 @@ function f_search_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'apachesolr_last_optimize';
-  $strongarm->value = 1395277501;
+  $strongarm->value = 1395450535;
   $export['apachesolr_last_optimize'] = $strongarm;
 
   $strongarm = new stdClass();
