@@ -80,8 +80,6 @@ function f_candidate_details_user_default_permissions() {
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
       'All Domains Author' => 'All Domains Author',
-      'State Domains Approver' => 'State Domains Approver',
-      'State Domains Author' => 'State Domains Author',
     ),
     'module' => 'node',
   );
