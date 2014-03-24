@@ -227,3 +227,17 @@ function domain_aap_custom_panes_twitter_content() {
   return $body_html;
 }
 
+/**
+ * implements hook_node_presave().
+ * @param $node
+ */
+function domain_aap_custom_panes_node_presave($node) {
+  //assign current domain as source to nodes if the domain_source is still same as conatnt for 'DOMAIN_SOURCE_USE_ACTIVE'
+  if (isset($node->domain_source) && $node->domain_source == DOMAIN_SOURCE_USE_ACTIVE) {
+    // get current domain.
+    $_domain = domain_get_domain();
+    // assign current domain's id as source domain id.
+    $node->domain_source = $_domain['domain_id'];
+  }
+}
+
