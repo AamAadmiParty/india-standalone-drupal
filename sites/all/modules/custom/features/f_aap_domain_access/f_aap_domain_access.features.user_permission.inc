@@ -363,6 +363,7 @@ function f_aap_domain_access_user_default_permissions() {
     'name' => 'publish from assigned domain',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -404,6 +405,7 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
+      'All Domains Author' => 'All Domains Author',
     ),
     'module' => 'domain',
   );
