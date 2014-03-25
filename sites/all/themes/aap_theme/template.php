@@ -65,7 +65,7 @@ function aap_theme_preprocess_html(&$vars) {
  * Implements theme_link().
  */
 function aap_theme_link(&$variables) {
-  if (isset($variables['options']) && isset($variables['options']['attributes']) && isset($variables['options']['attributes']['id']) && $variables['options']['attributes']['id'] == 'logo') {
+  /* if (isset($variables['options']) && isset($variables['options']['attributes']) && isset($variables['options']['attributes']['id']) && $variables['options']['attributes']['id'] == 'logo') {
     global $base_url;
     $_domain = domain_get_domain();
     $fid = domain_custom_pane_batch_lookup_logo($_domain);
@@ -79,7 +79,7 @@ function aap_theme_link(&$variables) {
       $logo = theme_get_setting('logo');
     }
     $variables['text'] = '<img src="' . $logo . '" alt="Home" height=47px />';
-  }
+  } */
   return '<a href="' . check_plain(url($variables['path'], $variables['options'])) . '"' . drupal_attributes($variables['options']['attributes']) . '>' . ($variables['options']['html'] ? $variables['text'] : check_plain($variables['text'])) . '</a>';
 }
 
