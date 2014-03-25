@@ -224,7 +224,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -235,9 +234,17 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
+  );
+
+  // Exported permission: delete any content directly owned by assigned domain.
+  $permissions['delete any content directly owned by assigned domain'] = array(
+    'name' => 'delete any content directly owned by assigned domain',
+    'roles' => array(
+      'State Domains Approver' => 'State Domains Approver',
+    ),
+    'module' => 'f_aap_domain_access',
   );
 
   // Exported permission: delete basic_page content on assigned domains.
@@ -246,7 +253,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -257,7 +263,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -268,7 +273,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -279,7 +283,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -290,7 +293,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -301,7 +303,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -312,7 +313,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -323,7 +323,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -334,7 +333,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -345,7 +343,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -356,9 +353,17 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
+  );
+
+  // Exported permission: edit any content directly owned by assigned domain.
+  $permissions['edit any content directly owned by assigned domain'] = array(
+    'name' => 'edit any content directly owned by assigned domain',
+    'roles' => array(
+      'State Domains Approver' => 'State Domains Approver',
+    ),
+    'module' => 'f_aap_domain_access',
   );
 
   // Exported permission: edit domain content.
@@ -367,7 +372,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -377,6 +381,7 @@ function f_aap_domain_access_user_default_permissions() {
     'name' => 'publish from assigned domain',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -418,6 +423,7 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
+      'All Domains Author' => 'All Domains Author',
     ),
     'module' => 'domain',
   );
@@ -428,7 +434,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -439,7 +444,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -450,7 +454,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -461,7 +464,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -472,7 +474,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -483,7 +484,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -494,7 +494,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -505,7 +504,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -516,7 +514,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -527,7 +524,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -538,7 +534,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );
@@ -549,7 +544,6 @@ function f_aap_domain_access_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'domain',
   );

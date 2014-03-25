@@ -18,3 +18,21 @@ function domain_aap_custom_panes_schema() {
   return $schema;
 }
 
+/**
+ * implements hook_update_N().
+ * @param $sandbox
+ */
+function domain_aap_custom_panes_update_7101($sandbox) {
+  $schema['domain_aap_logo_uri'] = array(
+    'description' => 'Stores logo uri for domains.',
+    'fields' => array(
+      'domain_id' => array('type' => 'int', 'not null' => TRUE, 'default' => 0),
+      'image_fid' => array('type' => 'varchar', 'length' => '255', 'not null' => FALSE)),
+    'primary key' => array('domain_id'),
+    'foreign_keys' => array(
+      'domain_id' => array('domain' => 'domain_id'),
+    ),
+  );
+  db_create_table('domain_aap_logo_uri', $schema['domain_aap_logo_uri']);
+}
+
