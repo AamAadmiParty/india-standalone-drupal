@@ -154,7 +154,6 @@ function f_selfie_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'India' => array(
             'Andaman And Nicobar Islands' => 'Andaman And Nicobar Islands',
             'Andhra Pradesh' => 'Andhra Pradesh',
             'Arunachal Pradesh' => 'Arunachal Pradesh',
@@ -189,8 +188,7 @@ function f_selfie_field_default_fields() {
             'Tripura' => 'Tripura',
             'Uttar Pradesh' => 'Uttar Pradesh',
             'Uttarakhand' => 'Uttarakhand',
-            'West Bengal' => 'West Bengal',),
-            'Rest of The World' => array(
+            'West Bengal' => 'West Bengal',
             'Afghanistan' => 'Afghanistan',
             'Albania' => 'Albania',
             'Algeria' => 'Algeria',
@@ -449,7 +447,6 @@ function f_selfie_field_default_fields() {
             'Yemen' => 'Yemen',
             'Zambia' => 'Zambia',
             'Zimbabwe' => 'Zimbabwe',
-          )
         ),
         'allowed_values_function' => '',
       ),
