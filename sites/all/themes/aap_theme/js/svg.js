@@ -45,7 +45,7 @@
         }
       });
 
-      $("path").click(function() {
+      $("path, text").click(function() {
         var clickedState = $(this).attr('id');
         // if user click on foreign or water region, then do not show popup
         if (clickedState != 'foreign_1_' && clickedState != 'water_1_') {
@@ -75,7 +75,7 @@
             width: 750,
             height: 520,
             resizable:false,
-          });dialog({ });
+          });/*dialog({ });*/
         }
       }
     }
