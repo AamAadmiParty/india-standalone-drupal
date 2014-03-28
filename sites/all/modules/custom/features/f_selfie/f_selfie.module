@@ -1,0 +1,8 @@
+<?php
+/**
+ * @file
+ * Code for the Selfie feature.
+ */
+
+include_once 'f_selfie.features.inc';
+
