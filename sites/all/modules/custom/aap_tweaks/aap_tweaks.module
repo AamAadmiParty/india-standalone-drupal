@@ -100,8 +100,6 @@ function aap_tweaks_form_alter(&$form, &$form_state, $form_id) {
       '#weight' => 500,
     );
   }
-
-  return $form;
 }
 
 /**
