@@ -796,6 +796,23 @@ h1.pane-title {
   top: 2.4em;
 }
 
+.page-selfies-campaign .view-filters .views-exposed-widgets {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 30px;
+}
+.page-selfies-campaign .view-content table {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-selfies-campaign .view-content table td .views-field-title {
+  margin-bottom: 25px;
+}
+.page-selfies-campaign .view-content table td.col-last {
+  float: right;
+}
+
 /*******************************************************************************
  * _components.scss
  *
