@@ -11,15 +11,16 @@ define('MOBILE_SITE', 'http://m.aamaadmiparty.org');
  *
  * Displays help and module information.
  *
- * @param path
+ * @param path 
  *   Which path of the site we're using to display help
- * @param arg
+ * @param arg 
  *   Array that holds the current path as returned from arg() function
  */
 function mredirect_help($path, $arg) {
   switch($path) {
     case "admin/help#mredirect":
-      return '<p>' . t("Provides a redirection service for mobile devices. It redirects using the DeviceAtlas redirection service").'</p>';
+      return '<p>' . t("Provides a redirection service for mobile devices. It redirects using the DeviceAtlas 
+          redirection service").'</p>';
     break;
   }
 }
@@ -29,16 +30,13 @@ function mredirect_help($path, $arg) {
  */
 
 function mredirect_boot() {
-	require_once 'includes/common.inc';
-	drupal_add_js('http://detect.deviceatlas.com/redirect.js?m=' . MOBILE_SITE . '&t=false', 'external');
-
-	$element = array(
-		'#tag' => 'link', // The #tag is the html tag - <link />
-		'#attributes' => array( // Set up an array of attributes inside the tag
-			'href' => MOBILE_SITE,
-			'rel' => 'alternate',
-			'media' => 'handheld',
-		),
-	);
-	drupal_add_html_head($element, 'google_mobile_seo_link');
+  require_once 'includes/common.inc';
+  header('Vary: User-Agent');
+  
+  drupal_add_js('http://detect.deviceatlas.com/redirect.js?m=' . MOBILE_SITE . '&t=false', 'external');
+  drupal_add_html_head_link(array(
+    "rel" => "alternate",
+    "media" => "only screen and (max-width: 640px)",
+    "href" => MOBILE_SITE."/w/".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']
+  ));
 }
