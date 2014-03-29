@@ -13,7 +13,6 @@ dependencies[] = domain_content
 dependencies[] = domain_nav
 dependencies[] = domain_settings
 dependencies[] = domain_source
-dependencies[] = domain_strict
 dependencies[] = domain_theme
 dependencies[] = f_aap_domain_access
 dependencies[] = features
