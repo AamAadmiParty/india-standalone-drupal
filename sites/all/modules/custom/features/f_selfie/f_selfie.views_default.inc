@@ -47,6 +47,7 @@ function f_selfie_views_default_views() {
   $handler->display->display_options['fields']['field_selfie_name']['id'] = 'field_selfie_name';
   $handler->display->display_options['fields']['field_selfie_name']['table'] = 'field_data_field_selfie_name';
   $handler->display->display_options['fields']['field_selfie_name']['field'] = 'field_selfie_name';
+  $handler->display->display_options['fields']['field_selfie_name']['label'] = 'Uploaded By';
   $handler->display->display_options['fields']['field_selfie_name']['exclude'] = TRUE;
   /* Field: Content: Age */
   $handler->display->display_options['fields']['field_selfie_age']['id'] = 'field_selfie_age';
@@ -85,6 +86,42 @@ function f_selfie_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'selfie' => 'selfie',
+  );
+  /* Filter criterion: Content: Location (field_selfie_location) */
+  $handler->display->display_options['filters']['field_selfie_location_value']['id'] = 'field_selfie_location_value';
+  $handler->display->display_options['filters']['field_selfie_location_value']['table'] = 'field_data_field_selfie_location';
+  $handler->display->display_options['filters']['field_selfie_location_value']['field'] = 'field_selfie_location_value';
+  $handler->display->display_options['filters']['field_selfie_location_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_selfie_location_value']['expose']['operator_id'] = 'field_selfie_location_value_op';
+  $handler->display->display_options['filters']['field_selfie_location_value']['expose']['label'] = 'Location';
+  $handler->display->display_options['filters']['field_selfie_location_value']['expose']['operator'] = 'field_selfie_location_value_op';
+  $handler->display->display_options['filters']['field_selfie_location_value']['expose']['identifier'] = 'location';
+  $handler->display->display_options['filters']['field_selfie_location_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    9 => 0,
+    10 => 0,
+    11 => 0,
+    12 => 0,
+    13 => 0,
+  );
+  /* Filter criterion: Content: Gender (field_selfie_gender) */
+  $handler->display->display_options['filters']['field_selfie_gender_value']['id'] = 'field_selfie_gender_value';
+  $handler->display->display_options['filters']['field_selfie_gender_value']['table'] = 'field_data_field_selfie_gender';
+  $handler->display->display_options['filters']['field_selfie_gender_value']['field'] = 'field_selfie_gender_value';
+  $handler->display->display_options['filters']['field_selfie_gender_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_selfie_gender_value']['expose']['operator_id'] = 'field_selfie_gender_value_op';
+  $handler->display->display_options['filters']['field_selfie_gender_value']['expose']['label'] = 'Gender';
+  $handler->display->display_options['filters']['field_selfie_gender_value']['expose']['operator'] = 'field_selfie_gender_value_op';
+  $handler->display->display_options['filters']['field_selfie_gender_value']['expose']['identifier'] = 'gender';
+  $handler->display->display_options['filters']['field_selfie_gender_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    9 => 0,
+    10 => 0,
+    11 => 0,
+    12 => 0,
+    13 => 0,
   );
 
   /* Display: Page */
