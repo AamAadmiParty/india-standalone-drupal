@@ -682,3 +682,28 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   }
 }
 
+.page-selfies-campaign {
+  .view-filters {
+    .views-exposed-widgets {
+      padding-bottom: 15px;
+      padding-top: 15px;
+      margin-left: 30px;
+    }
+  } 
+  .view-content {
+    table {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      td {
+        .views-field-title {
+          margin-bottom: 25px;
+        }
+        &.col-last {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
