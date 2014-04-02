@@ -811,10 +811,8 @@ h1.pane-title {
   text-align: center;
 }
 .view-id-Selfies .view-content table td .views-field-title {
-  margin-bottom: 25px;
-}
-.view-id-Selfies .view-content table td.col-last {
-  float: right;
+  margin: auto;
+  max-width: 220px;
 }
 
 /*******************************************************************************

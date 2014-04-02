@@ -701,10 +701,8 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       text-align: center;
       td {
         .views-field-title {
-          margin-bottom: 25px;
-        }
-        &.col-last {
-          float: right;
+          margin: auto;
+          max-width: 220px;
         }
       }
     }
