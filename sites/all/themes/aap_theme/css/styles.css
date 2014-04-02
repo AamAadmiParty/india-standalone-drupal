@@ -796,6 +796,9 @@ h1.pane-title {
   top: 2.4em;
 }
 
+.view-id-Selfies .video-embed-description {
+  display: none;
+}
 .view-id-Selfies .view-filters .views-exposed-widgets {
   padding-bottom: 15px;
   padding-top: 15px;
