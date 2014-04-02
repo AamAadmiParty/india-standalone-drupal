@@ -1,0 +1,6 @@
+name = Domain Switcher
+description = Provide block for domain switcher
+package = Domain Access
+dependencies[] = domain
+dependencies[] = domain_source
+core = 7.x
