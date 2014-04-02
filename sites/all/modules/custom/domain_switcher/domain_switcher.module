@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function domain_switcher_block_info() {
+  $blocks = array ();
+  $blocks ['aap_domain_switcher'] = array (
+    'info' => t ( 'AAP Domain Switcher' ),
+    'cache' => DRUPAL_CACHE_GLOBAL
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_configure.
+ */
+
+function domain_switcher_block_configure($delta = '') {
+  // This example comes from node.module.
+  $form = array();
+  if ($delta == 'aap_domain_switcher') {
+    $form['sort_domain'] = array(
+      '#type' => 'select',
+      '#title' => t('Domain is sorted by'),
+      '#default_value' => variable_get('sort_domain_order', 1), // By default domain will be sorted alphabatically
+      '#options' => array(0 => 'Alphabatically', 1 => 'Weight'),
+    );
+  }
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ */
+function domain_switcher_block_save($delta = '', $edit = array()) {
+  if ($delta == 'aap_domain_switcher') {
+    variable_set('sort_domain_order', $edit['sort_domain']);
+  }
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function domain_switcher_block_view($delta = '') {
+
+  if ($delta == 'aap_domain_switcher') {
+    $block = array (
+      'subject' => t ('AAP Domain Switcher'),
+      'content' => get_domains_select_list(),
+    );
+  }
+  return $block;
+}
+
+function get_domains_select_list() {
+  drupal_add_js(drupal_get_path('module', 'domain_switcher') . '/domain_switcher.js');
+
+  // Retireve all active domains (including the default) as an array.
+  // By default they are arranged in weight
+  $domains = domain_domains();
+
+  // If this variable has => 1, sort domain by weight else by alphabatically
+  $sort_order = variable_get('sort_domain_order', 1);
+  if ($sort_order == '0') {
+    $domains = sort_domain_by_alphabatically($domains);
+  }
+
+  $current_domain = domain_get_domain();
+  $select= '<div class="domain-switcher-block"><label for="domain-switcher"></label>
+        <select id="domain-switcher" name="domain-switcher" class="form-select">';
+  $options = '';
+  foreach ($domains as $domain) {
+
+    // Get state name for site name if not set, then it is national site
+    $sitename = explode(',', $domain['sitename']);
+    if (isset($sitename[1])) {
+      $state = $sitename[1];
+    }
+    else {
+      $state = 'India';
+    }
+
+    // Set current domain as default selected
+    if ($domain['subdomain'] == $current_domain['subdomain']) {
+      $options .= '<option selected="selected" value="' . $domain['subdomain'] . '">' . $state . '</option>';
+    }
+    else {
+      $options .= '<option value="' . $domain['subdomain'] . '">' . $state . '</option>';
+    }
+  }
+
+  $select .= $options . '</select></div>';
+  return $select;
+}
+
+function sort_domain_by_alphabatically($domains) {
+  $ordered_domains = array();
+  foreach ($domains as $domain) {
+      $ordered_domains[$domain['subdomain']]['sitename'] = $domain['sitename'];
+      $ordered_domains[$domain['subdomain']]['subdomain'] = $domain['subdomain'];
+  }
+  ksort($ordered_domains);
+  return $ordered_domains;
+}

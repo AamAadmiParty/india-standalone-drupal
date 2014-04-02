@@ -925,7 +925,7 @@ input[type=radio], input.radio {
 }
 
 /*********************************************************************
-  
+
     * Layout for dafault page
     *
     *******************************************************************/
@@ -1042,6 +1042,19 @@ a.header-button {
 }
 a.header-button:hover {
   background: #fcac33;
+}
+
+.aap-domain-switcher-pane {
+  float: right;
+}
+.aap-domain-switcher-pane .domain-switcher-block {
+  margin-top: 14px;
+}
+.aap-domain-switcher-pane #domain-switcher {
+  background: #f36c01;
+  padding: 2px;
+  color: white;
+  font-size: 15px;
 }
 
 .view-id-home_page_content {
