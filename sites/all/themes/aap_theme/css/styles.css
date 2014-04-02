@@ -617,7 +617,7 @@ h1.pane-title {
 }
 .aap-page-content-class .view-aap-media .video-title {
   width: 200px;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
 }
