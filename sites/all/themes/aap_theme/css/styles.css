@@ -253,7 +253,7 @@ h1.pane-title {
   display: none;
 }
 .aap-poll-class h4 {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -466,7 +466,7 @@ h1.pane-title {
 }
 .aap-call-us-class .content a, .aap-call-us-class .title a {
   color: white;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
 }
 .aap-call-us-class .content a:hover, .aap-call-us-class .title a:hover {
@@ -564,7 +564,7 @@ h1.pane-title {
 .aap-page-content-class .pane-content .view-topics p,
 .aap-page-content-class .pane-content .view-similar-content p {
   font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
 }
 .aap-page-content-class .pane-content .node-teaser p a,
 .aap-page-content-class .pane-content .node--full p a,
@@ -603,7 +603,7 @@ h1.pane-title {
 }
 .aap-page-content-class .view-aap-media .view-content p {
   font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
 }
 .aap-page-content-class .view-aap-media .view-content p a {
   font-family: "Droid Sans", Arial, sans-serif;
@@ -632,7 +632,7 @@ h1.pane-title {
   text-decoration: none;
 }
 .aap-page-content-class p {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -662,7 +662,7 @@ h1.pane-title {
 }
 .aap-donation-right-class .pane-content p {
   font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
 }
 .aap-donation-right-class .pane-content p a {
   font-family: "Droid Sans", Arial, sans-serif;
@@ -706,7 +706,7 @@ h1.pane-title {
 }
 .aap-tag-cloud .pane-content p {
   font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
 }
 .aap-tag-cloud .pane-content p a {
   font-family: "Droid Sans", Arial, sans-serif;
@@ -901,7 +901,7 @@ input[type=radio], input.radio {
 }
 
 .form-item label, .form-actions label {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
