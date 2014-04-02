@@ -57,7 +57,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Footer 3',
-        'width' => '25.087371954214223',
+        'width' => '25.087966588981615',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -72,7 +72,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_2' => array(
         'type' => 'region',
         'title' => 'Footer 2',
-        'width' => '25.08617414661059',
+        'width' => '25.172366212815493',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -80,7 +80,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_3' => array(
         'type' => 'region',
         'title' => 'Footer 4',
-        'width' => '24.654078752040245',
+        'width' => '24.481111972151375',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -88,7 +88,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_1' => array(
         'type' => 'region',
         'title' => 'Footer 1',
-        'width' => '25.172375147134936',
+        'width' => '25.258555226051513',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -271,7 +271,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Center',
-        'width' => '60.055249561944194',
+        'width' => '60.14265859399663',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'social-connector-region',
@@ -279,7 +279,7 @@ function f_theme_layout_default_panels_mini() {
       'copyright' => array(
         'type' => 'region',
         'title' => 'Copyright',
-        'width' => '39.944750438055806',
+        'width' => '39.85734140600337',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-copyright-class',
@@ -484,7 +484,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Header Content',
-        'width' => '49.905419324909055',
+        'width' => '49.73301528218164',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-header-search-class',
@@ -492,7 +492,7 @@ function f_theme_layout_default_panels_mini() {
       'header_logo' => array(
         'type' => 'region',
         'title' => 'Header Logo',
-        'width' => '50.09458067509095',
+        'width' => '50.26698471781836',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -514,16 +514,13 @@ function f_theme_layout_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-9';
     $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
+    $pane->type = 'block';
+    $pane->subtype = 'domain_switcher-aap_domain_switcher';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => 'Header Contact, Donate Buttons',
-      'title' => '',
-      'body' => '<p><a class="header-donate-button header-button" href="https://donate.aamaadmiparty.org/" target="_blank" title="Make a Donation">Donate</a><a class="header-contact-button header-button" href="/contact-us" title="Contact Us">Contact Us</a> </p>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
+      'override_title' => 1,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -531,7 +528,7 @@ function f_theme_layout_default_panels_mini() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'clearfix',
+      'css_class' => 'aap-domain-switcher-pane',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -543,12 +540,12 @@ function f_theme_layout_default_panels_mini() {
     $pane->panel = 'center';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
-    $pane->shown = FALSE;
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => '',
+      'admin_title' => 'Header Contact, Donate Buttons',
       'title' => '',
-      'body' => '<div class="header-donate-link"><a href="https://donate.aamaadmiparty.org">Donate</a></div>',
+      'body' => '<p><a class="header-donate-button header-button" href="https://donate.aamaadmiparty.org/" target="_blank" title="Make a Donation">Donate</a></p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -556,7 +553,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'clearfix',
+    );
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
