@@ -615,6 +615,13 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   cursor: auto;
 }
 .view-svg-maps {
+  .svg-map-header {
+    font-family: verdana;
+    font-size: 14px;
+    margin-left: 5em;
+    margin-top: 4px;
+  }
+
   .view-header {
     overflow: hidden;
   }
@@ -692,7 +699,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       padding-top: 15px;
       margin-left: 30px;
     }
-  } 
+  }
   .view-content {
     table {
       width: 75%;
