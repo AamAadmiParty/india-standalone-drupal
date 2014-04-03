@@ -737,6 +737,12 @@ h1.pane-title {
   cursor: auto;
 }
 
+.view-svg-maps .svg-map-header {
+  font-family: verdana;
+  font-size: 14px;
+  margin-left: 5em;
+  margin-top: 4px;
+}
 .view-svg-maps .view-header {
   overflow: hidden;
 }

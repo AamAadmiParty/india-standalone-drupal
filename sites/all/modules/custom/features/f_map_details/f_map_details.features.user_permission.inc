@@ -16,7 +16,6 @@ function f_map_details_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'All Domains Approver' => 'All Domains Approver',
-      'State Domains Approver' => 'State Domains Approver',
     ),
     'module' => 'node',
   );
