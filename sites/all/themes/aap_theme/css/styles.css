@@ -545,6 +545,7 @@ h1.pane-title {
   background: white;
   padding: 0 1em;
   color: #333333;
+  font-family: "Droid Sans", Arial, sans-serif;
   padding: 1% 2%;
 }
 .aap-page-content-class .pane-content .node-teaser .node__title a,
@@ -594,6 +595,7 @@ h1.pane-title {
   background: white;
   padding: 0 1em;
   color: #333333;
+  font-family: "Droid Sans", Arial, sans-serif;
   padding: 1% 2%;
 }
 .aap-page-content-class .view-aap-media .view-content .node__title a {
@@ -652,6 +654,7 @@ h1.pane-title {
   background: white;
   padding: 0 1em;
   color: #333333;
+  font-family: "Droid Sans", Arial, sans-serif;
   margin-top: 0;
   padding-bottom: 5%;
 }
@@ -698,6 +701,7 @@ h1.pane-title {
   background: white;
   padding: 0 1em;
   color: #333333;
+  font-family: "Droid Sans", Arial, sans-serif;
 }
 .aap-tag-cloud .pane-content .node__title a {
   color: #000;
@@ -813,6 +817,16 @@ h1.pane-title {
 .view-id-Selfies .view-content table td .views-field-title {
   margin: auto;
   max-width: 220px;
+}
+
+.page-node .node--selfie .field--name-field-selfie-youtube-link {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.selfie-instructions-link {
+  padding-top: 2em;
+  margin-bottom: 0;
 }
 
 /*******************************************************************************
