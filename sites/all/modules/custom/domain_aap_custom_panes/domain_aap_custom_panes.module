@@ -52,7 +52,7 @@ function domain_aap_custom_panes_domain_batch() {
   // Logo change page.
   $batch['domain_logo'] = array(
     '#form' => array(
-      '#title' => t('Domain specific Logo'),
+      '#title' => t('Domain Specific Logo'),
       '#type' => 'managed_file',
       //'#size' => 80,
       //'#maxlength' => 255,
@@ -92,6 +92,8 @@ function domain_custom_pane_batch_submit_logo($form_values) {
       // making the file status permanent
       $file->status = 1;
       $file = file_save($file);
+      global $user;
+      file_usage_add($file, 'domain_aap_custom_panes', 'node', $user->uid);
     }
     // check if fid exists.
     // explicit check of 0 because empty returns true for 0.
