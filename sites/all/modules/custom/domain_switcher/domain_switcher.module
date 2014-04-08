@@ -55,7 +55,7 @@ function domain_switcher_block_view($delta = '') {
 
 function get_domains_select_list() {
   drupal_add_js(drupal_get_path('module', 'domain_switcher') . '/domain_switcher.js');
-
+ drupal_add_js(drupal_get_path('module', 'domain_switcher') . '/jquery.easydropdown.min.js');
   // Retireve all active domains (including the default) as an array.
   // By default they are arranged in weight
   $domains = domain_domains();
@@ -68,7 +68,7 @@ function get_domains_select_list() {
 
   $current_domain = domain_get_domain();
   $select= '<div class="domain-switcher-block"><label for="domain-switcher"></label>
-        <select id="domain-switcher" name="domain-switcher" class="form-select">';
+        <select id="domain-switcher" name="domain-switcher" class="form-select dropdown">';
   $options = '';
   foreach ($domains as $domain) {
 
