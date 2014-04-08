@@ -961,8 +961,7 @@ input[type=radio], input.radio {
   padding: 3%;
 }
 .aap-donation-right-class .form-item label, .aap-donation-right-class .form-actions label {
-  padding: 1em;
-  text-align: center;
+  padding: 7% 1%;
 }
 
 .surveymonkey-drupal-popup {
