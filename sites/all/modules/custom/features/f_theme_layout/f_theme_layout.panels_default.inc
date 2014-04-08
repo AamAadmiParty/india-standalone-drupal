@@ -57,7 +57,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Footer 3',
-        'width' => '25.087371954214223',
+        'width' => '25.087966588981615',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -72,7 +72,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_2' => array(
         'type' => 'region',
         'title' => 'Footer 2',
-        'width' => '25.08617414661059',
+        'width' => '25.172366212815493',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -80,7 +80,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_3' => array(
         'type' => 'region',
         'title' => 'Footer 4',
-        'width' => '24.654078752040245',
+        'width' => '24.481111972151375',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -88,7 +88,7 @@ function f_theme_layout_default_panels_mini() {
       'footer_1' => array(
         'type' => 'region',
         'title' => 'Footer 1',
-        'width' => '25.172375147134936',
+        'width' => '25.258555226051513',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -271,7 +271,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Center',
-        'width' => '60.055249561944194',
+        'width' => '60.14265859399663',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'social-connector-region',
@@ -279,7 +279,7 @@ function f_theme_layout_default_panels_mini() {
       'copyright' => array(
         'type' => 'region',
         'title' => 'Copyright',
-        'width' => '39.944750438055806',
+        'width' => '39.85734140600337',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-copyright-class',
@@ -484,7 +484,7 @@ function f_theme_layout_default_panels_mini() {
       'center' => array(
         'type' => 'region',
         'title' => 'Header Content',
-        'width' => '49.905419324909055',
+        'width' => '49.73301528218164',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => 'aap-header-search-class',
@@ -492,7 +492,7 @@ function f_theme_layout_default_panels_mini() {
       'header_logo' => array(
         'type' => 'region',
         'title' => 'Header Logo',
-        'width' => '50.09458067509095',
+        'width' => '50.26698471781836',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -521,7 +521,7 @@ function f_theme_layout_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => 'Header Contact, Donate Buttons',
       'title' => '',
-      'body' => '<p><a class="header-donate-button header-button" href="https://donate.aamaadmiparty.org/" target="_blank" title="Make a Donation">Donate</a><a class="header-contact-button header-button" href="/contact-us" title="Contact Us">Contact Us</a> </p>',
+      'body' => '<p><a class="header-donate-button header-button" href="https://donate.aamaadmiparty.org/" target="_blank" title="Make a Donation">Donate</a><a class="header-contact-button header-button" href="/contact-us" title="Contact Us">Contact Us</a></p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -541,30 +541,6 @@ function f_theme_layout_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-10';
     $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<div class="header-donate-link"><a href="https://donate.aamaadmiparty.org">Donate</a></div>',
-      'format' => 'full_html',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['center'][1] = 'new-10';
-    $pane = new stdClass();
-    $pane->pid = 'new-11';
-    $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'search-form';
     $pane->shown = FALSE;
@@ -582,12 +558,12 @@ function f_theme_layout_default_panels_mini() {
       'css_class' => 'aap-search-class',
     );
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['center'][2] = 'new-11';
+    $display->content['new-10'] = $pane;
+    $display->panels['center'][1] = 'new-10';
     $pane = new stdClass();
-    $pane->pid = 'new-12';
+    $pane->pid = 'new-11';
     $pane->panel = 'header_logo';
     $pane->type = 'page_logo';
     $pane->subtype = 'page_logo';
@@ -605,8 +581,8 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['header_logo'][0] = 'new-12';
+    $display->content['new-11'] = $pane;
+    $display->panels['header_logo'][0] = 'new-11';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -636,7 +612,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-13';
+    $pane->pid = 'new-12';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'superfish-1';
@@ -657,10 +633,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['center'][0] = 'new-13';
+    $display->content['new-12'] = $pane;
+    $display->panels['center'][0] = 'new-12';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-13';
+  $display->title_pane = 'new-12';
   $mini->display = $display;
   $export['header_menu'] = $mini;
 
@@ -688,7 +664,7 @@ function f_theme_layout_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-14';
+    $pane->pid = 'new-13';
     $pane->panel = 'center';
     $pane->type = 'block';
     $pane->subtype = 'menu-menu-right-navigation';
@@ -709,10 +685,10 @@ function f_theme_layout_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['center'][0] = 'new-14';
+    $display->content['new-13'] = $pane;
+    $display->panels['center'][0] = 'new-13';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-14';
+  $display->title_pane = 'new-13';
   $mini->display = $display;
   $export['right_navigation'] = $mini;
 

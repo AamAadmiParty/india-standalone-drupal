@@ -60,6 +60,7 @@ function f_theme_layout_default_page_manager_handlers() {
       'footer_bottom' => NULL,
       'middle_left_content' => NULL,
       'right_middle_content' => NULL,
+      'top_header' => NULL,
     ),
   );
   $display->cache = array();
@@ -157,7 +158,7 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->pid = 'new-4';
     $pane->panel = 'header_logo';
     $pane->type = 'panels_mini';
-    $pane->subtype = 'header';
+    $pane->subtype = 'header_menu';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -177,19 +178,22 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-5';
     $pane->panel = 'header_menu';
-    $pane->type = 'panels_mini';
-    $pane->subtype = 'header_menu';
+    $pane->type = 'block';
+    $pane->subtype = 'block-10';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'lok-sabha-countdown lok-sabha-countdown-front',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -431,6 +435,27 @@ print domain_aap_custom_panes_facebook_content();
     $pane->locks = array();
     $display->content['new-13'] = $pane;
     $display->panels['sliding_region'][1] = 'new-13';
+    $pane = new stdClass();
+    $pane->pid = 'new-14';
+    $pane->panel = 'top_header';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'header';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-14'] = $pane;
+    $display->panels['top_header'][0] = 'new-14';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -592,7 +617,7 @@ print domain_aap_custom_panes_facebook_content();
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-14';
+    $pane->pid = 'new-15';
     $pane->panel = 'bottom_content';
     $pane->type = 'panels_mini';
     $pane->subtype = 'footer';
@@ -613,10 +638,10 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['bottom_content'][0] = 'new-14';
+    $display->content['new-15'] = $pane;
+    $display->panels['bottom_content'][0] = 'new-15';
     $pane = new stdClass();
-    $pane->pid = 'new-15';
+    $pane->pid = 'new-16';
     $pane->panel = 'center';
     $pane->type = 'panels_mini';
     $pane->subtype = 'header';
@@ -637,10 +662,10 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['center'][0] = 'new-15';
+    $display->content['new-16'] = $pane;
+    $display->panels['center'][0] = 'new-16';
     $pane = new stdClass();
-    $pane->pid = 'new-16';
+    $pane->pid = 'new-17';
     $pane->panel = 'footer_top_content';
     $pane->type = 'panels_mini';
     $pane->subtype = 'footer_bottom';
@@ -661,10 +686,34 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['footer_top_content'][0] = 'new-16';
+    $display->content['new-17'] = $pane;
+    $display->panels['footer_top_content'][0] = 'new-17';
     $pane = new stdClass();
-    $pane->pid = 'new-17';
+    $pane->pid = 'new-18';
+    $pane->panel = 'page_content';
+    $pane->type = 'block';
+    $pane->subtype = 'block-10';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'lok-sabha-countdown',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-18'] = $pane;
+    $display->panels['page_content'][0] = 'new-18';
+    $pane = new stdClass();
+    $pane->pid = 'new-19';
     $pane->panel = 'page_content';
     $pane->type = 'pane_messages';
     $pane->subtype = 'pane_messages';
@@ -677,12 +726,12 @@ print domain_aap_custom_panes_facebook_content();
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-17'] = $pane;
-    $display->panels['page_content'][0] = 'new-17';
+    $display->content['new-19'] = $pane;
+    $display->panels['page_content'][1] = 'new-19';
     $pane = new stdClass();
-    $pane->pid = 'new-18';
+    $pane->pid = 'new-20';
     $pane->panel = 'page_content';
     $pane->type = 'page_content';
     $pane->subtype = 'page_content';
@@ -702,12 +751,12 @@ print domain_aap_custom_panes_facebook_content();
       'css_class' => 'aap-page-content-class',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-18'] = $pane;
-    $display->panels['page_content'][1] = 'new-18';
+    $display->content['new-20'] = $pane;
+    $display->panels['page_content'][2] = 'new-20';
     $pane = new stdClass();
-    $pane->pid = 'new-19';
+    $pane->pid = 'new-21';
     $pane->panel = 'right_navigation';
     $pane->type = 'panels_mini';
     $pane->subtype = 'right_navigation';
@@ -728,10 +777,10 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-19'] = $pane;
-    $display->panels['right_navigation'][0] = 'new-19';
+    $display->content['new-21'] = $pane;
+    $display->panels['right_navigation'][0] = 'new-21';
     $pane = new stdClass();
-    $pane->pid = 'new-20';
+    $pane->pid = 'new-22';
     $pane->panel = 'right_navigation';
     $pane->type = 'views';
     $pane->subtype = 'similar_content';
@@ -769,10 +818,10 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-20'] = $pane;
-    $display->panels['right_navigation'][1] = 'new-20';
+    $display->content['new-22'] = $pane;
+    $display->panels['right_navigation'][1] = 'new-22';
     $pane = new stdClass();
-    $pane->pid = 'new-21';
+    $pane->pid = 'new-23';
     $pane->panel = 'right_navigation';
     $pane->type = 'block';
     $pane->subtype = 'aap_tweaks-Donation_ Block';
@@ -793,10 +842,10 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-21'] = $pane;
-    $display->panels['right_navigation'][2] = 'new-21';
+    $display->content['new-23'] = $pane;
+    $display->panels['right_navigation'][2] = 'new-23';
     $pane = new stdClass();
-    $pane->pid = 'new-22';
+    $pane->pid = 'new-24';
     $pane->panel = 'right_navigation';
     $pane->type = 'views';
     $pane->subtype = 'videos';
@@ -829,10 +878,10 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-22'] = $pane;
-    $display->panels['right_navigation'][3] = 'new-22';
+    $display->content['new-24'] = $pane;
+    $display->panels['right_navigation'][3] = 'new-24';
     $pane = new stdClass();
-    $pane->pid = 'new-23';
+    $pane->pid = 'new-25';
     $pane->panel = 'top_menu';
     $pane->type = 'panels_mini';
     $pane->subtype = 'header_menu';
@@ -850,10 +899,10 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-23'] = $pane;
-    $display->panels['top_menu'][0] = 'new-23';
+    $display->content['new-25'] = $pane;
+    $display->panels['top_menu'][0] = 'new-25';
     $pane = new stdClass();
-    $pane->pid = 'new-24';
+    $pane->pid = 'new-26';
     $pane->panel = 'top_menu';
     $pane->type = 'block';
     $pane->subtype = 'block-3';
@@ -871,8 +920,8 @@ print domain_aap_custom_panes_facebook_content();
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-24'] = $pane;
-    $display->panels['top_menu'][1] = 'new-24';
+    $display->content['new-26'] = $pane;
+    $display->panels['top_menu'][1] = 'new-26';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
