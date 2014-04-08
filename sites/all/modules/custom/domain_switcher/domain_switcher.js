@@ -1,11 +1,4 @@
-(function ($, Drupal, window, document, undefined) {
-  Drupal.behaviors.domain_switcher = {
-      attach: function(context) {
-        $('#domain-switcher').change(function() {
-          window.location.href = 'http://' + $(this).val();
-        });
-      }
-  }
-
+function redirectToSate() {
+  var url = document.getElementById("domain-switcher").value;
+  window.location.href = 'http://' + url;
 }
-)(jQuery, Drupal, this, this.document);
