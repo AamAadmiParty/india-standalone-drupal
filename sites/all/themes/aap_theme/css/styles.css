@@ -1072,9 +1072,8 @@ a.header-button:hover {
   margin-top: 14px;
 }
 .aap-domain-switcher-pane #domain-switcher {
-  background: #f36c01;
+  background: white;
   padding: 2px;
-  color: white;
   font-size: 15px;
 }
 
@@ -1113,6 +1112,11 @@ a.header-button:hover {
 }
 .lok-sabha-countdown-front #Stage_jbeeb_3 {
   margin-left: 7em;
+}
+
+.aap-header-buttons {
+  float: left;
+  margin-left: 5em;
 }
 
 .view-id-home_page_content {

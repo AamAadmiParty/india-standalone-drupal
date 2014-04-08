@@ -245,9 +245,8 @@ a.header-button {
     margin-top: 14px;
   }
   #domain-switcher {
-    background: #f36c01;
+    background: white;
     padding: 2px;
-    color: white;
     font-size: 15px;
   }
 }
@@ -293,3 +292,7 @@ a.header-button {
   }
 }
 
+.aap-header-buttons {
+  float: left;
+  margin-left: 5em;
+}
