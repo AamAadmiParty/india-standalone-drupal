@@ -527,7 +527,7 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
        		 }
        		.video-title {
        			width:200px;
-       			font-family: $font-family-serif;
+       			font-family: $font-family-sans-serif;
          		color:#f17e00;
          		text-decoration:none;
        		}
@@ -615,6 +615,13 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   cursor: auto;
 }
 .view-svg-maps {
+  .svg-map-header {
+    font-family: verdana;
+    font-size: 14px;
+    margin-left: 5em;
+    margin-top: 4px;
+  }
+
   .view-header {
     overflow: hidden;
   }
@@ -682,14 +689,17 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   }
 }
 
-.page-selfies-campaign {
+.view-id-Selfies {
+  .video-embed-description {
+    display: none;
+  }
   .view-filters {
     .views-exposed-widgets {
       padding-bottom: 15px;
       padding-top: 15px;
       margin-left: 30px;
     }
-  } 
+  }
   .view-content {
     table {
       width: 75%;
@@ -698,13 +708,21 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
       text-align: center;
       td {
         .views-field-title {
-          margin-bottom: 25px;
-        }
-        &.col-last {
-          float: right;
+          margin: auto;
+          max-width: 220px;
         }
       }
     }
   }
+}
+
+.page-node .node--selfie .field--name-field-selfie-youtube-link {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.selfie-instructions-link {
+  padding-top: 2em;
+  margin-bottom: 0;
 }
 

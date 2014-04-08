@@ -252,3 +252,44 @@ a.header-button {
   }
 }
 
+
+/**
+ * Style for loksabha countdown
+ */
+ .lok-sabha-countdown {
+  background: white;
+  margin-top: 1em;
+  padding-bottom: 1em;
+
+  .loksabha-countdown-title {
+    color: #DB4937;
+    font-size: 2.5em;
+    font-family: $font-family-serif;
+    margin-left: 1em;
+  }
+  .loksabha-countdown-content {
+    color: #75758A;
+    font-size: 1.5em;
+    font-family: $font-family-serif;
+    margin: 0.3em 0em 0.5em 7.8em;
+  }
+
+  #Stage_jbeeb_3 {
+    margin-left: 5em;
+  }
+ }
+
+.lok-sabha-countdown-front {
+  margin-bottom: 1em;
+  .loksabha-countdown-title {
+    margin-left: 3em;
+  }
+  .loksabha-countdown-content {
+    margin: 0.3em 0em 0.5em 10.8em;
+  }
+
+  #Stage_jbeeb_3 {
+    margin-left: 7em;
+  }
+}
+

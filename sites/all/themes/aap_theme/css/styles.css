@@ -253,7 +253,7 @@ h1.pane-title {
   display: none;
 }
 .aap-poll-class h4 {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -466,7 +466,7 @@ h1.pane-title {
 }
 .aap-call-us-class .content a, .aap-call-us-class .title a {
   color: white;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
 }
 .aap-call-us-class .content a:hover, .aap-call-us-class .title a:hover {
@@ -545,6 +545,7 @@ h1.pane-title {
   background: white;
   padding: 0 1em;
   color: #333333;
+  font-family: "Droid Sans", Arial, sans-serif;
   padding: 1% 2%;
 }
 .aap-page-content-class .pane-content .node-teaser .node__title a,
@@ -564,7 +565,7 @@ h1.pane-title {
 .aap-page-content-class .pane-content .view-topics p,
 .aap-page-content-class .pane-content .view-similar-content p {
   font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
 }
 .aap-page-content-class .pane-content .node-teaser p a,
 .aap-page-content-class .pane-content .node--full p a,
@@ -594,6 +595,7 @@ h1.pane-title {
   background: white;
   padding: 0 1em;
   color: #333333;
+  font-family: "Droid Sans", Arial, sans-serif;
   padding: 1% 2%;
 }
 .aap-page-content-class .view-aap-media .view-content .node__title a {
@@ -603,7 +605,7 @@ h1.pane-title {
 }
 .aap-page-content-class .view-aap-media .view-content p {
   font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
 }
 .aap-page-content-class .view-aap-media .view-content p a {
   font-family: "Droid Sans", Arial, sans-serif;
@@ -617,7 +619,7 @@ h1.pane-title {
 }
 .aap-page-content-class .view-aap-media .video-title {
   width: 200px;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   color: #f17e00;
   text-decoration: none;
 }
@@ -632,7 +634,7 @@ h1.pane-title {
   text-decoration: none;
 }
 .aap-page-content-class p {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -652,6 +654,7 @@ h1.pane-title {
   background: white;
   padding: 0 1em;
   color: #333333;
+  font-family: "Droid Sans", Arial, sans-serif;
   margin-top: 0;
   padding-bottom: 5%;
 }
@@ -662,7 +665,7 @@ h1.pane-title {
 }
 .aap-donation-right-class .pane-content p {
   font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
 }
 .aap-donation-right-class .pane-content p a {
   font-family: "Droid Sans", Arial, sans-serif;
@@ -698,6 +701,7 @@ h1.pane-title {
   background: white;
   padding: 0 1em;
   color: #333333;
+  font-family: "Droid Sans", Arial, sans-serif;
 }
 .aap-tag-cloud .pane-content .node__title a {
   color: #000;
@@ -706,7 +710,7 @@ h1.pane-title {
 }
 .aap-tag-cloud .pane-content p {
   font-style: normal;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif !important;
+  font-family: "Droid Sans", Arial, sans-serif !important;
 }
 .aap-tag-cloud .pane-content p a {
   font-family: "Droid Sans", Arial, sans-serif;
@@ -733,6 +737,12 @@ h1.pane-title {
   cursor: auto;
 }
 
+.view-svg-maps .svg-map-header {
+  font-family: verdana;
+  font-size: 14px;
+  margin-left: 5em;
+  margin-top: 4px;
+}
 .view-svg-maps .view-header {
   overflow: hidden;
 }
@@ -796,22 +806,33 @@ h1.pane-title {
   top: 2.4em;
 }
 
-.page-selfies-campaign .view-filters .views-exposed-widgets {
+.view-id-Selfies .video-embed-description {
+  display: none;
+}
+.view-id-Selfies .view-filters .views-exposed-widgets {
   padding-bottom: 15px;
   padding-top: 15px;
   margin-left: 30px;
 }
-.page-selfies-campaign .view-content table {
+.view-id-Selfies .view-content table {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-.page-selfies-campaign .view-content table td .views-field-title {
-  margin-bottom: 25px;
+.view-id-Selfies .view-content table td .views-field-title {
+  margin: auto;
+  max-width: 220px;
 }
-.page-selfies-campaign .view-content table td.col-last {
-  float: right;
+
+.page-node .node--selfie .field--name-field-selfie-youtube-link {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.selfie-instructions-link {
+  padding-top: 2em;
+  margin-bottom: 0;
 }
 
 /*******************************************************************************
@@ -901,7 +922,7 @@ input[type=radio], input.radio {
 }
 
 .form-item label, .form-actions label {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Droid Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: normal;
   color: #333333;
@@ -1055,6 +1076,43 @@ a.header-button:hover {
   padding: 2px;
   color: white;
   font-size: 15px;
+}
+
+/**
+ * Style for loksabha countdown
+ */
+.lok-sabha-countdown {
+  background: white;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+.lok-sabha-countdown .loksabha-countdown-title {
+  color: #DB4937;
+  font-size: 2.5em;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  margin-left: 1em;
+}
+.lok-sabha-countdown .loksabha-countdown-content {
+  color: #75758A;
+  font-size: 1.5em;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  margin: 0.3em 0em 0.5em 7.8em;
+}
+.lok-sabha-countdown #Stage_jbeeb_3 {
+  margin-left: 5em;
+}
+
+.lok-sabha-countdown-front {
+  margin-bottom: 1em;
+}
+.lok-sabha-countdown-front .loksabha-countdown-title {
+  margin-left: 3em;
+}
+.lok-sabha-countdown-front .loksabha-countdown-content {
+  margin: 0.3em 0em 0.5em 10.8em;
+}
+.lok-sabha-countdown-front #Stage_jbeeb_3 {
+  margin-left: 7em;
 }
 
 .view-id-home_page_content {

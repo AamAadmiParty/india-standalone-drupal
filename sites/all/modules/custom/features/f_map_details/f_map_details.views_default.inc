@@ -36,6 +36,13 @@ function f_map_details_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<div class="svg-map-header">Click on any state in the map below  to see the AAP candidates for the 2014 elections.</div>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Header: Global: PHP */
   $handler->display->display_options['header']['php']['id'] = 'php';
   $handler->display->display_options['header']['php']['table'] = 'views';
@@ -2284,7 +2291,8 @@ END STRIPS
   c-0.331,0.242,0.238,0.905-0.272,1.162c-2.241,1.103-2.604-0.932-3.513,1.8c-0.646,1.978-0.264,2.469-2.516,2.737
   c-1.703,0.203-3.508-0.07-5.212,0.038c0.086,2.032-2.542,1.678-2.325,4.175c-2.604,0.165-3.661-0.67-5.962-1.407
   c-0.762-0.244-1.555-0.321-2.358-0.283"/>
-
+<text id="DAMAN AND DIU" y="980" x="270" dy="4em" style="text-anchor: end;cursor: pointer;">Daman &amp; Diu</text>
+<text id="LAKSHADWEEP" y="1600" x="350" dy="4em" style="text-anchor: end;cursor: pointer;">Lakshadweep</text>
 </svg>
 ';
   /* Field: Content: Title */
