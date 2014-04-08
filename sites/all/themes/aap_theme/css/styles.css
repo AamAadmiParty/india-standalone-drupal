@@ -1069,7 +1069,7 @@ a.header-button:hover {
   float: right;
 }
 .aap-domain-switcher-pane .domain-switcher-block {
-  margin-top: 14px;
+  margin-top: -4px;
 }
 .aap-domain-switcher-pane #domain-switcher {
   background: white;
