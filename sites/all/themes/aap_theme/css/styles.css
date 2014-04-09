@@ -1073,17 +1073,36 @@ a.header-button:hover {
   margin-top: 1em;
   padding-bottom: 1em;
 }
+.lok-sabha-countdown .loksabha-countdown-link {
+  margin-top: 1em;
+}
+.lok-sabha-countdown .loksabha-countdown-link a {
+  text-decoration: underline;
+  color: #1526EE;
+}
+.lok-sabha-countdown .loksabha-countdown-link a:hover {
+  color: #1574EE;
+}
+.lok-sabha-countdown .loksabha-countdown-link1 {
+  float: left;
+  margin-left: 6.3em;
+}
+.lok-sabha-countdown .loksabha-countdown-link2 {
+  margin-left: 24.7em;
+  width: 250px;
+}
 .lok-sabha-countdown .loksabha-countdown-title {
   color: #DB4937;
   font-size: 2.5em;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  margin-left: 1em;
+  font-family: "Droid Sans", Arial, sans-serif;
+  margin-left: 0.5em;
+  padding-top: 0.3em;
 }
 .lok-sabha-countdown .loksabha-countdown-content {
   color: #75758A;
   font-size: 1.5em;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  margin: 0.3em 0em 0.5em 7.8em;
+  font-family: "Droid Sans", Arial, sans-serif;
+  margin: 0.3em 0em 0.8em 8.8em;
 }
 .lok-sabha-countdown #Stage_jbeeb_3 {
   margin-left: 5em;
@@ -1092,14 +1111,22 @@ a.header-button:hover {
 .lok-sabha-countdown-front {
   margin-bottom: 1em;
 }
+.lok-sabha-countdown-front .loksabha-countdown-link1 {
+  float: left;
+  margin-left: 15em;
+}
+.lok-sabha-countdown-front .loksabha-countdown-link2 {
+  margin-left: 31em;
+  width: 250px;
+}
 .lok-sabha-countdown-front .loksabha-countdown-title {
-  margin-left: 3em;
+  margin-left: 3.5em;
 }
 .lok-sabha-countdown-front .loksabha-countdown-content {
-  margin: 0.3em 0em 0.5em 10.8em;
+  margin: 0.3em 0em 0.5em 13.8em;
 }
 .lok-sabha-countdown-front #Stage_jbeeb_3 {
-  margin-left: 7em;
+  margin-left: 8.9em;
 }
 
 .view-id-home_page_content {
