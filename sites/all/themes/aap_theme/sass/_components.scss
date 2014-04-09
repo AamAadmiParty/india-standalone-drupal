@@ -238,6 +238,20 @@ a.header-button {
   }
 }
 
+.aap-domain-switcher-pane {
+  float: left;
+  margin-left: 6em;
+  .domain-switcher-block {
+    margin-top: -4px;
+  }
+  #domain-switcher {
+    background: white;
+    padding: 2px;
+    font-size: 15px;
+  }
+}
+
+
 /**
  * Style for loksabha countdown
  */
@@ -308,3 +322,4 @@ a.header-button {
     margin-left: 8.9em;
   }
 }
+

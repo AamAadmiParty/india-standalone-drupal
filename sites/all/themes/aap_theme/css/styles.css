@@ -1065,6 +1065,19 @@ a.header-button:hover {
   background: #fcac33;
 }
 
+.aap-domain-switcher-pane {
+  float: left;
+  margin-left: 6em;
+}
+.aap-domain-switcher-pane .domain-switcher-block {
+  margin-top: -4px;
+}
+.aap-domain-switcher-pane #domain-switcher {
+  background: white;
+  padding: 2px;
+  font-size: 15px;
+}
+
 /**
  * Style for loksabha countdown
  */

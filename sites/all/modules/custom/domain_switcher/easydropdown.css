@@ -1,0 +1,204 @@
+/* --- EASYDROPDOWN DEFAULT THEME --- */
+
+
+
+/* PREFIXED CSS */
+.aap-domain-switcher-pane .dropdown,
+.dropdown div,
+.dropdown li,
+.dropdown div::after{
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-ms-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+.aap-domain-switcher-pane .dropdown .selected::after,
+.dropdown.scrollable div::after{
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+}
+
+/* WRAPPER */
+
+.aap-domain-switcher-pane .dropdown{
+	position: relative;
+	width: 270px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	background: #fff;
+
+	border-radius: 3px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.aap-domain-switcher-pane .dropdown.open{
+	z-index: 2;
+}
+
+.aap-domain-switcher-pane .dropdown:hover{
+	box-shadow: 0 0 5px rgba(0,0,0,.15);
+}
+
+.aap-domain-switcher-pane .dropdown.focus{
+	box-shadow: 0 0 5px rgba(51,102,248,.4);
+}
+
+/* CARAT */
+
+.aap-domain-switcher-pane .dropdown .carat{
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	margin-top: -4px;
+	border: 6px solid transparent;
+	border-top: 8px solid #000;
+}
+
+.aap-domain-switcher-pane .dropdown.open .carat{
+	margin-top: -10px;
+	border-top: 6px solid transparent;
+	border-bottom: 8px solid #000;
+}
+
+.aap-domain-switcher-pane .dropdown.disabled .carat{
+	border-top-color: #999;
+}
+
+/* OLD SELECT (HIDDEN) */
+
+.aap-domain-switcher-pane .dropdown .old{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+.aap-domain-switcher-pane .dropdown select{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.aap-domain-switcher-pane .dropdown.touch .old{
+	width: 100%;
+	height: 100%;
+}
+
+.aap-domain-switcher-pane .dropdown.touch select{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+/* SELECTED FEEDBACK ITEM */
+
+.aap-domain-switcher-pane .dropdown .selected,
+.aap-domain-switcher-pane .dropdown li{
+	display: block;
+	font-size: 14px;
+	line-height: 5px;
+	color: #000;
+	padding: 9px 12px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.aap-domain-switcher-pane .dropdown.disabled .selected{
+	color: #999;
+}
+
+.aap-domain-switcher-pane .dropdown .selected::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 60px;
+
+	border-radius: 0 2px 2px 0;
+	box-shadow: inset -55px 0 25px -20px #fff;
+}
+
+/* DROP DOWN WRAPPER */
+
+.aap-domain-switcher-pane .dropdown div{
+	position: absolute;
+	height: 0;
+	left: -1px;
+	right: -1px;
+	top: 100%;
+	margin-top: -1px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-top: 1px solid #eee;
+	border-radius: 0 0 3px 3px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+/* Height is adjusted by JS on open */
+
+.aap-domain-switcher-pane .dropdown.open div{
+	opacity: 1;
+	z-index: 2;
+}
+
+/* FADE OVERLAY FOR SCROLLING LISTS */
+
+.aap-domain-switcher-pane .dropdown.scrollable div::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 50px;
+
+	box-shadow: inset 0 -50px 30px -35px #fff;
+}
+
+.aap-domain-switcher-pane .dropdown.scrollable.bottom div::after{
+	opacity: 0;
+}
+
+/* DROP DOWN LIST */
+
+.aap-domain-switcher-pane .dropdown ul{
+	height: 100%;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	margin-left: -35px;
+}
+
+.aap-domain-switcher-pane .dropdown.scrollable.open ul{
+	overflow-y: auto;
+}
+
+/* DROP DOWN LIST ITEMS */
+
+.aap-domain-switcher-pane .dropdown li{
+	list-style: none;
+	padding: 8px 12px;
+}
+
+/* .focus class is also added on hover */
+
+.aap-domain-switcher-pane .dropdown li.focus{
+	background: #d24a67;
+	position: relative;
+	z-index: 3;
+	color: #fff;
+}
+
+.aap-domain-switcher-pane .dropdown li.active{
+	font-weight: 700;
+}
+
