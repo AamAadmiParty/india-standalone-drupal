@@ -239,8 +239,8 @@ a.header-button {
 }
 
 .aap-domain-switcher-pane {
-  float: right;
-
+  float: left;
+  margin-left: 6em;
   .domain-switcher-block {
     margin-top: -4px;
   }
@@ -323,7 +323,3 @@ a.header-button {
   }
 }
 
-.aap-header-buttons {
-  float: left;
-  margin-left: 5em;
-}

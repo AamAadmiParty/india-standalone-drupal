@@ -514,6 +514,30 @@ function f_theme_layout_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-9';
     $pane->panel = 'center';
+    $pane->type = 'block';
+    $pane->subtype = 'domain_switcher-aap_domain_switcher';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'aap-domain-switcher-pane',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-9'] = $pane;
+    $display->panels['center'][0] = 'new-9';
+    $pane = new stdClass();
+    $pane->pid = 'new-10';
+    $pane->panel = 'center';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -532,30 +556,6 @@ function f_theme_layout_default_panels_mini() {
     $pane->css = array(
       'css_id' => '',
       'css_class' => 'aap-header-buttons clearfix',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['center'][0] = 'new-9';
-    $pane = new stdClass();
-    $pane->pid = 'new-10';
-    $pane->panel = 'center';
-    $pane->type = 'block';
-    $pane->subtype = 'domain_switcher-aap_domain_switcher';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'aap-domain-switcher-pane',
     );
     $pane->extras = array();
     $pane->position = 1;
