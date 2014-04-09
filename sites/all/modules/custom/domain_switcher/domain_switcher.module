@@ -69,7 +69,7 @@ function get_domains_select_list() {
 
   $current_domain = domain_get_domain();
   $select= '<div class="domain-switcher-block"><label for="domain-switcher"></label>
-        <select id="domain-switcher" name="domain-switcher" class="form-select dropdown" onchange="redirectToSate()">';
+        <select id="domain-switcher" name="domain-switcher" class="form-select dropdown" data-settings={"cutOff":15} onchange="redirectToSate()">';
   $options = '';
   foreach ($domains as $domain) {
 
