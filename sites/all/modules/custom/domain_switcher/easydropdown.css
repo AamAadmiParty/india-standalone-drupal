@@ -175,7 +175,8 @@
 	width: 100%;
 	list-style: none;
 	overflow: hidden;
-	margin-left: -35px;
+	margin: 0;
+	padding: 0;
 }
 
 .aap-domain-switcher-pane .dropdown.scrollable.open ul{
