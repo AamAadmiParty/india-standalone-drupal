@@ -79,7 +79,7 @@ function get_domains_select_list() {
       $state = $sitename[1];
     }
     else {
-      $state = 'India';
+      $state = 'National (Select State)';
     }
 
     // Set current domain as default selected
