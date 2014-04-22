@@ -25,14 +25,10 @@ function mredirect_help($path, $arg) {
   }
 }
 
-/*
- * Implementation of hook_boot
+/**
+ * Implements hook_page_alter() to insert JavaScript to the appropriate scope/region of the page.
  */
-
-function mredirect_boot() {
-  require_once 'includes/common.inc';
-  header('Vary: User-Agent');
-  
+function mredirect_page_alter(&$page) {
   drupal_add_js('http://detect.deviceatlas.com/redirect.js?m=' . MOBILE_SITE . '&t=false', 'external');
   drupal_add_html_head_link(array(
     "rel" => "alternate",
@@ -40,3 +36,4 @@ function mredirect_boot() {
     "href" => MOBILE_SITE."/w/".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']
   ));
 }
+
