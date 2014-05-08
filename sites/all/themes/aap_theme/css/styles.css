@@ -172,6 +172,11 @@ body.admin-menu #admin-menu {
   background: #1e7fa2;
 }
 
+.page-varanasi .panels-flexible-row.aap-page-background-class,
+.page-varanasi-2 .panels-flexible-row.aap-page-background-class {
+  background: none;
+}
+
 .panels-flexible-row.aap-page-background-class,
 body.front .panels-flexible-aap_layout-inside {
   background: url("../images/bg_flag.jpg") no-repeat 0px -3px;
@@ -197,7 +202,9 @@ body.front div.panels-flexible-aap_layout div.middle-content .inside {
   color: red;
 }
 
-h1.pane-title {
+h1.pane-title,
+.page-varanasi #varanasi-mashup h1.pane-title,
+.page-varanasi-2 #varanasi-mashup h1.pane-title {
   background-color: white;
   text-align: center;
   margin: 0.3em 0 0.5em;
@@ -833,6 +840,14 @@ h1.pane-title {
 .selfie-instructions-link {
   padding-top: 2em;
   margin-bottom: 0;
+}
+
+.page-varanasi #varanasi-mashup .aap-footer-top-class,
+.page-varanasi-2 #varanasi-mashup .aap-footer-top-class,
+.page-varanasi #varanasi-mashup .aap-footer-bottom-class,
+.page-varanasi-2 #varanasi-mashup .aap-footer-bottom-class,
+#varanasi-mashup .middle-content {
+  display: none;
 }
 
 /*******************************************************************************
